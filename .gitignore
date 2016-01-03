@@ -25,6 +25,7 @@ www/.gitattributes
 # Ignore Drupal's file directory.
 www/sites/default/default.services.yml
 www/sites/default/default.settings.php
+www/sites/default/settings.local.php
 www/sites/example.sites.php
 www/sites/sites.php
 www/sites/default/files
