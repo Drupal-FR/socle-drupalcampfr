@@ -10,6 +10,9 @@ DRUPAL_TEMP=$(mktemp -d)
 # Download Drupal in temp directory.
 $DRUSH dl "$DRUPAL_VERSION" --destination=$DRUPAL_TEMP --drupal-project-rename=drupal-8 --quiet -y
 
+# Create default directory in case it does not exist yet.
+mkdir -p $WWW_PATH/sites/default
+
 # Update specific files.
 rsync -avz $DRUPAL_TEMP/drupal-8/autoload.php                       $WWW_PATH/autoload.php
 rsync -avz $DRUPAL_TEMP/drupal-8/index.php                          $WWW_PATH/index.php

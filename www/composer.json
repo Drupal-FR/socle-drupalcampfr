@@ -31,6 +31,9 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
+  "scripts": {
+    "post-install-cmd": "sh ../scripts/update-scaffold.sh"
+  },
   "extra": {
     "installer-paths": {
       "core": ["type:drupal-core"],
