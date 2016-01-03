@@ -1,9 +1,10 @@
-#!/bin/bash -e
+#!/bin/bash
 
-SCRIPTS_RELATIVE_PATH=$(dirname $0)
-WWW_PATH=$SCRIPTS_RELATIVE_PATH/../www
+FILE_PATH=$(realpath $0)
+PROJECT_PATH=$(dirname $(dirname $FILE_PATH))
 
-DRUSH=$WWW_PATH/vendor/bin/drush
+. $PROJECT_PATH/scripts/script-parameters.sh
+
 DRUPAL_VERSION=${1:-drupal-8}
 DRUPAL_TEMP=$(mktemp -d)
 
