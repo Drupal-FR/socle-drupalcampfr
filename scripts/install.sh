@@ -13,3 +13,6 @@ fi
 
 # Installation.
 composer install --working-dir=$WWW_PATH
+
+# Add contrib files.
+$SCRIPTS_RELATIVE_PATH/update-scaffold.sh
