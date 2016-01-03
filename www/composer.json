@@ -22,7 +22,8 @@
     "drush/drush": "8.0.1",
     "drupal/admin_toolbar": "8.1.10",
     "drupal/features": "8.3.0-alpha5",
-    "drupal/field_group": "8.1.0-rc4"
+    "drupal/field_group": "8.1.0-rc4",
+    "drupal/bootstrap": "8.3.0-beta2"
   },
   "require-dev": {
     "drupal/devel": "8.1.*",
