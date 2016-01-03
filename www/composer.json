@@ -1,0 +1,41 @@
+{
+  "name": "florenttorregrosa/socle-drupalcampfr",
+  "description": "Technical base for french drupalcamps. Template inspired from drupal-composer/drupal-project.",
+  "type": "project",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Florent Torregrosa",
+      "role": "Developer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packagist.drupal-composer.org"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.0.21",
+    "cweagans/composer-patches": "~1.0",
+    "drupal/core": "8.0.1",
+    "drush/drush": "8.0.1",
+    "drupal/admin_toolbar": "8.1.10",
+    "drupal/features": "8.3.0-alpha5",
+    "drupal/field_group": "8.1.0-rc4"
+  },
+  "require-dev": {
+    "drupal/devel": "8.1.*",
+    "drupal/examples": "8.1.*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "core": ["type:drupal-core"],
+      "modules/contrib/{$name}": ["type:drupal-module"],
+      "profiles/contrib/{$name}": ["type:drupal-profile"],
+      "themes/contrib/{$name}": ["type:drupal-theme"]
+    }
+  }
+}
