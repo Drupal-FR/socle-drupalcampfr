@@ -40,11 +40,24 @@ if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
 fi
 
 # Revert features.
-$DRUSH fim -y --bundle=drupalcampfr core
-$DRUSH fim -y --bundle=drupalcampfr site
-$DRUSH fim -y --bundle=drupalcampfr user
+$DRUSH features-import -y --bundle=drupalcampfr core
+$DRUSH features-import -y --bundle=drupalcampfr site
+$DRUSH features-import -y --bundle=drupalcampfr user
+$DRUSH features-import -y --bundle=drupalcampfr news
+
 # Commented to not interfere with bootstrap block configs in bootstrap theme.
 #$DRUSH fim -y --bundle=drupalcampfr drupalcampfr
+
+# Create directory for csv files in public files.
+mkdir -p $PROJECT_PATH/www/sites/default/files/csv
+
+# Copy csv file into public directory.
+for CSV_FILE in $(find $PROJECT_PATH/www/*/custom/* -type f -name "*.csv"); do
+    cp -f $CSV_FILE $PROJECT_PATH/www/sites/default/files/csv/
+done
+
+# Import content.
+$DRUSH migrate-import --group=drupalcampfr --update
 
 # Back to the current directory.
 cd $CURRENT_PATH

@@ -1,0 +1,8 @@
+
+drupalcampfr_homepage.homepage_controller_index:
+  path: 'home'
+  defaults:
+    _controller: '\Drupal\drupalcampfr_homepage\Controller\HomepageController::index'
+    _title: 'Home'
+  requirements:
+    _permission: 'access content'

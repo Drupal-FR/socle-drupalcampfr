@@ -56,11 +56,15 @@ dependencies:
   - admin_toolbar_tools
   - features
   - field_group
+  - migrate_source_csv
+  - migrate_plus
+  - migrate_tools
 
   # Custom modules
   - drupalcampfr_core
   - drupalcampfr_site
   - drupalcampfr_user
+  - drupalcampfr_news
 
   # Development modules. Enabled in the install/update scripts.
 #  - dblog

@@ -1,0 +1,23 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - views
+  theme:
+    - bootstrap
+id: views_block__news_block_home_news
+theme: bootstrap
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'views_block:news-block_home_news'
+settings:
+  id: 'views_block:news-block_home_news'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }
