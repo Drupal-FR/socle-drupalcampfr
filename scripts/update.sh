@@ -11,21 +11,18 @@ if ! hash "composer" 2> /dev/null; then
     exit 1;
 fi
 
-# Installation.
+# Update source.
 composer install --working-dir=$WWW_PATH
 
 # Without drush alias, change temporarily directory to www.
 cd $WWW_PATH
 
-# Install Drupal.
-$DRUSH site-install standard \
-  --account-mail=$ACCOUNT_MAIL \
-  --account-name=$ACCOUNT_NAME \
-  --account-pass=$ACCOUNT_PASS \
-  --site-mail=$SITE_MAIL \
-  --site-name=$SITE_NAME \
-  --locale=fr \
-  --keep-config=TRUE
+# Launch updates.
+$DRUSH updb -y
+
+# Revert features.
+
+
 
 # Back to the current directory.
 cd $CURRENT_PATH
