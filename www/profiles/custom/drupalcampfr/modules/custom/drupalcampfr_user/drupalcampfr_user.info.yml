@@ -1,0 +1,11 @@
+name: User
+description: 'Provide User related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - file
+  - image
+  - user
+package: 'Drupalcampfr'
+features:
+  bundle: drupalcampfr

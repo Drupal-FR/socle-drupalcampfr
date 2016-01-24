@@ -1,0 +1,13 @@
+name: Site
+description: 'Provide site components.'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - ckeditor
+  - editor
+  - taxonomy
+  - text
+package: 'Drupalcampfr'
+features:
+  bundle: drupalcampfr

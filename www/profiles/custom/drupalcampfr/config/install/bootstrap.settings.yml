@@ -1,0 +1,26 @@
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://socle-drupalcampfr.local/themes/contrib/bootstrap/favicon.ico'
+  use_default: true
+schema: '8000'
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: well
+  sidebar_second: ''
+  footer: ''
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+breadcrumb_home: 1

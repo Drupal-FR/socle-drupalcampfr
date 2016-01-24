@@ -1,0 +1,11 @@
+name: Core
+description: 'Provide core components required by other features.'
+type: module
+core: 8.x
+dependencies:
+  - image
+  - responsive_image
+  - user
+package: 'Drupalcampfr'
+features:
+  bundle: drupalcampfr
