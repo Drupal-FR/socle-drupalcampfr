@@ -32,3 +32,6 @@ www/sites/default/files
 
 # Script configuration.
 scripts/script-parameters.sh
+
+# Backups.
+backups/*

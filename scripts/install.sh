@@ -12,19 +12,39 @@ if ! hash "composer" 2> /dev/null; then
 fi
 
 # Installation.
-composer install --working-dir=$WWW_PATH
+if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
+    composer install --working-dir=$WWW_PATH
+else
+    composer install --working-dir=$WWW_PATH --no-dev
+fi
 
 # Without drush alias, change temporarily directory to www.
 cd $WWW_PATH
 
+# Database backup.
+$DRUSH sql-dump --result-file="${PROJECT_PATH}/backups/${CURRENT_DATE}.sql" --gzip
+
 # Install Drupal.
-$DRUSH site-install standard \
+$DRUSH site-install drupalcampfr \
   --account-mail=$ACCOUNT_MAIL \
   --account-name=$ACCOUNT_NAME \
   --account-pass=$ACCOUNT_PASS \
   --site-mail=$SITE_MAIL \
   --site-name=$SITE_NAME \
-  --locale=fr
+  --locale=fr \
+  -y
+
+# Enable development modules.
+if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
+  $DRUSH en \
+    dblog \
+    devel \
+    features_ui \
+    field_ui \
+    views_ui \
+    webprofiler \
+    -y
+fi
 
 # Back to the current directory.
 cd $CURRENT_PATH

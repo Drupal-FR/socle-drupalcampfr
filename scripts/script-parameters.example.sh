@@ -10,6 +10,13 @@ WWW_PATH=$PROJECT_PATH/www
 
 DRUSH=$WWW_PATH/vendor/bin/drush
 
+# Used to know if we want to download and enable development modules.
+ENVIRONMENT_MODE="dev"
+# Only "dev" is searched. So any other string can prevent development modules.
+ENVIRONMENT_MODE="prod"
+
+CURRENT_DATE=$(date "+%Y-%m-%d-%Hh%Mm%Ss")
+
 # For Drush site-install.
 ACCOUNT_MAIL=admin@example.com
 ACCOUNT_NAME=admin
