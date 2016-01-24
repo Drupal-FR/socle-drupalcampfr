@@ -24,3 +24,6 @@ logo:
   url: ''
   use_default: true
 breadcrumb_home: 1
+_core:
+  default_config_hash: 5h1ipYv23t5vlAILAKdkDeOC-JYC63X9UQakv_zZCqU
+langcode: fr

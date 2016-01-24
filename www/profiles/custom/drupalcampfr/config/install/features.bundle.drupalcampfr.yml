@@ -2,8 +2,8 @@ langcode: fr
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: KoZ_XxBBnbwbOzk9MQEbO35YZdA1UK2F2GvnBNYv_yA
-name: 'Drupalcampfr'
+  default_config_hash: LoWwT54icnyvUYq4AUGHp5c7-6zMFDQC1TcsWRuqSOo
+name: Drupalcampfr
 machine_name: drupalcampfr
 description: 'Technical base for french drupalcamps.'
 assignments:
@@ -20,6 +20,7 @@ assignments:
     types:
       config:
         date_format: date_format
+        features_bundle: features_bundle
         field_storage_config: field_storage_config
         entity_form_mode: entity_form_mode
         image_style: image_style

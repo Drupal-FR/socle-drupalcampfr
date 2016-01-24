@@ -72,8 +72,23 @@ dependencies:
 themes:
   - bootstrap
   - seven
-package: 'Drupalcampfr'
+package: Drupalcampfr
 features:
   bundle: drupalcampfr
+  required:
+    - block.block.bootstrap_account_menu
+    - block.block.bootstrap_branding
+    - block.block.bootstrap_breadcrumbs
+    - block.block.bootstrap_content
+    - block.block.bootstrap_footer
+    - block.block.bootstrap_help
+    - block.block.bootstrap_local_actions
+    - block.block.bootstrap_local_tasks
+    - block.block.bootstrap_main_menu
+    - block.block.bootstrap_messages
+    - block.block.bootstrap_page_title
+    - block.block.bootstrap_powered
+    - block.block.bootstrap_search
+    - block.block.bootstrap_tools
 #distribution:
-#  name: 'Drupalcampfr'
+#  name: Drupalcampfr
