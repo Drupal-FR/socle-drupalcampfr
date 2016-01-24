@@ -24,8 +24,7 @@ $DRUSH site-install standard \
   --account-pass=$ACCOUNT_PASS \
   --site-mail=$SITE_MAIL \
   --site-name=$SITE_NAME \
-  --locale=fr \
-  --keep-config=TRUE
+  --locale=fr
 
 # Back to the current directory.
 cd $CURRENT_PATH

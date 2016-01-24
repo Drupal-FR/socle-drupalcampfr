@@ -23,9 +23,15 @@ rsync -avz $DRUPAL_TEMP/drupal-8/.htaccess                          $WWW_PATH/.h
 # Do not erase existing robots.txt file.
 rsync -avz --ignore-existing $DRUPAL_TEMP/drupal-8/robots.txt       $WWW_PATH/robots.txt
 
+# Add temporarily write permission to default directory.
+chmod u+w $WWW_PATH/sites/default
+
 rsync -avz $DRUPAL_TEMP/drupal-8/sites/default/default.services.yml $WWW_PATH/sites/default/default.services.yml
 rsync -avz $DRUPAL_TEMP/drupal-8/sites/default/default.settings.php $WWW_PATH/sites/default/default.settings.php
 rsync -avz $DRUPAL_TEMP/drupal-8/sites/example.sites.php            $WWW_PATH/sites/example.sites.php
+
+# Remove write permission to default directory.
+chmod u-w $WWW_PATH/sites/default
 
 # Development files.
 rsync -avz $DRUPAL_TEMP/drupal-8/.csslintrc                         $WWW_PATH/.csslintrc
