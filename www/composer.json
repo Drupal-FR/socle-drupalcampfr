@@ -46,6 +46,11 @@
       "modules/contrib/{$name}": ["type:drupal-module"],
       "profiles/contrib/{$name}": ["type:drupal-profile"],
       "themes/contrib/{$name}": ["type:drupal-theme"]
+    },
+    "patches": {
+      "drupal/features": {
+        "Fatal error during import using drush": "https://www.drupal.org/files/issues/features-import.patch"
+      }
     }
   }
 }

@@ -40,8 +40,11 @@ if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
 fi
 
 # Revert features.
-
-
+$DRUSH fim -y --bundle=drupalcampfr core
+$DRUSH fim -y --bundle=drupalcampfr site
+$DRUSH fim -y --bundle=drupalcampfr user
+# Commented to not interfere with bootstrap block configs in bootstrap theme.
+#$DRUSH fim -y --bundle=drupalcampfr drupalcampfr
 
 # Back to the current directory.
 cd $CURRENT_PATH
