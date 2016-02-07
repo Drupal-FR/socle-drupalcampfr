@@ -6,7 +6,7 @@ dependencies:
 migration_group: drupalcampfr
 source:
   plugin: csv
-  path: public://csv/news.csv
+  path: 'profiles/custom/drupalcampfr/modules/custom/drupalcampfr_news/migrate_data/news.csv'
   header_row_count: 1
   keys:
     - id
