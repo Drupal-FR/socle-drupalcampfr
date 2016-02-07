@@ -38,7 +38,7 @@ assignments:
       config: {  }
     curated: 1
     module:
-      enabled: 1
+      installed: 1
       profile: 1
       namespace: 1
     enabled: true

@@ -25,7 +25,7 @@
     "drupal/block_visibility_groups": "8.1.0-rc1",
     "drupal/commerce": "8.2.0-alpha2",
     "drupal/entity": "8.1.0-alpha1",
-    "drupal/features": "8.3.0-alpha5",
+    "drupal/features": "8.3.0-alpha6",
     "drupal/field_group": "8.1.0-rc4",
     "drupal/inline_entity_form": "8.1.0-alpha3",
     "drupal/migrate_plus": "8.1.0-beta1",
@@ -50,11 +50,6 @@
       "modules/contrib/{$name}": ["type:drupal-module"],
       "profiles/contrib/{$name}": ["type:drupal-profile"],
       "themes/contrib/{$name}": ["type:drupal-theme"]
-    },
-    "patches": {
-      "drupal/features": {
-        "Fatal error during import using drush": "https://www.drupal.org/files/issues/features-import.patch"
-      }
     }
   }
 }

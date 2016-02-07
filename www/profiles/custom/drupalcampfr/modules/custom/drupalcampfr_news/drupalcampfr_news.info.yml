@@ -14,5 +14,3 @@ dependencies:
   - user
   - views
 package: Drupalcampfr
-features:
-  bundle: drupalcampfr

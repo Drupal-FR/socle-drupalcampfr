@@ -7,5 +7,3 @@ dependencies:
   - responsive_image
   - user
 package: 'Drupalcampfr'
-features:
-  bundle: drupalcampfr
