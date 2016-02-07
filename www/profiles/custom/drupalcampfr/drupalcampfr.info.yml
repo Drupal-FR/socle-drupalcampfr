@@ -4,7 +4,7 @@ type: profile
 core: 8.x
 dependencies:
   # Core modules.
-  - automated_cron
+#  - automated_cron
   - block
   - block_content
   - breakpoint
