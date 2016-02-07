@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dff140ec3300fda6684e4f1a9d76cdc4",
-    "content-hash": "e1986f792ece3f2bacc186ac8a6a7e0d",
+    "hash": "44354140242d961b55a042b98aaadc7c",
+    "content-hash": "b9bae436377c9923b7f1985db28272b6",
     "packages": [
         {
             "name": "commerceguys/addressing",
@@ -194,12 +194,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/tax.git",
-                "reference": "feca1f6c05007cb553b924072e714559eff48d0c"
+                "reference": "200592048ce96bfa00313c13e5ee106da3dbd7d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/tax/zipball/feca1f6c05007cb553b924072e714559eff48d0c",
-                "reference": "feca1f6c05007cb553b924072e714559eff48d0c",
+                "url": "https://api.github.com/repos/commerceguys/tax/zipball/200592048ce96bfa00313c13e5ee106da3dbd7d3",
+                "reference": "200592048ce96bfa00313c13e5ee106da3dbd7d3",
                 "shasum": ""
             },
             "require": {
@@ -242,7 +242,7 @@
                 "tax",
                 "vat"
             ],
-            "time": "2015-11-25 22:15:57"
+            "time": "2016-02-02 10:31:33"
         },
         {
             "name": "commerceguys/zone",
@@ -293,20 +293,20 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.0.22",
+            "version": "v1.0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "^1.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -387,7 +387,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-10-29 23:28:48"
+            "time": "2016-01-27 12:54:22"
         },
         {
             "name": "composer/semver",
@@ -963,15 +963,15 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "8.1.11",
+            "version": "8.1.13",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/admin_toolbar.git",
-                "reference": "4ffa123d545305870741a8cd5ce554906135bfeb"
+                "reference": "57d2b61423d4df291b3fd6adab5d7e57902b98a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.11.zip",
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.13.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1003,7 +1003,7 @@
             ],
             "description": "Admin Toolbar improve the default Drupal Toolbar,it lets the hover of sub menus.",
             "homepage": "http://drupal.org/project/admin_toolbar",
-            "time": "2015-12-11 08:22:06"
+            "time": "2016-02-02 09:31:53"
         },
         {
             "name": "drupal/block_visibility_groups",
@@ -1169,16 +1169,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.0.2",
+            "version": "8.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "45cfc0f34191c35ac35d603aa6f3b8a3c632ab8e"
+                "reference": "f5b2a07081b963e0931adaf816f62b79541ac1e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/45cfc0f34191c35ac35d603aa6f3b8a3c632ab8e",
-                "reference": "45cfc0f34191c35ac35d603aa6f3b8a3c632ab8e",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/f5b2a07081b963e0931adaf816f62b79541ac1e6",
+                "reference": "f5b2a07081b963e0931adaf816f62b79541ac1e6",
                 "shasum": ""
             },
             "require": {
@@ -1330,7 +1330,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2016-01-06 22:36:23"
+            "time": "2016-02-03 08:47:36"
         },
         {
             "name": "drupal/entity",
@@ -1631,20 +1631,20 @@
         },
         {
             "name": "drush/drush",
-            "version": "8.0.2",
+            "version": "8.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "5c90a1d3d201bde1d733afa5d2a1885056a3932f"
+                "reference": "ee77dc526aa9fb26611ded18b5caef801b29aca7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/5c90a1d3d201bde1d733afa5d2a1885056a3932f",
-                "reference": "5c90a1d3d201bde1d733afa5d2a1885056a3932f",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/ee77dc526aa9fb26611ded18b5caef801b29aca7",
+                "reference": "ee77dc526aa9fb26611ded18b5caef801b29aca7",
                 "shasum": ""
             },
             "require": {
-                "pear/console_table": "~1.2.0",
+                "pear/console_table": "~1.3.0",
                 "php": ">=5.4.5",
                 "psr/log": "~1.0",
                 "psy/psysh": "~0.6",
@@ -1725,7 +1725,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2016-01-08 18:28:35"
+            "time": "2016-02-03 20:52:22"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -2218,20 +2218,20 @@
         },
         {
             "name": "pear/console_table",
-            "version": "1.2.1",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Console_Table.git",
-                "reference": "a129a91d8bf19317d81e68d1d3a2e18932f684e4"
+                "reference": "64100b9ee81852f4fa17823e55d0b385a544f976"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Console_Table/zipball/a129a91d8bf19317d81e68d1d3a2e18932f684e4",
-                "reference": "10d89fbbe533351dcfe5dc1e84de25d9a8395950",
+                "url": "https://api.github.com/repos/pear/Console_Table/zipball/64100b9ee81852f4fa17823e55d0b385a544f976",
+                "reference": "64100b9ee81852f4fa17823e55d0b385a544f976",
                 "shasum": ""
             },
             "require": {
-                "php": ">=4.3.10"
+                "php": ">=5.2.0"
             },
             "suggest": {
                 "pear/Console_Color2": ">=0.1.2"
@@ -2269,7 +2269,7 @@
             "keywords": [
                 "console"
             ],
-            "time": "2014-10-27 10:04:49"
+            "time": "2016-01-21 16:14:31"
         },
         {
             "name": "psr/http-message",
@@ -2965,16 +2965,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.0.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "49ff736bd5d41f45240cec77b44967d76e0c3d25"
+                "reference": "1289d16209491b584839022f29257ad859b8532d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/49ff736bd5d41f45240cec77b44967d76e0c3d25",
-                "reference": "49ff736bd5d41f45240cec77b44967d76e0c3d25",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/1289d16209491b584839022f29257ad859b8532d",
+                "reference": "1289d16209491b584839022f29257ad859b8532d",
                 "shasum": ""
             },
             "require": {
@@ -2986,7 +2986,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -3020,7 +3020,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2015-11-20 09:19:13"
+            "time": "2016-01-20 09:13:37"
         },
         {
             "name": "symfony/process",
@@ -3511,16 +3511,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.23.3",
+            "version": "v1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "ae53fc2c312fdee63773b75cb570304f85388b08"
+                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ae53fc2c312fdee63773b75cb570304f85388b08",
-                "reference": "ae53fc2c312fdee63773b75cb570304f85388b08",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
+                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
                 "shasum": ""
             },
             "require": {
@@ -3533,7 +3533,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.23-dev"
+                    "dev-master": "1.24-dev"
                 }
             },
             "autoload": {
@@ -3568,7 +3568,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-01-11 14:02:19"
+            "time": "2016-01-25 21:22:18"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -3841,39 +3841,12 @@
     ],
     "packages-dev": [
         {
-            "name": "drupal/ctools",
-            "version": "8.3.0-alpha21",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/ctools",
-                "reference": "58ba369085fc117b02ca9027718ce17218caa193"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha21.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/core": "8.*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-8.x-3.x": "8.3.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
-            "homepage": "https://www.drupal.org/project/ctools"
-        },
-        {
             "name": "drupal/devel",
             "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/devel",
-                "reference": "c0b5c5f9a8ec688459e7cd03eb6b1008a9d5a194"
+                "reference": "bb45a4e5e1c0f8f83ec05b52b3d7329a1ca77dec"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -3908,7 +3881,7 @@
             ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "http://drupal.org/project/devel",
-            "time": "2016-01-06 13:38:58"
+            "time": "2016-01-30 21:39:03"
         },
         {
             "name": "drupal/examples",
@@ -3916,7 +3889,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/examples.git",
-                "reference": "b3b89bfd9ef6d247a49d6661badaccf93a0be72a"
+                "reference": "666a7b5779639918b958e8852aca57883e12e045"
             },
             "require": {
                 "drupal/core": "8.*",
@@ -3963,61 +3936,7 @@
             ],
             "description": "A variety of example code for you to learn from and hack upon.",
             "homepage": "https://www.drupal.org/project/examples",
-            "time": "2016-01-16 19:45:18"
-        },
-        {
-            "name": "drupal/layout_plugin",
-            "version": "8.1.0-alpha22",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/layout_plugin",
-                "reference": "90be55a68dd33d3564c26fab77573b62f6cda77e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/layout_plugin-8.x-1.0-alpha22.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/core": "8.*"
-            },
-            "replace": {
-                "drupal/block_page_layout": "self.version",
-                "drupal/layout_plugin_example": "self.version"
-            },
-            "suggest": {
-                "drupal/core": "Required by drupal/block_page_layout, drupal/layout_plugin_example",
-                "drupal/page_manager": "Required by drupal/block_page_layout"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "David Snopek"
-                },
-                {
-                    "name": "Bram Goffings"
-                },
-                {
-                    "name": "Fredrik Lassen"
-                }
-            ],
-            "description": "A registry for layout plugins.",
-            "homepage": "https://www.drupal.org/project/layout_plugin",
-            "keywords": [
-                "layout",
-                "php"
-            ],
-            "time": "2016-01-11 16:56:15"
+            "time": "2016-02-01 01:23:51"
         }
     ],
     "aliases": [],
