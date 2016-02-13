@@ -44,9 +44,7 @@ $DRUSH features-import -y --bundle=drupalcampfr core
 $DRUSH features-import -y --bundle=drupalcampfr site
 $DRUSH features-import -y --bundle=drupalcampfr user
 $DRUSH features-import -y --bundle=drupalcampfr news
-
-# Commented to not interfere with bootstrap block configs in bootstrap theme.
-#$DRUSH fim -y --bundle=drupalcampfr drupalcampfr
+$DRUSH features-import -y --bundle=drupalcampfr drupalcampfr
 
 # Import content.
 $DRUSH migrate-import --group=drupalcampfr --update

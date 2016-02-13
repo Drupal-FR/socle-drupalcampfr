@@ -2,7 +2,7 @@ langcode: fr
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: kn5rC4d6FuIjxwk0Et5_Pti4vUQdCAmY-r7m_ofBvK8
+  default_config_hash: w-twXUPdxHsTEOfzCxv0J4kO0WopFO7j_QjqCp4krV8
 name: Drupalcampfr
 machine_name: drupalcampfr
 description: 'Technical base for french drupalcamps.'
@@ -15,12 +15,11 @@ assignments:
       content:
         user: user
     enabled: true
-    weight: '-2'
+    weight: '-18'
   core:
     types:
       config:
         date_format: date_format
-        features_bundle: features_bundle
         field_storage_config: field_storage_config
         entity_form_mode: entity_form_mode
         image_style: image_style
@@ -29,10 +28,10 @@ assignments:
         user_role: user_role
         entity_view_mode: entity_view_mode
     enabled: true
-    weight: '5'
+    weight: '-15'
   dependency:
     enabled: true
-    weight: '15'
+    weight: '-11'
   exclude:
     types:
       config: {  }
@@ -42,16 +41,17 @@ assignments:
       profile: 1
       namespace: 1
     enabled: true
-    weight: '-5'
+    weight: '-19'
   existing:
     enabled: true
-    weight: '12'
+    weight: '-12'
   namespace:
     enabled: true
-    weight: '0'
+    weight: '-16'
   optional:
     types:
       config:
+        block: block
         image_style: image_style
         migration: migration
         rdf_mapping: rdf_mapping
@@ -60,7 +60,7 @@ assignments:
         tour: tour
         view: view
     enabled: true
-    weight: '0'
+    weight: '-17'
   packages:
     enabled: true
     weight: '-20'
@@ -73,12 +73,12 @@ assignments:
       config:
         block: block
         language_content_settings: language_content_settings
+        features_bundle: features_bundle
         configurable_language: configurable_language
         migration: migration
-        shortcut_set: shortcut_set
         tour: tour
     enabled: true
-    weight: '10'
+    weight: '-13'
   site:
     types:
       config:
@@ -91,6 +91,6 @@ assignments:
         editor: editor
         filter_format: filter_format
     enabled: true
-    weight: '7'
-profile_name: ''
-is_profile: true
+    weight: '-14'
+profile_name: drupalcampfr
+is_profile: false

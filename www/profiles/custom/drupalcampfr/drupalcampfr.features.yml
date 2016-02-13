@@ -1,1 +1,3 @@
 bundle: drupalcampfr
+required:
+  - block.block.drupalcampfr_theme_views_block__news_block_home_news
