@@ -6,11 +6,13 @@ dependencies:
   module:
     - views
   theme:
-    - bootstrap
-id: views_block__news_block_home_news
-theme: bootstrap
+    - drupalcampfr_theme
+_core:
+  default_config_hash: VBrKa17-zTagpVvdA6HYepQusu4QKJ_fjC1l40w5Nuk
+id: drupalcampfr_theme_views_block__news_block_home_news
+theme: drupalcampfr_theme
 region: sidebar_first
-weight: -5
+weight: -6
 provider: null
 plugin: 'views_block:news-block_home_news'
 settings:

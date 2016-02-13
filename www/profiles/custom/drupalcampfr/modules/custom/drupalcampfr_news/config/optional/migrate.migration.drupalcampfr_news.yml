@@ -1,0 +1,49 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - migrate_source_csv
+    - node
+_core:
+  default_config_hash: iziILaUZtanJp20yUlqvw5Hp20cLx5J15SN0Kh6--48
+id: drupalcampfr_news
+migration_tags: null
+label: 'News import'
+source:
+  plugin: csv
+  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_news/migrate_data/news.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      id: Identifier
+    -
+      title: Title
+    -
+      body: Body
+    -
+      creation_date: 'Creation date'
+    -
+      published: Published
+    -
+      promoted: 'Promoted to front page'
+process:
+  type:
+    plugin: default_value
+    default_value: news
+  title: title
+  body: body
+  created:
+    plugin: callback
+    callable: strtotime
+    source: creation_date
+  status: published
+  promote: promoted
+destination:
+  plugin: 'entity:node'
+  type: news
+  bundle: news
+template: null
+migration_dependencies: {  }
+migration_group: drupalcampfr

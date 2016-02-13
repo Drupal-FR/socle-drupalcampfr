@@ -3,10 +3,12 @@ description: 'Provide News content type and related configuration.'
 type: module
 core: 8.x
 dependencies:
+  - block
+  - drupalcampfr_news
+  - field
+  - language
   - menu_ui
-  - migrate_source_csv
-  - migrate_plus
-  - migrate_tools
+  - migrate
   - node
   - path
   - system

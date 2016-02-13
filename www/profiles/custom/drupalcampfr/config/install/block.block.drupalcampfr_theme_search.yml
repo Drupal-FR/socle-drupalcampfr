@@ -4,13 +4,13 @@ dependencies:
   module:
     - search
   theme:
-    - bootstrap
+    - drupalcampfr_theme
 _core:
-  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
-id: bootstrap_search
-theme: bootstrap
+  default_config_hash: hpX4Y4igX89ETrCfgym4OLbkKnB2GoMAyTlzncjACBQ
+id: drupalcampfr_theme_search
+theme: drupalcampfr_theme
 region: sidebar_first
-weight: -6
+weight: -7
 provider: null
 plugin: search_form_block
 settings:

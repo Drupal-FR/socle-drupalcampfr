@@ -4,11 +4,11 @@ dependencies:
   module:
     - help
   theme:
-    - bootstrap
+    - drupalcampfr_theme
 _core:
-  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
-id: bootstrap_help
-theme: bootstrap
+  default_config_hash: YDBraJ5uSX40rCtjY5xyAu-b8ptImRuHSGCpoQQj3mw
+id: drupalcampfr_theme_help
+theme: drupalcampfr_theme
 region: help
 weight: -7
 provider: null

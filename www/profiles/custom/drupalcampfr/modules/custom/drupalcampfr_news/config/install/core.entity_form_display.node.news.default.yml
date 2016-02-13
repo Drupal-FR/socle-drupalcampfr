@@ -7,6 +7,8 @@ dependencies:
   module:
     - path
     - text
+_core:
+  default_config_hash: ipva3Lr7veZoHE3tVCDdBKfXlnva6lQr-viIyAoAJ6o
 id: node.news.default
 targetEntityType: node
 bundle: news

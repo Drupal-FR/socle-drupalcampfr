@@ -1,5 +1,5 @@
 admin: seven
-default: bootstrap
+default: drupalcampfr_theme
 _core:
-  default_config_hash: fOjer9hADYYnbCJVZMFZIIM1azTFWyg84ZkFDHfAbUg
+  default_config_hash: Z0_i4ny8FIbZrG4b2wOd4EiiVkiI5nuq__bTN7c2Ih8
 langcode: fr

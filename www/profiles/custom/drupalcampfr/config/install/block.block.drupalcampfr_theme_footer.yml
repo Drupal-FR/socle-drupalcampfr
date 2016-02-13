@@ -6,11 +6,11 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - drupalcampfr_theme
 _core:
-  default_config_hash: h06zhb3xV9_2_3Zy9NsyylL7YBaEDlMwMEqNwAn8kMo
-id: bootstrap_footer
-theme: bootstrap
+  default_config_hash: OKlfSADYrRaSCc9QGOLspdqSY90kNZCTjCYp5RBZTFA
+id: drupalcampfr_theme_footer
+theme: drupalcampfr_theme
 region: footer
 weight: -6
 provider: null

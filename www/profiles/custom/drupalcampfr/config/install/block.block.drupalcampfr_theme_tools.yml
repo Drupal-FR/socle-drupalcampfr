@@ -6,11 +6,11 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - drupalcampfr_theme
 _core:
-  default_config_hash: f3Dd5TnUiFDjFZp9yEGJInwt6cUzs7O6SvLTFTATSlU
-id: bootstrap_tools
-theme: bootstrap
+  default_config_hash: C9vI6fIzGDG85qwwzGYgFHdZW_JBd-eCNVLjosZO2EU
+id: drupalcampfr_theme_tools
+theme: drupalcampfr_theme
 region: sidebar_first
 weight: -5
 provider: null

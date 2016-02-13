@@ -1,4 +1,4 @@
-name: 'Drupalcampfr'
+name: Drupalcampfr
 description: 'Technical base for french drupalcamps.'
 type: profile
 core: 8.x
@@ -74,7 +74,7 @@ dependencies:
 #  - views_ui
 #  - webprofiler
 themes:
-  - bootstrap
+  - drupalcampfr_theme
   - seven
 package: Drupalcampfr
 #distribution:

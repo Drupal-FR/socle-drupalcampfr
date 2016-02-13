@@ -2,7 +2,7 @@ langcode: fr
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: LoWwT54icnyvUYq4AUGHp5c7-6zMFDQC1TcsWRuqSOo
+  default_config_hash: kn5rC4d6FuIjxwk0Et5_Pti4vUQdCAmY-r7m_ofBvK8
 name: Drupalcampfr
 machine_name: drupalcampfr
 description: 'Technical base for french drupalcamps.'
@@ -92,7 +92,5 @@ assignments:
         filter_format: filter_format
     enabled: true
     weight: '7'
-weights: {  }
-settings: {  }
 profile_name: ''
 is_profile: true

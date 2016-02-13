@@ -4,11 +4,11 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - drupalcampfr_theme
 _core:
-  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
-id: bootstrap_breadcrumbs
-theme: bootstrap
+  default_config_hash: r6GW9pV2pbhVUimr-7ihOYzeNPkuIPU_D9KuhnrpCqo
+id: drupalcampfr_theme_breadcrumbs
+theme: drupalcampfr_theme
 region: content
 weight: -6
 provider: null

@@ -4,13 +4,13 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - drupalcampfr_theme
 _core:
-  default_config_hash: Cy3vkpYrD1O5JG-BeEnokF0bByHYDEa8CBfWivB4_SQ
-id: bootstrap_branding
-theme: bootstrap
+  default_config_hash: IYchYV853QpZ3vBEmq0Y0aZfZq1VQvLxBhjx86tnloY
+id: drupalcampfr_theme_branding
+theme: drupalcampfr_theme
 region: navigation
-weight: 0
+weight: -7
 provider: null
 plugin: system_branding_block
 settings:

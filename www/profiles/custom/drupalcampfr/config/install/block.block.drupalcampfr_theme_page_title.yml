@@ -2,11 +2,11 @@ langcode: fr
 status: true
 dependencies:
   theme:
-    - bootstrap
+    - drupalcampfr_theme
 _core:
-  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
-id: bootstrap_page_title
-theme: bootstrap
+  default_config_hash: A4DC6Kh8Wik9YdbKTJKjOFTYX7uhsCY9YTV2mg4cJkk
+id: drupalcampfr_theme_page_title
+theme: drupalcampfr_theme
 region: content
 weight: -5
 provider: null
