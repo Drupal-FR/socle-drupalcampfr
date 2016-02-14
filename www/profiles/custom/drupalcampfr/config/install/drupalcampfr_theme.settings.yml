@@ -13,4 +13,14 @@ logo:
   path: ''
   url: ''
   use_default: 1
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: well
+  sidebar_second: ''
+  footer: ''
 langcode: fr
