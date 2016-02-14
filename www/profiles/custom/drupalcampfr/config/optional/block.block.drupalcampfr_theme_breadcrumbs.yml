@@ -5,8 +5,6 @@ dependencies:
     - system
   theme:
     - drupalcampfr_theme
-_core:
-  default_config_hash: r6GW9pV2pbhVUimr-7ihOYzeNPkuIPU_D9KuhnrpCqo
 id: drupalcampfr_theme_breadcrumbs
 theme: drupalcampfr_theme
 region: content

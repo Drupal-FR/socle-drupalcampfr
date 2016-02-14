@@ -8,8 +8,6 @@ dependencies:
   module:
     - node
     - user
-_core:
-  default_config_hash: XZFR-e0f6P_1SPkUrbM4XtHuUZcEAyD6i6zA66N27Zk
 id: news
 label: Actualités
 module: views

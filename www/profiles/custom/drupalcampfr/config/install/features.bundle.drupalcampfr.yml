@@ -1,8 +1,6 @@
 langcode: fr
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: w-twXUPdxHsTEOfzCxv0J4kO0WopFO7j_QjqCp4krV8
 name: Drupalcampfr
 machine_name: drupalcampfr
 description: 'Technical base for french drupalcamps.'

@@ -5,8 +5,6 @@ dependencies:
     - search
   theme:
     - drupalcampfr_theme
-_core:
-  default_config_hash: hpX4Y4igX89ETrCfgym4OLbkKnB2GoMAyTlzncjACBQ
 id: drupalcampfr_theme_search
 theme: drupalcampfr_theme
 region: sidebar_first

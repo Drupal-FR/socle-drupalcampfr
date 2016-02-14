@@ -3,8 +3,6 @@ status: true
 dependencies:
   theme:
     - drupalcampfr_theme
-_core:
-  default_config_hash: A4DC6Kh8Wik9YdbKTJKjOFTYX7uhsCY9YTV2mg4cJkk
 id: drupalcampfr_theme_page_title
 theme: drupalcampfr_theme
 region: content

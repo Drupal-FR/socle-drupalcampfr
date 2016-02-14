@@ -50,6 +50,15 @@
       "modules/contrib/{$name}": ["type:drupal-module"],
       "profiles/contrib/{$name}": ["type:drupal-profile"],
       "themes/contrib/{$name}": ["type:drupal-theme"]
+    },
+    "patches": {
+      "drupal/config_update": {
+        "Do not diff _core": "https://www.drupal.org/files/issues/2636514.patch"
+      },
+      "drupal/features": {
+        "Fatal error during import using drush": "https://www.drupal.org/files/issues/2635714-8.patch",
+        "Do not export _core default_config_hash": "https://www.drupal.org/files/issues/features-do_not_export_hash-2668526-2.patch"
+      }
     }
   }
 }

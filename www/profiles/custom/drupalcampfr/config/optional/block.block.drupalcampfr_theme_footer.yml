@@ -7,8 +7,6 @@ dependencies:
     - system
   theme:
     - drupalcampfr_theme
-_core:
-  default_config_hash: OKlfSADYrRaSCc9QGOLspdqSY90kNZCTjCYp5RBZTFA
 id: drupalcampfr_theme_footer
 theme: drupalcampfr_theme
 region: footer

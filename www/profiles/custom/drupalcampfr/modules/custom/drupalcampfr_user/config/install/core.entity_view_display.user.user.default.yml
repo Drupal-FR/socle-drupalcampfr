@@ -7,8 +7,6 @@ dependencies:
   module:
     - image
     - user
-_core:
-  default_config_hash: '-OGxjOl6mUBXJUN76cXpzO_0ASwcFd7P__-8PaLRCSM'
 id: user.user.default
 targetEntityType: user
 bundle: user

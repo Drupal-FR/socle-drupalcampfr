@@ -5,8 +5,6 @@ dependencies:
     - system
   theme:
     - drupalcampfr_theme
-_core:
-  default_config_hash: IYchYV853QpZ3vBEmq0Y0aZfZq1VQvLxBhjx86tnloY
 id: drupalcampfr_theme_branding
 theme: drupalcampfr_theme
 region: navigation

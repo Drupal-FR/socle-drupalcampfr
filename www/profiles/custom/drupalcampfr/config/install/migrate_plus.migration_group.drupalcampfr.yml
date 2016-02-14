@@ -1,8 +1,6 @@
 langcode: fr
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: J2FyWoxfWMiM746LmfrC0N05IwQmc3Ys63ciNdhDKUU
 id: drupalcampfr
 label: Drupalcampfr
 description: 'A container for the drupalcampfr migrations.'

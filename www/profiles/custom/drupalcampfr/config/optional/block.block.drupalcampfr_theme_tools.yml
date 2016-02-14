@@ -7,8 +7,6 @@ dependencies:
     - system
   theme:
     - drupalcampfr_theme
-_core:
-  default_config_hash: C9vI6fIzGDG85qwwzGYgFHdZW_JBd-eCNVLjosZO2EU
 id: drupalcampfr_theme_tools
 theme: drupalcampfr_theme
 region: sidebar_first

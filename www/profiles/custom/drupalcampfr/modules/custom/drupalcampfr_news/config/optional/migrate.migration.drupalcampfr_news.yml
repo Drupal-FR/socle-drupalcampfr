@@ -4,8 +4,6 @@ dependencies:
   module:
     - migrate_source_csv
     - node
-_core:
-  default_config_hash: iziILaUZtanJp20yUlqvw5Hp20cLx5J15SN0Kh6--48
 id: drupalcampfr_news
 migration_tags: null
 label: 'News import'

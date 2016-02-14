@@ -3,8 +3,6 @@ status: true
 dependencies:
   theme:
     - seven
-_core:
-  default_config_hash: XwSvLdzxG70CQBPE6d3v2TFhXVE1Fq3759ViJHALLqM
 id: seven_secondary_local_tasks
 theme: seven
 region: pre_content
