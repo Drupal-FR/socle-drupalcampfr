@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "91fd5879d81703c14d83cef9c299fd5c",
-    "content-hash": "43a54010d74073830c024dab27a9b444",
+    "hash": "caded258ce484f8a815b601c36c22f78",
+    "content-hash": "fd94b3b785a21b27179c3fad57e422c6",
     "packages": [
         {
             "name": "commerceguys/addressing",
@@ -1399,7 +1399,8 @@
                 },
                 "patches_applied": {
                     "Fatal error during import using drush": "https://www.drupal.org/files/issues/2635714-8.patch",
-                    "Do not export _core default_config_hash": "https://www.drupal.org/files/issues/features-do_not_export_hash-2668526-2.patch"
+                    "Do not export _core default_config_hash": "https://www.drupal.org/files/issues/features-do_not_export_hash-2668526-2.patch",
+                    "Not detecting overrides in profile config files": "https://www.drupal.org/files/issues/features-not_detecting_profile_files-2668562-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
