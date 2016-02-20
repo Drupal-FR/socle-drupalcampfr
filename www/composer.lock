@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "45f89b71fe8490037a9f9da8494b7a8d",
-    "content-hash": "ee7ddb3777379c4644f762b32cb6dea2",
+    "hash": "ccc27fe7c37d27f73155db414d07d8bb",
+    "content-hash": "e1906c6a7ed4fe7b29107b53086ef34e",
     "packages": [
         {
             "name": "commerceguys/addressing",
@@ -1402,7 +1402,8 @@
                     "Do not export _core default_config_hash": "https://www.drupal.org/files/issues/features-do_not_export_hash-2668526-8.patch",
                     "Not detecting overrides in profile config files": "https://www.drupal.org/files/issues/features-not_detecting_profile_files-2668562-2.patch",
                     "Drush export features do not overwrite the existing feature": "https://www.drupal.org/files/issues/features-drush_export_overwrite-2672406-5.patch",
-                    "Warning uasort in Features UI": "https://www.drupal.org/files/issues/features-warning_uasort-2672470-2.patch"
+                    "Warning uasort in Features UI": "https://www.drupal.org/files/issues/features-warning_uasort-2672470-2.patch",
+                    "Remove obsolete 'settings' and 'weights' export keys from features bundle": "https://www.drupal.org/files/issues/2653124-6.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
