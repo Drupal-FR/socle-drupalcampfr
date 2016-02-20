@@ -58,7 +58,8 @@
       "drupal/features": {
         "Fatal error during import using drush": "https://www.drupal.org/files/issues/2635714-8.patch",
         "Do not export _core default_config_hash": "https://www.drupal.org/files/issues/features-do_not_export_hash-2668526-8.patch",
-        "Not detecting overrides in profile config files": "https://www.drupal.org/files/issues/features-not_detecting_profile_files-2668562-2.patch"
+        "Not detecting overrides in profile config files": "https://www.drupal.org/files/issues/features-not_detecting_profile_files-2668562-2.patch",
+        "Drush export features do not overwrite the existing feature": "https://www.drupal.org/files/issues/features-drush_export_overwrite-2672406-5.patch"
       }
     }
   }
