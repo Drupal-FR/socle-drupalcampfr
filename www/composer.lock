@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "caded258ce484f8a815b601c36c22f78",
-    "content-hash": "fd94b3b785a21b27179c3fad57e422c6",
+    "hash": "922d5bea68254b92ed8a20bb7b328c18",
+    "content-hash": "feba9004c70324b0d794f5414e10900f",
     "packages": [
         {
             "name": "commerceguys/addressing",
@@ -1399,7 +1399,7 @@
                 },
                 "patches_applied": {
                     "Fatal error during import using drush": "https://www.drupal.org/files/issues/2635714-8.patch",
-                    "Do not export _core default_config_hash": "https://www.drupal.org/files/issues/features-do_not_export_hash-2668526-2.patch",
+                    "Do not export _core default_config_hash": "https://www.drupal.org/files/issues/features-do_not_export_hash-2668526-8.patch",
                     "Not detecting overrides in profile config files": "https://www.drupal.org/files/issues/features-not_detecting_profile_files-2668562-2.patch"
                 }
             },
@@ -1966,16 +1966,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "f5d04bdd2881ac89abde1fb78cc234bce24327bb"
+                "reference": "2e89629ff057ebb49492ba08e6995d3a6a80021b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5d04bdd2881ac89abde1fb78cc234bce24327bb",
-                "reference": "f5d04bdd2881ac89abde1fb78cc234bce24327bb",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/2e89629ff057ebb49492ba08e6995d3a6a80021b",
+                "reference": "2e89629ff057ebb49492ba08e6995d3a6a80021b",
                 "shasum": ""
             },
             "require": {
@@ -2020,7 +2020,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2016-01-23 01:23:02"
+            "time": "2016-02-18 21:54:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -3830,7 +3830,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/examples.git",
-                "reference": "b6483202852719b91e0b7d0e5f24aa665ba61958"
+                "reference": "4c00312b7636e232698d4f55d52723bb8aafaebc"
             },
             "require": {
                 "drupal/core": "8.*",
@@ -3845,6 +3845,7 @@
                 "drupal/dbtng_example": "self.version",
                 "drupal/email_example": "self.version",
                 "drupal/field_example": "self.version",
+                "drupal/field_permission_example": "self.version",
                 "drupal/js_example": "self.version",
                 "drupal/node_type_example": "self.version",
                 "drupal/page_example": "self.version",
@@ -3856,7 +3857,7 @@
             "suggest": {
                 "drupal/block": "Required by drupal/block_example",
                 "drupal/color": "Required by drupal/field_example",
-                "drupal/core": "Required by drupal/block_example, drupal/cache_example, drupal/config_entity_example, drupal/content_entity_example, drupal/cron_example, drupal/dbtng_example, drupal/email_example, drupal/field_example, drupal/js_example, drupal/node_type_example, drupal",
+                "drupal/core": "Required by drupal/block_example, drupal/cache_example, drupal/config_entity_example, drupal/content_entity_example, drupal/cron_example, drupal/dbtng_example, drupal/email_example, drupal/field_example, drupal/field_permission_example, drupal/js_example,",
                 "drupal/node": "Required by drupal/node_type_example",
                 "drupal/options": "Required by drupal/content_entity_example",
                 "drupal/path": "Required by drupal/node_type_example",
@@ -3877,7 +3878,7 @@
             ],
             "description": "A variety of example code for you to learn from and hack upon.",
             "homepage": "https://www.drupal.org/project/examples",
-            "time": "2016-02-09 21:18:34"
+            "time": "2016-02-16 01:58:11"
         }
     ],
     "aliases": [],
