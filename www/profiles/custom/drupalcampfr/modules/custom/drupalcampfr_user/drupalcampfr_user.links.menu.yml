@@ -1,0 +1,19 @@
+# Account menu.
+drupalcampfr_user.account.compte:
+  title: 'Compte'
+  description: 'Gérer votre compte.'
+  route_name: user.login
+  weight: -10
+  menu_name: account
+  expanded: TRUE
+
+drupalcamp_user.account.login:
+  parent: drupalcampfr_user.account.compte
+  weight: -10
+  menu_name: account
+  class: Drupal\user\Plugin\Menu\LoginLogoutMenuLink
+drupalcampfr_user.account.create:
+  parent: drupalcampfr_user.account.compte
+  weight: -9
+  menu_name: account
+  class: Drupal\drupalcampfr_user\Plugin\Menu\MyAccountCreateAccountMenuLink
