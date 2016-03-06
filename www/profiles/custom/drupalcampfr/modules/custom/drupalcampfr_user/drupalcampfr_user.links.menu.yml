@@ -5,7 +5,7 @@ drupalcampfr_user.account.compte:
   route_name: user.login
   weight: -10
   menu_name: account
-  expanded: TRUE
+  expanded: true
 
 drupalcamp_user.account.login:
   parent: drupalcampfr_user.account.compte

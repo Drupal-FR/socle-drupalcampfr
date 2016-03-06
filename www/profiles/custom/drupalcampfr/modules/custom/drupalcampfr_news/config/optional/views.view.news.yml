@@ -309,6 +309,11 @@ display:
       menu:
         type: normal
         title: Actualités
+        description: 'Toutes les actualités.'
+        expanded: true
+        parent: drupalcampfr_news.main.news
+        weight: -50
+        context: '0'
         menu_name: main
     cache_metadata:
       max-age: -1
