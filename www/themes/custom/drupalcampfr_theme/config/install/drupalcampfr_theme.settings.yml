@@ -23,4 +23,5 @@ region_wells:
   sidebar_first: well
   sidebar_second: ''
   footer: ''
+navbar_position: fixed-top
 langcode: fr

@@ -10,7 +10,7 @@ dependencies:
 id: drupalcampfr_theme_account_menu
 theme: drupalcampfr_theme
 region: navigation_collapsible
-weight: -6
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:
