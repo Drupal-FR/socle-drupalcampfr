@@ -91,4 +91,4 @@ assignments:
     enabled: true
     weight: '-14'
 profile_name: drupalcampfr
-is_profile: false
+is_profile: true

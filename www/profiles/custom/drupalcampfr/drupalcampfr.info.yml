@@ -76,6 +76,6 @@ dependencies:
 themes:
   - drupalcampfr_theme
   - seven
-package: Drupalcampfr
+package: 'Drupalcampfr'
 #distribution:
 #  name: Drupalcampfr
