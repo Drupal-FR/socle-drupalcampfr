@@ -9,7 +9,7 @@ migration_tags: null
 label: 'News import'
 source:
   plugin: csv
-  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_news/migrate_data/news.csv
+  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_news/migrations/data/news.csv
   header_row_count: 1
   keys:
     - id
