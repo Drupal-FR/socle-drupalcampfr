@@ -3,7 +3,9 @@ description: 'Provide core components required by other features.'
 type: module
 core: 8.x
 dependencies:
+  - block
   - image
   - responsive_image
+  - system
   - user
-package: 'Drupalcampfr'
+package: Drupalcampfr

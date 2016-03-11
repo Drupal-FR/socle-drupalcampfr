@@ -2,22 +2,22 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - system.menu.footer
+    - system.menu.footer-menu-4
   module:
     - system
   theme:
     - drupalcampfr_theme
-id: drupalcampfr_theme_footer
+id: drupalcampfr_theme_footer_menu_4
 theme: drupalcampfr_theme
 region: footer
-weight: -6
+weight: -5
 provider: null
-plugin: 'system_menu_block:footer'
+plugin: 'system_menu_block:footer-menu-4'
 settings:
-  id: 'system_menu_block:footer'
-  label: 'Footer menu'
+  id: 'system_menu_block:footer-menu-4'
+  label: Lieu
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 0
 visibility: {  }

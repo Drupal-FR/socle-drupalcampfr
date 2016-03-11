@@ -2,20 +2,20 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - system.menu.tools
+    - system.menu.footer-menu-1
   module:
     - system
   theme:
     - drupalcampfr_theme
-id: drupalcampfr_theme_tools
+id: drupalcampfr_theme_footer_menu_1
 theme: drupalcampfr_theme
-region: sidebar_first
-weight: -5
+region: footer
+weight: -8
 provider: null
-plugin: 'system_menu_block:tools'
+plugin: 'system_menu_block:footer-menu-1'
 settings:
-  id: 'system_menu_block:tools'
-  label: Tools
+  id: 'system_menu_block:footer-menu-1'
+  label: Programme
   provider: system
   label_display: visible
   level: 1
