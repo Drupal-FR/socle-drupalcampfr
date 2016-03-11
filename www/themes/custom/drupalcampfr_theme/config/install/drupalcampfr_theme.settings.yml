@@ -24,4 +24,4 @@ region_wells:
   sidebar_second: ''
   footer: ''
 navbar_position: fixed-top
-langcode: fr
+breadcrumb_home: 1
