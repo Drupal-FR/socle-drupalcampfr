@@ -1,0 +1,43 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - migrate_source_csv
+    - node
+id: drupalcampfr_page
+migration_tags: null
+label: 'Page import'
+source:
+  plugin: csv
+  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_page/migrations/data/page.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      id: Identifier
+    -
+      title: Title
+    -
+      body: Body
+    -
+      published: Published
+process:
+  type:
+    plugin: default_value
+    default_value: page
+  title: title
+  body: body
+  created:
+    plugin: callback
+    callable: strtotime
+    source: creation_date
+  status: published
+  promote: promoted
+destination:
+  plugin: 'entity:node'
+  type: page
+  bundle: page
+template: null
+migration_dependencies: {  }
+migration_group: drupalcampfr
