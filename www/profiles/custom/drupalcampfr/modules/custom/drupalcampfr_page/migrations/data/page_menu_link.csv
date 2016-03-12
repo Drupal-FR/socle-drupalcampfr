@@ -30,4 +30,4 @@ Identifier,UUID,Title,URI,Parent,Weight,Menu name,Expanded,Enabled
 29,,Hébergements,entity:node/13,26,2,main,1,1
 30,,Se préparer,entity:node/14,26,3,main,1,1
 31,,Bons plans,entity:node/15,26,4,main,1,1
-32,,Revue de presse,entity:node/16,view.news.page_news,1,main,1,1
+32,,Revue de presse,entity:node/16,drupalcampfr_news.main.news,1,main,1,1
