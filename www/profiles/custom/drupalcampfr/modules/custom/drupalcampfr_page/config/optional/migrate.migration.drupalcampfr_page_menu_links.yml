@@ -1,0 +1,58 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - drupalcampfr_core
+    - menu_link_content
+    - migrate_source_csv
+    - node
+id: drupalcampfr_page_menu_links
+label: 'Page menu links import'
+migration_tags:
+  - drupalcampfr
+source:
+  plugin: csv
+  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_page/migrations/data/page_menu_link.csv
+  keys:
+    - id
+  header_row_count: 1
+  column_names:
+    -
+      id: Identifier
+    -
+      uuid: UUID
+    -
+      title: Title
+    -
+      uri: URI
+    -
+      parent: Parent
+    -
+      weight: Weight
+    -
+      menu_name: Menu name
+    -
+      expanded: Expanded
+    -
+      enabled: Enabled
+process:
+  id: id
+  # uuid: uuid
+  title: title
+  'link/uri': uri
+  weight: weight
+  parent:
+    plugin: callback
+    callable: '\Drupal\drupalcampfr_core\FindMenuPluginId::find'
+    source: parent
+  bundle:
+    plugin: default_value
+    default_value: menu_link_content
+  menu_name: menu_name
+  expanded: expanded
+  enabled: enabled
+destination:
+  plugin: entity:menu_link_content
+migration_dependencies:
+  required:
+    - drupalcampfr_page

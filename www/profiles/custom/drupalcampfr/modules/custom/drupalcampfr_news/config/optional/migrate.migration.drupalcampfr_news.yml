@@ -5,7 +5,8 @@ dependencies:
     - migrate_source_csv
     - node
 id: drupalcampfr_news
-migration_tags: null
+migration_tags:
+  - drupalcampfr
 label: 'News import'
 source:
   plugin: csv

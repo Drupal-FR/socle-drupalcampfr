@@ -1,0 +1,33 @@
+Identifier,UUID,Title,URI,Parent,Weight,Menu name,Expanded,Enabled
+1,,Keynotes,entity:node/1,0,2,footer-menu-1,0,1
+2,,Sprints,entity:node/2,0,3,footer-menu-1,0,1
+3,,Prises de notes collaboratives,entity:node/3,0,4,footer-menu-1,0,1
+4,,À propos,entity:node/5,0,0,footer-menu-2,0,1
+5,,Soirée communautaire,entity:node/6,0,2,footer-menu-2,0,1
+6,,Code de conduite,entity:node/7,0,3,footer-menu-2,0,1
+7,,Forfaits,entity:node/9,0,2,footer-menu-3,0,1
+8,,Lieu,entity:node/11,0,0,footer-menu-4,0,1
+9,,Accès,entity:node/12,0,1,footer-menu-4,0,1
+10,,Hébergements,entity:node/13,0,2,footer-menu-4,0,1
+11,,Se préparer,entity:node/14,0,3,footer-menu-4,0,1
+12,,Bons plans,entity:node/15,0,4,footer-menu-4,0,1
+13,,Programme,entity:node/1,0,0,main,0,1
+14,,Keynotes,entity:node/1,13,2,main,0,1
+15,,Sprints,entity:node/2,13,3,main,0,1
+16,,Prises de notes collaboratives,entity:node/3,13,4,main,0,1
+17,,Guide aux conférenciers,entity:node/4,13,7,main,0,1
+18,,Communauté,entity:node/5,0,1,main,0,1
+19,,À propos,entity:node/5,18,0,main,0,1
+20,,Soirée communautaire,entity:node/6,18,2,main,0,1
+21,,Code de conduite,entity:node/7,18,3,main,0,1
+22,,Convaincre sa société,entity:node/8,18,6,main,0,1
+23,,Sponsors,entity:node/9,0,2,main,0,1
+24,,Forfaits,entity:node/9,0,2,main,0,1
+25,,Badges,entity:node/10,0,6,main,0,1
+26,,Infos pratiques,entity:node/11,0,3,main,0,1
+27,,Lieu,entity:node/11,0,0,main,0,1
+28,,Accès,entity:node/12,0,1,main,0,1
+29,,Hébergements,entity:node/13,0,2,main,0,1
+30,,Se préparer,entity:node/14,0,3,main,0,1
+31,,Bons plans,entity:node/15,0,4,main,0,1
+32,,Revue de presse,entity:node/16,view.news.page_news,1,main,0,1

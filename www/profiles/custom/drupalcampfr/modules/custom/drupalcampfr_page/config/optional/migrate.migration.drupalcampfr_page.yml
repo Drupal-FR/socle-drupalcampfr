@@ -5,7 +5,8 @@ dependencies:
     - migrate_source_csv
     - node
 id: drupalcampfr_page
-migration_tags: null
+migration_tags:
+  - drupalcampfr
 label: 'Page import'
 source:
   plugin: csv
@@ -19,15 +20,22 @@ source:
     -
       title: Title
     -
-      body: Body
+      path: Path
     -
       published: Published
+    -
+      body: Body
 process:
   type:
     plugin: default_value
     default_value: page
   title: title
   body: body
+  path:
+   -
+     plugin: skip_on_empty
+     method: process
+     source: path
   status: published
 destination:
   plugin: 'entity:node'

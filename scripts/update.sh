@@ -53,7 +53,9 @@ $DRUSH features-import -y --bundle=drupalcampfr news
 #$Drush locale-update
 
 # Import content.
-$DRUSH migrate-import --group=drupalcampfr --update
+$DRUSH migrate-import drupalcampfr_page --update
+$DRUSH migrate-import drupalcampfr_page_menu_links --update
+$DRUSH migrate-import drupalcampfr_news --update
 
 # Back to the current directory.
 cd $CURRENT_PATH
