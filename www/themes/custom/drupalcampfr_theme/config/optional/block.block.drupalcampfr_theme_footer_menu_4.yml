@@ -15,7 +15,7 @@ provider: null
 plugin: 'system_menu_block:footer-menu-4'
 settings:
   id: 'system_menu_block:footer-menu-4'
-  label: Lieu
+  label: 'Infos pratiques'
   provider: system
   label_display: visible
   level: 1
