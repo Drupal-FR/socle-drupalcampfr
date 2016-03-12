@@ -47,6 +47,11 @@ $DRUSH features-import -y --bundle=drupalcampfr news
 # Waiting for https://www.drupal.org/node/2672490
 #$DRUSH features-import -y --bundle=drupalcampfr drupalcampfr
 
+# Translation updates.
+# TODO: Drush commands are broken.
+#$DRUSH locale-check
+#$Drush locale-update
+
 # Import content.
 $DRUSH migrate-import --group=drupalcampfr --update
 

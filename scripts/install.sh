@@ -46,6 +46,11 @@ if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
     -y
 fi
 
+# Translation updates.
+# TODO: Drush commands are broken.
+#$DRUSH locale-check
+#$Drush locale-update
+
 # Import content.
 $DRUSH migrate-import --group=drupalcampfr --update
 
