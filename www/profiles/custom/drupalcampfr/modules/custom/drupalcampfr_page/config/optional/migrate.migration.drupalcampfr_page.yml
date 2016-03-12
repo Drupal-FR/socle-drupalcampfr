@@ -28,12 +28,7 @@ process:
     default_value: page
   title: title
   body: body
-  created:
-    plugin: callback
-    callable: strtotime
-    source: creation_date
   status: published
-  promote: promoted
 destination:
   plugin: 'entity:node'
   type: page
