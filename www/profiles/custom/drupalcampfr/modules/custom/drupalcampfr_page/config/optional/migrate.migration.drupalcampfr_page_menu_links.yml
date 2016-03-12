@@ -42,8 +42,7 @@ process:
   'link/uri': uri
   weight: weight
   parent:
-    plugin: callback
-    callable: '\Drupal\drupalcampfr_core\FindMenuPluginId::find'
+    plugin: drupalcampfr_findmenupluginid
     source: parent
   bundle:
     plugin: default_value

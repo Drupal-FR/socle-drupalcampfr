@@ -2,6 +2,6 @@ drupalcampfr_news.main.news:
   title: 'Actualités'
   description: 'Toutes les actualités.'
   route_name: view.news.page_news
-  weight: 0
+  weight: 4
   menu_name: main
   expanded: true
