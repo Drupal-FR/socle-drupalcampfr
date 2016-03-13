@@ -2,37 +2,28 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.listing
     - field.field.node.news.body
     - field.field.node.news.field_news_link
     - node.type.news
   module:
-    - link
     - text
     - user
-id: node.news.teaser
+id: node.news.listing
 targetEntityType: node
 bundle: news
-mode: teaser
+mode: listing
 content:
   body:
     label: hidden
-    type: text_summary_or_trimmed
+    type: text_default
     weight: 0
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings: {  }
-  field_news_link:
-    type: link
+  links:
     weight: 1
-    label: hidden
-    settings:
-      trim_length: 80
-      rel: ''
-      target: ''
-      url_only: false
-      url_plain: false
+    settings: {  }
     third_party_settings: {  }
 hidden:
+  field_news_link: true
   langcode: true
-  links: true

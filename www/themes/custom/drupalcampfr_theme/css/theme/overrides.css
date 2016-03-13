@@ -1,0 +1,8 @@
+
+/*
+As the field is wrapped in a div, CSS overrides of the bootstrap theme has a
+p:last-child selector which set margin-bottom to 0.
+*/
+article.news.teaser .field--type-text-with-summary {
+  margin-bottom: 10px;
+}

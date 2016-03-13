@@ -3,8 +3,8 @@ type: theme
 description: Base theme for the french Drupalcamps.
 package: Drupalcampfr
 core: 8.x
-#libraries:
-#  - drupalcampfr_theme/global-styling
+libraries:
+  - drupalcampfr_theme/global-styling
 
 base theme: bootstrap
 

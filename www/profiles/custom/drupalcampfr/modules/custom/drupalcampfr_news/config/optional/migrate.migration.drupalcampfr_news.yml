@@ -20,19 +20,38 @@ source:
     -
       title: Title
     -
-      body: Body
+      path: Path
     -
       creation_date: 'Creation date'
     -
       published: Published
     -
       promoted: 'Promoted to front page'
+    -
+      news_link_title: 'Link title'
+    -
+      news_link_uri: 'Link URI'
+    -
+      body_summary: 'Body (summary)'
+    -
+      body_value: Body
+    -
+      body_format: 'Body format'
 process:
   type:
     plugin: default_value
     default_value: news
   title: title
-  body: body
+  'body/value': body_value
+  'body/summary': body_summary
+  'body/format': body_format
+  'field_news_link/uri': news_link_uri
+  'field_news_link/title': news_link_title
+  path:
+   -
+     plugin: skip_on_empty
+     method: process
+     source: path
   created:
     plugin: callback
     callable: strtotime

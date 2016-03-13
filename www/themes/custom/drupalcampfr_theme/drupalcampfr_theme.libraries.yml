@@ -1,3 +1,4 @@
 global-styling:
-  css: {}
-  js: {}
+  css:
+    theme:
+      css/theme/overrides.css: {}

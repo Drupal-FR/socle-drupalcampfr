@@ -4,7 +4,9 @@ type: module
 core: 8.x
 dependencies:
   - block
+  - drupalcampfr_core
   - image
+  - node
   - responsive_image
   - system
   - user

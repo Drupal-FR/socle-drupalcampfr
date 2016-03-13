@@ -1,24 +1,29 @@
 langcode: fr
 status: true
 dependencies:
+  config:
+    - views.view.news
   module:
     - system
+    - views
   theme:
     - drupalcampfr_theme
-id: drupalcampfr_theme_page_title
+id: views_block__news_block_home_news
 theme: drupalcampfr_theme
 region: content
-weight: -5
+weight: null
 provider: null
-plugin: page_title_block
+plugin: 'views_block:news-block_home_news'
 settings:
-  id: page_title_block
-  label: 'Page title'
-  provider: core
+  id: 'views_block:news-block_home_news'
+  label: ''
+  provider: views
   label_display: '0'
+  views_label: ''
+  items_per_page: none
 visibility:
   request_path:
     id: request_path
     pages: '<front>'
-    negate: true
+    negate: false
     context_mapping: {  }

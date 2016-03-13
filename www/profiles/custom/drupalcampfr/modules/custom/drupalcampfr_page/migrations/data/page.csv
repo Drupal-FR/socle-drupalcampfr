@@ -1,18 +1,18 @@
-Identifier,Title,Path,Published,Body
-1,Keynotes,/programme/keynotes,1,Lorem ipsum
-2,Sprints,/programme/sprints,1,Lorem ipsum
-3,Prises de notes collaboratives,/programme/prise-de-notes-collaboratives,1,Lorem ipsum
-4,Guide aux conférenciers,/programme/guide-aux-conferenciers,1,Lorem ipsum
-5,À propos,/communaute/a-propos,1,Lorem ipsum
-6,Soirée communautaire,/communaute/soiree-communautaire,1,Lorem ipsum
-7,Code de conduite,/communaute/code-de-conduite,1,Lorem ipsum
-8,Convaincre sa société,/communaute/convaincre-sa-societe,1,Lorem ipsum
-9,Forfaits,/sponsors/forfaits,1,Lorem ipsum
-10,Badges,/sponsors/badges,1,Lorem ipsum
-11,Lieu,/informations-pratiques/lieu,1,Lorem ipsum
-12,Accès,/informations-pratiques/acces,1,Lorem ipsum
-13,Hébergements,/informations-pratiques/hebergements,1,Lorem ipsum
-14,Se préparer,/informations-pratiques/se-preparer,1,Lorem ipsum
-15,Bons plans,/informations-pratiques/bons-plans,1,Lorem ipsum
-16,Revue de presse,/actualites/revue-de-presse,1,Lorem ipsum
-17,Mentions légales,/mentions-legales,1,Lorem ipsum
+Identifier,Title,Path,Published,Body,Body format
+1,Keynotes,/programme/keynotes,1,Lorem ipsum,basic_html
+2,Sprints,/programme/sprints,1,Lorem ipsum,basic_html
+3,Prises de notes collaboratives,/programme/prise-de-notes-collaboratives,1,Lorem ipsum,basic_html
+4,Guide aux conférenciers,/programme/guide-aux-conferenciers,1,Lorem ipsum,basic_html
+5,À propos,/communaute/a-propos,1,Lorem ipsum,basic_html
+6,Soirée communautaire,/communaute/soiree-communautaire,1,Lorem ipsum,basic_html
+7,Code de conduite,/communaute/code-de-conduite,1,Lorem ipsum,basic_html
+8,Convaincre sa société,/communaute/convaincre-sa-societe,1,Lorem ipsum,basic_html
+9,Forfaits,/sponsors/forfaits,1,Lorem ipsum,basic_html
+10,Badges,/sponsors/badges,1,Lorem ipsum,basic_html
+11,Lieu,/informations-pratiques/lieu,1,Lorem ipsum,basic_html
+12,Accès,/informations-pratiques/acces,1,Lorem ipsum,basic_html
+13,Hébergements,/informations-pratiques/hebergements,1,Lorem ipsum,basic_html
+14,Se préparer,/informations-pratiques/se-preparer,1,Lorem ipsum,basic_html
+15,Bons plans,/informations-pratiques/bons-plans,1,Lorem ipsum,basic_html
+16,Revue de presse,/actualites/revue-de-presse,1,Lorem ipsum,basic_html
+17,Mentions légales,/mentions-legales,1,Lorem ipsum,basic_html

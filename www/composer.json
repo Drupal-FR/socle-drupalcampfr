@@ -25,6 +25,7 @@
     "drupal/block_visibility_groups": "8.1.0",
     "drupal/commerce": "8.2.0-alpha3",
     "drupal/entity": "8.1.0-alpha1",
+    "drupal/entityqueue": "8.1.0-alpha4",
     "drupal/features": "8.3.0-alpha6",
     "drupal/field_group": "8.1.0-rc4",
     "drupal/inline_entity_form": "8.1.0-alpha5",

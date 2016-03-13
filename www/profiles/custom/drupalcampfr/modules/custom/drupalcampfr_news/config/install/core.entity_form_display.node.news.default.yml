@@ -3,8 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_news_link
     - node.type.news
   module:
+    - link
     - path
     - text
 id: node.news.default
@@ -25,6 +27,13 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_news_link:
+    weight: 32
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
   langcode:
     type: language_select
     weight: 2

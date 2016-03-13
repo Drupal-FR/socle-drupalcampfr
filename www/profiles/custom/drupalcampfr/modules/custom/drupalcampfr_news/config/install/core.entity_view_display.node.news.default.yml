@@ -3,8 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_news_link
     - node.type.news
   module:
+    - link
     - text
     - user
 id: node.news.default
@@ -18,8 +20,19 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-  links:
+  field_news_link:
     weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 2
     settings: {  }
     third_party_settings: {  }
 hidden:

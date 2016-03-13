@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fc8e1cff8afb248a58d959f078e5f4d8",
-    "content-hash": "0f8e77bddd1ff2efa297f7b4c3367e66",
+    "hash": "833e5a02929bbff9b9c7aed559952a1d",
+    "content-hash": "4bec0308515b141a5ce0f03efc256a97",
     "packages": [
         {
             "name": "commerceguys/addressing",
@@ -1367,6 +1367,33 @@
             "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
             "homepage": "http://drupal.org/project/entity",
             "time": "2015-12-23 18:25:04"
+        },
+        {
+            "name": "drupal/entityqueue",
+            "version": "8.1.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entityqueue",
+                "reference": "5b6c2ae88b5c26665f7293e732cd880badcb9c97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entityqueue-8.x-1.0-alpha4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Allows users to collect entities in arbitrarily ordered lists.",
+            "homepage": "https://www.drupal.org/project/entityqueue"
         },
         {
             "name": "drupal/features",
