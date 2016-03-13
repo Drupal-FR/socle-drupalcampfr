@@ -1,0 +1,7 @@
+drupalcampfr_social.main.twitter:
+  title: 'Twitter'
+  description: 'Compte twitter du drupalcamp.'
+  url: 'https://twitter.com/drupalcampfr'
+  weight: 7
+  menu_name: main
+  parent: drupalcampfr_news.main.news

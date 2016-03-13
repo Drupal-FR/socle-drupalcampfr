@@ -67,6 +67,7 @@ dependencies:
   - drupalcampfr_news
   - drupalcampfr_page
   - drupalcampfr_homepage
+  - drupalcampfr_social
 
   # Development modules. Enabled in the install/update scripts.
 #  - dblog
