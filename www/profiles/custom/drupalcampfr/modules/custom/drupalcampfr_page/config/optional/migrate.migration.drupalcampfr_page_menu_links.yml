@@ -39,8 +39,10 @@ process:
   id: id
   # uuid: uuid
   title: title
+  # TODO: Get uri with uuid.
   'link/uri': uri
   weight: weight
+  # TODO: Get parent with uuid.
   parent:
     plugin: drupalcampfr_findmenupluginid
     source: parent
