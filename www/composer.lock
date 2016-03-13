@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c8a4997755a7b8965e1c519e8d847eb0",
-    "content-hash": "faf822465b02859444e952fc88519966",
+    "hash": "fc8e1cff8afb248a58d959f078e5f4d8",
+    "content-hash": "0f8e77bddd1ff2efa297f7b4c3367e66",
     "packages": [
         {
             "name": "commerceguys/addressing",
@@ -198,7 +198,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/tax/zipball/200592048ce96bfa00313c13e5ee106da3dbd7d3",
+                "url": "https://api.github.com/repos/commerceguys/tax/zipball/fcc7a9d00ffc9f4e3c7e3a1883c61cb683fb7b6b",
                 "reference": "200592048ce96bfa00313c13e5ee106da3dbd7d3",
                 "shasum": ""
             },
@@ -3941,6 +3941,28 @@
             "description": "A variety of example code for you to learn from and hack upon.",
             "homepage": "https://www.drupal.org/project/examples",
             "time": "2016-02-16 01:58:11"
+        },
+        {
+            "name": "drupal/pistachio",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/pistachio.git",
+                "reference": "2a1de3ce05939e9b23be3d3cf860e0ed0b94110c"
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "A nutty, yet elegant example theme.",
+            "homepage": "https://www.drupal.org/project/pistachio",
+            "time": "2016-01-31 21:21:18"
         }
     ],
     "aliases": [],

@@ -37,7 +37,8 @@
   },
   "require-dev": {
     "drupal/devel": "8.1.*",
-    "drupal/examples": "8.1.*"
+    "drupal/examples": "8.1.*",
+    "drupal/pistachio": "8.1.*"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
