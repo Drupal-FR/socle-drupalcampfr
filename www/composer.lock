@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "833e5a02929bbff9b9c7aed559952a1d",
-    "content-hash": "4bec0308515b141a5ce0f03efc256a97",
+    "hash": "4a5a83645910b4cf6a402e1cf855ecc8",
+    "content-hash": "bb6a53873dcdf7e3f8dafc6086697b08",
     "packages": [
         {
             "name": "commerceguys/addressing",
@@ -194,12 +194,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/tax.git",
-                "reference": "200592048ce96bfa00313c13e5ee106da3dbd7d3"
+                "reference": "92716dad7dd285e384a9356d64c555994b740543"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/tax/zipball/fcc7a9d00ffc9f4e3c7e3a1883c61cb683fb7b6b",
-                "reference": "200592048ce96bfa00313c13e5ee106da3dbd7d3",
+                "url": "https://api.github.com/repos/commerceguys/tax/zipball/92716dad7dd285e384a9356d64c555994b740543",
+                "reference": "92716dad7dd285e384a9356d64c555994b740543",
                 "shasum": ""
             },
             "require": {
@@ -242,7 +242,7 @@
                 "tax",
                 "vat"
             ],
-            "time": "2016-02-02 10:31:33"
+            "time": "2016-03-14 09:52:35"
         },
         {
             "name": "commerceguys/zone",
@@ -1136,15 +1136,15 @@
         },
         {
             "name": "drupal/config_update",
-            "version": "8.1.0",
+            "version": "8.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/config_update.git",
-                "reference": "82596578ccdd79a06cc624b3790173360fe55290"
+                "reference": "ac1526df5836a611f04bb421945beddb6306b7f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.0.zip",
+                "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1163,9 +1163,6 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
-                },
-                "patches_applied": {
-                    "Do not diff _core": "https://www.drupal.org/files/issues/2636514.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -1644,15 +1641,15 @@
         },
         {
             "name": "drupal/state_machine",
-            "version": "8.1.0-beta1",
+            "version": "8.1.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/state_machine",
-                "reference": "4fce22fbb85c03ebce4ae5ea22df17e33de8c46e"
+                "reference": "9af95093ed41eaf653ba51415ff85b8a42f6532f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/state_machine-8.x-1.0-beta1.zip",
+                "url": "https://ftp.drupal.org/files/projects/state_machine-8.x-1.0-beta2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1946,16 +1943,16 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea"
+                "reference": "bb9024c526b22f3fe6ae55a561fd70653d470aa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/b1e1c0d55f8083c71eda2c28c12a228d708294ea",
-                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/bb9024c526b22f3fe6ae55a561fd70653d470aa8",
+                "reference": "bb9024c526b22f3fe6ae55a561fd70653d470aa8",
                 "shasum": ""
             },
             "require": {
@@ -1993,7 +1990,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2015-10-15 22:28:00"
+            "time": "2016-03-08 01:15:46"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -2400,16 +2397,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.7.1",
+            "version": "v0.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "5e8cedbe0a3681f18782594eefc78423f8401fc8"
+                "reference": "e64e10b20f8d229cac76399e1f3edddb57a0f280"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/5e8cedbe0a3681f18782594eefc78423f8401fc8",
-                "reference": "5e8cedbe0a3681f18782594eefc78423f8401fc8",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/e64e10b20f8d229cac76399e1f3edddb57a0f280",
+                "reference": "e64e10b20f8d229cac76399e1f3edddb57a0f280",
                 "shasum": ""
             },
             "require": {
@@ -2468,7 +2465,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2016-02-27 18:59:18"
+            "time": "2016-03-09 05:03:14"
         },
         {
             "name": "stack/builder",
@@ -3006,16 +3003,16 @@
         },
         {
             "name": "symfony/polyfill-apcu",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-apcu.git",
-                "reference": "d1911e6caeb4b6a4c8e2d5c46b978a66b3745e4c"
+                "reference": "0c901e4e65a2f7ece68f0fd249b56d6ad3adc214"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/d1911e6caeb4b6a4c8e2d5c46b978a66b3745e4c",
-                "reference": "d1911e6caeb4b6a4c8e2d5c46b978a66b3745e4c",
+                "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/0c901e4e65a2f7ece68f0fd249b56d6ad3adc214",
+                "reference": "0c901e4e65a2f7ece68f0fd249b56d6ad3adc214",
                 "shasum": ""
             },
             "require": {
@@ -3030,9 +3027,6 @@
             "autoload": {
                 "files": [
                     "bootstrap.php"
-                ],
-                "classmap": [
-                    "Resources/stubs"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3058,11 +3052,11 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-01-20 09:13:37"
+            "time": "2016-03-03 16:49:40"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -3876,7 +3870,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/devel",
-                "reference": "38818a6a9320d52b573ac1fa8d66ae6489de31a9"
+                "reference": "360cd944b0c85b20b74a74969ee19c3a095b111d"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -3911,7 +3905,7 @@
             ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "http://drupal.org/project/devel",
-            "time": "2016-02-20 12:26:05"
+            "time": "2016-03-14 20:10:03"
         },
         {
             "name": "drupal/examples",
@@ -3919,7 +3913,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/examples.git",
-                "reference": "4c00312b7636e232698d4f55d52723bb8aafaebc"
+                "reference": "ad74a3bdd4e154fdd16b36e100b64eb116288d46"
             },
             "require": {
                 "drupal/core": "8.*",
@@ -3933,6 +3927,7 @@
                 "drupal/cron_example": "self.version",
                 "drupal/dbtng_example": "self.version",
                 "drupal/email_example": "self.version",
+                "drupal/fapi_example": "self.version",
                 "drupal/field_example": "self.version",
                 "drupal/field_permission_example": "self.version",
                 "drupal/js_example": "self.version",
@@ -3946,7 +3941,7 @@
             "suggest": {
                 "drupal/block": "Required by drupal/block_example",
                 "drupal/color": "Required by drupal/field_example",
-                "drupal/core": "Required by drupal/block_example, drupal/cache_example, drupal/config_entity_example, drupal/content_entity_example, drupal/cron_example, drupal/dbtng_example, drupal/email_example, drupal/field_example, drupal/field_permission_example, drupal/js_example,",
+                "drupal/core": "Required by drupal/block_example, drupal/cache_example, drupal/config_entity_example, drupal/content_entity_example, drupal/cron_example, drupal/dbtng_example, drupal/email_example, drupal/fapi_example, drupal/field_example, drupal/field_permission_exampl",
                 "drupal/node": "Required by drupal/node_type_example",
                 "drupal/options": "Required by drupal/content_entity_example",
                 "drupal/path": "Required by drupal/node_type_example",
@@ -3967,7 +3962,7 @@
             ],
             "description": "A variety of example code for you to learn from and hack upon.",
             "homepage": "https://www.drupal.org/project/examples",
-            "time": "2016-02-16 01:58:11"
+            "time": "2016-03-13 18:18:52"
         },
         {
             "name": "drupal/pistachio",
