@@ -1,0 +1,14 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    redirect_uri: ''
+id: attendance_certificate
+label: 'Certificat de présence'
+recipients:
+  - dcn2016@listes.drupalfr.org
+reply: ''
+weight: 0

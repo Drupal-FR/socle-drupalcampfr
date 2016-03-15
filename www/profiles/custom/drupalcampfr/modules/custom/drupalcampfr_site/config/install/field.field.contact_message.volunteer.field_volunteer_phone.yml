@@ -1,0 +1,20 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.volunteer
+    - field.storage.contact_message.field_volunteer_phone
+  module:
+    - telephone
+id: contact_message.volunteer.field_volunteer_phone
+field_name: field_volunteer_phone
+entity_type: contact_message
+bundle: volunteer
+label: 'Numéro de téléphone'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,20 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.attendance_certificate
+    - field.storage.contact_message.field_attendance_departure
+  module:
+    - options
+id: contact_message.attendance_certificate.field_attendance_departure
+field_name: field_attendance_departure
+entity_type: contact_message
+bundle: attendance_certificate
+label: 'Jour de départ'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

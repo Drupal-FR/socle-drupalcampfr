@@ -1,0 +1,8 @@
+langcode: fr
+status: true
+dependencies: {  }
+id: anonymous
+label: 'Utilisateur anonyme'
+weight: 0
+is_admin: false
+permissions: {  }

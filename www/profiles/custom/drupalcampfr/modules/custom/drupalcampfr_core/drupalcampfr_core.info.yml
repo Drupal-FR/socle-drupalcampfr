@@ -4,10 +4,15 @@ type: module
 core: 8.x
 dependencies:
   - block
+  - contact
   - drupalcampfr_core
+  - field
+  - honeypot
   - image
   - node
+  - options
   - responsive_image
   - system
+  - telephone
   - user
 package: Drupalcampfr

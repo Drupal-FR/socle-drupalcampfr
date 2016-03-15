@@ -5,9 +5,18 @@ core: 8.x
 dependencies:
   - block_content
   - ckeditor
+  - contact
+  - contact_storage
+  - drupalcampfr_core
+  - drupalcampfr_site
   - editor
+  - field
+  - filter
+  - options
+  - rdf
   - taxonomy
+  - telephone
   - text
-package: 'Drupalcampfr'
+package: Drupalcampfr
 features:
   bundle: drupalcampfr

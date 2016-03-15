@@ -1,0 +1,18 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.volunteer
+    - field.storage.contact_message.field_volunteer_availability
+id: contact_message.volunteer.field_volunteer_availability
+field_name: field_volunteer_availability
+entity_type: contact_message
+bundle: volunteer
+label: Disponibilité
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -54,9 +54,11 @@ dependencies:
   # Contrib modules.
   - admin_toolbar
   - admin_toolbar_tools
+  - contact_storage
   - entityqueue
   - features
   - field_group
+  - honeypot
   - migrate_source_csv
   - migrate_plus
   - migrate_tools

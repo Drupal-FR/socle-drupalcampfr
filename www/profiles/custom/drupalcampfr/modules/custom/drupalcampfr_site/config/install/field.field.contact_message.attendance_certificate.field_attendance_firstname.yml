@@ -1,0 +1,18 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.attendance_certificate
+    - field.storage.contact_message.field_attendance_firstname
+id: contact_message.attendance_certificate.field_attendance_firstname
+field_name: field_attendance_firstname
+entity_type: contact_message
+bundle: attendance_certificate
+label: Prénom
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

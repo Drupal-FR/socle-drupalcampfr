@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations for drupalcampfr_site module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function drupalcampfr_site_form_contact_message_contact_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Remove the Preview button.
+  unset($form['actions']['preview']);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function drupalcampfr_site_form_contact_message_volunteer_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Remove the Preview button.
+  unset($form['actions']['preview']);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function drupalcampfr_site_form_contact_message_attendance_certificate_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Remove the Preview button.
+  unset($form['actions']['preview']);
+}

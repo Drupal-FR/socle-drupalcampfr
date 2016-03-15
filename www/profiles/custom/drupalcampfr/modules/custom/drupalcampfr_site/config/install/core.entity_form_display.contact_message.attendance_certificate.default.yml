@@ -1,0 +1,45 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.attendance_certificate
+    - field.field.contact_message.attendance_certificate.field_attendance_arrival
+    - field.field.contact_message.attendance_certificate.field_attendance_departure
+    - field.field.contact_message.attendance_certificate.field_attendance_firstname
+    - field.field.contact_message.attendance_certificate.field_attendance_lastname
+id: contact_message.attendance_certificate.default
+targetEntityType: contact_message
+bundle: attendance_certificate
+mode: default
+content:
+  field_attendance_arrival:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_attendance_departure:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_attendance_firstname:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_attendance_lastname:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  copy: true
+  langcode: true
+  mail: true
+  message: true
+  name: true
+  subject: true

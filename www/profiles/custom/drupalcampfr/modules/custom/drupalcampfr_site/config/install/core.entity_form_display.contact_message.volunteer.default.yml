@@ -1,0 +1,52 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.volunteer
+    - field.field.contact_message.volunteer.field_volunteer_availability
+    - field.field.contact_message.volunteer.field_volunteer_function
+    - field.field.contact_message.volunteer.field_volunteer_phone
+  module:
+    - telephone
+id: contact_message.volunteer.default
+targetEntityType: contact_message
+bundle: volunteer
+mode: default
+content:
+  field_volunteer_availability:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_volunteer_function:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_volunteer_phone:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+  mail:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  langcode: true
+  subject: true
