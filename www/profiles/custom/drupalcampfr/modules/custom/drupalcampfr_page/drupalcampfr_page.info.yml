@@ -6,7 +6,6 @@ dependencies:
   - field
   - language
   - menu_ui
-  - migrate
   - node
   - path
   - text

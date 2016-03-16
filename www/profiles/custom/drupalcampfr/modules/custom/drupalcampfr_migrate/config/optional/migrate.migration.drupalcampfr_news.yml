@@ -2,15 +2,16 @@ langcode: fr
 status: true
 dependencies:
   module:
+    - drupalcampfr_news
     - migrate_source_csv
     - node
-id: drupalcampfr_page
+id: drupalcampfr_news
 migration_tags:
   - drupalcampfr
-label: 'Page import'
+label: 'News import'
 source:
   plugin: csv
-  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_page/migrations/data/page.csv
+  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/news.csv
   header_row_count: 1
   keys:
     - id
@@ -22,7 +23,17 @@ source:
     -
       path: Path
     -
+      creation_date: 'Creation date'
+    -
       published: Published
+    -
+      promoted: 'Promoted to front page'
+    -
+      news_link_title: 'Link title'
+    -
+      news_link_uri: 'Link URI'
+    -
+      body_summary: 'Body (summary)'
     -
       body_value: Body
     -
@@ -30,20 +41,28 @@ source:
 process:
   type:
     plugin: default_value
-    default_value: page
+    default_value: news
   title: title
   'body/value': body_value
+  'body/summary': body_summary
   'body/format': body_format
+  'field_news_link/uri': news_link_uri
+  'field_news_link/title': news_link_title
   path:
    -
      plugin: skip_on_empty
      method: process
      source: path
+  created:
+    plugin: callback
+    callable: strtotime
+    source: creation_date
   status: published
+  promote: promoted
 destination:
   plugin: 'entity:node'
-  type: page
-  bundle: page
+  type: news
+  bundle: news
 template: null
 migration_dependencies: {  }
 migration_group: drupalcampfr

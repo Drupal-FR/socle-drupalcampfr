@@ -12,7 +12,7 @@ migration_tags:
   - drupalcampfr
 source:
   plugin: csv
-  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_page/migrations/data/page_menu_link.csv
+  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/page_menu_link.csv
   keys:
     - id
   header_row_count: 1
