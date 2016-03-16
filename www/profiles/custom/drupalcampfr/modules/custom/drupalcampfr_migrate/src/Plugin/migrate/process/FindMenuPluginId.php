@@ -5,7 +5,7 @@
  * Contains \Drupal\drupalcampfr_migrate\Plugin\migrate\process\FindMenuPluginId.
  */
 
-namespace Drupal\drupalcampfr_core\Plugin\migrate\process;
+namespace Drupal\drupalcampfr_migrate\Plugin\migrate\process;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;

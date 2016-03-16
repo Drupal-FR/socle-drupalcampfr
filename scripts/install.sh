@@ -53,8 +53,8 @@ fi
 
 # Import content.
 $DRUSH migrate-import drupalcampfr_page --update
-$DRUSH migrate-import drupalcampfr_page_menu_links --update
 $DRUSH migrate-import drupalcampfr_news --update
+$DRUSH migrate-import drupalcampfr_menu_link --update
 
 # Back to the current directory.
 cd $CURRENT_PATH
