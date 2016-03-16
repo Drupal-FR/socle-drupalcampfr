@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\drupalcampfr_core\Plugin\migrate\process\FindMenuPluginId.
+ * Contains \Drupal\drupalcampfr_migrate\Plugin\migrate\process\FindMenuPluginId.
  */
 
 namespace Drupal\drupalcampfr_core\Plugin\migrate\process;

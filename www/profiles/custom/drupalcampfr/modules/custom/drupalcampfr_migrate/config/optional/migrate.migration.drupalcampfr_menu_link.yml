@@ -6,13 +6,13 @@ dependencies:
     - menu_link_content
     - migrate_source_csv
     - node
-id: drupalcampfr_page_menu_links
-label: 'Page menu links import'
+id: drupalcampfr_menu_link
+label: 'Menu link import'
 migration_tags:
   - drupalcampfr
 source:
   plugin: csv
-  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/page_menu_link.csv
+  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/menu_link.csv
   keys:
     - id
   header_row_count: 1
