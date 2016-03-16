@@ -1,0 +1,7 @@
+drupalcampfr_site.main.contact:
+  title: 'Contact'
+  description: 'Nous contacter'
+  route_name: contact.site_page
+  weight: 5
+  menu_name: main
+  expanded: true
