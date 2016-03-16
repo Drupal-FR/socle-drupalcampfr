@@ -11,11 +11,11 @@ dependencies:
     - contact
     - options
     - user
-id: drupalcampfr_volunteer
+id: volunteer
 label: 'Drupalcampfr volontaires'
 module: views
 description: ''
-tag: ''
+tag: 'Drupalcampfr'
 base_table: contact_message
 base_field: id
 core: 8.x

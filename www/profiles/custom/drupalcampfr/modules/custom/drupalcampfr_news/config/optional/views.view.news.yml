@@ -15,7 +15,7 @@ id: news
 label: Actualités
 module: views
 description: ''
-tag: ''
+tag: 'Drupalcampfr'
 base_table: node_field_data
 base_field: nid
 core: 8.x
