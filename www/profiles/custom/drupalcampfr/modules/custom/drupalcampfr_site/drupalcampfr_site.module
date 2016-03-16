@@ -21,6 +21,9 @@ function drupalcampfr_site_form_contact_message_contact_form_alter(&$form, FormS
 function drupalcampfr_site_form_contact_message_volunteer_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   // Remove the Preview button.
   unset($form['actions']['preview']);
+
+  // Change submit label.
+  $form['actions']['submit']['#value'] = t('Submit');
 }
 
 /**
@@ -29,4 +32,7 @@ function drupalcampfr_site_form_contact_message_volunteer_form_alter(&$form, For
 function drupalcampfr_site_form_contact_message_attendance_certificate_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   // Remove the Preview button.
   unset($form['actions']['preview']);
+
+  // Change submit label.
+  $form['actions']['submit']['#value'] = t('Submit');
 }
