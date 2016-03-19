@@ -6,3 +6,8 @@ p:last-child selector which set margin-bottom to 0.
 article.news.teaser .field--type-text-with-summary {
   margin-bottom: 10px;
 }
+
+/* TODO: Better place for that? */
+.sponsor-view .view-content .views-row {
+  margin-bottom: 5px;
+}
