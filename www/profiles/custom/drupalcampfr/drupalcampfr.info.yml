@@ -59,9 +59,6 @@ dependencies:
   - features
   - field_group
   - honeypot
-  - migrate_source_csv
-  - migrate_plus
-  - migrate_tools
 
   # Custom modules
   - drupalcampfr_core
@@ -71,7 +68,7 @@ dependencies:
   - drupalcampfr_page
   - drupalcampfr_homepage
   - drupalcampfr_social
-  - drupalcampfr_migrate
+  - drupalcampfr_sponsor
 
   # Development modules. Enabled in the install/update scripts.
 #  - dblog
@@ -80,6 +77,7 @@ dependencies:
 #  - field_ui
 #  - views_ui
 #  - webprofiler
+#  - drupalcampfr_migrate
 themes:
   - drupalcampfr_theme
   - seven

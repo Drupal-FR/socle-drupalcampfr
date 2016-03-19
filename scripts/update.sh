@@ -44,18 +44,26 @@ $DRUSH features-import -y --bundle=drupalcampfr core
 $DRUSH features-import -y --bundle=drupalcampfr site
 $DRUSH features-import -y --bundle=drupalcampfr user
 $DRUSH features-import -y --bundle=drupalcampfr news
+$DRUSH features-import -y --bundle=drupalcampfr page
+$DRUSH features-import -y --bundle=drupalcampfr sponsor
 # Waiting for https://www.drupal.org/node/2672490
 #$DRUSH features-import -y --bundle=drupalcampfr drupalcampfr
 
 # Translation updates.
-# TODO: Drush commands are broken.
+# TODO: Drush commands are broken. Repaired in 8.1.x
 #$DRUSH locale-check
 #$Drush locale-update
 
 # Import content.
-$DRUSH migrate-import drupalcampfr_page --update
-$DRUSH migrate-import drupalcampfr_news --update
-$DRUSH migrate-import drupalcampfr_menu_link --update
+# For update.sh import only content if the environment is dev to not risk
+# breaking prod.
+if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
+  $DRUSH en drupalcampfr_migrate -y
+  $DRUSH migrate-import drupalcampfr_page --update
+  $DRUSH migrate-import drupalcampfr_news --update
+  $DRUSH migrate-import drupalcampfr_sponsor --update
+  $DRUSH migrate-import drupalcampfr_menu_link --update
+fi
 
 # Back to the current directory.
 cd $CURRENT_PATH
