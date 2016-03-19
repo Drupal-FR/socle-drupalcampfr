@@ -16,7 +16,7 @@ id: attendance_certificate
 label: 'Drupalcampfr certificats de présence'
 module: views
 description: ''
-tag: 'Drupalcampfr'
+tag: Drupalcampfr
 base_table: contact_message
 base_field: id
 core: 8.x
