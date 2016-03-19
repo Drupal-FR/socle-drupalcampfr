@@ -18,5 +18,3 @@ dependencies:
   - telephone
   - text
 package: Drupalcampfr
-features:
-  bundle: drupalcampfr

@@ -12,7 +12,7 @@ dependencies:
     - node
     - user
 id: news
-label: Actualités
+label: 'Drupalcampfr actualités'
 module: views
 description: ''
 tag: 'Drupalcampfr'
