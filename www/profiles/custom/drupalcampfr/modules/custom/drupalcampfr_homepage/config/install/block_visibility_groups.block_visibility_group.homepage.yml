@@ -1,0 +1,16 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+id: homepage
+label: Homepage
+logic: and
+conditions:
+  3cc8d1b6-01b9-40de-9b00-d0d8f3ff076f:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+    uuid: 3cc8d1b6-01b9-40de-9b00-d0d8f3ff076f
+allow_other_conditions: false

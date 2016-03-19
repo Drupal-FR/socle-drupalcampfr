@@ -3,23 +3,23 @@ status: true
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.homepage
-    - views.view.news
+    - views.view.sponsor
   module:
     - block_visibility_groups
     - views
   theme:
     - drupalcampfr_theme
-id: views_block__news_block_home_news
+id: views_block__sponsor_block_homepage
 theme: drupalcampfr_theme
 region: content
 weight: -1
 provider: null
-plugin: 'views_block:news-block_home_news'
+plugin: 'views_block:sponsor-block_homepage'
 settings:
-  id: 'views_block:news-block_home_news'
+  id: 'views_block:sponsor-block_homepage'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
 visibility:

@@ -25,3 +25,5 @@ region_wells:
   footer: ''
 navbar_position: fixed-top
 breadcrumb_home: 1
+forms_smart_descriptions: 0
+tooltip_enabled: 0

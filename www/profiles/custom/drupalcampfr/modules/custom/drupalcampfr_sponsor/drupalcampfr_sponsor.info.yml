@@ -3,6 +3,7 @@ description: 'Provide Sponsor type de contenu and related configuration. '
 type: module
 core: 8.x
 dependencies:
+  - block_visibility_groups
   - contact
   - contact_storage
   - drupalcampfr_core

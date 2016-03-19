@@ -1,0 +1,25 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - system
+id: sponsor_sitewide
+label: 'Sponsor sitewide'
+logic: and
+conditions:
+  cd34525c-e4a4-4aa1-af09-9accc80c74d1:
+    id: node_type
+    bundles:
+      sponsor: sponsor
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: cd34525c-e4a4-4aa1-af09-9accc80c74d1
+  08a896a5-0450-4d62-be01-1bfb95171299:
+    id: request_path
+    pages: "<front>\r\nsponsors"
+    negate: true
+    context_mapping: {  }
+    uuid: 08a896a5-0450-4d62-be01-1bfb95171299
+allow_other_conditions: false
