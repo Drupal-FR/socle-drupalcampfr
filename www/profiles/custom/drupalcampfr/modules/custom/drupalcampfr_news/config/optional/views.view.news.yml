@@ -15,7 +15,7 @@ id: news
 label: 'Drupalcampfr actualités'
 module: views
 description: ''
-tag: 'Drupalcampfr'
+tag: Drupalcampfr
 base_table: node_field_data
 base_field: nid
 core: 8.x
@@ -240,31 +240,6 @@ display:
             label: ''
           entity_type: node
           plugin_id: entity_queue_position
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  feed_news:
-    display_plugin: feed
-    id: feed_news
-    display_title: Feed
-    position: 2
-    display_options:
-      display_extenders: {  }
-      row:
-        type: node_rss
-      pager:
-        type: some
-      style:
-        type: rss
-      path: actualites.xml
-      displays:
-        default: default
-        page_1: page_1
     cache_metadata:
       max-age: -1
       contexts:
