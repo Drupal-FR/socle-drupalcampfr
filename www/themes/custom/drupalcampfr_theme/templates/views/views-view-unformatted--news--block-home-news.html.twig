@@ -40,9 +40,20 @@ set row_classes = [
 {% for batched_rows in rows|without(0)|batch(3) %}
   <div class="row">
     {% for row in batched_rows %}
-      <div{{ row.attributes.addClass(row_classes) }}>
-        {{ row.content }}
-      </div>
+      {% if loop.length == 1 %}
+        <div{{ row.attributes.addClass(row_classes).addClass('col-md-offset-4') }}>
+          {{ row.content }}
+        </div>
+      {% elseif loop.length == 2 and loop.first %}
+        <div{{ row.attributes.addClass(row_classes).addClass('col-md-offset-2') }}>
+          {{ row.content }}
+        </div>
+      {% else %}
+        <div{{ row.attributes.addClass(row_classes) }}>
+          {{ row.content }}
+        </div>
+      {% endif %}
+
     {% endfor %}
   </div>
 {% endfor %}
