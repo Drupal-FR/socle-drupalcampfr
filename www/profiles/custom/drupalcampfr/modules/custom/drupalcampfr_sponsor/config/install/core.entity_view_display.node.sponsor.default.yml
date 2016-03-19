@@ -1,0 +1,58 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.sponsor.body
+    - field.field.node.sponsor.field_sponsor_level
+    - field.field.node.sponsor.field_sponsor_link
+    - field.field.node.sponsor.field_sponsor_logo
+    - image.style.max_1300x1300
+    - node.type.sponsor
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.sponsor.default
+targetEntityType: node
+bundle: sponsor
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  field_sponsor_level:
+    weight: 1
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_sponsor_link:
+    weight: 2
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_sponsor_logo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: max_1300x1300
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,22 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sponsor_level_status
+    - taxonomy.vocabulary.sponsor_levels
+id: taxonomy_term.sponsor_levels.field_sponsor_level_status
+field_name: field_sponsor_level_status
+entity_type: taxonomy_term
+bundle: sponsor_levels
+label: Statut
+description: 'Si le niveau de sponsor peut être sélectionné sur le formulaire de demande de sponsoring.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

@@ -1,0 +1,15 @@
+drupalcampfr_sponsor.main.sponsor:
+  title: 'Sponsors'
+  description: 'Tous nos sponsors.'
+  route_name: view.sponsor.page_sponsor
+  weight: 2
+  menu_name: main
+  expanded: true
+
+drupalcampfr_sponsor.footer_menu_3.sponsor:
+  title: 'Nos sponsors'
+  description: 'Tous nos sponsors.'
+  route_name: view.sponsor.page_sponsor
+  weight: 0
+  menu_name: footer-menu-3
+  expanded: true

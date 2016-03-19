@@ -1,0 +1,26 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.sponsor
+    - field.storage.contact_message.field_sponsor_level
+    - taxonomy.vocabulary.sponsor_levels
+id: contact_message.sponsor.field_sponsor_level
+field_name: field_sponsor_level
+entity_type: contact_message
+bundle: sponsor
+label: 'Niveau de sponsor'
+description: 'Sélectionnez le (ou les) niveau(x) de sponsor qui vous intéresse(nt) le plus.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sponsor_levels: sponsor_levels
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

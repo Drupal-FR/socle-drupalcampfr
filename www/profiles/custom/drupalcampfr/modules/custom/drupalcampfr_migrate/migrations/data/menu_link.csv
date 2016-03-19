@@ -23,9 +23,9 @@ Identifier,UUID,Title,URI,Parent,Weight,Menu name,Expanded,Enabled
 22,,Devenir volontaire,internal:/communaute/devenir-volontaire,18,5,main,1,1
 23,,Convaincre sa société,entity:node/8,18,6,main,1,1
 24,,Demander un certificat de présence,internal:/communaute/certificat-presence,18,7,main,1,1
-25,,Sponsors,entity:node/9,0,2,main,1,1
-26,,Forfaits,entity:node/9,25,2,main,1,1
-27,,Badges,entity:node/10,25,6,main,1,1
+25,,Forfaits,entity:node/9,drupalcampfr_sponsor.main.sponsor,2,main,1,1
+26,,Devenir sponsor,internal:/sponsors/devenir-sponsor,drupalcampfr_sponsor.main.sponsor,5,main,1,1
+27,,Badges,entity:node/10,drupalcampfr_sponsor.main.sponsor,6,main,1,1
 28,,Infos pratiques,entity:node/11,0,3,main,1,1
 29,,Lieu,entity:node/11,28,0,main,1,1
 30,,Accès,entity:node/12,28,1,main,1,1

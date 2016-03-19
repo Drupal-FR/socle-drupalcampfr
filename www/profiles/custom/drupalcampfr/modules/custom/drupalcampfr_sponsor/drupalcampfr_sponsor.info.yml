@@ -1,22 +1,24 @@
-name: Site
-description: 'Provide site components.'
+name: Sponsor
+description: 'Provide Sponsor type de contenu and related configuration. '
 type: module
 core: 8.x
 dependencies:
-  - block_content
-  - ckeditor
   - contact
   - contact_storage
   - drupalcampfr_core
   - drupalcampfr_site
-  - editor
   - field
-  - filter
-  - options
-  - rdf
+  - file
+  - image
+  - language
+  - link
+  - menu_ui
+  - node
+  - path
   - system
   - taxonomy
   - telephone
   - text
+  - user
   - views
 package: Drupalcampfr

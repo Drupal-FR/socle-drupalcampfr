@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations for drupalcampfr_sponsor module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function drupalcampfr_sponsor_form_contact_message_sponsor_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  /** @var Drupal\Core\Entity\Query\QueryFactory $entity_query */
+  $entity_query = \Drupal::getContainer()->get('entity.query');
+
+  // Remove the Preview button.
+  unset($form['actions']['preview']);
+
+  // Change submit label.
+  $form['actions']['submit']['#value'] = t('Submit');
+
+  // TODO: Display sponsor level price?
+  // Disable checkboxes where sponsor level is disabled.
+  if (isset($form['field_sponsor_level']) && isset($form['field_sponsor_level']['widget'])) {
+    $disabled_sponsor_levels_ids = $entity_query->get('taxonomy_term', 'AND')
+      ->condition('vid', 'sponsor_levels')
+      ->condition('field_sponsor_level_status', FALSE)
+      ->execute();
+
+    foreach ($disabled_sponsor_levels_ids as $sponsor_level_tid) {
+      $form['field_sponsor_level']['widget'][$sponsor_level_tid]['#disabled'] = TRUE;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sponsor_level_homepage
+    - taxonomy.vocabulary.sponsor_levels
+id: taxonomy_term.sponsor_levels.field_sponsor_level_homepage
+field_name: field_sponsor_level_homepage
+entity_type: taxonomy_term
+bundle: sponsor_levels
+label: 'Apparaît en page d''accueil'
+description: 'Si les sponsors de ce niveau apparaissent en page d''accueil ou non.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Apparaît en page d''accueil'
+  off_label: 'N''apparaît pas en page d''accueil'
+field_type: boolean

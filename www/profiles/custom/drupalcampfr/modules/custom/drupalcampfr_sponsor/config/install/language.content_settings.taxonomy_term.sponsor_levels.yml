@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sponsor_levels
+id: taxonomy_term.sponsor_levels
+target_entity_type_id: taxonomy_term
+target_bundle: sponsor_levels
+default_langcode: site_default
+language_alterable: false

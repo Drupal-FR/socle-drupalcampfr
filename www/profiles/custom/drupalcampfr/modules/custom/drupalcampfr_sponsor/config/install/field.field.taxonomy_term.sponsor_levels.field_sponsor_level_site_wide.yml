@@ -1,0 +1,22 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sponsor_level_site_wide
+    - taxonomy.vocabulary.sponsor_levels
+id: taxonomy_term.sponsor_levels.field_sponsor_level_site_wide
+field_name: field_sponsor_level_site_wide
+entity_type: taxonomy_term
+bundle: sponsor_levels
+label: 'Apparaît sur les pages du site'
+description: 'Si les sponsors de ce niveau apparaissent sur les pages du site, autres que la page d''accueil et la page d''un autre sponsor.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Apparaît sur les pages du site'
+  off_label: 'N''apparaît pas sur les pages du site'
+field_type: boolean

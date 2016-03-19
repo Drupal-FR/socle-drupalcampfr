@@ -1,0 +1,8 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Niveaux de sponsor'
+vid: sponsor_levels
+description: ''
+hierarchy: 0
+weight: 0
