@@ -20,7 +20,7 @@ region_wells:
   highlighted: ''
   help: ''
   content: ''
-  sidebar_first: well
+  sidebar_first: ''
   sidebar_second: ''
   footer: ''
 navbar_position: fixed-top

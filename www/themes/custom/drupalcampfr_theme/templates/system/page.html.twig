@@ -63,7 +63,6 @@
 #}
 {% extends "@bootstrap/system/page.html.twig" %}
 
-{% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
@@ -75,6 +74,7 @@
       ]
     %}
     <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+      {# Override: Add div.container #}
       <div class="container">
         <div class="navbar-header">
           {{ page.navigation }}
@@ -97,5 +97,88 @@
         {% endif %}
       </div>
     </header>
-  {% endblock %}
+  {% endblock navbar %}
 {% endif %}
+
+{# Main #}
+{% block main %}
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+    <div class="row">
+
+      {# Header #}
+      {% if page.header %}
+        {% block header %}
+          <div class="col-sm-12" role="heading">
+            {{ page.header }}
+          </div>
+        {% endblock header %}
+      {% endif %}
+
+      {# Override: Add class col-md-push-3 for mobile. #}
+      {# Content #}
+      {%
+      set content_classes = [
+      page.sidebar_first and page.sidebar_second ? 'col-sm-6 col-md-push-3',
+      page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9 col-md-push-3',
+      page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
+      page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12',
+      ]
+      %}
+      <section{{ content_attributes.addClass(content_classes) }}>
+
+        {# Highlighted #}
+        {% if page.highlighted %}
+          {% block highlighted %}
+            <div class="highlighted">{{ page.highlighted }}</div>
+          {% endblock highlighted %}
+        {% endif %}
+
+        {# Breadcrumbs #}
+        {% if breadcrumb %}
+          {% block breadcrumb %}
+            {{ breadcrumb }}
+          {% endblock breadcrumb %}
+        {% endif %}
+
+        {# Action Links #}
+        {% if action_links %}
+          {% block action_links %}
+            <ul class="action-links">{{ action_links }}</ul>
+          {% endblock action_links %}
+        {% endif %}
+
+        {# Help #}
+        {% if page.help %}
+          {% block help %}
+            {{ page.help }}
+          {% endblock help %}
+        {% endif %}
+
+        {# Content #}
+        {% block content %}
+          <a id="main-content"></a>
+          {{ page.content }}
+        {% endblock content %}
+      </section>
+
+      {# Override: Put sidebar_first after content for mobile. #}
+      {# Sidebar First #}
+      {% if page.sidebar_first %}
+        {% block sidebar_first %}
+          <aside class="col-sm-3 col-md-pull-9" role="complementary">
+            {{ page.sidebar_first }}
+          </aside>
+        {% endblock sidebar_first %}
+      {% endif %}
+
+      {# Sidebar Second #}
+      {% if page.sidebar_second %}
+        {% block sidebar_second %}
+          <aside class="col-sm-3" role="complementary">
+            {{ page.sidebar_second }}
+          </aside>
+        {% endblock sidebar_second %}
+      {% endif %}
+    </div>
+  </div>
+{% endblock main %}
