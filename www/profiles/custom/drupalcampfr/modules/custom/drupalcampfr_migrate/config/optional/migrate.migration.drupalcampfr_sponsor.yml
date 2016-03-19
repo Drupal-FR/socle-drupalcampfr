@@ -23,7 +23,7 @@ source:
     -
       published: Published
     -
-      link_url: 'Link URL'
+      link_uri: 'Link URL'
     -
       link_title: 'Link title'
     -
@@ -39,6 +39,10 @@ process:
       plugin: skip_on_empty
       method: process
       source: level
+    -
+      plugin: explode
+      source: level
+      delimiter: ;
     -
       plugin: migration
       migration: drupalcampfr_sponsor_level
