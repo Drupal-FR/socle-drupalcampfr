@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - drupalcampfr_core
+    - drupalcampfr_sponsor
     - menu_link_content
     - migrate_source_csv
     - node

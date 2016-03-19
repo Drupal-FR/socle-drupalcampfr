@@ -55,6 +55,7 @@ fi
 $DRUSH en drupalcampfr_migrate -y
 $DRUSH migrate-import drupalcampfr_page --update
 $DRUSH migrate-import drupalcampfr_news --update
+$DRUSH migrate-import drupalcampfr_sponsor_level --update
 $DRUSH migrate-import drupalcampfr_sponsor --update
 $DRUSH migrate-import drupalcampfr_menu_link --update
 

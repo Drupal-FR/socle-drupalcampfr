@@ -1,0 +1,55 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - drupalcampfr_sponsor
+    - migrate_source_csv
+    - node
+id: drupalcampfr_sponsor
+migration_tags:
+  - drupalcampfr
+label: 'Sponsor import'
+source:
+  plugin: csv
+  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/sponsor.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      id: Identifier
+    -
+      title: Title
+    -
+      published: Published
+    -
+      link_url: 'Link URL'
+    -
+      link_title: 'Link title'
+    -
+      level: 'Level'
+process:
+  type:
+    plugin: default_value
+    default_value: sponsor
+  title: title
+  status: published
+  field_sponsor_level:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: level
+    -
+      plugin: migration
+      migration: drupalcampfr_sponsor_level
+  'field_sponsor_link/uri': link_uri
+  'field_sponsor_link/title': link_title
+destination:
+  plugin: 'entity:node'
+  type: sponsor
+  bundle: sponsor
+template: null
+migration_dependencies:
+  required:
+    - drupalcampfr_sponsor_level
+migration_group: drupalcampfr
