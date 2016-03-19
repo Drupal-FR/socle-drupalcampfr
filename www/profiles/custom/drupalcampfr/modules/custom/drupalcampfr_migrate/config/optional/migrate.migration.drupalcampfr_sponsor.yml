@@ -49,7 +49,5 @@ destination:
   type: sponsor
   bundle: sponsor
 template: null
-migration_dependencies:
-  required:
-    - drupalcampfr_sponsor_level
+migration_dependencies: {}
 migration_group: drupalcampfr
