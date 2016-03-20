@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "20870ad916ad8aa9701aa3ddfca32765",
-    "content-hash": "969f5e9de3378303798c453c17138cee",
+    "hash": "477ab11da21760b74655eaa03016c233",
+    "content-hash": "92186259064d7c4fa88cdcc0ff84fadc",
     "packages": [
         {
             "name": "commerceguys/addressing",
@@ -1068,6 +1068,13 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-3.x": "8.3.x-dev"
+                },
+                "patches_applied": {
+                    "Required span displayed even if the field not required": "https://www.drupal.org/files/issues/bootstrap-required_span_displayed-2687999-2.patch",
+                    "Views table header not sortable": "https://www.drupal.org/files/issues/bootstrap-views_table_header_sort-2690921-2.patch",
+                    "Required span not displayed in bootstrap panel": "https://www.drupal.org/files/issues/bootstrap-required_not_displayed_panel-2691007-2.patch",
+                    "Add glyphicon on preview": "https://www.drupal.org/files/issues/bootstrap-preview_glyphicon-2691029-2.patch",
+                    "Description popover even if popover disabled": "https://www.drupal.org/files/issues/bootstrap-popover_even_if_disabled-2691039-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -3739,20 +3746,20 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.3.3",
+            "version": "1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "4d54fde709664562eb63356f0250d527824d05de"
+                "reference": "b1d59735b672865dbeb930805029c24f226e3e77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/4d54fde709664562eb63356f0250d527824d05de",
-                "reference": "4d54fde709664562eb63356f0250d527824d05de",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/b1d59735b672865dbeb930805029c24f226e3e77",
+                "reference": "b1d59735b672865dbeb930805029c24f226e3e77",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4",
+                "php": "^5.4 || ^7.0",
                 "psr/http-message": "~1.0"
             },
             "provide": {
@@ -3785,7 +3792,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2016-01-04 21:37:32"
+            "time": "2016-03-17 18:02:05"
         },
         {
             "name": "zendframework/zend-escaper",
@@ -3988,7 +3995,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/examples.git",
-                "reference": "ad74a3bdd4e154fdd16b36e100b64eb116288d46"
+                "reference": "138e774f7762aa8b25cdedf6333acfb618a0995c"
             },
             "require": {
                 "drupal/core": "8.*",
@@ -4037,7 +4044,7 @@
             ],
             "description": "A variety of example code for you to learn from and hack upon.",
             "homepage": "https://www.drupal.org/project/examples",
-            "time": "2016-03-13 18:18:52"
+            "time": "2016-03-17 17:16:37"
         },
         {
             "name": "drupal/pistachio",
