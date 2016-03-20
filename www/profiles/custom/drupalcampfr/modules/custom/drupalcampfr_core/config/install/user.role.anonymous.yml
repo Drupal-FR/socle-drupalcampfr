@@ -10,3 +10,4 @@ permissions:
   - 'use text format restricted_html'
   - 'access content'
   - 'search content'
+  - 'access user profiles'
