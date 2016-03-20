@@ -1,0 +1,98 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - drupalcampfr_session
+    - migrate_source_csv
+    - node
+id: drupalcampfr_session
+migration_tags:
+  - drupalcampfr
+label: 'Session import'
+source:
+  plugin: csv
+  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/session.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      id: Identifier
+    -
+      title: Title
+    -
+      published: Published
+    -
+      level: Level
+    -
+      track: Track
+    -
+      length: Length
+    -
+      day: Day
+    -
+      start_date: Start date
+    -
+      end_date: End date
+    -
+      room: Room
+    -
+      body_value: Body
+    -
+      body_format: 'Body format'
+process:
+  type:
+    plugin: default_value
+    default_value: session
+  title: title
+  'body/value': body_value
+  'body/format': body_format
+  field_session_level:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: level
+    -
+      plugin: migration
+      migration: drupalcampfr_session_level
+  field_session_track:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: track
+    -
+      plugin: migration
+      migration: drupalcampfr_session_track
+  field_session_length:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: length
+    -
+      plugin: migration
+      migration: drupalcampfr_session_length
+  field_session_room:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: room
+    -
+      plugin: migration
+      migration: drupalcampfr_session_room
+  field_session_day: day
+  field_session_date_start:
+      plugin: callback
+      callable: strtotime
+      source: start_date
+  field_session_date_end:
+      plugin: callback
+      callable: strtotime
+      source: end_date
+  status: published
+destination:
+  plugin: 'entity:node'
+  type: session
+  bundle: session
+template: null
+migration_dependencies: {  }
+migration_group: drupalcampfr

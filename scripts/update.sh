@@ -46,6 +46,7 @@ $DRUSH features-import -y --bundle=drupalcampfr user
 $DRUSH features-import -y --bundle=drupalcampfr news
 $DRUSH features-import -y --bundle=drupalcampfr page
 $DRUSH features-import -y --bundle=drupalcampfr sponsor
+$DRUSH features-import -y --bundle=drupalcampfr session
 # Waiting for https://www.drupal.org/node/2672490
 #$DRUSH features-import -y --bundle=drupalcampfr drupalcampfr
 
@@ -63,6 +64,11 @@ if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
   $DRUSH migrate-import drupalcampfr_news --update
   $DRUSH migrate-import drupalcampfr_sponsor_level --update
   $DRUSH migrate-import drupalcampfr_sponsor --update
+  $DRUSH migrate-import drupalcampfr_session_level --update
+  $DRUSH migrate-import drupalcampfr_session_track --update
+  $DRUSH migrate-import drupalcampfr_session_length --update
+  $DRUSH migrate-import drupalcampfr_session_room --update
+  $DRUSH migrate-import drupalcampfr_session --update
   $DRUSH migrate-import drupalcampfr_menu_link --update
 fi
 

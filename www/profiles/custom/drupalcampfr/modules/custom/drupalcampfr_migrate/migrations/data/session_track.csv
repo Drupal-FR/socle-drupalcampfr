@@ -1,0 +1,13 @@
+Identifier,Name,Weight
+1,Commerce,0
+2,Communauté,1
+3,Découverte,2
+4,Développement,3
+5,"Étude de cas, Retours d'expérience",4
+6,"Gestion de projet, Méthodologie",5
+7,Industrialisation,6
+8,Performances,7
+9,Présentation de modules,8
+10,Site building,9
+11,"Theming, Mobile, Design",10
+12,Autre,11

@@ -1,0 +1,35 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - drupalcampfr_session
+    - migrate_source_csv
+    - taxonomy
+id: drupalcampfr_session_track
+migration_tags:
+  - drupalcampfr
+label: 'Session track import'
+source:
+  plugin: csv
+  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/session_track.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      id: Identifier
+    -
+      name: Name
+    -
+      weight: Weight
+process:
+    vid:
+      plugin: default_value
+      default_value: session_tracks
+    name: name
+    weight: weight
+destination:
+  plugin: 'entity:taxonomy_term'
+template: null
+migration_dependencies: {  }
+migration_group: drupalcampfr

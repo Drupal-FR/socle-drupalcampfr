@@ -57,6 +57,11 @@ $DRUSH migrate-import drupalcampfr_page --update
 $DRUSH migrate-import drupalcampfr_news --update
 $DRUSH migrate-import drupalcampfr_sponsor_level --update
 $DRUSH migrate-import drupalcampfr_sponsor --update
+$DRUSH migrate-import drupalcampfr_session_level --update
+$DRUSH migrate-import drupalcampfr_session_track --update
+$DRUSH migrate-import drupalcampfr_session_length --update
+$DRUSH migrate-import drupalcampfr_session_room --update
+$DRUSH migrate-import drupalcampfr_session --update
 $DRUSH migrate-import drupalcampfr_menu_link --update
 
 # Back to the current directory.
