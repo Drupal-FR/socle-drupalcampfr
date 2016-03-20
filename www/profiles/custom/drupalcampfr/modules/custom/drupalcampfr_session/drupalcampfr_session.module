@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations for drupalcampfr_session module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Hide fields to users.
+ */
+function drupalcampfr_session_form_node_session_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  drupalcampfr_session_session_hide_fields_to_user($form, $form_state, $form_id);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Hide fields to users.
+ */
+function drupalcampfr_session_form_node_session_edit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  drupalcampfr_session_session_hide_fields_to_user($form, $form_state, $form_id);
+}
+
+/**
+ * Helper function to hide fields on session forms.
+ */
+function drupalcampfr_session_session_hide_fields_to_user(&$form, FormStateInterface $form_state, $form_id) {
+  $current_user = \Drupal::currentUser();
+  if (!$current_user->hasPermission('administer nodes')) {
+    $form['field_session_day']['#access'] = FALSE;
+    $form['field_session_status']['#access'] = FALSE;
+    $form['field_session_date_start']['#access'] = FALSE;
+    $form['field_session_date_end']['#access'] = FALSE;
+    $form['field_session_room']['#access'] = FALSE;
+    $form['revision_log']['#access'] = FALSE;
+  }
+}
