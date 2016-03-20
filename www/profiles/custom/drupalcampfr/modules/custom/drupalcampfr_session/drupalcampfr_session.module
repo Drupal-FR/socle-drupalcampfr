@@ -23,6 +23,10 @@ function drupalcampfr_session_form_node_session_form_alter(&$form, FormStateInte
  */
 function drupalcampfr_session_form_node_session_edit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   drupalcampfr_session_session_hide_fields_to_user($form, $form_state, $form_id);
+
+  // Add classes for delete link.
+  $form['actions']['delete']['#attributes']['class'][] = 'btn';
+  $form['actions']['delete']['#attributes']['class'][] = 'btn-danger';
 }
 
 /**
