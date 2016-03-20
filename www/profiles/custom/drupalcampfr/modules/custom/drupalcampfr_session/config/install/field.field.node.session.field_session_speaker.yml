@@ -10,7 +10,7 @@ entity_type: node
 bundle: session
 label: Présentateur(s)/rice(s)
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

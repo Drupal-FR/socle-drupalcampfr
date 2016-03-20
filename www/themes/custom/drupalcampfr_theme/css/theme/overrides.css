@@ -1,8 +1,8 @@
 
-/*
-As the field is wrapped in a div, CSS overrides of the bootstrap theme has a
-p:last-child selector which set margin-bottom to 0.
-*/
+/**
+ * As the field is wrapped in a div, CSS overrides of the bootstrap theme has a
+ * p:last-child selector which set margin-bottom to 0.
+ */
 article.news.teaser .field--type-text-with-summary {
   margin-bottom: 10px;
 }
@@ -10,4 +10,31 @@ article.news.teaser .field--type-text-with-summary {
 /* TODO: Better place for that? */
 .sponsor-view .view-content .views-row {
   margin-bottom: 5px;
+}
+
+/* TODO: Better place for that? */
+/**
+ * Session.
+ */
+.session.full .row.well {
+  margin-left: 0;
+  margin-right: 0;
+}
+/**
+ * Session: speaker field.
+ */
+.field--name-field-session-speaker .field--item {
+  display: inline;
+}
+.field--name-field-session-speaker .field--item:not(:last-child)::after {
+  content: ",";
+}
+/**
+ * Session: day, start date and end date fields.
+ */
+.field--name-field-session-day,
+.field--name-field-session-day .field--item,
+.field--name-field-session-date-start,
+.field--name-field-session-date-end {
+  display: inline;
 }

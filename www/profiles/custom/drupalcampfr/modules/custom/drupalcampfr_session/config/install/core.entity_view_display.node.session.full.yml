@@ -41,18 +41,18 @@ content:
   field_session_date_end:
     type: datetime_default
     weight: 6
-    label: inline
+    label: hidden
     settings:
       timezone_override: ''
-      format_type: html_time
+      format_type: html_time_without_second
     third_party_settings: {  }
   field_session_date_start:
     type: datetime_default
     weight: 5
-    label: inline
+    label: hidden
     settings:
       timezone_override: ''
-      format_type: html_time
+      format_type: html_time_without_second
     third_party_settings: {  }
   field_session_day:
     type: list_default

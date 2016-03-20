@@ -11,9 +11,10 @@ use Drupal\Component\Render\FormattableMarkup;
 
 /**
  * Implements hook_preprocess_menu__account().
+ *
+ * Add icon on user link.
  */
 function drupalcampfr_theme_preprocess_menu__account(array &$variables) {
-  // Add glyphicon on user link.
   if (isset($variables['items']['drupalcampfr_user.account.compte'])) {
     $variables['items']['drupalcampfr_user.account.compte']['title'] = new FormattableMarkup(
       '<span class="glyphicon glyphicon-user" aria-hidden="true"></span> @original_title',
@@ -26,9 +27,10 @@ function drupalcampfr_theme_preprocess_menu__account(array &$variables) {
 
 /**
  * Implements hook_preprocess_field__field_news_link().
+ *
+ * Add classes to link.
  */
 function drupalcampfr_theme_preprocess_field__field_news_link(array &$variables) {
-  // Add classes to link.
   if (isset($variables['items']) && is_array($variables['items'])) {
     foreach ($variables['items'] as $key => $item) {
       $variables['items'][$key]['content']['#options']['attributes'] = array(
@@ -38,5 +40,34 @@ function drupalcampfr_theme_preprocess_field__field_news_link(array &$variables)
         ),
       );
     }
+  }
+}
+
+/**
+ * Implements hook_preprocess_field__node__session().
+ */
+function drupalcampfr_theme_preprocess_field__node__session(array &$variables) {
+  $field_name = $variables['field_name'];
+
+  if ($field_name == 'field_session_day') {
+    // Change field session day label for display.
+    $variables['label'] = t('Créneaux horaires');
+  }
+
+  // Add icons on labels.
+  $iconised_fields = array(
+    'field_session_speaker' => 'bullhorn',
+    'field_session_level' => 'star',
+    'field_session_track' => 'tag',
+    'field_session_length' => 'time',
+    'field_session_day' => 'calendar',
+    'field_session_room' => 'map-marker',
+  );
+
+  if (array_key_exists($field_name, $iconised_fields)) {
+    $variables['label'] = new FormattableMarkup('<i class="glyphicon glyphicon-:glyphicon" aria-hidden="true"></i> @label', array(
+      '@label' => $variables['label'],
+      ':glyphicon' => $iconised_fields[$field_name],
+    ));
   }
 }

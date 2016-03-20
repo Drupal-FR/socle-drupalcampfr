@@ -1,0 +1,7 @@
+langcode: fr
+status: true
+dependencies: {  }
+id: html_time_without_second
+label: 'Heure HTML sans seconde'
+locked: false
+pattern: 'H:i'
