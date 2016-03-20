@@ -1,0 +1,11 @@
+drupalcampfr_site.admin.attendance_certificates:
+  title: 'Certificats de présence'
+  route_name: view.attendance_certificate.page
+  base_route: entity.user.collection
+  weight: 15
+
+drupalcampfr_site.admin.volunteer:
+  title: 'Volontaires'
+  route_name: view.volunteer.page
+  base_route: entity.user.collection
+  weight: 20

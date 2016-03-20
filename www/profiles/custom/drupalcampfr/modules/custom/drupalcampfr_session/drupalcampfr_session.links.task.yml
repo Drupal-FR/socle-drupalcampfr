@@ -1,0 +1,5 @@
+drupalcampfr_session.admin.session_admin:
+  title: 'Sessions'
+  route_name: view.session_admin.page
+  base_route: system.admin_content
+  weight: 5
