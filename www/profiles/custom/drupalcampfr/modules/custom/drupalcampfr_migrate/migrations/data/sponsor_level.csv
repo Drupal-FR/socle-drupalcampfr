@@ -1,6 +1,6 @@
-Identifier,Name,Weight,Price,Displayed on homepage,Displayed site wide,Status,CSS class
-1,Platine,0,0,1,1,1,
-2,Or,1,0,1,1,1,
-3,Argent,2,0,0,1,1,
-4,Bronze,3,0,0,0,1,
-5,Sprint,4,0,0,0,1,
+Identifier,Name,Weight,Displayed on homepage,Displayed site wide,Status
+1,Platine,0,1,1,1
+2,Or,1,1,1,1
+3,Argent,2,0,1,1
+4,Bronze,3,0,0,1
+5,Sprint,4,0,0,1

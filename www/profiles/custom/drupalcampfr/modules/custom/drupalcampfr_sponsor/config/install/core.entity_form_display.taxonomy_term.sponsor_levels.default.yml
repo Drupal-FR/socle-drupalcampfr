@@ -2,9 +2,7 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.sponsor_levels.field_sponsor_level_class
     - field.field.taxonomy_term.sponsor_levels.field_sponsor_level_homepage
-    - field.field.taxonomy_term.sponsor_levels.field_sponsor_level_price
     - field.field.taxonomy_term.sponsor_levels.field_sponsor_level_site_wide
     - field.field.taxonomy_term.sponsor_levels.field_sponsor_level_status
     - taxonomy.vocabulary.sponsor_levels
@@ -23,25 +21,12 @@ content:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
-  field_sponsor_level_class:
-    weight: 6
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
   field_sponsor_level_homepage:
     weight: 3
     settings:
       display_label: false
     third_party_settings: {  }
     type: boolean_checkbox
-  field_sponsor_level_price:
-    weight: 2
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
   field_sponsor_level_site_wide:
     weight: 4
     settings:

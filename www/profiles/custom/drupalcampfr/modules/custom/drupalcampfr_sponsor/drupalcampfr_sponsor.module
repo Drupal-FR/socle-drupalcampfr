@@ -20,7 +20,6 @@ function drupalcampfr_sponsor_form_contact_message_sponsor_form_alter(&$form, Fo
   // Change submit label.
   $form['actions']['submit']['#value'] = t('Submit');
 
-  // TODO: Display sponsor level price?
   // Disable checkboxes where sponsor level is disabled.
   if (isset($form['field_sponsor_level']) && isset($form['field_sponsor_level']['widget'])) {
     $disabled_sponsor_levels_ids = $entity_query->get('taxonomy_term', 'AND')

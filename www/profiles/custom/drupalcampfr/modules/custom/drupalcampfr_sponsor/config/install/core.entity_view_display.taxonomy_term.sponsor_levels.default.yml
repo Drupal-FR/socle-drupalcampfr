@@ -2,9 +2,7 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.sponsor_levels.field_sponsor_level_class
     - field.field.taxonomy_term.sponsor_levels.field_sponsor_level_homepage
-    - field.field.taxonomy_term.sponsor_levels.field_sponsor_level_price
     - field.field.taxonomy_term.sponsor_levels.field_sponsor_level_site_wide
     - field.field.taxonomy_term.sponsor_levels.field_sponsor_level_status
     - taxonomy.vocabulary.sponsor_levels
@@ -15,9 +13,7 @@ mode: default
 content: {  }
 hidden:
   description: true
-  field_sponsor_level_class: true
   field_sponsor_level_homepage: true
-  field_sponsor_level_price: true
   field_sponsor_level_site_wide: true
   field_sponsor_level_status: true
   langcode: true
