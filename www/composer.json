@@ -65,7 +65,8 @@
         "Remove obsolete 'settings' and 'weights' export keys from features bundle": "https://www.drupal.org/files/issues/2653124-6.patch"
       },
       "drupal/bootstrap": {
-        "Required span displayed even if the field not required": "https://www.drupal.org/files/issues/bootstrap-required_span_displayed-2687999-2.patch"
+        "Required span displayed even if the field not required": "https://www.drupal.org/files/issues/bootstrap-required_span_displayed-2687999-2.patch",
+        "Views table header not sortable": "https://www.drupal.org/files/issues/bootstrap-views_table_header_sort-2690921-2.patch"
       }
     }
   }
