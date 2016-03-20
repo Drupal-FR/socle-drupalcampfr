@@ -1,0 +1,26 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_attachment
+    - node.type.session
+  module:
+    - file
+id: node.session.field_session_attachment
+field_name: field_session_attachment
+entity_type: node
+bundle: session
+label: 'Pièces jointes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: sessions
+  file_extensions: 'pdf odp ppt pptx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

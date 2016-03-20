@@ -1,0 +1,8 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Salles de session'
+vid: session_rooms
+description: ''
+hierarchy: 0
+weight: 0

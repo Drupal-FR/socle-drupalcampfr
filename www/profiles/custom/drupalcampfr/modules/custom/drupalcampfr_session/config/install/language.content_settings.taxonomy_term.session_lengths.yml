@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_lengths
+id: taxonomy_term.session_lengths
+target_entity_type_id: taxonomy_term
+target_bundle: session_lengths
+default_langcode: site_default
+language_alterable: false

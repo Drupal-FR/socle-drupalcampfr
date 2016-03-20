@@ -1,0 +1,26 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_length
+    - node.type.session
+    - taxonomy.vocabulary.session_lengths
+id: node.session.field_session_length
+field_name: field_session_length
+entity_type: node
+bundle: session
+label: Durée
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      session_lengths: session_lengths
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

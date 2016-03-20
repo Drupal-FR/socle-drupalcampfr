@@ -1,0 +1,26 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_track
+    - node.type.session
+    - taxonomy.vocabulary.session_tracks
+id: node.session.field_session_track
+field_name: field_session_track
+entity_type: node
+bundle: session
+label: Thème
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      session_tracks: session_tracks
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

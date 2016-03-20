@@ -10,3 +10,7 @@ permissions:
   - 'use text format basic_html'
   - 'access content'
   - 'search content'
+  - 'view own unpublished content'
+  - 'create session content'
+  - 'delete own session content'
+  - 'edit own session content'

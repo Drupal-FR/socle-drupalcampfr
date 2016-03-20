@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_tracks
+id: taxonomy_term.session_tracks
+target_entity_type_id: taxonomy_term
+target_bundle: session_tracks
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,47 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.session.body
+    - field.field.node.session.field_session_attachment
+    - field.field.node.session.field_session_date_end
+    - field.field.node.session.field_session_date_start
+    - field.field.node.session.field_session_day
+    - field.field.node.session.field_session_length
+    - field.field.node.session.field_session_level
+    - field.field.node.session.field_session_room
+    - field.field.node.session.field_session_speaker
+    - field.field.node.session.field_session_status
+    - field.field.node.session.field_session_track
+    - node.type.session
+  module:
+    - text
+    - user
+id: node.session.default
+targetEntityType: node
+bundle: session
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_session_attachment: true
+  field_session_date_end: true
+  field_session_date_start: true
+  field_session_day: true
+  field_session_length: true
+  field_session_level: true
+  field_session_room: true
+  field_session_speaker: true
+  field_session_status: true
+  field_session_track: true
+  langcode: true

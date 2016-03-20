@@ -1,0 +1,8 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Durées de session'
+vid: session_lengths
+description: ''
+hierarchy: 0
+weight: 0
