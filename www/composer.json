@@ -19,7 +19,7 @@
     "composer/installers": "^1.0.21",
     "cweagans/composer-patches": "~1.0",
     "drupal/core": "8.0.5",
-    "drush/drush": "8.0.3",
+    "drush/drush": "8.0.5",
     "drupal/address": "8.1.0-beta2",
     "drupal/admin_toolbar": "8.1.14",
     "drupal/block_visibility_groups": "8.1.0",
