@@ -65,4 +65,6 @@ destination:
   bundle: news
 template: null
 migration_dependencies: {  }
-migration_group: drupalcampfr
+third_party_settings:
+  migrate_plus:
+    migration_group: drupalcampfr
