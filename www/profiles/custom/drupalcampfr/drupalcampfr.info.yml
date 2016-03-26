@@ -71,6 +71,7 @@ dependencies:
   - drupalcampfr_social
   - drupalcampfr_sponsor
   - drupalcampfr_session
+  - drupalcampfr_newsletter
 
   # Development modules. Enabled in the install/update scripts.
 #  - dblog

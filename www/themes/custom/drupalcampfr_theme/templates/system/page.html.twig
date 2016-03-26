@@ -164,8 +164,17 @@
       {# Override: Put sidebar_first after content for mobile. #}
       {# Sidebar First #}
       {% if page.sidebar_first %}
+        {%
+        set sidebar_first_classes = [
+        'col-sm-3',
+        page.content and page.sidebar_second ? 'col-md-pull-6',
+        page.content and page.sidebar_second is empty ? 'col-md-pull-9',
+        page.sidebar_second and page.content is empty ? '',
+        page.content is empty and page.sidebar_second is empty ? '',
+        ]
+        %}
         {% block sidebar_first %}
-          <aside class="col-sm-3 col-md-pull-9" role="complementary">
+          <aside class="{{ sidebar_first_classes|join(' ') }}" role="complementary">
             {{ page.sidebar_first }}
           </aside>
         {% endblock sidebar_first %}
@@ -178,6 +187,14 @@
             {{ page.sidebar_second }}
           </aside>
         {% endblock sidebar_second %}
+      {% endif %}
+
+      {% if page.content_bottom %}
+        {% block content_bottom %}
+          <div class="col-sm-12" role="complementary">
+            {{ page.content_bottom }}
+          </div>
+        {% endblock content_bottom %}
       {% endif %}
     </div>
   </div>

@@ -1,0 +1,25 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - drupalcampfr_newsletter
+  theme:
+    - drupalcampfr_theme
+id: newslettersubscriptionblock
+theme: drupalcampfr_theme
+region: content_bottom
+weight: -1
+provider: null
+plugin: newsletter_subscription_block
+settings:
+  id: newsletter_subscription_block
+  label: 'S''inscrire à notre newsletter'
+  provider: drupalcampfr_newsletter
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
