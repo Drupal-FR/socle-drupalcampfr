@@ -37,7 +37,6 @@
     "drupal/profile": "8.1.0-alpha3",
     "drupal/state_machine": "8.1.0-beta2",
     "drupal/bootstrap": "8.3.0-beta3",
-    "drupal/twitter": "8.1.*",
     "abraham/twitteroauth": "0.6.2"
   },
   "require-dev": {
