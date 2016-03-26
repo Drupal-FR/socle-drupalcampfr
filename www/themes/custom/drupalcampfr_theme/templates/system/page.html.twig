@@ -174,7 +174,7 @@
         ]
         %}
         {% block sidebar_first %}
-          <aside class="{{ sidebar_first_classes|join(' ') }}" role="complementary">
+          <aside class="{{ sidebar_first_classes|safe_join(' ') }}" role="complementary">
             {{ page.sidebar_first }}
           </aside>
         {% endblock sidebar_first %}

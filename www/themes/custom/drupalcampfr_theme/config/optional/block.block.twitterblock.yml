@@ -1,0 +1,27 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.homepage
+  module:
+    - block_visibility_groups
+    - drupalcampfr_social
+  theme:
+    - drupalcampfr_theme
+id: twitterblock
+theme: drupalcampfr_theme
+region: content
+weight: -2
+provider: null
+plugin: twitter_block
+settings:
+  id: twitter_block
+  label: 'Derniers tweets'
+  provider: drupalcampfr_social
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: homepage
+    context_mapping: {  }

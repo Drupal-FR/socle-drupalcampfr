@@ -1,0 +1,4 @@
+services:
+  drupalcampfr_social.twitter:
+    class: Drupal\drupalcampfr_social\Service\TwitterService
+    arguments: ["@config.factory"]

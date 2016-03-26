@@ -1,0 +1,9 @@
+drupalcampfr_social.config:
+  path: '/admin/config/drupalcampfr/social'
+  defaults:
+    _form: '\Drupal\drupalcampfr_social\Form\AdminForm'
+    _title: 'Social'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

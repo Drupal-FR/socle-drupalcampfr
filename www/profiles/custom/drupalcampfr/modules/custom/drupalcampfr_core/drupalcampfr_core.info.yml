@@ -16,3 +16,4 @@ dependencies:
   - telephone
   - user
 package: Drupalcampfr
+configure: drupalcampfr_core.config_list

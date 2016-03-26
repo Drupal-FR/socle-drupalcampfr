@@ -2,4 +2,4 @@ name: Newsletter
 type: module
 description: Provide Mailchimp newsletter block.
 core: 8.x
-package: drupalcampfr
+package: Drupalcampfr

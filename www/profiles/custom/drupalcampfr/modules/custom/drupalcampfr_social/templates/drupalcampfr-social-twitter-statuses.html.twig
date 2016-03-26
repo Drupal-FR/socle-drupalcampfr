@@ -1,0 +1,17 @@
+<div class="row">
+  {% for status in statuses %}
+    <div class="col-md-4">
+      {{ status.text }}
+      <div class="row">
+        <div class="col-md-3">
+          <img src="{{ status.user.profile_image_url_https }}"
+               class="img-circle pull-left" height="50" width="50">
+        </div>
+        <div class="col-md-9">
+          <h4>{{ status.user.name }}</h4>
+          <span>{{ status.created_at }}</span>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

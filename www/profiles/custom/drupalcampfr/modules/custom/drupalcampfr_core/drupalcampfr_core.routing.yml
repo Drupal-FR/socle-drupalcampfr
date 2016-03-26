@@ -1,0 +1,9 @@
+drupalcampfr_core.config_list:
+  path: '/admin/config/drupalcampfr'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Drupalcamp'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

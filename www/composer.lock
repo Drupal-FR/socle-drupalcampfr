@@ -4,9 +4,63 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "96d23a500a7137b8b185f9ab31bf8db3",
-    "content-hash": "8a42a9c363b3889da79f31174ddb4f13",
+    "hash": "981e512c50220a12d3013a1883be5fad",
+    "content-hash": "a61f46f16005590ca44d5852dcc03896",
     "packages": [
+        {
+            "name": "abraham/twitteroauth",
+            "version": "0.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/abraham/twitteroauth.git",
+                "reference": "d4fc4a3c36f5ecdfc8865ab1e7cefc432e49491c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/abraham/twitteroauth/zipball/d4fc4a3c36f5ecdfc8865ab1e7cefc432e49491c",
+                "reference": "d4fc4a3c36f5ecdfc8865ab1e7cefc432e49491c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "2.2.*",
+                "phpunit/phpunit": "4.7.*",
+                "squizlabs/php_codesniffer": "2.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Abraham\\TwitterOAuth\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abraham Williams",
+                    "email": "abraham@abrah.am",
+                    "homepage": "https://abrah.am",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The most popular PHP library for use with the Twitter OAuth REST API.",
+            "homepage": "https://twitteroauth.com",
+            "keywords": [
+                "Twitter API",
+                "Twitter oAuth",
+                "api",
+                "oauth",
+                "rest",
+                "social",
+                "twitter"
+            ],
+            "time": "2015-11-05 04:04:20"
+        },
         {
             "name": "commerceguys/addressing",
             "version": "dev-master",
@@ -1591,6 +1645,31 @@
             "time": "2016-02-29 21:27:04"
         },
         {
+            "name": "drupal/libraries",
+            "version": "dev-8.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/libraries",
+                "reference": "52e91afc55235d88879058b45d2e351ff1319dae"
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-3.x": "8.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows version-dependent and shared usage of external libraries.",
+            "homepage": "http://drupal.org/project/libraries",
+            "time": "2015-11-04 20:24:22"
+        },
+        {
             "name": "drupal/migrate_plus",
             "version": "8.1.0",
             "source": {
@@ -1710,6 +1789,37 @@
             "time": "2016-03-16 20:32:43"
         },
         {
+            "name": "drupal/oauth",
+            "version": "8.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/oauth",
+                "reference": "8f74649b16613f75d37f33063ef80191d5a54216"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/oauth-8.x-2.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides OAuth 1.0a server authentication",
+            "homepage": "https://www.drupal.org/project/oauth",
+            "time": "2016-01-25 10:12:44"
+        },
+        {
             "name": "drupal/profile",
             "version": "8.1.0-alpha3",
             "source": {
@@ -1770,6 +1880,34 @@
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Provides code-driven workflow functionality.",
             "homepage": "https://www.drupal.org/project/state_machine"
+        },
+        {
+            "name": "drupal/twitter",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/twitter",
+                "reference": "fba2285dc5c94ffa5701935894adc408ef842c88"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/libraries": "8.*",
+                "drupal/oauth": "8.*",
+                "drupal/views": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows integration with the Twitter microblogging service.",
+            "homepage": "https://www.drupal.org/project/twitter",
+            "time": "2016-01-09 12:55:10"
         },
         {
             "name": "drush/drush",

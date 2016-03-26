@@ -4,4 +4,5 @@ description: Provide social integration and social links.
 core: 8.x
 dependencies:
   - drupalcampfr_news
-package: drupalcampfr
+package: Drupalcampfr
+configure: drupalcampfr_social.config

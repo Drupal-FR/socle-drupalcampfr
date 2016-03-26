@@ -5,3 +5,8 @@ drupalcampfr_social.main.twitter:
   weight: 7
   menu_name: main
   parent: drupalcampfr_news.main.news
+
+drupalcampfr_social.admin_form:
+  title: 'Social'
+  route_name: drupalcampfr_social.config
+  parent: drupalcampfr_core.config_list
