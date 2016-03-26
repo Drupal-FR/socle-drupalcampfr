@@ -15,3 +15,4 @@ permissions:
   - 'delete own session content'
   - 'edit own session content'
   - 'access user profiles'
+  - 'use text format restricted_html'
