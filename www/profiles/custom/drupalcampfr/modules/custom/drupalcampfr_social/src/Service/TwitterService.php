@@ -9,6 +9,8 @@ namespace Drupal\drupalcampfr_social\Service;
 
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Abraham\TwitterOAuth\TwitterOAuth;
+use Drupal\Core\StringTranslation\StringTranslationTrait;
+use Drupal\Core\Url;
 
 /**
  * Class TwitterService.
@@ -16,6 +18,7 @@ use Abraham\TwitterOAuth\TwitterOAuth;
  * @package Drupal\drupalcampfr_social
  */
 class TwitterService implements TwitterServiceInterface {
+  use StringTranslationTrait;
 
   /**
    * The factory for configuration objects.
@@ -72,7 +75,16 @@ class TwitterService implements TwitterServiceInterface {
   public function getStatuses($path, array $options) {
     $connection = $this->getConnection();
 
-    return $connection->get($path, $options);
+    $statuses = $connection->get($path, $options);
+
+    if ($connection->getLastHttpCode() == 200) {
+      return $statuses;
+    }
+    else {
+      $url = Url::fromRoute('drupalcampfr_social.config')->toString();
+      drupal_set_message($this->t('Unable to request Twitter. Please check your <a href=":url">twitter connection settings</a>.', array(':url' => $url)), 'error');
+      return array();
+    }
   }
 
 }
