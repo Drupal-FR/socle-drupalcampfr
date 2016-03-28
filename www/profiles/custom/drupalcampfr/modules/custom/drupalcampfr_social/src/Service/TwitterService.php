@@ -74,6 +74,7 @@ class TwitterService implements TwitterServiceInterface {
    */
   public function getStatuses($path, array $options) {
     $connection = $this->getConnection();
+    $connection->setTimeouts(10, 15);
 
     $statuses = $connection->get($path, $options);
 
