@@ -25,7 +25,7 @@ cd $WWW_PATH
 $DRUSH sql-dump --result-file="${PROJECT_PATH}/backups/${CURRENT_DATE}.sql" --gzip
 
 # Install Drupal.
-$DRUSH site-install drupalcampfr \
+$DRUSH site-install $PROFILE \
   --account-mail=$ACCOUNT_MAIL \
   --account-name=$ACCOUNT_NAME \
   --account-pass=$ACCOUNT_PASS \

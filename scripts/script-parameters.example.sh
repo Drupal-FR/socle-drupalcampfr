@@ -18,6 +18,7 @@ ENVIRONMENT_MODE="prod"
 CURRENT_DATE=$(date "+%Y-%m-%d-%Hh%Mm%Ss")
 
 # For Drush site-install.
+PROFILE=drupalcampfr
 ACCOUNT_MAIL=admin@example.com
 ACCOUNT_NAME=admin
 ACCOUNT_PASS=admin
