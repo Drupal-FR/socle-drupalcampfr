@@ -8,6 +8,6 @@ Technical base for french Drupalcamps.
 
 # Installation
 
-* Copy/paste scripts/script-parameters.example.sh into scripts/script-parameters.sh and adapt it to your configuration.
+* Copy/paste scripts/example.script-parameters.sh into scripts/script-parameters.sh and adapt it to your configuration.
 * Copy/paste www/sites/default/example.settings/local.php into www/sites/default/settings.local.php and adapt it to your configuration.
 * Execute scripts/install.sh
