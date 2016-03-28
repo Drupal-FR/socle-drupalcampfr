@@ -12,7 +12,7 @@ dependencies:
 id: views_block__news_block_home_news
 theme: drupalcampfr_theme
 region: content
-weight: -1
+weight: -4
 provider: null
 plugin: 'views_block:news-block_home_news'
 settings:
