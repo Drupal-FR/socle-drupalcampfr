@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "61945589f7cd40ddf23cd2c8d831ff6b",
-    "content-hash": "0df5537620b9b0960de76355c9d2c700",
+    "hash": "e206127cbc04bccf855225c8e5f54799",
+    "content-hash": "bddb3d20cd9166ced32eee8b9e66cd29",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1280,6 +1280,31 @@
             "description": "Tools to assist in developing and running migrations.",
             "homepage": "https://www.drupal.org/project/migrate_tools",
             "time": "2016-03-16 20:32:43"
+        },
+        {
+            "name": "drupal/r4032login",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/r4032login",
+                "reference": "4b2077aa70e3f7b00b8a9cba25af5b948ba2e3b9"
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Redirect anonymous users from 403 Access Denied pages to the /user/login page.",
+            "homepage": "https://www.drupal.org/project/r4032login",
+            "time": "2016-03-01 13:56:38"
         },
         {
             "name": "drush/drush",

@@ -59,6 +59,7 @@ dependencies:
   - entityqueue
   - features
   - honeypot
+  - r4032login
 
   # Custom modules
   - drupalcampfr_core
