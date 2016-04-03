@@ -58,7 +58,6 @@ dependencies:
   - contact_storage
   - entityqueue
   - features
-  - field_group
   - honeypot
 
   # Custom modules
