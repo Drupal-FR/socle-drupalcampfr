@@ -17,6 +17,7 @@ if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
 else
     composer install --working-dir=$WWW_PATH --no-dev
 fi
+composer dump-autoload --working-dir=$WWW_PATH --optimize
 
 # Without drush alias, change temporarily directory to www.
 cd $WWW_PATH
