@@ -13,9 +13,9 @@ article.news.teaser .field--type-text-with-summary {
 }
 
 /* TODO: Better place for that? */
-/**
+/**********
  * Session.
- */
+ **********/
 .session.full .row.well {
   margin-left: 0;
   margin-right: 0;
@@ -36,4 +36,8 @@ article.news.teaser .field--type-text-with-summary {
 .field--name-field-session-date-start .field--item,
 .field--name-field-session-date-end {
   display: inline;
+}
+
+.region-navigation-collapsible .navbar-nav.navbar-right {
+  margin-right: 0;
 }
