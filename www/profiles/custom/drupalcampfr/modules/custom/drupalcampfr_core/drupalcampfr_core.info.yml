@@ -4,16 +4,22 @@ type: module
 core: 8.x
 dependencies:
   - block
+  - block_content
   - contact
   - drupalcampfr_core
+  - entityqueue
   - field
+  - file
   - honeypot
   - image
+  - menu_link_content
   - node
   - options
   - responsive_image
   - system
+  - taxonomy
   - telephone
+  - tour
   - user
 package: Drupalcampfr
 configure: drupalcampfr_core.config_list

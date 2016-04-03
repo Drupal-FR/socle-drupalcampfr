@@ -8,6 +8,7 @@ dependencies:
   - contact_storage
   - drupalcampfr_core
   - drupalcampfr_site
+  - drupalcampfr_sponsor
   - field
   - file
   - image
@@ -16,6 +17,7 @@ dependencies:
   - menu_ui
   - node
   - path
+  - pathauto
   - system
   - taxonomy
   - telephone

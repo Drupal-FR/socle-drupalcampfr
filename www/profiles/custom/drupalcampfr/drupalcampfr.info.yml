@@ -59,6 +59,7 @@ dependencies:
   - entityqueue
   - features
   - honeypot
+  - pathauto
   - r4032login
 
   # Custom modules

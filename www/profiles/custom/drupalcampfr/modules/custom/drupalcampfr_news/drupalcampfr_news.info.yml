@@ -13,6 +13,7 @@ dependencies:
   - menu_ui
   - node
   - path
+  - pathauto
   - system
   - text
   - user

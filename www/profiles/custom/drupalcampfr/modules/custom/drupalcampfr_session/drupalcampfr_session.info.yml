@@ -1,9 +1,10 @@
 name: Session
-description: 'Provide Session type de contenu and related configuration. '
+description: 'Provide Session type de contenu and related configuration.'
 type: module
 core: 8.x
 dependencies:
   - datetime
+  - drupalcampfr_session
   - field
   - file
   - language
@@ -11,7 +12,9 @@ dependencies:
   - node
   - options
   - path
+  - pathauto
   - taxonomy
   - text
   - user
+  - views
 package: Drupalcampfr

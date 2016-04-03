@@ -1,0 +1,21 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: session
+label: Session
+type: 'canonical_entities:node'
+pattern: '/programme/sessions/[node:title]'
+selection_criteria:
+  9d56e818-1050-4789-8800-c87f63ffe629:
+    id: node_type
+    bundles:
+      session: session
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9d56e818-1050-4789-8800-c87f63ffe629
+selection_logic: and
+weight: -5
+relationships: {  }
