@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.session.field_session_attachment
     - field.field.node.session.field_session_date_end
     - field.field.node.session.field_session_date_start
-    - field.field.node.session.field_session_day
     - field.field.node.session.field_session_length
     - field.field.node.session.field_session_level
     - field.field.node.session.field_session_room
@@ -38,7 +37,6 @@ hidden:
   field_session_attachment: true
   field_session_date_end: true
   field_session_date_start: true
-  field_session_day: true
   field_session_length: true
   field_session_level: true
   field_session_room: true

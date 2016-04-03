@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.storage.node.field_session_date_end
     - field.storage.node.field_session_date_start
-    - field.storage.node.field_session_day
     - field.storage.node.field_session_length
     - field.storage.node.field_session_level
     - field.storage.node.field_session_room
@@ -152,14 +151,14 @@ display:
               empty_column: false
               responsive: ''
             field_session_date_start:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
             field_session_date_end:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
@@ -413,9 +412,9 @@ display:
           click_sort_column: value
           type: boolean
           settings:
-            format: on-off
-            format_custom_true: ''
-            format_custom_false: ''
+            format: custom
+            format_custom_true: Publié
+            format_custom_false: Dépublié
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -428,68 +427,6 @@ display:
           field_api_classes: false
           entity_type: node
           entity_field: status
-          plugin_id: field
-        field_session_day:
-          id: field_session_day
-          table: node__field_session_day
-          field: field_session_day
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Jour
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: list_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
           plugin_id: field
         field_session_length:
           id: field_session_length
@@ -561,7 +498,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Heure de début'
+          label: Début
           exclude: false
           alter:
             alter_text: false
@@ -625,7 +562,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Heure de fin'
+          label: Fin
           exclude: false
           alter:
             alter_text: false
@@ -1103,46 +1040,6 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
-        field_session_day_value:
-          id: field_session_day_value
-          table: node__field_session_day
-          field: field_session_day_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_session_day_value_op
-            label: Jour
-            description: ''
-            use_operator: false
-            operator: field_session_day_value_op
-            identifier: field_session_day_value
-            required: false
-            remember: false
-            multiple: true
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          plugin_id: list_field
         field_session_room_target_id:
           id: field_session_room_target_id
           table: node__field_session_room
@@ -1439,7 +1336,6 @@ display:
       tags:
         - 'config:field.storage.node.field_session_date_end'
         - 'config:field.storage.node.field_session_date_start'
-        - 'config:field.storage.node.field_session_day'
         - 'config:field.storage.node.field_session_length'
         - 'config:field.storage.node.field_session_level'
         - 'config:field.storage.node.field_session_room'
@@ -1476,7 +1372,6 @@ display:
       tags:
         - 'config:field.storage.node.field_session_date_end'
         - 'config:field.storage.node.field_session_date_start'
-        - 'config:field.storage.node.field_session_day'
         - 'config:field.storage.node.field_session_length'
         - 'config:field.storage.node.field_session_level'
         - 'config:field.storage.node.field_session_room'

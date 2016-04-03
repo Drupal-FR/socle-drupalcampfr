@@ -10,7 +10,6 @@ dependencies:
   - language
   - menu_ui
   - node
-  - options
   - path
   - pathauto
   - taxonomy

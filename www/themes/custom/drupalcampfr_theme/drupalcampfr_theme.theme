@@ -50,8 +50,8 @@ function drupalcampfr_theme_preprocess_field__field_news_link(array &$variables)
 function drupalcampfr_theme_preprocess_field__node__session(array &$variables) {
   $field_name = $variables['field_name'];
 
-  if ($field_name == 'field_session_day') {
-    // Change field session day label for display.
+  if ($field_name == 'field_session_date_start') {
+    // Change field session start date label for display.
     $variables['label'] = t('Créneaux horaires');
   }
 
@@ -61,7 +61,7 @@ function drupalcampfr_theme_preprocess_field__node__session(array &$variables) {
     'field_session_level' => 'star',
     'field_session_track' => 'tag',
     'field_session_length' => 'time',
-    'field_session_day' => 'calendar',
+    'field_session_date_start' => 'calendar',
     'field_session_room' => 'map-marker',
   );
 

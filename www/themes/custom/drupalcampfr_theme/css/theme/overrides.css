@@ -32,9 +32,8 @@ article.news.teaser .field--type-text-with-summary {
 /**
  * Session: day, start date and end date fields.
  */
-.field--name-field-session-day,
-.field--name-field-session-day .field--item,
 .field--name-field-session-date-start,
+.field--name-field-session-date-start .field--item,
 .field--name-field-session-date-end {
   display: inline;
 }

@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.session.field_session_attachment
     - field.field.node.session.field_session_date_end
     - field.field.node.session.field_session_date_start
-    - field.field.node.session.field_session_day
     - field.field.node.session.field_session_length
     - field.field.node.session.field_session_level
     - field.field.node.session.field_session_room
@@ -49,16 +48,10 @@ content:
   field_session_date_start:
     type: datetime_default
     weight: 5
-    label: hidden
+    label: inline
     settings:
       timezone_override: ''
-      format_type: html_time_without_second
-    third_party_settings: {  }
-  field_session_day:
-    type: list_default
-    weight: 4
-    label: inline
-    settings: {  }
+      format_type: day_and_time
     third_party_settings: {  }
   field_session_length:
     type: entity_reference_label

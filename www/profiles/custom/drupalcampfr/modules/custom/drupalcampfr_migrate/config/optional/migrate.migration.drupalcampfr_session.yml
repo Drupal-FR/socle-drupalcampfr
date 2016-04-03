@@ -29,8 +29,6 @@ source:
     -
       length: Length
     -
-      day: Day
-    -
       start_date: Start date (yyyy-MM-ddTHH:mm:ss)
     -
       end_date: End date (yyyy-MM-ddTHH:mm:ss)
@@ -79,7 +77,6 @@ process:
     -
       plugin: migration
       migration: drupalcampfr_session_room
-  field_session_day: day
   field_session_date_start: start_date
   field_session_date_end: end_date
   status: published

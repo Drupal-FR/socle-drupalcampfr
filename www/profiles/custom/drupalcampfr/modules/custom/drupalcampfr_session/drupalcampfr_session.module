@@ -17,9 +17,11 @@ function drupalcampfr_session_form_node_session_form_alter(&$form, FormStateInte
   drupalcampfr_session_session_hide_fields_to_user($form, $form_state, $form_id);
 
   // Set default value for speaker field.
-  $current_user = \Drupal::currentUser();
-  $current_user_entity = User::load($current_user->id());
-  $form['field_session_speaker']['widget'][0]['target_id']['#default_value'] = $current_user_entity;
+  if (isset($form['field_session_speaker'])) {
+    $current_user = \Drupal::currentUser();
+    $current_user_entity = User::load($current_user->id());
+    $form['field_session_speaker']['widget'][0]['target_id']['#default_value'] = $current_user_entity;
+  }
 }
 
 /**
@@ -37,11 +39,18 @@ function drupalcampfr_session_form_node_session_edit_form_alter(&$form, FormStat
 function drupalcampfr_session_session_hide_fields_to_user(&$form, FormStateInterface $form_state, $form_id) {
   $current_user = \Drupal::currentUser();
   if (!$current_user->hasPermission('administer nodes')) {
-    $form['field_session_day']['#access'] = FALSE;
-    $form['field_session_status']['#access'] = FALSE;
-    $form['field_session_date_start']['#access'] = FALSE;
-    $form['field_session_date_end']['#access'] = FALSE;
-    $form['field_session_room']['#access'] = FALSE;
-    $form['revision_log']['#access'] = FALSE;
+    $fields_to_hide = array(
+      'field_session_status',
+      'field_session_date_start',
+      'field_session_date_end',
+      'field_session_room',
+      'revision_log',
+    );
+
+    foreach ($fields_to_hide as $field_name) {
+      if (isset($form[$field_name])) {
+        $form[$field_name]['#access'] = FALSE;
+      }
+    }
   }
 }

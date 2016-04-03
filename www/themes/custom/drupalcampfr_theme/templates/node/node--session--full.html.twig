@@ -106,12 +106,8 @@ view_mode ? view_mode|clean_class,
       <div class="col-md-6">
         {{ content.field_session_length }}
         <hr>
-        {{ content.field_session_day }}
-        {% if content.field_session_day.0 and (content.field_session_date_start.0 or content.field_session_date_end.0)  %}
-          |
-        {% endif %}
         {{ content.field_session_date_start }}
-        {% if (content.field_session_date_start.0 and content.field_session_date_end.0)  %}
+        {% if content.field_session_date_end.0 %}
           -
         {% endif %}
         {{ content.field_session_date_end }}
@@ -125,7 +121,6 @@ view_mode ? view_mode|clean_class,
     |without('field_session_level')
     |without('field_session_track')
     |without('field_session_length')
-    |without('field_session_day')
     |without('field_session_date_start')
     |without('field_session_date_end')
     |without('field_session_room')
