@@ -1,7 +1,7 @@
-Identifier,Title,Path,Creation date,Published,Promoted to front page,Link title,Link URI,Body (summary),Body,Body format
-1,Appel à conférenciers,/actualites/appel-a-conferenciers,+1 week,1,0,Soumettre une session,entity:node/4,<p>Lorem ipsum dolor</p>,<p>Lorem ipsum dolor</p>,basic_html
-2,Sponsor,/actualites/sponsor,+2 weeks,1,0,Sponsorisez l'événement,http://example.com,<p>Lorem ipsum dolor</p>,<p>Lorem ipsum dolor</p>,basic_html
-3,Billeterie,/actualites/billeterie,+3 weeks,1,0,Achetez votre place,http://example.com,<p>La billeterie est ouverte !</p>,<p>Lorem ipsum dolor</p>,basic_html
-4,Goodies,/actualites/goodies,+4 weeks,1,0,Voir les goodies,http://example.com,<p>N'hésitez pas à acheter des goodies dans notre boutique pour soutenir l'événement.</p>,<p>Lorem ipsum dolor</p>,basic_html
-5,Mentor,/actualites/mentor,+5 weeks,1,0,Devenez mentor,entity:node/2,<p>Lorem ipsum dolor</p>,<p>Lorem ipsum dolor</p>,basic_html
-6,Appel à volontaires,/actualites/appel-a-volontaires,+6 weeks,1,0,Devenez bénévole,http://example.com,<p>Vous avez envie d'aider sur place le jour de l'événement ? Parce qu'on a toujours besoin de bras en plus :).</p>,<p>Lorem ipsum dolor</p>,basic_html
+Identifier,Title,Creation date,Published,Promoted to front page,Link title,Link URI,Body (summary),Body,Body format
+1,Appel à conférenciers,+1 week,1,0,Soumettre une session,entity:node/4,<p>Lorem ipsum dolor</p>,<p>Lorem ipsum dolor</p>,basic_html
+2,Sponsor,+2 weeks,1,0,Sponsorisez l'événement,http://example.com,<p>Lorem ipsum dolor</p>,<p>Lorem ipsum dolor</p>,basic_html
+3,Billeterie,+3 weeks,1,0,Achetez votre place,http://example.com,<p>La billeterie est ouverte !</p>,<p>Lorem ipsum dolor</p>,basic_html
+4,Goodies,+4 weeks,1,0,Voir les goodies,http://example.com,<p>N'hésitez pas à acheter des goodies dans notre boutique pour soutenir l'événement.</p>,<p>Lorem ipsum dolor</p>,basic_html
+5,Mentor,+5 weeks,1,0,Devenez mentor,entity:node/2,<p>Lorem ipsum dolor</p>,<p>Lorem ipsum dolor</p>,basic_html
+6,Appel à volontaires,+6 weeks,1,0,Devenez bénévole,http://example.com,<p>Vous avez envie d'aider sur place le jour de l'événement ? Parce qu'on a toujours besoin de bras en plus :).</p>,<p>Lorem ipsum dolor</p>,basic_html

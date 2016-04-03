@@ -21,8 +21,6 @@ source:
     -
       title: Title
     -
-      path: Path
-    -
       creation_date: 'Creation date'
     -
       published: Published
@@ -48,11 +46,6 @@ process:
   'body/format': body_format
   'field_news_link/uri': news_link_uri
   'field_news_link/title': news_link_title
-  path:
-   -
-     plugin: skip_on_empty
-     method: process
-     source: path
   created:
     plugin: callback
     callable: strtotime
