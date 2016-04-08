@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "90f507b12142d4dab9b4a782449a060b",
-    "content-hash": "048dbe2c08ad17679138d44e66285ce2",
+    "hash": "fc8fe88d30b27273b201a8cd4dc55c14",
+    "content-hash": "466b8ff891b17b743ac3e8ad6dca5bc1",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -885,16 +885,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.0.5",
+            "version": "8.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "da4c151b0ca4b27197b0407a590e117c4d2866e7"
+                "reference": "0691e597e80fc047279f9ef273d7028b96b19c1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/da4c151b0ca4b27197b0407a590e117c4d2866e7",
-                "reference": "da4c151b0ca4b27197b0407a590e117c4d2866e7",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/0691e597e80fc047279f9ef273d7028b96b19c1a",
+                "reference": "0691e597e80fc047279f9ef273d7028b96b19c1a",
                 "shasum": ""
             },
             "require": {
@@ -1046,7 +1046,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2016-03-02 10:31:56"
+            "time": "2016-04-05 23:34:17"
         },
         {
             "name": "drupal/ctools",
@@ -1117,15 +1117,15 @@
         },
         {
             "name": "drupal/features",
-            "version": "8.3.0-beta1",
+            "version": "8.3.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/features",
-                "reference": "93c5fcc49526835a442956ac45d61029b3377693"
+                "reference": "14d66f68c13a0b93134ba15ac2ef641e6799eb1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta1.zip",
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1157,7 +1157,7 @@
             ],
             "description": "Enables administrators to package configuration into modules.",
             "homepage": "https://www.drupal.org/project/features",
-            "time": "2016-04-01 22:54:02"
+            "time": "2016-04-07 19:57:25"
         },
         {
             "name": "drupal/honeypot",
