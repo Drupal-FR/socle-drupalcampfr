@@ -38,6 +38,7 @@ $DRUSH site-install $PROFILE \
 # Enable development modules.
 if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
   $DRUSH en \
+    config_inspector \
     dblog \
     devel \
     features_ui \

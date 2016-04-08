@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2bdb3e188b57fe5ed6883b4df4117233",
-    "content-hash": "11984c552e57eeae24ce0f81cdd0c669",
+    "hash": "90f507b12142d4dab9b4a782449a060b",
+    "content-hash": "048dbe2c08ad17679138d44e66285ce2",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -63,16 +63,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.0.23",
+            "version": "v1.0.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
+                "reference": "1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "url": "https://api.github.com/repos/composer/installers/zipball/1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988",
+                "reference": "1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988",
                 "shasum": ""
             },
             "require": {
@@ -94,8 +94,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Composer\\Installers\\": "src/"
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -110,12 +110,14 @@
                 }
             ],
             "description": "A multi-framework Composer library installer",
-            "homepage": "http://composer.github.com/installers/",
+            "homepage": "https://composer.github.io/installers/",
             "keywords": [
                 "Craft",
                 "Dolibarr",
                 "Hurad",
+                "ImageCMS",
                 "MODX Evo",
+                "Mautic",
                 "OXID",
                 "SMF",
                 "Thelia",
@@ -157,7 +159,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-01-27 12:54:22"
+            "time": "2016-04-05 11:42:46"
         },
         {
             "name": "composer/semver",
@@ -3611,12 +3613,44 @@
     ],
     "packages-dev": [
         {
+            "name": "drupal/config_inspector",
+            "version": "8.1.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/config_inspector",
+                "reference": "9c2ee529375e15b648ad25c0b58cc658842cb45e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_inspector-8.x-1.0-beta1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/config": "8.*",
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a configuration data and structure inspector tool.",
+            "homepage": "https://www.drupal.org/project/config_inspector",
+            "time": "2015-11-24 09:16:46"
+        },
+        {
             "name": "drupal/devel",
             "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/devel",
-                "reference": "c4cf2d4d600cabd489b02098e7494b95d01fd521"
+                "reference": "449d8ed0c040ae265dc8d4146ee6d7043d619b41"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -3651,7 +3685,7 @@
             ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "http://drupal.org/project/devel",
-            "time": "2016-03-29 16:12:53"
+            "time": "2016-04-07 06:41:07"
         },
         {
             "name": "drupal/examples",
@@ -3659,7 +3693,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/examples.git",
-                "reference": "3c379b2e7aa1a79241212b4433c03ba86e0e3e54"
+                "reference": "c7d43fee2b29eb4ed20c3877209cc440f323fd58"
             },
             "require": {
                 "drupal/core": "8.*",
@@ -3687,7 +3721,7 @@
             "suggest": {
                 "drupal/block": "Required by drupal/block_example",
                 "drupal/color": "Required by drupal/field_example",
-                "drupal/core": "Required by drupal/block_example, drupal/cache_example, drupal/config_entity_example, drupal/content_entity_example, drupal/cron_example, drupal/dbtng_example, drupal/email_example, drupal/fapi_example, drupal/field_example, drupal/field_permission_exampl",
+                "drupal/core": "Required by drupal/block_example, drupal/cache_example, drupal/config_entity_example, drupal/content_entity_example, drupal/cron_example, drupal/dbtng_example, drupal/email_example, drupal/fapi_example, drupal/field_example, drupal/field_permission_example, drupal/js_example, drupal/node_type_example, drupal/page_example, drupal/phpunit_example, drupal/plugin_type_example, drupal/tablesort_example, drupal/tour_example",
                 "drupal/node": "Required by drupal/node_type_example",
                 "drupal/options": "Required by drupal/content_entity_example",
                 "drupal/path": "Required by drupal/node_type_example",
@@ -3708,7 +3742,7 @@
             ],
             "description": "A variety of example code for you to learn from and hack upon.",
             "homepage": "https://www.drupal.org/project/examples",
-            "time": "2016-03-21 00:09:13"
+            "time": "2016-04-06 20:15:10"
         },
         {
             "name": "drupal/pistachio",

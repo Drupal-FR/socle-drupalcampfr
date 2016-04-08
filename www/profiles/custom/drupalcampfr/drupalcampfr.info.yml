@@ -75,6 +75,7 @@ dependencies:
   - drupalcampfr_newsletter
 
   # Development modules. Enabled in the install/update scripts.
+#  - config_inspector
 #  - dblog
 #  - devel
 #  - features_ui
