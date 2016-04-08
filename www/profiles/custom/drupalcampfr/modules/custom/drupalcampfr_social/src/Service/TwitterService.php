@@ -82,8 +82,10 @@ class TwitterService implements TwitterServiceInterface {
       return $statuses;
     }
     else {
-      $url = Url::fromRoute('drupalcampfr_social.config')->toString();
-      drupal_set_message($this->t('Unable to request Twitter. Please check your <a href=":url">twitter connection settings</a>.', array(':url' => $url)), 'error');
+      $url = Url::fromRoute('drupalcampfr_social.config');
+      if ($url->renderAccess($url->toRenderArray())) {
+        drupal_set_message($this->t('Unable to request Twitter. Please check your <a href=":url">twitter connection settings</a>.', array(':url' => $url->toString())), 'error');
+      }
       return array();
     }
   }
