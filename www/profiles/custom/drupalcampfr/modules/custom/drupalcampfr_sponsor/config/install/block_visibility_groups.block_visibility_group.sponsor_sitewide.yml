@@ -6,7 +6,7 @@ dependencies:
     - system
 id: sponsor_sitewide
 label: 'Sponsor sitewide'
-logic: and
+logic: or
 conditions:
   cd34525c-e4a4-4aa1-af09-9accc80c74d1:
     id: node_type
@@ -18,7 +18,7 @@ conditions:
     uuid: cd34525c-e4a4-4aa1-af09-9accc80c74d1
   08a896a5-0450-4d62-be01-1bfb95171299:
     id: request_path
-    pages: "<front>\r\nsponsors"
+    pages: "<front>\r\n/sponsors"
     negate: true
     context_mapping: {  }
     uuid: 08a896a5-0450-4d62-be01-1bfb95171299
