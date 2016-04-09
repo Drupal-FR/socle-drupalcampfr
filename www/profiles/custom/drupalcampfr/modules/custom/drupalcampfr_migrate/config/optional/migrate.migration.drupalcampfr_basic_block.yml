@@ -1,0 +1,45 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - migrate_source_csv
+    - block
+id: drupalcampfr_basic_block
+migration_tags:
+  - drupalcampfr
+label: 'Default blocks import'
+source:
+  plugin: csv
+  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/basic_block.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      id: Identifier
+    -
+      uuid: UUID
+    -
+      info: Title
+    -
+      body_value: Body
+    -
+      body_format: 'Body format'
+process:
+  id: id
+  uuid: uuid
+  type:
+    plugin: default_value
+    default_value: basic
+  info: info
+  "body/value": body_value
+  'body/format': body_format
+destination:
+  plugin: 'entity:block_content'
+  type: basic
+  no_stub: true
+template: null
+migration_dependencies: {  }
+third_party_settings:
+  migrate_plus:
+    migration_group: drupalcampfr
