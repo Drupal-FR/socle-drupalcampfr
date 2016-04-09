@@ -8,6 +8,23 @@
 use Drupal\Core\Form\FormStateInterface;
 
 /**
+ * Implements hook_theme().
+ */
+function drupalcampfr_site_theme($existing, $type, $theme, $path) {
+  return array(
+    'drupalcampfr_site_banner_block' => array(
+      'variables' => array(),
+    ),
+    'drupalcampfr_site_map_block' => array(
+      'variables' => array(
+        'latitude' => NULL,
+        'longitude' => NULL,
+      ),
+    ),
+  );
+}
+
+/**
  * Implements hook_form_FORM_ID_alter().
  */
 function drupalcampfr_site_form_contact_message_contact_form_alter(&$form, FormStateInterface $form_state, $form_id) {

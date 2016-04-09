@@ -7,6 +7,20 @@ article.news.teaser .field--type-text-with-summary {
   margin-bottom: 10px;
 }
 
+/**
+ * Avoid white space between page content and navbar.
+ */
+.main-container {
+  margin-top: -15px;
+}
+
+/**
+ * Banner block.
+ */
+.region-header #block-bannerblock:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 /* TODO: Better place for that? */
 .sponsor-view .view-content .views-row {
   margin-bottom: 5px;
