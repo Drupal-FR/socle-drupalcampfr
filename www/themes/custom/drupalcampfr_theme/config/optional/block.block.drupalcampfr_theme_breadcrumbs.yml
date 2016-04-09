@@ -8,7 +8,7 @@ dependencies:
 id: drupalcampfr_theme_breadcrumbs
 theme: drupalcampfr_theme
 region: content
-weight: -6
+weight: -10
 provider: null
 plugin: system_breadcrumb_block
 settings:

@@ -1,0 +1,33 @@
+# Schema for the configuration files of the Drupalcampfr site module.
+
+block.settings.map_block:
+  type: block_settings
+  label: 'Map block settings.'
+  mapping:
+    latitude:
+      type: string
+      label: 'Latitude'
+    longitude:
+      type: string
+      label: 'Longitude'
+    zoom_level:
+      type: string
+      label: 'Zoom level'
+    box_bottom_left_latitude:
+      type: string
+      label: 'Box bottom left latitude'
+    box_bottom_left_longitude:
+      type: string
+      label: 'Box bottom left longitude'
+    box_top_right_latitude:
+      type: string
+      label: 'Box top right latitude'
+    box_top_right_longitude:
+      type: string
+      label: 'Box top right longitude'
+    marker_latitude:
+      type: string
+      label: 'Marker latitude'
+    marker_longitude:
+      type: string
+      label: 'Marker longitude'

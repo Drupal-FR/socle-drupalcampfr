@@ -8,7 +8,7 @@ dependencies:
 id: drupalcampfr_theme_content
 theme: drupalcampfr_theme
 region: content
-weight: -2
+weight: -6
 provider: null
 plugin: system_main_block
 settings:

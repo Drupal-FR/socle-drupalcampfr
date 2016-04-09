@@ -6,7 +6,7 @@ dependencies:
 id: drupalcampfr_theme_local_actions
 theme: drupalcampfr_theme
 region: content
-weight: -3
+weight: -7
 provider: null
 plugin: local_actions_block
 settings:

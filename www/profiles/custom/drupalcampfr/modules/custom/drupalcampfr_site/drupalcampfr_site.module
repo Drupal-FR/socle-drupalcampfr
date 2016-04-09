@@ -7,6 +7,16 @@
 
 use Drupal\Core\Form\FormStateInterface;
 
+define('DRUPALCAMPFR_SITE_DEFAULT_MAP_LATITUDE', '48.86771');
+define('DRUPALCAMPFR_SITE_DEFAULT_MAP_LONGITUDE', '2.36193');
+define('DRUPALCAMPFR_SITE_DEFAULT_MAP_ZOOM_LEVEL', '18');
+define('DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_BOTTOM_LEFT_LATITUDE', '48.86618277284446');
+define('DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_BOTTOM_LEFT_LONGITUDE', '2.358391284942627');
+define('DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_TOP_RIGHT_LATITUDE', '48.869242167070894');
+define('DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_TOP_RIGHT_LONGITUDE', '2.3654723167419434');
+define('DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LATITUDE', '48.867713375517354');
+define('DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LONGITUDE', '2.361931800842285');
+
 /**
  * Implements hook_theme().
  */
@@ -17,8 +27,15 @@ function drupalcampfr_site_theme($existing, $type, $theme, $path) {
     ),
     'drupalcampfr_site_map_block' => array(
       'variables' => array(
-        'latitude' => NULL,
-        'longitude' => NULL,
+        'latitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_LATITUDE,
+        'longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_LONGITUDE,
+        'zoom_level' => DRUPALCAMPFR_SITE_DEFAULT_MAP_ZOOM_LEVEL,
+        'box_bottom_left_latitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_BOTTOM_LEFT_LATITUDE,
+        'box_bottom_left_longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_BOTTOM_LEFT_LONGITUDE,
+        'box_top_right_latitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_TOP_RIGHT_LATITUDE,
+        'box_top_right_longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_TOP_RIGHT_LONGITUDE,
+        'marker_latitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LATITUDE,
+        'marker_longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LONGITUDE,
       ),
     ),
   );
