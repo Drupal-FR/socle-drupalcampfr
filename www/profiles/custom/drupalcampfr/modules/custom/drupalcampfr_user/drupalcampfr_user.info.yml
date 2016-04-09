@@ -7,5 +7,8 @@ dependencies:
   - field
   - file
   - image
+  - node
+  - path
   - user
+  - views
 package: Drupalcampfr
