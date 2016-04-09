@@ -1,3 +1,5 @@
+# Schema for the configuration files of the Drupalcampfr social module.
+
 drupalcampfr_social.twitter:
   type: config_object
   label: 'Settings for Twitter connection'

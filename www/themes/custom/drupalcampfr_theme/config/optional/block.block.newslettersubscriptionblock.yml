@@ -17,6 +17,9 @@ settings:
   label: 'S''inscrire à notre newsletter'
   provider: drupalcampfr_newsletter
   label_display: visible
+  account_hash: eb7ebedd32b3b2fc0ac192ee9
+  mailing_list_hash: 26bff72b56
+  anti_spam_token: b_eb7ebedd32b3b2fc0ac192ee9_450c6dc6d6
 visibility:
   condition_group:
     id: condition_group

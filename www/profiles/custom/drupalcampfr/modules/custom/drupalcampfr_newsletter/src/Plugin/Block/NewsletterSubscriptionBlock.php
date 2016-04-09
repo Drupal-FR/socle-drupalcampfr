@@ -8,6 +8,7 @@
 namespace Drupal\drupalcampfr_newsletter\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Provides a 'NewsletterSubscriptionBlock' block.
@@ -22,32 +23,51 @@ class NewsletterSubscriptionBlock extends BlockBase {
   /**
    * {@inheritdoc}
    */
+  public function blockForm($form, FormStateInterface $form_state) {
+    $form['account_hash'] = array(
+      '#type' => 'textfield',
+      '#title' => $this->t('Account hash'),
+      '#description' => $this->t('Mailchimp account hash.'),
+      '#default_value' => isset($this->configuration['account_hash']) ? $this->configuration['account_hash'] : DRUPALCAMPFR_NEWSLETTER_DEFAULT_ACCOUNT_HASH,
+      '#required' => TRUE,
+    );
+    $form['mailing_list_hash'] = array(
+      '#type' => 'textfield',
+      '#title' => $this->t('Mailing list hash'),
+      '#description' => $this->t('Mailchimp mailing list hash.'),
+      '#default_value' => isset($this->configuration['mailing_list_hash']) ? $this->configuration['mailing_list_hash'] : DRUPALCAMPFR_NEWSLETTER_DEFAULT_MAILING_LIST_HASH,
+      '#required' => TRUE,
+    );
+    $form['anti_spam_token'] = array(
+      '#type' => 'textfield',
+      '#title' => $this->t('Anti-spam token'),
+      '#description' => $this->t('Mailchimp anti-spam token'),
+      '#default_value' => isset($this->configuration['anti_spam_token']) ? $this->configuration['anti_spam_token'] : DRUPALCAMPFR_NEWSLETTER_DEFAULT_ANTI_SPAM_TOKEN,
+      '#required' => TRUE,
+    );
+
+    return $form;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function blockSubmit($form, FormStateInterface $form_state) {
+    $this->configuration['account_hash'] = $form_state->getValue('account_hash');
+    $this->configuration['mailing_list_hash'] = $form_state->getValue('mailing_list_hash');
+    $this->configuration['anti_spam_token'] = $form_state->getValue('anti_spam_token');
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function build() {
-    $form = '
-      <form role="form" action="//drupalfr.us8.list-manage.com/subscribe/post?u=eb7ebedd32b3b2fc0ac192ee9&amp;id=26bff72b56" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
-        <div class="form-group">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Saisir votre email" name="EMAIL" id="mce-EMAIL">
-            <span class="input-group-btn">
-              <input value="S\'inscrire" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success form-submit" type="submit">
-            </span>
-          </div>
-          <div class="hidden">
-            <input name="b_eb7ebedd32b3b2fc0ac192ee9_450c6dc6d6" tabindex="-1" value="" type="text">
-          </div>
-        </div>
-      </form>';
 
     $build = array(
-      '#markup' => $form,
-      '#allowed_tags' => array(
-        'form',
-        'input',
-        'div',
-        'h3',
-        'label',
-        'span',
-      ),
+      '#theme' => 'drupalcampfr_newsletter_subscription_block',
+      '#account_hash' => isset($this->configuration['account_hash']) ? $this->configuration['account_hash'] : DRUPALCAMPFR_NEWSLETTER_DEFAULT_ACCOUNT_HASH,
+      '#mailing_list_hash' => isset($this->configuration['mailing_list_hash']) ? $this->configuration['mailing_list_hash'] : DRUPALCAMPFR_NEWSLETTER_DEFAULT_MAILING_LIST_HASH,
+      '#anti_spam_token' => isset($this->configuration['anti_spam_token']) ? $this->configuration['anti_spam_token'] : DRUPALCAMPFR_NEWSLETTER_DEFAULT_ANTI_SPAM_TOKEN,
     );
 
     return $build;
