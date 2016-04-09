@@ -11,7 +11,7 @@ dependencies:
 id: mapblock
 theme: drupalcampfr_theme
 region: content
-weight: -4
+weight: -5
 provider: null
 plugin: map_block
 settings:

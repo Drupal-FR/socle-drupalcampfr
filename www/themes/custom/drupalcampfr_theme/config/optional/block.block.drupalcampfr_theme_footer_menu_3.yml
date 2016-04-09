@@ -10,7 +10,7 @@ dependencies:
 id: drupalcampfr_theme_footer_menu_3
 theme: drupalcampfr_theme
 region: footer
-weight: -6
+weight: -9
 provider: null
 plugin: 'system_menu_block:footer-menu-3'
 settings:

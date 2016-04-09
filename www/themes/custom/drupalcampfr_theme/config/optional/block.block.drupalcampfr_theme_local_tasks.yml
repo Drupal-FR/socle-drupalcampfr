@@ -6,7 +6,7 @@ dependencies:
 id: drupalcampfr_theme_local_tasks
 theme: drupalcampfr_theme
 region: content
-weight: -8
+weight: -9
 provider: null
 plugin: local_tasks_block
 settings:
