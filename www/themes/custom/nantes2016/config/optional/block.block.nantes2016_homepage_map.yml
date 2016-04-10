@@ -19,15 +19,15 @@ settings:
   label: 'Plan d''accès'
   provider: drupalcampfr_site
   label_display: visible
-  latitude: '48.86771'
-  longitude: '2.36193'
+  latitude: '47.21047'
+  longitude: '-1.56677'
   zoom_level: '18'
-  box_bottom_left_latitude: '48.86618277284446'
-  box_bottom_left_longitude: '2.358391284942627'
-  box_top_right_latitude: '48.869242167070894'
-  box_top_right_longitude: '2.3654723167419434'
-  marker_latitude: '48.867713375517354'
-  marker_longitude: '2.361931800842285'
+  box_bottom_left_latitude: '47.20888804767002'
+  box_bottom_left_longitude: '-1.5712487697601318'
+  box_top_right_latitude: '47.21204747198281'
+  box_top_right_longitude: '-1.5622901916503906'
+  marker_latitude: '47.21046778335233'
+  marker_longitude: '-1.5667694807052612'
 visibility:
   condition_group:
     id: condition_group
