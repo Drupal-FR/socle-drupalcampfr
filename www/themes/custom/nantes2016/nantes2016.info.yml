@@ -3,6 +3,8 @@ type: theme
 description: 'Nantes 2016 Drupalcamp theme.'
 package: 'Nantes 2016'
 core: 8.x
+libraries:
+  - nantes2016/global-styling
 
 base theme: drupalcampfr_theme
 

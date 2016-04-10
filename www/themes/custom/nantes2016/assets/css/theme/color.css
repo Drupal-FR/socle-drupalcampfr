@@ -1,0 +1,45 @@
+/**
+ * TODO:
+ *   - Use SASS.
+ *   - Split this file content.
+ */
+
+/*
+ * yellow light: #FBCD45
+ * yellow dark: #F9A919
+ */
+
+.btn-primary,
+.btn-info {
+  background-color: #F9A919;
+  border-color: #F9A919;
+}
+.btn-primary:hover,
+.btn-info:hover {
+  background-color: #FBCD45;
+  border-color: #FBCD45;
+}
+
+a {
+  color: #F9A919;
+}
+a:hover {
+  color: #FBCD45;
+}
+
+.select-wrapper::after {
+  color: #F9A919;
+}
+
+.field--label {
+  color: #F9A919;
+}
+
+section.program .col-md-4 {
+  background: url('../../images/petit-beurre-jaune.png') no-repeat center center;
+  background-size: contain;
+  min-height: 300px;
+  padding-top: 80px;
+  color: #FFF;
+  vertical-align: middle;
+}

@@ -1,0 +1,4 @@
+global-styling:
+  css:
+    theme:
+      assets/css/theme/color.css: {}
