@@ -1,0 +1,30 @@
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:163d2712-a683-4183-89c0-4a287e8291f6'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - nantes2016
+id: nantes2016_baseline
+theme: nantes2016
+region: footer
+weight: -7
+provider: null
+plugin: 'block_content:163d2712-a683-4183-89c0-4a287e8291f6'
+settings:
+  id: 'block_content:163d2712-a683-4183-89c0-4a287e8291f6'
+  label: Baseline
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

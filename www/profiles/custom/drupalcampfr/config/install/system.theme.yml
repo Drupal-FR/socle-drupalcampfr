@@ -1,3 +1,4 @@
 admin: seven
-default: drupalcampfr_theme
+#default: drupalcampfr_theme
+default: nantes2016
 langcode: fr

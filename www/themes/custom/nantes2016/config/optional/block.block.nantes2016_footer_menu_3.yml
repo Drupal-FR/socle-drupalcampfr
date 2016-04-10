@@ -1,0 +1,23 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.footer-menu-3
+  module:
+    - system
+  theme:
+    - nantes2016
+id: nantes2016_footer_menu_3
+theme: nantes2016
+region: footer
+weight: -9
+provider: null
+plugin: 'system_menu_block:footer-menu-3'
+settings:
+  id: 'system_menu_block:footer-menu-3'
+  label: Sponsors
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

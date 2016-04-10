@@ -84,7 +84,8 @@ dependencies:
 #  - webprofiler
 #  - drupalcampfr_migrate
 themes:
-  - drupalcampfr_theme
+  - nantes2016
+#  - drupalcampfr_theme
   - seven
 package: 'Drupalcampfr'
 #distribution:

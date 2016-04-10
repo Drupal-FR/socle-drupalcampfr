@@ -1,0 +1,32 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.homepage
+  content:
+    - 'block_content:basic:34839cf0-8835-464b-98f7-bb86ecd65531'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - nantes2016
+id: nantes2016_homepage_program
+theme: nantes2016
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:34839cf0-8835-464b-98f7-bb86ecd65531'
+settings:
+  id: 'block_content:34839cf0-8835-464b-98f7-bb86ecd65531'
+  label: Programme
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: homepage
+    context_mapping: {  }
