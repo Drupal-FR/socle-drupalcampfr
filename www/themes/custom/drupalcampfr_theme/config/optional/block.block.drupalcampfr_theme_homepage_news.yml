@@ -2,29 +2,29 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.sponsor_sitewide
-    - views.view.sponsor
+    - block_visibility_groups.block_visibility_group.homepage
+    - views.view.news
   module:
     - block_visibility_groups
     - views
   theme:
     - drupalcampfr_theme
-id: views_block__sponsor_block_sitewide
+id: drupalcampfr_theme_homepage_news
 theme: drupalcampfr_theme
-region: sidebar_first
-weight: -9
+region: content
+weight: -6
 provider: null
-plugin: 'views_block:sponsor-block_sitewide'
+plugin: 'views_block:news-block_home_news'
 settings:
-  id: 'views_block:sponsor-block_sitewide'
+  id: 'views_block:news-block_home_news'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: sponsor_sitewide
+    block_visibility_group: homepage
     context_mapping: {  }

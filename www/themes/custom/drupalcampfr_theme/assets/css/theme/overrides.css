@@ -17,7 +17,7 @@ article.news.teaser .field--type-text-with-summary {
 /**
  * Banner block.
  */
-.region-header #block-bannerblock:not(:last-child) {
+.region-header .banner:not(:last-child) {
   margin-bottom: 10px;
 }
 

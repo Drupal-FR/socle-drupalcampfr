@@ -6,7 +6,7 @@ dependencies:
     - drupalcampfr_newsletter
   theme:
     - drupalcampfr_theme
-id: newslettersubscriptionblock
+id: drupalcampfr_theme_newsletter_subscription
 theme: drupalcampfr_theme
 region: content_bottom
 weight: -1

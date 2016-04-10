@@ -6,7 +6,7 @@ dependencies:
     - drupalcampfr_site
   theme:
     - drupalcampfr_theme
-id: bannerblock
+id: drupalcampfr_theme_banner
 theme: drupalcampfr_theme
 region: header
 weight: -9

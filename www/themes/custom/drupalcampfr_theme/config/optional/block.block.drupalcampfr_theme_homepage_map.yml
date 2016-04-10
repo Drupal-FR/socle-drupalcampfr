@@ -8,7 +8,7 @@ dependencies:
     - drupalcampfr_site
   theme:
     - drupalcampfr_theme
-id: mapblock
+id: drupalcampfr_theme_homepage_map
 theme: drupalcampfr_theme
 region: content
 weight: -5

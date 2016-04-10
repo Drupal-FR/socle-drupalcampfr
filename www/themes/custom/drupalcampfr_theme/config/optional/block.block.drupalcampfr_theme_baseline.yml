@@ -8,7 +8,7 @@ dependencies:
     - block_visibility_groups
   theme:
     - drupalcampfr_theme
-id: baseline
+id: drupalcampfr_theme_baseline
 theme: drupalcampfr_theme
 region: footer
 weight: -7

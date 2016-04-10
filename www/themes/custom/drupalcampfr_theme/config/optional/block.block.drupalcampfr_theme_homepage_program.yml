@@ -3,25 +3,27 @@ status: true
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.homepage
-    - views.view.news
+  content:
+    - 'block_content:basic:34839cf0-8835-464b-98f7-bb86ecd65531'
   module:
+    - block_content
     - block_visibility_groups
-    - views
   theme:
     - drupalcampfr_theme
-id: views_block__news_block_home_news
+id: drupalcampfr_theme_homepage_program
 theme: drupalcampfr_theme
 region: content
-weight: -6
+weight: -3
 provider: null
-plugin: 'views_block:news-block_home_news'
+plugin: 'block_content:34839cf0-8835-464b-98f7-bb86ecd65531'
 settings:
-  id: 'views_block:news-block_home_news'
-  label: ''
-  provider: views
-  label_display: '0'
-  views_label: ''
-  items_per_page: none
+  id: 'block_content:34839cf0-8835-464b-98f7-bb86ecd65531'
+  label: Programme
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
 visibility:
   condition_group:
     id: condition_group
