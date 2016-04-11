@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE_PATH=$(realpath $0)
+FILE_PATH=$(abspath $0)
 PROJECT_PATH=$(dirname $(dirname $FILE_PATH))
 
 CURRENT_PATH=$(pwd)
