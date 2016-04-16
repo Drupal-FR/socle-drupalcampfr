@@ -29,7 +29,7 @@ cd $WWW_PATH
 # Database backup.
 $DRUSH sql-dump --result-file="${PROJECT_PATH}/backups/${CURRENT_DATE}.sql" --gzip
 
-# Launch updates.
+# Launch updates. Ensure that the database schema is up-to-date.
 $DRUSH updb --entity-updates -y
 
 # Enable development modules.

@@ -39,6 +39,9 @@ $DRUSH site-install $PROFILE \
   --locale=fr \
   -y
 
+# Launch updates. Ensure that the database schema is up-to-date.
+$DRUSH updb --entity-updates -y
+
 # Enable development modules.
 if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
   $DRUSH en \
