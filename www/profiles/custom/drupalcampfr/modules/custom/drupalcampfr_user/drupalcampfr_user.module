@@ -5,6 +5,8 @@
  * Contains hook implementations for drupalcampfr_user module.
  */
 
+use Drupal\Core\Form\FormStateInterface;
+
 /**
  * Implements hook_menu_links_discovered_alter().
  *
@@ -20,5 +22,17 @@ function drupalcampfr_user_menu_links_discovered_alter(&$links) {
     if (isset($links[$user_link])) {
       $links[$user_link]['enabled'] = FALSE;
     }
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ *
+ * Hide field on user form.
+ */
+function drupalcampfr_user_form_user_form_alter(&$form, FormStateInterface $form_state) {
+  $current_user = \Drupal::currentUser();
+  if (!$current_user->hasPermission('administer users') && isset($form['field_user_is_attendee'])) {
+    $form['field_user_is_attendee']['#access'] = FALSE;
   }
 }
