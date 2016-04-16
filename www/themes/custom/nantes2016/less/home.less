@@ -1,0 +1,148 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(https://fonts.gstatic.com/s/oxygen/v5/LC4u_jU27qpsdszDEgeU_3-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(https://fonts.gstatic.com/s/oxygen/v5/qBSyz106i5ud7wkBU-FrPevvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oxygen Bold'), local('Oxygen-Bold'), url(https://fonts.gstatic.com/s/oxygen/v5/fSUtikcZd7PHZK0t2hzTeYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oxygen Bold'), local('Oxygen-Bold'), url(https://fonts.gstatic.com/s/oxygen/v5/yVHpdQrmTj9Kax1tmFSx2pBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Aleo';
+  src: url('../fonts/aleo-regular-webfont.eot');
+  src: url('../fonts/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/aleo-regular-webfont.woff') format('woff'),
+  url('../fonts/aleo-regular-webfont.ttf') format('truetype'),
+  url('../fonts/aleo-regular-webfont.svg#aleolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aleo';
+  src: url('../fonts/aleo-light-webfont.eot');
+  src: url('../fonts/aleo-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/aleo-light-webfont.woff') format('woff'),
+  url('../fonts/aleo-light-webfont.ttf') format('truetype'),
+  url('../fonts/aleo-light-webfont.svg#aleolight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+#splash-title {
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: @font-family-headings;
+}
+
+#splash-title > img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#splash-title h1 {
+  position: absolute;
+  text-align: center;
+  top: 60px;
+  left: 0;
+  right: 0;
+  color: white;
+  font-weight: 300;
+  font-size: 45px;
+  margin: 0;
+}
+
+#splash-title h2 {
+  position: absolute;
+  text-align: center;
+  top: 130px;
+  left: 0;
+  right: 0;
+  color: #f9a919;
+  font-weight: 300;
+  font-size: 28px;
+  margin: 0;
+}
+
+#splash-title span {
+  position: fixed;
+  text-align: center;
+  top: 100%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-size: 25px;
+  margin-top: -30px;
+  opacity: .5;
+}
+
+#splash-title h1 img {
+  height: 60px;
+  padding-left: 10px;
+  vertical-align: text-bottom;
+  margin-bottom: -5px;
+}
+
+@media (max-width: 520px) {
+  #splash-title h1 {
+    font-size: 30px;
+    top: 5px;
+  }
+
+  #splash-title h2 {
+    font-size: 18px;
+    top: 45px;
+  }
+
+  #splash-title h1 img {
+    height: 28px;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 720px) {
+  #splash-title h1 {
+    font-size: 40px;
+    top: 20px;
+  }
+
+  #splash-title h2 {
+    font-size: 18px;
+    top: 90px;
+  }
+}
+
+a.logo {
+  padding-right: @grid-gutter-width/2;
+}

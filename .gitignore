@@ -35,3 +35,6 @@ scripts/script-parameters.sh
 
 # Backups.
 backups/*
+
+# Node modules
+node_modules

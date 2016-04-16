@@ -1,0 +1,14 @@
+{
+  "name": "nantes2016",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-rename": "latest",
+    "gulp-concat": "latest",
+    "less-plugin-clean-css": "latest",
+    "gulp-less": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-sourcemaps": "latest"
+  }
+}
