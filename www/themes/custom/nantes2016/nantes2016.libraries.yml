@@ -1,4 +1,6 @@
 global-styling:
   css:
     theme:
-      assets/css/theme/color.css: {}
+      assets/css/style.min.css: {}
+  js:
+    assets/js/bootstrap.min.js: {}
