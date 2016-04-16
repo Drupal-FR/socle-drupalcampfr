@@ -1,6 +1,10 @@
 #!/bin/bash
 
-FILE_PATH=$(abspath $0)
+function abspath() {
+    python -c "import sys, os;sys.stdout.write(os.path.abspath(\"$@\"))"
+}
+
+FILE_PATH=$(abspath "${0}")
 PROJECT_PATH=$(dirname $(dirname $FILE_PATH))
 
 CURRENT_PATH=$(pwd)
