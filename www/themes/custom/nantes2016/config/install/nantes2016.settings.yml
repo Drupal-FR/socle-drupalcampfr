@@ -10,9 +10,8 @@ features:
   favicon: 1
   node_user_picture: 1
 logo:
-  path: ''
-  url: ''
-  use_default: 1
+  path: 'themes/custom/nantes2016/logo.png'
+  use_default: 0
 region_wells:
   navigation: ''
   navigation_collapsible: ''
@@ -24,6 +23,7 @@ region_wells:
   sidebar_second: ''
   footer: ''
 navbar_position: fixed-top
+navbar_inverse: 1
 breadcrumb_home: 1
 forms_smart_descriptions: 0
 tooltip_enabled: 0
