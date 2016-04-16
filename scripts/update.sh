@@ -30,7 +30,7 @@ cd $WWW_PATH
 $DRUSH sql-dump --result-file="${PROJECT_PATH}/backups/${CURRENT_DATE}.sql" --gzip
 
 # Launch updates.
-$DRUSH updb -y
+$DRUSH updb --entity-updates -y
 
 # Enable development modules.
 if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
