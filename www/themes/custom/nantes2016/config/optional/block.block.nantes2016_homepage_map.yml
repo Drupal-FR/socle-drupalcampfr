@@ -18,7 +18,7 @@ settings:
   id: map_block
   label: 'Plan d''accès'
   provider: drupalcampfr_site
-  label_display: visible
+  label_display: ''
   latitude: '47.21047'
   longitude: '-1.56677'
   zoom_level: '18'
