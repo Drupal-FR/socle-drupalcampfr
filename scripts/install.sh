@@ -8,6 +8,7 @@ FILE_PATH=$(abspath "${0}")
 PROJECT_PATH=$(dirname $(dirname $FILE_PATH))
 
 . $PROJECT_PATH/scripts/script-parameters.sh
+. $PROJECT_PATH/scripts/script-parameters.local.sh
 
 # Test that composer is installed.
 if ! hash "composer" 2> /dev/null; then

@@ -8,6 +8,7 @@ FILE_PATH=$(abspath "${0}")
 PROJECT_PATH=$(dirname $(dirname $FILE_PATH))
 
 . $PROJECT_PATH/scripts/script-parameters.sh
+. $PROJECT_PATH/scripts/script-parameters.local.sh
 
 DRUPAL_VERSION=${1:-drupal-8}
 DRUPAL_TEMP=$(mktemp -d)

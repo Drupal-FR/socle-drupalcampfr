@@ -43,7 +43,10 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "scripts": {
-    "post-install-cmd": "bash ../scripts/update-scaffold.sh"
+    "post-install-cmd": [
+      "bash ../scripts/update-scaffold.sh",
+      "bash ../scripts/update-libraries.sh"
+    ]
   },
   "extra": {
     "installer-paths": {

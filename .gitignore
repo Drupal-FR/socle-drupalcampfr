@@ -3,6 +3,7 @@ www/core
 www/modules/contrib
 www/themes/contrib
 www/profiles/contrib
+www/libraries
 www/vendor
 
 www/autoload.php
@@ -31,7 +32,7 @@ www/sites/default/files
 .idea
 
 # Script configuration.
-scripts/script-parameters.sh
+scripts/script-parameters.local.sh
 
 # Backups.
 backups/*
