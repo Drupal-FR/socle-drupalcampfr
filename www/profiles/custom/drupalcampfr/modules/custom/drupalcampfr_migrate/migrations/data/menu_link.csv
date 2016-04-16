@@ -15,25 +15,25 @@ Identifier,UUID,Title,URI,Parent,Weight,Menu name,Expanded,Enabled
 14,,Programme,entity:node/1,0,0,main,1,1
 15,,Programme,entity:node/1,14,0,main,1,1
 16,,Sessions,internal:/programme/sessions,14,1,main,1,1
-17,,Keynotes,entity:node/2,14,2,main,1,"0
-"
+17,,Keynotes,entity:node/2,14,2,main,1,0
 18,,Sprints,entity:node/3,14,3,main,1,1
 19,,Prises de notes collaboratives,entity:node/4,14,4,main,1,1
 20,,Guide aux conférenciers,entity:node/5,14,7,main,1,1
 21,,Communauté,entity:node/6,0,1,main,1,1
 22,,À propos,entity:node/6,21,0,main,1,1
-23,,Soirée communautaire,entity:node/7,21,2,main,1,1
-24,,Code de conduite,entity:node/8,21,3,main,1,1
-25,,Devenir volontaire,internal:/communaute/devenir-volontaire,21,5,main,1,0
-26,,Convaincre sa société,entity:node/9,21,6,main,1,1
-27,,Demander un certificat de présence,internal:/communaute/certificat-presence,21,7,main,1,1
-28,,Forfaits,entity:node/10,drupalcampfr_sponsor.main.sponsor,2,main,1,1
-29,,Devenir sponsor,internal:/sponsors/devenir-sponsor,drupalcampfr_sponsor.main.sponsor,5,main,1,1
-30,,Badges,entity:node/11,drupalcampfr_sponsor.main.sponsor,6,main,1,1
-31,,Infos pratiques,entity:node/12,0,3,main,1,1
-32,,Lieu,entity:node/12,31,0,main,1,1
-33,,Accès,entity:node/13,31,1,main,1,1
-34,,Hébergements,entity:node/14,31,2,main,1,1
-35,,Se préparer,entity:node/15,31,3,main,1,1
-36,,Bons plans,entity:node/16,31,4,main,1,1
-37,,Revue de presse,entity:node/17,drupalcampfr_news.main.news,1,main,1,1
+23,,Participants,internal:/communaute/participants,21,1,main,1,1
+24,,Soirée communautaire,entity:node/7,21,2,main,1,1
+25,,Code de conduite,entity:node/8,21,3,main,1,1
+26,,Devenir volontaire,internal:/communaute/devenir-volontaire,21,5,main,1,0
+27,,Convaincre sa société,entity:node/9,21,6,main,1,1
+28,,Demander un certificat de présence,internal:/communaute/certificat-presence,21,7,main,1,1
+29,,Forfaits,entity:node/10,drupalcampfr_sponsor.main.sponsor,2,main,1,1
+30,,Devenir sponsor,internal:/sponsors/devenir-sponsor,drupalcampfr_sponsor.main.sponsor,5,main,1,1
+31,,Badges,entity:node/11,drupalcampfr_sponsor.main.sponsor,6,main,1,1
+32,,Infos pratiques,entity:node/12,0,3,main,1,1
+33,,Lieu,entity:node/12,32,0,main,1,1
+34,,Accès,entity:node/13,32,1,main,1,1
+35,,Hébergements,entity:node/14,32,2,main,1,1
+36,,Se préparer,entity:node/15,32,3,main,1,1
+37,,Bons plans,entity:node/16,32,4,main,1,1
+38,,Revue de presse,entity:node/17,drupalcampfr_news.main.news,1,main,1,1

@@ -23,7 +23,7 @@ settings:
 module: image
 locked: false
 cardinality: 1
-translatable: true
+translatable: false
 indexes:
   target_id:
     - target_id

@@ -3,22 +3,25 @@ status: true
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.homepage
+    - views.view.user_attendee
   module:
     - block_visibility_groups
-    - drupalcampfr_social
+    - views
   theme:
     - nantes2016
-id: nantes2016_homepage_twitter
+id: nantes2016_homepage_attendee
 theme: nantes2016
 region: content
-weight: -1
+weight: -2
 provider: null
-plugin: twitter_block
+plugin: 'views_block:user_attendee-block_home'
 settings:
-  id: twitter_block
-  label: 'Derniers tweets'
-  provider: drupalcampfr_social
+  id: 'views_block:user_attendee-block_home'
+  label: ''
+  provider: views
   label_display: visible
+  views_label: ''
+  items_per_page: none
 visibility:
   condition_group:
     id: condition_group

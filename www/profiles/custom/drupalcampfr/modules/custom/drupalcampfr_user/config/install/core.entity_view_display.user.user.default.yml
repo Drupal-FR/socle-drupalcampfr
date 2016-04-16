@@ -2,6 +2,8 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_user_is_attendee
+    - field.field.user.user.field_user_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -12,8 +14,13 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  member_for:
-    weight: 5
+  field_user_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
   user_picture:
     type: image
     weight: 0
@@ -22,4 +29,6 @@ content:
       image_link: content
     third_party_settings: {  }
     label: hidden
-hidden: {  }
+hidden:
+  field_user_is_attendee: true
+  member_for: true

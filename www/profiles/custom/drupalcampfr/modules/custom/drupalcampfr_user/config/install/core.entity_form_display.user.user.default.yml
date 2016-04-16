@@ -2,11 +2,12 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_user_is_attendee
+    - field.field.user.user.field_user_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
-    - path
     - user
 id: user.user.default
 targetEntityType: user
@@ -14,23 +15,40 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
-  contact:
-    weight: 5
-  language:
     weight: 0
-  path:
-    type: path
-    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+  field_user_is_attendee:
+    type: boolean_checkbox
+    weight: 6
+    settings:
+      display_label: false
+    third_party_settings: {  }
+  field_user_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  language:
+    weight: 3
     settings: {  }
     third_party_settings: {  }
   timezone:
-    weight: 6
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
-hidden: {  }
+    weight: 2
+hidden:
+  path: true

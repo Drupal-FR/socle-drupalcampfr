@@ -84,3 +84,12 @@ function drupalcampfr_theme_form_node_session_edit_form_alter(&$form, FormStateI
     $form['actions']['delete']['#attributes']['class'][] = 'btn-danger';
   }
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * Add suggestions for field.
+ */
+function drupalcampfr_theme_theme_suggestions_field_alter(array &$suggestions, array $variables) {
+  $suggestions[] = 'field__' . $variables['element']['#entity_type'] . '__' . $variables['element']['#field_name'] . '__' . $variables['element']['#bundle'] . '__' . $variables['element']['#view_mode'];
+}

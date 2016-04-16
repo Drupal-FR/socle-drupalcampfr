@@ -3,6 +3,7 @@ description: 'Provide User related configuration.'
 type: module
 core: 8.x
 dependencies:
+  - drupalcampfr_core
   - drupalcampfr_user
   - field
   - file
