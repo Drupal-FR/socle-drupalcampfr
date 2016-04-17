@@ -21,6 +21,7 @@ region_wells:
   content: ''
   sidebar_first: ''
   sidebar_second: ''
+  content_bottom: ''
   footer: ''
 navbar_position: fixed-top
 navbar_inverse: 1
