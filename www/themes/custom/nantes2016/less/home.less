@@ -134,3 +134,53 @@ a.logo {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
+
+section.program .col-md-4 {
+  background: url('../images/petit-beurre-jaune.png') no-repeat center center;
+  background-size: contain;
+  min-height: 300px;
+  padding-top: 80px;
+  color: #FFF;
+  vertical-align: middle;
+}
+
+#block-nantes2016-homepage-twitter {
+  .col-md-4 {
+    // lu gris
+  }
+}
+
+footer {
+  position: relative;
+  background: url(../images/nantes.jpg);
+  background-size: cover;
+  margin-top: 30px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(251, 205, 69, 1) 0%, rgba(251, 205, 69, 0));
+  }
+}
+#block-nantes2016-newsletter-subscription {
+  h2 {
+    color: #fff;
+    margin: 0 0 1em;
+    &:after {
+      content: "-";
+      display: block;
+    }
+  }
+}
+#block-nantes2016-baseline {
+  margin-top: 20em;
+  p {
+    display: inline-block;
+    background: #fff;
+  }
+}
