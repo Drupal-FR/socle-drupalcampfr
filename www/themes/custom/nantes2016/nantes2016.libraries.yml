@@ -4,3 +4,4 @@ global-styling:
       assets/css/style.min.css: { minified: true }
   js:
     assets/js/bootstrap.min.js: { minified: true }
+    assets/js/nantes2016.js: { }
