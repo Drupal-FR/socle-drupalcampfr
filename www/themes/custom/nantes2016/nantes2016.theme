@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Add some useful variables
+ *
+ * @param $vars
+ */
+function nantes2016_preprocess_drupalcampfr_site_banner_block(&$vars) {
+  $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+  $vars['user_is_attendant'] = (int) $user->get('field_user_is_attendee')->value;
+  $vars['user_uid'] = \Drupal::currentUser()->id();
+  $vars['user_name'] = \Drupal::currentUser()->getAccountName();
+}
