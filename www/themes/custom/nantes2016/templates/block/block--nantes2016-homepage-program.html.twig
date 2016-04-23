@@ -48,16 +48,14 @@
 <section{{ attributes.addClass('block', 'clearfix', 'program') }}>
   {{ title_prefix }}
   {% if label %}
-    <div class="row">
-      <div class="col-md-12">
-        <h2{{ title_attributes.addClass('block-title', 'text-center') }}>{{ label }}</h2>
-      </div>
+    <div class="col-md-12">
+      <h2{{ title_attributes.addClass('block-title', 'text-center') }}>{{ label }}</h2>
     </div>
   {% endif %}
   {{ title_suffix }}
 
   {% block content %}
-    <div class="row text-center">
+    <div class="text-center">
       {{ content }}
     </div>
   {% endblock content %}

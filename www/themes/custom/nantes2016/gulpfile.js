@@ -30,7 +30,7 @@ gulp.task('less', function () {
 
 // Optimisation des images
 gulp.task('images', function () {
-    return gulp.src(['*/img*/*'])
+    return gulp.src(['assets/images/*'])
         .pipe(imagemin({
             progressive: true
         }))
@@ -40,9 +40,7 @@ gulp.task('images', function () {
 gulp.task('default', ['less']);
 gulp.task('watch', function () {
     gulp.watch(['./less/*'], ['less']);
-    gulp.watch(['./svg/*'], ['icons']);
-    gulp.watch(['*/js/*', '../modules/**/*.js'], ['jshint']);
-    gulp.watch(['*/img/*', '!./img/sprite.png'], ['images']);
+    gulp.watch(['./assets/images/*'], ['images']);
 });
 
 // Handle the error
