@@ -31,4 +31,11 @@ function drupalcampfr_sponsor_form_contact_message_sponsor_form_alter(&$form, Fo
       $form['field_sponsor_level']['widget'][$sponsor_level_tid]['#disabled'] = TRUE;
     }
   }
+
+  // Set Subject as company name (form mail subject)
+  $input = $form_state->getUserInput();
+  $form['subject'] = [
+    '#type'  => 'value',
+    '#value' => $input['field_sponsor_name'][0]['value'],
+  ];
 }
