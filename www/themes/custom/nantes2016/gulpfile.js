@@ -34,7 +34,7 @@ gulp.task('images', function () {
         .pipe(imagemin({
             progressive: true
         }))
-        .pipe(gulp.dest('.')).on('error', errorHandler);
+        .pipe(gulp.dest('assets/images/')).on('error', errorHandler);
 });
 
 gulp.task('default', ['less']);

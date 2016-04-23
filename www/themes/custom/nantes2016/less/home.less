@@ -169,7 +169,7 @@ section.program .col-md-4 {
 
 footer {
   position: relative;
-  background: url(../images/nantes.jpg);
+  background: url(../images/nantes768.jpg);
   background-size: cover;
   margin-top: 30px;
   padding-top: 1em;
@@ -184,6 +184,14 @@ footer {
     background: linear-gradient(180deg, rgba(251, 205, 69, 1) 0%, rgba(251, 205, 69, 0));
   }
 }
+@media (min-width: @screen-sm-min) {
+  footer {
+    background: url(../images/nantes.jpg);
+  }
+  #block-nantes2016-baseline {
+    margin-top: 20em;
+  }
+}
 #block-nantes2016-newsletter-subscription {
   h2 {
     color: #fff;
@@ -196,7 +204,7 @@ footer {
   }
 }
 #block-nantes2016-baseline {
-  margin-top: 20em;
+  margin-top: 3em;
   p {
     display: inline-block;
     background: #fff;
