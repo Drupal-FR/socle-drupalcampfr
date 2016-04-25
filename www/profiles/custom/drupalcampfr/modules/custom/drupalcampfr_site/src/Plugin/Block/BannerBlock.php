@@ -30,4 +30,16 @@ class BannerBlock extends BlockBase {
     return $build;
   }
 
+  /**
+   * Implements cache contexts.
+   *
+   * @return array|\string[]
+   */
+  public function getCacheContexts() {
+    $contexts = parent::getCacheContexts();
+
+    $contexts[] = 'user';
+
+    return $contexts;
+  }
 }
