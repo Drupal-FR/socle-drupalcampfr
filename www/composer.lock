@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fc8fe88d30b27273b201a8cd4dc55c14",
-    "content-hash": "466b8ff891b17b743ac3e8ad6dca5bc1",
+    "hash": "893f5a5e974838eb20271286572a2d9b",
+    "content-hash": "88e701ebe4004125f026d9774eccb51c",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1109,11 +1109,21 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "Empty views cache when queue is updated - 1": "https://www.drupal.org/files/issues/2686623.patch",
+                    "Empty views cache when queue is updated - 2": "https://www.drupal.org/files/issues/2686623-7_0.patch",
+                    "Can't save view with entity queue relationship - 1": "https://www.drupal.org/files/issues/2643928-27-dev.patch",
+                    "Can't save view with entity queue relationship - 2": "https://www.drupal.org/files/issues/2643928-29.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Allows users to collect entities in arbitrarily ordered lists.",
-            "homepage": "https://www.drupal.org/project/entityqueue"
+            "homepage": "https://www.drupal.org/project/entityqueue",
+            "time": "2016-02-27 10:27:11"
         },
         {
             "name": "drupal/features",

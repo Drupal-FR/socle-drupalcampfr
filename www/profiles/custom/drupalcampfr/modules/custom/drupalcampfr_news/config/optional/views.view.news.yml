@@ -247,7 +247,10 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:entityqueue.entity_queue.news_homepage'
+        - entity_field_info
+        - views_data
   page_news:
     display_plugin: page
     id: page_news

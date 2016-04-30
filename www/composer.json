@@ -56,6 +56,12 @@
       "themes/contrib/{$name}": ["type:drupal-theme"]
     },
     "patches": {
+      "drupal/entityqueue": {
+        "Empty views cache when queue is updated - 1": "https://www.drupal.org/files/issues/2686623.patch",
+        "Empty views cache when queue is updated - 2": "https://www.drupal.org/files/issues/2686623-7_0.patch",
+        "Can't save view with entity queue relationship - 1": "https://www.drupal.org/files/issues/2643928-27-dev.patch",
+        "Can't save view with entity queue relationship - 2": "https://www.drupal.org/files/issues/2643928-29.patch"
+      },
       "drupal/features": {
         "Not detecting overrides in profile config files": "https://www.drupal.org/files/issues/features-not_detecting_profile_files-2668562-2.patch",
         "Drush export features do not overwrite the existing feature": "https://www.drupal.org/files/issues/features-drush_export_overwrite-2672406-5.patch",
