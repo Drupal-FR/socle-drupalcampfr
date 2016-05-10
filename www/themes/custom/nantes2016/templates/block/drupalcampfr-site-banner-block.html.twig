@@ -7,7 +7,7 @@
     <div class="col-sm-4 col-sm-offset-3 text-center">
       {% if not logged_in %}
         <a href="/user" class="btn btn-primary btn-lg">
-          S'inscrire
+          S'inscrire pour acheter un ticket
         </a>
       {% elseif not user_is_attending %}
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#paypalModal">
@@ -18,6 +18,9 @@
           Acheter un autre ticket
         </a>
       {% endif %}
+      <p class="text-primary">
+        <small>Tarifs : 10€/j ou 15€ les 2j, dimanche gratuit.<br>Repas et soirées compris.</small>
+      </p>
     </div>
   </div>
 </div>
