@@ -2,7 +2,7 @@
 drupalcampfr_user.account.compte:
   title: 'Compte'
   description: 'Gérer votre compte.'
-  route_name: user.login
+  route_name: user.page
   weight: -10
   menu_name: account
   expanded: true
