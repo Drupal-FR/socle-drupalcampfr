@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalcampfr_newsletter\Plugin\Block\NewsletterSubscriptionBlock.
- */
-
 namespace Drupal\drupalcampfr_newsletter\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;

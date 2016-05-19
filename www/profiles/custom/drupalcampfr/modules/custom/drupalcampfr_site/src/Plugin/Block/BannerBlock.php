@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalcampfr_site\Plugin\Block\BannerBlock.
- */
-
 namespace Drupal\drupalcampfr_site\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;

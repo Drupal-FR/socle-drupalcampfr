@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalcampfr_social\Service\TwitterService.
- */
-
 namespace Drupal\drupalcampfr_social\Service;
 
 use Drupal\Core\Config\ConfigFactoryInterface;
@@ -30,7 +25,7 @@ class TwitterService implements TwitterServiceInterface {
   /**
    * The connection object.
    *
-   * @var Abraham\TwitterOAuth\TwitterOAuth
+   * @var \Abraham\TwitterOAuth\TwitterOAuth
    */
   protected $connection = NULL;
 

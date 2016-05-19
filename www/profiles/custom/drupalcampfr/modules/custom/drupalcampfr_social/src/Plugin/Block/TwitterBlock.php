@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalcampfr_social\Plugin\Block\TwitterBlock.
- */
-
 namespace Drupal\drupalcampfr_social\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;

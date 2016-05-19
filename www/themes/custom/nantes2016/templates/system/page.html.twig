@@ -74,7 +74,7 @@
     <div class="container">
       <div class="navbar-header">
         {{ page.navigation }}
-        {#.btn-navbar is used as the toggle for collapsed navbar content #}
+        {# .btn-navbar is used as the toggle for collapsed navbar content #}
         {% if page.navigation_collapsible %}
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
@@ -85,7 +85,7 @@
         {% endif %}
       </div>
 
-      {#Navigation (collapsible) #}
+      {# Navigation (collapsible) #}
       {% if page.navigation_collapsible %}
         <div class="navbar-collapse collapse">
           <a class="btn btn-primary navbar-btn navbar-right" href="{{ path('entity.contact_form.canonical', {'contact_form': 'sponsor'}) }}">{{ 'Sponsoriser'|t }}</a>

@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalcampfr_homepage\Controller\HomepageController.
- */
-
 namespace Drupal\drupalcampfr_homepage\Controller;
 
 use Drupal\Core\Controller\ControllerBase;

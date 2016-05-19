@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains Drupal\drupalcampfr_social\Form\AdminForm.
- */
-
 namespace Drupal\drupalcampfr_social\Form;
 
 use Drupal\Core\Form\ConfigFormBase;

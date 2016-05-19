@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalcampfr_migrate\Plugin\migrate\process\FindMenuPluginId.
- */
-
 namespace Drupal\drupalcampfr_migrate\Plugin\migrate\process;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
@@ -14,7 +9,6 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\migrate\ProcessPluginBase;
 use Drupal\migrate\MigrateExecutableInterface;
 use Drupal\migrate\Row;
-use Drupal\menu_link_content\Entity\MenuLinkContent;
 
 /**
  * Maps Menu id to Menu plugin id.
@@ -35,10 +29,7 @@ class FindMenuPluginId extends ProcessPluginBase implements ContainerFactoryPlug
   protected $entityTypeManager;
 
   /**
-   * Constructs a new FindMenuPluginId.
-   *
-   * @param EntityTypeManagerInterface $entity_type_manager
-   *   An Entity type manager.
+   * {@inheritdoc}
    */
   public function __construct(array $configuration, $plugin_id, $plugin_definition, MigrationInterface $migration, EntityTypeManagerInterface $entity_type_manager) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
@@ -62,7 +53,7 @@ class FindMenuPluginId extends ProcessPluginBase implements ContainerFactoryPlug
    * {@inheritdoc}
    */
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
-    /** @var MenuLinkContent $menu */
+    /** @var \Drupal\menu_link_content\Entity\MenuLinkContent $menu */
     $menu = $this->entityTypeManager->getStorage('menu_link_content')->load($value);
     if ($menu) {
       return $menu->getPluginId();

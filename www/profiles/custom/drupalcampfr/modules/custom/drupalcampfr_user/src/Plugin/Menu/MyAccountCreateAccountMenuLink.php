@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalcampfr_user\Plugin\Menu\MyAccountCreateAccountMenuLink.
- */
-
 namespace Drupal\drupalcampfr_user\Plugin\Menu;
 
 use Drupal\Core\Config\ConfigFactoryInterface;

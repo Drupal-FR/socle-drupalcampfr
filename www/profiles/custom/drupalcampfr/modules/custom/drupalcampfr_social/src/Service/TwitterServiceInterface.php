@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalcampfr_social\Service\TwitterServiceInterface.
- */
-
 namespace Drupal\drupalcampfr_social\Service;
 
 /**
