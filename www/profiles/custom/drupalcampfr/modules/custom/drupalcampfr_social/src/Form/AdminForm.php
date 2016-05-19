@@ -45,28 +45,24 @@ class AdminForm extends ConfigFormBase {
       '#title' => $this->t('Consumer key'),
       '#size' => 64,
       '#default_value' => $twitter->get('consumer_key'),
-      '#disabled' => TRUE,
     ];
     $form['twitter']['consumer_secret'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Consumer secret'),
       '#size' => 64,
       '#default_value' => $twitter->get('consumer_secret'),
-      '#disabled' => TRUE,
     ];
     $form['twitter']['access_token'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Access token'),
       '#size' => 64,
       '#default_value' => $twitter->get('access_token'),
-      '#disabled' => TRUE,
     ];
     $form['twitter']['access_token_secret'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Access token secret'),
       '#size' => 64,
       '#default_value' => $twitter->get('access_token_secret'),
-      '#disabled' => TRUE,
     ];
 
     return parent::buildForm($form, $form_state);
