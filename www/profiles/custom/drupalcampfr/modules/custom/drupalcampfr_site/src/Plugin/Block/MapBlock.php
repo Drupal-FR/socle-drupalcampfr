@@ -23,55 +23,55 @@ class MapBlock extends BlockBase {
     $form['latitude'] = array(
       '#type' => 'textfield',
       '#title' => $this->t('Latitude'),
-      '#default_value' => isset($this->configuration['latitude']) ? $this->configuration['latitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_LATITUDE,
+      '#default_value' => $this->configuration['latitude'],
       '#required' => TRUE,
     );
     $form['longitude'] = array(
       '#type' => 'textfield',
       '#title' => $this->t('Longitude'),
-      '#default_value' => isset($this->configuration['longitude']) ? $this->configuration['longitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_LONGITUDE,
+      '#default_value' => $this->configuration['longitude'],
       '#required' => TRUE,
     );
     $form['zoom_level'] = array(
       '#type' => 'number',
       '#title' => $this->t('Zoom level'),
-      '#default_value' => isset($this->configuration['zoom_level']) ? $this->configuration['zoom_level'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_ZOOM_LEVEL,
+      '#default_value' => $this->configuration['zoom_level'],
       '#required' => TRUE,
     );
     $form['box_bottom_left_latitude'] = array(
       '#type' => 'textfield',
       '#title' => $this->t('Box bottom left latitude'),
-      '#default_value' => isset($this->configuration['box_bottom_left_latitude']) ? $this->configuration['box_bottom_left_latitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_BOTTOM_LEFT_LATITUDE,
+      '#default_value' => $this->configuration['box_bottom_left_latitude'],
       '#required' => TRUE,
     );
     $form['box_bottom_left_longitude'] = array(
       '#type' => 'textfield',
       '#title' => $this->t('Box bottom left longitude'),
-      '#default_value' => isset($this->configuration['box_bottom_left_longitude']) ? $this->configuration['box_bottom_left_longitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_BOTTOM_LEFT_LONGITUDE,
+      '#default_value' => $this->configuration['box_bottom_left_longitude'],
       '#required' => TRUE,
     );
     $form['box_top_right_latitude'] = array(
       '#type' => 'textfield',
       '#title' => $this->t('Box top right latitude'),
-      '#default_value' => isset($this->configuration['box_top_right_latitude']) ? $this->configuration['box_top_right_latitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_TOP_RIGHT_LATITUDE,
+      '#default_value' => $this->configuration['box_top_right_latitude'],
       '#required' => TRUE,
     );
     $form['box_top_right_longitude'] = array(
       '#type' => 'textfield',
       '#title' => $this->t('Box top right longitude'),
-      '#default_value' => isset($this->configuration['box_top_right_longitude']) ? $this->configuration['box_top_right_longitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_TOP_RIGHT_LONGITUDE,
+      '#default_value' => $this->configuration['box_top_right_longitude'],
       '#required' => TRUE,
     );
     $form['marker_latitude'] = array(
       '#type' => 'textfield',
       '#title' => $this->t('Marker latitude'),
-      '#default_value' => isset($this->configuration['marker_latitude']) ? $this->configuration['marker_latitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LATITUDE,
+      '#default_value' => $this->configuration['marker_latitude'],
       '#required' => TRUE,
     );
     $form['marker_longitude'] = array(
       '#type' => 'textfield',
       '#title' => $this->t('Marker longitude'),
-      '#default_value' => isset($this->configuration['marker_longitude']) ? $this->configuration['marker_longitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LONGITUDE,
+      '#default_value' => $this->configuration['marker_longitude'],
       '#required' => TRUE,
     );
 
@@ -99,18 +99,35 @@ class MapBlock extends BlockBase {
   public function build() {
     $build = array(
       '#theme' => 'drupalcampfr_site_map_block',
-      '#latitude' => isset($this->configuration['latitude']) ? $this->configuration['latitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_LATITUDE,
-      '#longitude' => isset($this->configuration['longitude']) ? $this->configuration['longitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_LONGITUDE,
-      '#zoom_level' => isset($this->configuration['zoom_level']) ? $this->configuration['zoom_level'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_ZOOM_LEVEL,
-      '#box_bottom_left_latitude' => isset($this->configuration['box_bottom_left_latitude']) ? $this->configuration['box_bottom_left_latitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_BOTTOM_LEFT_LATITUDE,
-      '#box_bottom_left_longitude' => isset($this->configuration['box_bottom_left_longitude']) ? $this->configuration['box_bottom_left_longitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_BOTTOM_LEFT_LONGITUDE,
-      '#box_top_right_latitude' => isset($this->configuration['box_top_right_latitude']) ? $this->configuration['box_top_right_latitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_TOP_RIGHT_LATITUDE,
-      '#box_top_right_longitude' => isset($this->configuration['box_top_right_longitude']) ? $this->configuration['box_top_right_longitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_TOP_RIGHT_LONGITUDE,
-      '#marker_latitude' => isset($this->configuration['marker_latitude']) ? $this->configuration['marker_latitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LATITUDE,
-      '#marker_longitude' => isset($this->configuration['marker_longitude']) ? $this->configuration['marker_longitude'] : DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LONGITUDE,
+      '#latitude' => $this->configuration['latitude'],
+      '#longitude' => $this->configuration['longitude'],
+      '#zoom_level' => $this->configuration['zoom_level'],
+      '#box_bottom_left_latitude' => $this->configuration['box_bottom_left_latitude'],
+      '#box_bottom_left_longitude' => $this->configuration['box_bottom_left_longitude'],
+      '#box_top_right_latitude' => $this->configuration['box_top_right_latitude'],
+      '#box_top_right_longitude' => $this->configuration['box_top_right_longitude'],
+      '#marker_latitude' => $this->configuration['marker_latitude'],
+      '#marker_longitude' => $this->configuration['marker_longitude'],
     );
 
     return $build;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function defaultConfiguration() {
+    return array(
+      'latitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_LATITUDE,
+      'longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_LONGITUDE,
+      'zoom_level' => DRUPALCAMPFR_SITE_DEFAULT_MAP_ZOOM_LEVEL,
+      'box_bottom_left_latitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_BOTTOM_LEFT_LATITUDE,
+      'box_bottom_left_longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_BOTTOM_LEFT_LONGITUDE,
+      'box_top_right_latitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_TOP_RIGHT_LATITUDE,
+      'box_top_right_longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_TOP_RIGHT_LONGITUDE,
+      'marker_latitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LATITUDE,
+      'marker_longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LONGITUDE,
+    );
   }
 
 }

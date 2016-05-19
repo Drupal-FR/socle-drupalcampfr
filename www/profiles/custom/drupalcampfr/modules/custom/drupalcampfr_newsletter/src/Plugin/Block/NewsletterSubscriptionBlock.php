@@ -23,21 +23,21 @@ class NewsletterSubscriptionBlock extends BlockBase {
       '#type' => 'textfield',
       '#title' => $this->t('Account hash'),
       '#description' => $this->t('Mailchimp account hash.'),
-      '#default_value' => isset($this->configuration['account_hash']) ? $this->configuration['account_hash'] : DRUPALCAMPFR_NEWSLETTER_DEFAULT_ACCOUNT_HASH,
+      '#default_value' => $this->configuration['account_hash'],
       '#required' => TRUE,
     );
     $form['mailing_list_hash'] = array(
       '#type' => 'textfield',
       '#title' => $this->t('Mailing list hash'),
       '#description' => $this->t('Mailchimp mailing list hash.'),
-      '#default_value' => isset($this->configuration['mailing_list_hash']) ? $this->configuration['mailing_list_hash'] : DRUPALCAMPFR_NEWSLETTER_DEFAULT_MAILING_LIST_HASH,
+      '#default_value' => $this->configuration['mailing_list_hash'],
       '#required' => TRUE,
     );
     $form['anti_spam_token'] = array(
       '#type' => 'textfield',
       '#title' => $this->t('Anti-spam token'),
       '#description' => $this->t('Mailchimp anti-spam token'),
-      '#default_value' => isset($this->configuration['anti_spam_token']) ? $this->configuration['anti_spam_token'] : DRUPALCAMPFR_NEWSLETTER_DEFAULT_ANTI_SPAM_TOKEN,
+      '#default_value' => $this->configuration['anti_spam_token'],
       '#required' => TRUE,
     );
 
@@ -60,12 +60,23 @@ class NewsletterSubscriptionBlock extends BlockBase {
 
     $build = array(
       '#theme' => 'drupalcampfr_newsletter_subscription_block',
-      '#account_hash' => isset($this->configuration['account_hash']) ? $this->configuration['account_hash'] : DRUPALCAMPFR_NEWSLETTER_DEFAULT_ACCOUNT_HASH,
-      '#mailing_list_hash' => isset($this->configuration['mailing_list_hash']) ? $this->configuration['mailing_list_hash'] : DRUPALCAMPFR_NEWSLETTER_DEFAULT_MAILING_LIST_HASH,
-      '#anti_spam_token' => isset($this->configuration['anti_spam_token']) ? $this->configuration['anti_spam_token'] : DRUPALCAMPFR_NEWSLETTER_DEFAULT_ANTI_SPAM_TOKEN,
+      '#account_hash' => $this->configuration['account_hash'],
+      '#mailing_list_hash' => $this->configuration['mailing_list_hash'],
+      '#anti_spam_token' => $this->configuration['anti_spam_token'],
     );
 
     return $build;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function defaultConfiguration() {
+    return array(
+      'account_hash' => DRUPALCAMPFR_NEWSLETTER_DEFAULT_ACCOUNT_HASH,
+      'mailing_list_hash' => DRUPALCAMPFR_NEWSLETTER_DEFAULT_MAILING_LIST_HASH,
+      'anti_spam_token' => DRUPALCAMPFR_NEWSLETTER_DEFAULT_ANTI_SPAM_TOKEN,
+    );
   }
 
 }
