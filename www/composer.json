@@ -53,7 +53,8 @@
       "core": ["type:drupal-core"],
       "modules/contrib/{$name}": ["type:drupal-module"],
       "profiles/contrib/{$name}": ["type:drupal-profile"],
-      "themes/contrib/{$name}": ["type:drupal-theme"]
+      "themes/contrib/{$name}": ["type:drupal-theme"],
+      "libraries/{$name}": ["drupal-library"]
     },
     "patches": {
       "drupal/entityqueue": {
