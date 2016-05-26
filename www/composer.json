@@ -36,6 +36,7 @@
   },
   "require-dev": {
     "drupal/devel": "8.1.*",
+    "drupal/devel_a11y": "8.1.*",
     "drupal/config_inspector": "8.1.*",
     "drupal/examples": "8.1.*",
     "drupal/pistachio": "8.1.*"

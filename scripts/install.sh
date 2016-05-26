@@ -49,6 +49,7 @@ if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
     config_inspector \
     dblog \
     devel \
+    devel_a11y \
     features_ui \
     field_ui \
     views_ui \

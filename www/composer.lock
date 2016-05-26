@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "893f5a5e974838eb20271286572a2d9b",
-    "content-hash": "88e701ebe4004125f026d9774eccb51c",
+    "hash": "d9db110d7433dd459a4ab6e1e71bd246",
+    "content-hash": "b9243c0160c131f59dbe00e81a434ac4",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -3696,6 +3696,32 @@
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "http://drupal.org/project/devel",
             "time": "2016-04-07 06:41:07"
+        },
+        {
+            "name": "drupal/devel_a11y",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/devel_a11y.git",
+                "reference": "b0832552461e6776ef8e5e2120da53dcdc888c9e"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/devel": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Extends the Devel module to simplify testing of accessibility.",
+            "homepage": "https://www.drupal.org/project/devel_a11y",
+            "time": "2015-06-21 11:41:15"
         },
         {
             "name": "drupal/examples",
