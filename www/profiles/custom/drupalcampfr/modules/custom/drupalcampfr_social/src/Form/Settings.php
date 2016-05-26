@@ -6,11 +6,11 @@ use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Class AdminForm.
+ * Class Settings.
  *
  * @package Drupal\drupalcampfr_social\Form
  */
-class AdminForm extends ConfigFormBase {
+class Settings extends ConfigFormBase {
 
   /**
    * {@inheritdoc}
@@ -25,7 +25,7 @@ class AdminForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'admin_form';
+    return 'drupalcampfr_social_settings_form';
   }
 
   /**
