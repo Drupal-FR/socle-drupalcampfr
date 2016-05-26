@@ -1,14 +1,21 @@
 {
-  "name": "florenttorregrosa/socle-drupalcampfr",
+  "name": "Drupal-FR/socle-drupalcampfr",
   "description": "Technical base for french drupalcamps. Template inspired from drupal-composer/drupal-project.",
   "type": "project",
+  "homepage": "http://drupalcamp.fr",
   "license": "GPL-2.0+",
   "authors": [
     {
       "name": "Florent Torregrosa",
+      "homepage": "http://drupal.fr/user/40695",
       "role": "Developer"
     }
   ],
+  "support": {
+    "issues": "https://github.com/Drupal-FR/socle-drupalcampfr/issues",
+    "source": "https://github.com/Drupal-FR/socle-drupalcampfr",
+    "docs": "https://github.com/Drupal-FR/socle-drupalcampfr/blob/8.x-1.x/README.md"
+  },
   "repositories": [
     {
       "type": "composer",
