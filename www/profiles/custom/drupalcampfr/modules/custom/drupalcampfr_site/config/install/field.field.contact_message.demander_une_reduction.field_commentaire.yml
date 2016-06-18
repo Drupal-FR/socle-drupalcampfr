@@ -1,0 +1,18 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.demander_une_reduction
+    - field.storage.contact_message.field_commentaire
+id: contact_message.demander_une_reduction.field_commentaire
+field_name: field_commentaire
+entity_type: contact_message
+bundle: demander_une_reduction
+label: Commentaire
+description: 'Dans le cas d''une réduction adhérent, veuillez indiquer votre nom complet et votre pseudo sur <a href="http://drupalfr.org">drupalfr.org</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

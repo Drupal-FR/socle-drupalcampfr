@@ -11,6 +11,7 @@ dependencies:
   - drupalcampfr_site
   - editor
   - field
+  - file
   - filter
   - options
   - rdf

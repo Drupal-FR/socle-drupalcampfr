@@ -1,0 +1,19 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_indications_repas
+  module:
+    - user
+id: user.user.field_indications_repas
+field_name: field_indications_repas
+entity_type: user
+bundle: user
+label: 'Indications repas'
+description: 'Si vous avez des indications particulières concernant les repas (allergies, régimes spéciaux, végétarien, halal, casher, ...), merci de nous l''indiquer, nous essaierons de correspondre à vos besoins.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

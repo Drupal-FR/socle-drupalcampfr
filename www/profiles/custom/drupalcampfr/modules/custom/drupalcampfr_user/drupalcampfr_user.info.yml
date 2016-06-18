@@ -9,6 +9,7 @@ dependencies:
   - file
   - image
   - node
+  - options
   - path
   - user
   - views

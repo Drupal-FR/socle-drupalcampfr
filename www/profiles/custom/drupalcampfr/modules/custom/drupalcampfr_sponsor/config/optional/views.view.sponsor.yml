@@ -490,7 +490,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: col-md-3
+          row_class: 'col-md-6 text-center'
           default_row_class: true
       row:
         type: fields

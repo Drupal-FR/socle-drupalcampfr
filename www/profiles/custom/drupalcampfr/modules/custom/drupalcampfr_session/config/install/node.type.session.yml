@@ -10,7 +10,7 @@ third_party_settings:
 name: Session
 type: session
 description: ''
-help: ''
+help: 'Si vous souhaiter présenter une session lors de ce DrupalCamp, n''oubliez pas de <a href="/programme/guide-aux-conferenciers">consulter notre guide pour les conférenciers</a>.'
 new_revision: true
 preview_mode: 1
 display_submitted: true

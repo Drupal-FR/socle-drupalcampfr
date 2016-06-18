@@ -2,30 +2,21 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - field.storage.node.field_session_date_end
-    - field.storage.node.field_session_date_start
-    - field.storage.node.field_session_level
-    - field.storage.node.field_session_speaker
-    - field.storage.node.field_session_status
-    - field.storage.node.field_session_track
-    - node.type.session
-    - taxonomy.vocabulary.session_levels
-    - taxonomy.vocabulary.session_tracks
+    - field.storage.user.field_entreprise
+    - field.storage.user.field_indications_repas
+    - field.storage.user.field_souhaite_participer
+    - field.storage.user.field_taille_de_tshirt
+    - field.storage.user.field_user_name
   module:
-    - datetime
-    - node
     - options
-    - taxonomy
-    - text
     - user
-id: session
-label: 'Drupalcampfr session'
-module: views
-description: ''
-tag: Drupalcampfr
-base_table: node_field_data
-base_field: nid
+id: participants
+label: Participants
+module: user
+description: 'Find and manage people interacting with your site.'
+tag: default
+base_table: users_field_data
+base_field: uid
 core: 8.x
 display:
   default:
@@ -37,10 +28,9 @@ display:
       access:
         type: perm
         options:
-          perm: 'access content'
+          perm: 'administer users'
       cache:
         type: tag
-        options: {  }
       query:
         type: views_query
         options:
@@ -52,7 +42,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Filter
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -60,26 +50,9 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: full
+        type: none
         options:
-          items_per_page: 20
           offset: 0
-          id: 0
-          total_pages: null
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          quantity: 9
       style:
         type: table
         options:
@@ -92,99 +65,102 @@ display:
           summary: ''
           description: ''
           columns:
-            title: title
-            field_session_speaker: field_session_speaker
-            field_session_level: field_session_level
-            field_session_track: field_session_track
-            field_session_status: field_session_status
-            body: body
-            field_session_date_start: field_session_date_start
-            field_session_date_end: field_session_date_start
+            user_bulk_form: user_bulk_form
+            name: name
+            mail: mail
+            field_user_is_attendee: field_user_is_attendee
+            roles_target_id: roles_target_id
+            created: created
+            operations: operations
           info:
-            title:
+            user_bulk_form:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            name:
               sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            field_session_speaker:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_session_level:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_session_track:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_session_status:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            body:
+            mail:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            field_session_date_start:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: '-'
-              empty_column: false
-              responsive: ''
-            field_session_date_end:
+            field_user_is_attendee:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-          default: field_session_date_start
-          empty_table: false
+            roles_target_id:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            created:
+              sortable: true
+              default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+            operations:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: created
+          empty_table: true
       row:
         type: fields
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          entity_type: node
-          entity_field: title
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
+        field_user_name:
+          id: field_user_name
+          table: user__field_user_name
+          field: field_user_name
           relationship: none
           group_type: group
           admin_label: ''
-          label: Title
-          exclude: false
+          label: 'Prénom Nom'
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
@@ -194,9 +170,13 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
+          hide_empty: false
+          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: string
+          settings:
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -207,207 +187,19 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_session_speaker:
-          id: field_session_speaker
-          table: node__field_session_speaker
-          field: field_session_speaker
+          plugin_id: field
+        name:
+          id: name
+          table: users_field_data
+          field: name
           relationship: none
           group_type: group
           admin_label: ''
-          label: Présentateur(s)/rice(s)
+          label: Username
           exclude: false
           alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: true
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_session_level:
-          id: field_session_level
-          table: node__field_session_level
-          field: field_session_level
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Niveau
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_session_track:
-          id: field_session_track
-          table: node__field_session_track
-          field: field_session_track
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Thème
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_session_status:
-          id: field_session_status
-          table: node__field_session_status
-          field: field_session_status
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Statut
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '{{ name }} ({{ field_user_name }})'
             make_link: false
             path: ''
             absolute: false
@@ -445,8 +237,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: list_default
-          settings: {  }
+          type: user_name
+          settings:
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -458,15 +251,17 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        body:
-          id: body
-          table: node__body
-          field: body
+          entity_type: user
+          entity_field: name
+        mail:
+          id: mail
+          table: users_field_data
+          field: mail
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
-          exclude: true
+          label: Courriel
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -507,7 +302,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
+          type: basic_string
           settings: {  }
           group_column: value
           group_columns: {  }
@@ -520,14 +315,16 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_session_date_start:
-          id: field_session_date_start
-          table: node__field_session_date_start
-          field: field_session_date_start
+          entity_type: user
+          entity_field: mail
+        field_entreprise:
+          id: field_entreprise
+          table: user__field_entreprise
+          field: field_entreprise
           relationship: none
           group_type: group
           admin_label: ''
-          label: Horaire
+          label: Entreprise
           exclude: false
           alter:
             alter_text: false
@@ -569,10 +366,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_default
+          type: string
           settings:
-            timezone_override: ''
-            format_type: short
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -584,14 +380,14 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_session_date_end:
-          id: field_session_date_end
-          table: node__field_session_date_end
-          field: field_session_date_end
+        field_taille_de_tshirt:
+          id: field_taille_de_tshirt
+          table: user__field_taille_de_tshirt
+          field: field_taille_de_tshirt
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Heure de fin'
+          label: T-shirt
           exclude: false
           alter:
             alter_text: false
@@ -633,10 +429,132 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_default
-          settings:
-            timezone_override: ''
-            format_type: html_time_without_second
+          type: list_key
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_souhaite_participer:
+          id: field_souhaite_participer
+          table: user__field_souhaite_participer
+          field: field_souhaite_participer
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Participe à'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_key
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_indications_repas:
+          id: field_indications_repas
+          table: user__field_indications_repas
+          field: field_indications_repas
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Indications repas'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -649,98 +567,32 @@ display:
           field_api_classes: false
           plugin_id: field
       filters:
-        status:
-          value: true
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            session: session
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-        field_session_level_target_id:
-          id: field_session_level_target_id
-          table: node__field_session_level
-          field: field_session_level_target_id
+        uid_raw:
+          id: uid_raw
+          table: users_field_data
+          field: uid_raw
           relationship: none
           group_type: group
           admin_label: ''
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_session_level_target_id_op
-            label: Niveau
-            description: ''
-            use_operator: false
-            operator: field_session_level_target_id_op
-            identifier: field_session_level_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: session_levels
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
-        field_session_status_value:
-          id: field_session_status_value
-          table: node__field_session_status
-          field: field_session_status_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
+          operator: '!='
           value:
-            accepted: accepted
+            min: ''
+            max: ''
+            value: '0'
           group: 1
           exposed: false
           expose:
-            operator_id: field_session_status_value_op
-            label: Statut
+            operator_id: '0'
+            label: ''
             description: ''
             use_operator: false
-            operator: field_session_status_value_op
-            identifier: field_session_status_value
+            operator: ''
+            identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -753,26 +605,26 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
-          plugin_id: list_field
-        field_session_track_target_id:
-          id: field_session_track_target_id
-          table: node__field_session_track
-          field: field_session_track_target_id
+          plugin_id: numeric
+          entity_type: user
+        field_user_is_attendee_value:
+          id: field_user_is_attendee_value
+          table: user__field_user_is_attendee
+          field: field_user_is_attendee_value
           relationship: none
           group_type: group
           admin_label: ''
-          operator: or
-          value: {  }
+          operator: '='
+          value: true
           group: 1
-          exposed: true
+          exposed: false
           expose:
-            operator_id: field_session_track_target_id_op
-            label: Thème
+            operator_id: ''
+            label: Participe
             description: ''
             use_operator: false
-            operator: field_session_track_target_id_op
-            identifier: field_session_track_target_id
+            operator: field_user_is_attendee_value_op
+            identifier: attendee
             required: false
             remember: false
             multiple: false
@@ -780,140 +632,117 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            reduce: false
+              moderateur: '0'
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: 'Participant ? (field_user_is_attendee)'
+            description: null
+            identifier: field_user_is_attendee_value
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: session_tracks
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
-        combine:
-          id: combine
-          table: views
-          field: combine
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: contains
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: combine_op
-            label: Mots-clés
-            description: ''
-            use_operator: false
-            operator: combine_op
-            identifier: combine
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          fields:
-            title: title
-            body: body
-          plugin_id: combine
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
+          plugin_id: boolean
       sorts:
         created:
           id: created
-          table: node_field_data
+          table: users_field_data
           field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
           relationship: none
           group_type: group
           admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
           granularity: second
-      title: Sessions
-      header: {  }
-      footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
+          plugin_id: date
+          entity_type: user
+          entity_field: created
+      title: Participants
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: 'No people available.'
+          plugin_id: text_custom
+      use_more: false
+      use_more_always: false
+      use_more_text: more
+      display_comment: ''
+      use_ajax: false
+      hide_attachment_summary: false
+      show_admin_links: true
+      group_by: false
+      link_url: ''
+      link_display: page_1
+      css_class: ''
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
-        - user
-        - 'user.node_grants:view'
         - user.permissions
+      max-age: 0
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_session_date_end'
-        - 'config:field.storage.node.field_session_date_start'
-        - 'config:field.storage.node.field_session_level'
-        - 'config:field.storage.node.field_session_speaker'
-        - 'config:field.storage.node.field_session_status'
-        - 'config:field.storage.node.field_session_track'
-  page:
+        - 'config:field.storage.user.field_entreprise'
+        - 'config:field.storage.user.field_indications_repas'
+        - 'config:field.storage.user.field_souhaite_participer'
+        - 'config:field.storage.user.field_taille_de_tshirt'
+        - 'config:field.storage.user.field_user_name'
+  page_2:
     display_plugin: page
-    id: page
+    id: page_2
     display_title: Page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: programme/sessions
+      path: admin/people/participants
+      show_admin_links: false
       menu:
-        type: none
-        title: Session
-        description: ''
+        type: tab
+        title: Participants
+        description: 'Find and manage people interacting with your site.'
         expanded: false
-        parent: ''
-        weight: 0
+        parent: entity.user.collection
+        weight: -10
         context: '0'
-        menu_name: main
+        menu_name: admin
+      tab_options:
+        type: normal
+        title: People
+        description: 'Manage user accounts, roles, and permissions.'
+        menu_name: admin
+        weight: 0
+      defaults:
+        show_admin_links: false
+      display_extenders: {  }
     cache_metadata:
-      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
-        - user
-        - 'user.node_grants:view'
         - user.permissions
+      max-age: 0
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_session_date_end'
-        - 'config:field.storage.node.field_session_date_start'
-        - 'config:field.storage.node.field_session_level'
-        - 'config:field.storage.node.field_session_speaker'
-        - 'config:field.storage.node.field_session_status'
-        - 'config:field.storage.node.field_session_track'
+        - 'config:field.storage.user.field_entreprise'
+        - 'config:field.storage.user.field_indications_repas'
+        - 'config:field.storage.user.field_souhaite_participer'
+        - 'config:field.storage.user.field_taille_de_tshirt'
+        - 'config:field.storage.user.field_user_name'

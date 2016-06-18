@@ -1,0 +1,35 @@
+langcode: fr
+status: true
+dependencies: {  }
+id: moderateur
+label: Modérateur
+weight: 3
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access files overview'
+  - 'translate interface'
+  - 'access content overview'
+  - 'administer nodes'
+  - 'revert all revisions'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'create news content'
+  - 'delete any news content'
+  - 'delete own news content'
+  - 'administer url aliases'
+  - 'create url aliases'
+  - 'notify of path changes'
+  - 'access in-place editing'
+  - 'access administration pages'
+  - 'access site in maintenance mode'
+  - 'view the administration theme'
+  - 'administer taxonomy'
+  - 'access toolbar'
+  - 'change own username'
+  - 'access user profiles'
+  - 'administer users'
+  - 'bypass node access'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'

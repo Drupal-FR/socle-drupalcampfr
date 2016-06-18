@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - contact.form.sponsor
+    - field.field.contact_message.sponsor.field_adresse_postale
     - field.field.contact_message.sponsor.field_sponsor_level
     - field.field.contact_message.sponsor.field_sponsor_name
     - field.field.contact_message.sponsor.field_sponsor_phone
@@ -11,31 +12,37 @@ targetEntityType: contact_message
 bundle: sponsor
 mode: default
 content:
+  field_adresse_postale:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
   field_sponsor_level:
     weight: 3
-    label: above
+    label: inline
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
   field_sponsor_name:
-    weight: 2
-    label: above
+    weight: 0
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_sponsor_phone:
     weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-  message:
-    type: string
-    weight: 0
-    label: above
+    label: inline
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  message:
+    type: basic_string
+    weight: 4
+    label: above
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

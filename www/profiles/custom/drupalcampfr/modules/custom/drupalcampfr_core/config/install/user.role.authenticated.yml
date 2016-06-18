@@ -16,3 +16,4 @@ permissions:
   - 'edit own session content'
   - 'access user profiles'
   - 'use text format restricted_html'
+  - 'change own username'

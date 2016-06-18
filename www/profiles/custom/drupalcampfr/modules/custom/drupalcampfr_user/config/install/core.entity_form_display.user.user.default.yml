@@ -2,6 +2,10 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_entreprise
+    - field.field.user.user.field_indications_repas
+    - field.field.user.user.field_souhaite_participer
+    - field.field.user.user.field_taille_de_tshirt
     - field.field.user.user.field_user_is_attendee
     - field.field.user.user.field_user_name
     - field.field.user.user.user_picture
@@ -18,13 +22,33 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-  contact:
-    weight: 4
+  field_entreprise:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_indications_repas:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_souhaite_participer:
+    weight: 6
     settings: {  }
     third_party_settings: {  }
+    type: options_buttons
+  field_taille_de_tshirt:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
   field_user_is_attendee:
     type: boolean_checkbox
-    weight: 6
+    weight: 4
     settings:
       display_label: false
     third_party_settings: {  }
@@ -35,10 +59,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-  language:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
   timezone:
     weight: 5
     settings: {  }
@@ -49,6 +69,8 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: 2
+    weight: 3
 hidden:
+  contact: true
+  language: true
   path: true

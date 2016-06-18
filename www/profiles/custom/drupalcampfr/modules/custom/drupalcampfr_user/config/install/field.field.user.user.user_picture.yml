@@ -11,7 +11,7 @@ field_name: user_picture
 entity_type: user
 bundle: user
 label: Picture
-description: 'Your virtual face or picture.'
+description: 'Cette image sera affichée dans la liste des participants.'
 required: false
 translatable: true
 default_value: {  }
@@ -27,11 +27,11 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: ''
+    uuid: e7701921-05b2-4473-b65e-881420087930
     alt: ''
     title: ''
-    width: null
-    height: null
+    width: 269
+    height: 300
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

@@ -3,10 +3,16 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.user.register
+    - field.field.user.user.field_entreprise
+    - field.field.user.user.field_indications_repas
+    - field.field.user.user.field_souhaite_participer
+    - field.field.user.user.field_taille_de_tshirt
     - field.field.user.user.field_user_is_attendee
     - field.field.user.user.field_user_name
     - field.field.user.user.user_picture
+    - image.style.thumbnail
   module:
+    - image
     - user
 id: user.user.register
 targetEntityType: user
@@ -17,11 +23,47 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+  field_entreprise:
+    type: string_textfield
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_indications_repas:
+    type: string_textarea
+    weight: 5
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+  field_souhaite_participer:
+    type: options_buttons
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+  field_taille_de_tshirt:
+    type: options_select
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  field_user_name:
+    type: string_textfield
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_picture:
+    type: image_image
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
 hidden:
   contact: true
   field_user_is_attendee: true
-  field_user_name: true
   language: true
   path: true
   timezone: true
-  user_picture: true

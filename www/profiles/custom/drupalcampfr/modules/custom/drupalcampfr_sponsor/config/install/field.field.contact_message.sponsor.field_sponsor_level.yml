@@ -11,7 +11,7 @@ entity_type: contact_message
 bundle: sponsor
 label: 'Niveau de sponsor'
 description: 'Sélectionnez le (ou les) niveau(x) de sponsor qui vous intéresse(nt) le plus.'
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

@@ -13,5 +13,5 @@ effects:
     weight: 1
     data:
       width: 325
-      height: 325
+      height: 150
       upscale: false

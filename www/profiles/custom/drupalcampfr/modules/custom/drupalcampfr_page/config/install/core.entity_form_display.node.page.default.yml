@@ -3,8 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_fichiers
     - node.type.page
   module:
+    - file
     - path
     - text
 id: node.page.default
@@ -25,6 +27,12 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_fichiers:
+    weight: 32
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
   langcode:
     type: language_select
     weight: 2

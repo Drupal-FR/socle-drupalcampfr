@@ -2,6 +2,10 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_entreprise
+    - field.field.user.user.field_indications_repas
+    - field.field.user.user.field_souhaite_participer
+    - field.field.user.user.field_taille_de_tshirt
     - field.field.user.user.field_user_is_attendee
     - field.field.user.user.field_user_name
     - field.field.user.user.user_picture
@@ -14,6 +18,19 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_entreprise:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_indications_repas:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
   field_user_name:
     weight: 1
     label: hidden
@@ -30,5 +47,7 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  field_souhaite_participer: true
+  field_taille_de_tshirt: true
   field_user_is_attendee: true
   member_for: true

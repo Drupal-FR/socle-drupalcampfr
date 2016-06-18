@@ -1,0 +1,20 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_taille_de_tshirt
+  module:
+    - options
+    - user
+id: user.user.field_taille_de_tshirt
+field_name: field_taille_de_tshirt
+entity_type: user
+bundle: user
+label: 'Taille de t-shirt'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
