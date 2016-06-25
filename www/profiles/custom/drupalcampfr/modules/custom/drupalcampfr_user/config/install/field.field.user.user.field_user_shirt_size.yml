@@ -2,18 +2,19 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.user.field_entreprise
+    - field.storage.user.field_user_shirt_size
   module:
+    - options
     - user
-id: user.user.field_entreprise
-field_name: field_entreprise
+id: user.user.field_user_shirt_size
+field_name: field_user_shirt_size
 entity_type: user
 bundle: user
-label: Entreprise
+label: 'Taille de t-shirt'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: list_string

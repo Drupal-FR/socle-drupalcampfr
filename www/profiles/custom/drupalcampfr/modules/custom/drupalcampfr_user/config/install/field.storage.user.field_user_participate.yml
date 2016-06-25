@@ -4,8 +4,8 @@ dependencies:
   module:
     - options
     - user
-id: user.field_souhaite_participer
-field_name: field_souhaite_participer
+id: user.field_user_participate
+field_name: field_user_participate
 entity_type: user
 type: list_string
 settings:

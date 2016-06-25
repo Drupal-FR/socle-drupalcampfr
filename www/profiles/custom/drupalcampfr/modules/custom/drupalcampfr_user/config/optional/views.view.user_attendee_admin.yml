@@ -2,10 +2,10 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.user.field_entreprise
-    - field.storage.user.field_indications_repas
-    - field.storage.user.field_souhaite_participer
-    - field.storage.user.field_taille_de_tshirt
+    - field.storage.user.field_user_society
+    - field.storage.user.field_user_meal_indication
+    - field.storage.user.field_user_participate
+    - field.storage.user.field_user_shirt_size
     - field.storage.user.field_user_name
     - system.menu.admin
   module:
@@ -318,10 +318,10 @@ display:
           plugin_id: field
           entity_type: user
           entity_field: mail
-        field_entreprise:
-          id: field_entreprise
-          table: user__field_entreprise
-          field: field_entreprise
+        field_user_society:
+          id: field_user_society
+          table: user__field_user_society
+          field: field_user_society
           relationship: none
           group_type: group
           admin_label: ''
@@ -381,10 +381,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_taille_de_tshirt:
-          id: field_taille_de_tshirt
-          table: user__field_taille_de_tshirt
-          field: field_taille_de_tshirt
+        field_user_shirt_size:
+          id: field_user_shirt_size
+          table: user__field_user_shirt_size
+          field: field_user_shirt_size
           relationship: none
           group_type: group
           admin_label: ''
@@ -443,10 +443,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_souhaite_participer:
-          id: field_souhaite_participer
-          table: user__field_souhaite_participer
-          field: field_souhaite_participer
+        field_user_participate:
+          id: field_user_participate
+          table: user__field_user_participate
+          field: field_user_participate
           relationship: none
           group_type: group
           admin_label: ''
@@ -505,10 +505,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_indications_repas:
-          id: field_indications_repas
-          table: user__field_indications_repas
-          field: field_indications_repas
+        field_user_meal_indication:
+          id: field_user_meal_indication
+          table: user__field_user_meal_indication
+          field: field_user_meal_indication
           relationship: none
           group_type: group
           admin_label: ''
@@ -703,10 +703,10 @@ display:
         - user.permissions
       max-age: 0
       tags:
-        - 'config:field.storage.user.field_entreprise'
-        - 'config:field.storage.user.field_indications_repas'
-        - 'config:field.storage.user.field_souhaite_participer'
-        - 'config:field.storage.user.field_taille_de_tshirt'
+        - 'config:field.storage.user.field_user_society'
+        - 'config:field.storage.user.field_user_meal_indication'
+        - 'config:field.storage.user.field_user_participate'
+        - 'config:field.storage.user.field_user_shirt_size'
         - 'config:field.storage.user.field_user_name'
   page:
     display_plugin: page
@@ -741,8 +741,8 @@ display:
         - user.permissions
       max-age: 0
       tags:
-        - 'config:field.storage.user.field_entreprise'
-        - 'config:field.storage.user.field_indications_repas'
-        - 'config:field.storage.user.field_souhaite_participer'
-        - 'config:field.storage.user.field_taille_de_tshirt'
+        - 'config:field.storage.user.field_user_society'
+        - 'config:field.storage.user.field_user_meal_indication'
+        - 'config:field.storage.user.field_user_participate'
+        - 'config:field.storage.user.field_user_shirt_size'
         - 'config:field.storage.user.field_user_name'

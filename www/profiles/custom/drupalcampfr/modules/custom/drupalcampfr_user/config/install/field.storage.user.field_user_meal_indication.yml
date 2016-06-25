@@ -3,13 +3,11 @@ status: true
 dependencies:
   module:
     - user
-id: user.field_entreprise
-field_name: field_entreprise
+id: user.field_user_meal_indication
+field_name: field_user_meal_indication
 entity_type: user
-type: string
+type: string_long
 settings:
-  max_length: 255
-  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

@@ -2,9 +2,9 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.user.field_entreprise
-    - field.storage.user.field_souhaite_participer
-    - field.storage.user.field_taille_de_tshirt
+    - field.storage.user.field_user_society
+    - field.storage.user.field_user_participate
+    - field.storage.user.field_user_shirt_size
     - field.storage.user.field_user_is_attendee
     - field.storage.user.field_user_name
   module:
@@ -86,10 +86,10 @@ display:
             field_user_name: field_user_name
             name: name
             mail: mail
-            field_entreprise: mail
+            field_user_society: mail
             field_user_is_attendee: field_user_is_attendee
-            field_taille_de_tshirt: field_taille_de_tshirt
-            field_souhaite_participer: field_souhaite_participer
+            field_user_shirt_size: field_user_shirt_size
+            field_user_participate: field_user_participate
             created: created
             operations: operations
           info:
@@ -119,7 +119,7 @@ display:
               separator: '<br>'
               empty_column: false
               responsive: ''
-            field_entreprise:
+            field_user_society:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -133,14 +133,14 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            field_taille_de_tshirt:
+            field_user_shirt_size:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            field_souhaite_participer:
+            field_user_participate:
               align: ''
               separator: ''
               empty_column: false
@@ -406,10 +406,10 @@ display:
           plugin_id: field
           entity_type: user
           entity_field: mail
-        field_entreprise:
-          id: field_entreprise
-          table: user__field_entreprise
-          field: field_entreprise
+        field_user_society:
+          id: field_user_society
+          table: user__field_user_society
+          field: field_user_society
           relationship: none
           group_type: group
           admin_label: ''
@@ -534,10 +534,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_taille_de_tshirt:
-          id: field_taille_de_tshirt
-          table: user__field_taille_de_tshirt
-          field: field_taille_de_tshirt
+        field_user_shirt_size:
+          id: field_user_shirt_size
+          table: user__field_user_shirt_size
+          field: field_user_shirt_size
           relationship: none
           group_type: group
           admin_label: ''
@@ -596,10 +596,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_souhaite_participer:
-          id: field_souhaite_participer
-          table: user__field_souhaite_participer
-          field: field_souhaite_participer
+        field_user_participate:
+          id: field_user_participate
+          table: user__field_user_participate
+          field: field_user_participate
           relationship: none
           group_type: group
           admin_label: ''
@@ -1069,19 +1069,18 @@ display:
         - user.permissions
       max-age: 0
       tags:
-        - 'config:field.storage.user.field_entreprise'
-        - 'config:field.storage.user.field_souhaite_participer'
-        - 'config:field.storage.user.field_taille_de_tshirt'
+        - 'config:field.storage.user.field_user_society'
+        - 'config:field.storage.user.field_user_participate'
+        - 'config:field.storage.user.field_user_shirt_size'
         - 'config:field.storage.user.field_user_is_attendee'
         - 'config:field.storage.user.field_user_name'
-  page_2:
+  page:
     display_plugin: page
-    id: page_2
+    id: page
     display_title: Page
     position: 1
     display_options:
       path: admin/people/list
-      show_admin_links: false
       menu:
         type: 'default tab'
         title: List
@@ -1096,7 +1095,7 @@ display:
         menu_name: admin
         weight: 0
       defaults:
-        show_admin_links: false
+        show_admin_links: true
         filters: true
         filter_groups: true
       display_extenders: {  }
@@ -1109,8 +1108,8 @@ display:
         - user.permissions
       max-age: 0
       tags:
-        - 'config:field.storage.user.field_entreprise'
-        - 'config:field.storage.user.field_souhaite_participer'
-        - 'config:field.storage.user.field_taille_de_tshirt'
+        - 'config:field.storage.user.field_user_society'
+        - 'config:field.storage.user.field_user_participate'
+        - 'config:field.storage.user.field_user_shirt_size'
         - 'config:field.storage.user.field_user_is_attendee'
         - 'config:field.storage.user.field_user_name'

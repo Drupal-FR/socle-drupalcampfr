@@ -3,11 +3,13 @@ status: true
 dependencies:
   module:
     - user
-id: user.field_indications_repas
-field_name: field_indications_repas
+id: user.field_user_society
+field_name: field_user_society
 entity_type: user
-type: string_long
+type: string
 settings:
+  max_length: 255
+  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

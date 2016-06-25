@@ -4,8 +4,8 @@ dependencies:
   module:
     - options
     - user
-id: user.field_taille_de_tshirt
-field_name: field_taille_de_tshirt
+id: user.field_user_shirt_size
+field_name: field_user_shirt_size
 entity_type: user
 type: list_string
 settings:
