@@ -2,8 +2,9 @@ langcode: fr
 status: true
 dependencies:
   module:
+    - block_content
+    - migrate_plus
     - migrate_source_csv
-    - block
 id: drupalcampfr_basic_block
 migration_tags:
   - drupalcampfr
@@ -32,14 +33,12 @@ process:
     plugin: default_value
     default_value: basic
   info: info
-  "body/value": body_value
-  'body/format': body_format
+  body/value: body_value
+  body/format: body_format
 destination:
   plugin: 'entity:block_content'
   type: basic
   no_stub: true
 template: null
 migration_dependencies: {  }
-third_party_settings:
-  migrate_plus:
-    migration_group: drupalcampfr
+migration_group: drupalcampfr

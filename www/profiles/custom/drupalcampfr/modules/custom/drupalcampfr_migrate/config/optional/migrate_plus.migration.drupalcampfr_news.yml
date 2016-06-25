@@ -2,7 +2,7 @@ langcode: fr
 status: true
 dependencies:
   module:
-    - drupalcampfr_news
+    - migrate_plus
     - migrate_source_csv
     - node
 id: drupalcampfr_news
@@ -41,11 +41,11 @@ process:
     plugin: default_value
     default_value: news
   title: title
-  'body/value': body_value
-  'body/summary': body_summary
-  'body/format': body_format
-  'field_news_link/uri': news_link_uri
-  'field_news_link/title': news_link_title
+  body/value: body_value
+  body/summary: body_summary
+  body/format: body_format
+  field_news_link/uri: news_link_uri
+  field_news_link/title: news_link_title
   created:
     plugin: callback
     callable: strtotime
@@ -58,6 +58,4 @@ destination:
   bundle: news
 template: null
 migration_dependencies: {  }
-third_party_settings:
-  migrate_plus:
-    migration_group: drupalcampfr
+migration_group: drupalcampfr

@@ -2,7 +2,7 @@ langcode: fr
 status: true
 dependencies:
   module:
-    - drupalcampfr_sponsor
+    - migrate_plus
     - migrate_source_csv
     - taxonomy
 id: drupalcampfr_sponsor_level
@@ -29,18 +29,16 @@ source:
     -
       status: Status
 process:
-    vid:
-      plugin: default_value
-      default_value: sponsor_levels
-    name: name
-    weight: weight
-    field_sponsor_level_homepage: homepage
-    field_sponsor_level_site_wide: site_wide
-    field_sponsor_level_status: status
+  vid:
+    plugin: default_value
+    default_value: sponsor_levels
+  name: name
+  weight: weight
+  field_sponsor_level_homepage: homepage
+  field_sponsor_level_site_wide: site_wide
+  field_sponsor_level_status: status
 destination:
   plugin: 'entity:taxonomy_term'
 template: null
 migration_dependencies: {  }
-third_party_settings:
-  migrate_plus:
-    migration_group: drupalcampfr
+migration_group: drupalcampfr

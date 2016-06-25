@@ -2,7 +2,7 @@ langcode: fr
 status: true
 dependencies:
   module:
-    - drupalcampfr_session
+    - migrate_plus
     - migrate_source_csv
     - node
 id: drupalcampfr_session
@@ -29,9 +29,9 @@ source:
     -
       length: Length
     -
-      start_date: Start date (yyyy-MM-ddTHH:mm:ss)
+      start_date: 'Start date (yyyy-MM-ddTHH:mm:ss)'
     -
-      end_date: End date (yyyy-MM-ddTHH:mm:ss)
+      end_date: 'End date (yyyy-MM-ddTHH:mm:ss)'
     -
       room: Room
     -
@@ -43,8 +43,8 @@ process:
     plugin: default_value
     default_value: session
   title: title
-  'body/value': body_value
-  'body/format': body_format
+  body/value: body_value
+  body/format: body_format
   field_session_level:
     -
       plugin: skip_on_empty
@@ -86,6 +86,4 @@ destination:
   bundle: session
 template: null
 migration_dependencies: {  }
-third_party_settings:
-  migrate_plus:
-    migration_group: drupalcampfr
+migration_group: drupalcampfr

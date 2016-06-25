@@ -2,7 +2,7 @@ langcode: fr
 status: true
 dependencies:
   module:
-    - drupalcampfr_session
+    - migrate_plus
     - migrate_source_csv
     - taxonomy
 id: drupalcampfr_session_track
@@ -23,15 +23,13 @@ source:
     -
       weight: Weight
 process:
-    vid:
-      plugin: default_value
-      default_value: session_tracks
-    name: name
-    weight: weight
+  vid:
+    plugin: default_value
+    default_value: session_tracks
+  name: name
+  weight: weight
 destination:
   plugin: 'entity:taxonomy_term'
 template: null
 migration_dependencies: {  }
-third_party_settings:
-  migrate_plus:
-    migration_group: drupalcampfr
+migration_group: drupalcampfr
