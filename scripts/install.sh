@@ -58,9 +58,8 @@ if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
 fi
 
 # Translation updates.
-# TODO: Drush commands are broken. Repaired in 8.1.x
-#$DRUSH locale-check
-#$Drush locale-update
+$DRUSH locale-check
+$DRUSH locale-update
 
 # Import content.
 $DRUSH en drupalcampfr_migrate -y

@@ -60,9 +60,8 @@ $DRUSH features-import -y --bundle=drupalcampfr session
 #$DRUSH features-import -y --bundle=drupalcampfr drupalcampfr
 
 # Translation updates.
-# TODO: Drush commands are broken. Repaired in 8.1.x
-#$DRUSH locale-check
-#$Drush locale-update
+$DRUSH locale-check
+$DRUSH locale-update
 
 # Import content.
 # For update.sh import only content if the environment is dev to not risk
