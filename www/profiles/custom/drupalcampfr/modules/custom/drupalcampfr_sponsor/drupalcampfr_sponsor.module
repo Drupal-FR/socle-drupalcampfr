@@ -14,11 +14,8 @@ function drupalcampfr_sponsor_form_contact_message_sponsor_form_alter(&$form, Fo
   /** @var Drupal\Core\Entity\Query\QueryFactory $entity_query */
   $entity_query = \Drupal::getContainer()->get('entity.query');
 
-  // Remove the Preview button.
-  unset($form['actions']['preview']);
-
-  // Change submit label.
-  $form['actions']['submit']['#value'] = t('Submit');
+  // Change subject label.
+  $form['subject']['widget'][0]['value']['#title'] = t("Nom de la société ou de l'organisation");
 
   // Disable checkboxes where sponsor level is disabled.
   if (isset($form['field_sponsor_level']) && isset($form['field_sponsor_level']['widget'])) {
@@ -30,15 +27,5 @@ function drupalcampfr_sponsor_form_contact_message_sponsor_form_alter(&$form, Fo
     foreach ($disabled_sponsor_levels_ids as $sponsor_level_tid) {
       $form['field_sponsor_level']['widget'][$sponsor_level_tid]['#disabled'] = TRUE;
     }
-  }
-
-  // TODO: Remove after 2016 camp. Use the subject field, just change the label.
-  // Set Subject as company name (form mail subject).
-  $input = $form_state->getUserInput();
-  if (isset($input['field_sponsor_name'])) {
-    $form['subject'] = [
-      '#type'  => 'value',
-      '#value' => $input['field_sponsor_name'][0]['value'],
-    ];
   }
 }

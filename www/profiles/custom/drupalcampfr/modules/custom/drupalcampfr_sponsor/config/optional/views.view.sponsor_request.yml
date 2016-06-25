@@ -4,7 +4,6 @@ dependencies:
   config:
     - contact.form.sponsor
     - field.storage.contact_message.field_sponsor_level
-    - field.storage.contact_message.field_sponsor_name
     - field.storage.contact_message.field_sponsor_phone
     - system.menu.admin
     - taxonomy.vocabulary.sponsor_levels
@@ -88,8 +87,9 @@ display:
             name: name
             mail: mail
             field_sponsor_phone: field_sponsor_phone
-            field_sponsor_name: field_sponsor_name
+            subject: subject
             field_sponsor_level: field_sponsor_level
+            message: message
             created: created
             operations: operations
           info:
@@ -106,7 +106,7 @@ display:
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-low
             field_sponsor_phone:
               sortable: false
               default_sort_order: asc
@@ -114,7 +114,7 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            field_sponsor_name:
+            subject:
               sortable: true
               default_sort_order: asc
               align: ''
@@ -125,21 +125,28 @@ display:
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-medium
+            message:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
             created:
               sortable: true
               default_sort_order: desc
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-low
             operations:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-medium
           default: created
           empty_table: false
       row:
@@ -337,10 +344,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_sponsor_name:
-          id: field_sponsor_name
-          table: contact_message__field_sponsor_name
-          field: field_sponsor_name
+        subject:
+          id: subject
+          table: contact_message
+          field: subject
           relationship: none
           group_type: group
           admin_label: ''
@@ -399,6 +406,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: contact_message
+          entity_field: subject
           plugin_id: field
         field_sponsor_level:
           id: field_sponsor_level
@@ -755,7 +764,6 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.contact_message.field_sponsor_level'
-        - 'config:field.storage.contact_message.field_sponsor_name'
         - 'config:field.storage.contact_message.field_sponsor_phone'
   page:
     display_plugin: page
@@ -785,5 +793,4 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.contact_message.field_sponsor_level'
-        - 'config:field.storage.contact_message.field_sponsor_name'
         - 'config:field.storage.contact_message.field_sponsor_phone'

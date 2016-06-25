@@ -5,8 +5,6 @@
  * Contains hook implementations for drupalcampfr_site module.
  */
 
-use Drupal\Core\Form\FormStateInterface;
-
 define('DRUPALCAMPFR_SITE_DEFAULT_MAP_LATITUDE', '48.86771');
 define('DRUPALCAMPFR_SITE_DEFAULT_MAP_LONGITUDE', '2.36193');
 define('DRUPALCAMPFR_SITE_DEFAULT_MAP_ZOOM_LEVEL', '18');
@@ -39,34 +37,4 @@ function drupalcampfr_site_theme($existing, $type, $theme, $path) {
       ),
     ),
   );
-}
-
-/**
- * Implements hook_form_FORM_ID_alter().
- */
-function drupalcampfr_site_form_contact_message_contact_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  // Remove the Preview button.
-  unset($form['actions']['preview']);
-}
-
-/**
- * Implements hook_form_FORM_ID_alter().
- */
-function drupalcampfr_site_form_contact_message_volunteer_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  // Remove the Preview button.
-  unset($form['actions']['preview']);
-
-  // Change submit label.
-  $form['actions']['submit']['#value'] = t('Submit');
-}
-
-/**
- * Implements hook_form_FORM_ID_alter().
- */
-function drupalcampfr_site_form_contact_message_attendance_certificate_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  // Remove the Preview button.
-  unset($form['actions']['preview']);
-
-  // Change submit label.
-  $form['actions']['submit']['#value'] = t('Submit');
 }

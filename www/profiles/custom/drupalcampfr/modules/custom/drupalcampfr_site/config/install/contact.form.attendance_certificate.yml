@@ -6,6 +6,8 @@ dependencies:
 third_party_settings:
   contact_storage:
     redirect_uri: ''
+    submit_text: Soumettre
+    show_preview: false
 id: attendance_certificate
 label: 'Certificat de présence'
 recipients:

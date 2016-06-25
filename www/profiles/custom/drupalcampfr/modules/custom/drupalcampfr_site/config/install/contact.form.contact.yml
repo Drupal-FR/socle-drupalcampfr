@@ -6,6 +6,8 @@ dependencies:
 third_party_settings:
   contact_storage:
     redirect_uri: ''
+    submit_text: ''
+    show_preview: false
 id: contact
 label: Contact
 recipients:
