@@ -18,7 +18,7 @@ Identifier,UUID,Title,URI,Parent,Weight,Menu name,Expanded,Enabled
 17,,Keynotes,entity:node/2,14,2,main,1,0
 18,,Sprints,entity:node/3,14,3,main,1,1
 19,,Prises de notes collaboratives,entity:node/4,14,4,main,1,1
-20,,Guide aux conférenciers,entity:node/5,14,7,main,1,1
+20,,Guide aux conférencier•es,entity:node/5,14,7,main,1,1
 21,,Communauté,entity:node/6,0,1,main,1,1
 22,,À propos,entity:node/6,21,0,main,1,1
 23,,Participants,internal:/communaute/participants,21,1,main,1,1
