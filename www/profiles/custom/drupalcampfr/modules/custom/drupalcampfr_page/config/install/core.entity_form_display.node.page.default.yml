@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_fichiers
+    - field.field.node.page.field_page_attachment
     - node.type.page
   module:
     - file
@@ -27,8 +27,8 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
-  field_fichiers:
-    weight: 32
+  field_page_attachment:
+    weight: 33
     settings:
       progress_indicator: throbber
     third_party_settings: {  }

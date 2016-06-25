@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_fichiers
+    - field.field.node.page.field_page_attachment
     - node.type.page
   module:
     - file
@@ -20,14 +20,14 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-  field_fichiers:
-    weight: 2
+  field_page_attachment:
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: file_default
   links:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
 hidden:
