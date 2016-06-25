@@ -1,8 +1,6 @@
 langcode: fr
 status: true
 dependencies:
-  config:
-    - migrate_plus.migration.drupalcampfr_page
   module:
     - menu_link_content
     - migrate_plus
