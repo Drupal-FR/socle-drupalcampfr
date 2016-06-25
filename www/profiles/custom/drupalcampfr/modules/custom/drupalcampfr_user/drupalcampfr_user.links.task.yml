@@ -1,0 +1,5 @@
+drupalcampfr_site.admin.attendee:
+  title: 'Participants'
+  route_name: view.user_attendee_admin.page
+  base_route: entity.user.collection
+  weight: 20

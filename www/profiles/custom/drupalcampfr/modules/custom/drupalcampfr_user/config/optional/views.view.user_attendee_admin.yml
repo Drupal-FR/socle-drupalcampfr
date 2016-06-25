@@ -7,14 +7,15 @@ dependencies:
     - field.storage.user.field_souhaite_participer
     - field.storage.user.field_taille_de_tshirt
     - field.storage.user.field_user_name
+    - system.menu.admin
   module:
     - options
     - user
-id: participants
-label: Participants
+id: user_attendee_admin
+label: 'Drupalcampfr participants admin'
 module: user
-description: 'Find and manage people interacting with your site.'
-tag: default
+description: ''
+tag: Drupalcampfr
 base_table: users_field_data
 base_field: uid
 core: 8.x
@@ -707,21 +708,20 @@ display:
         - 'config:field.storage.user.field_souhaite_participer'
         - 'config:field.storage.user.field_taille_de_tshirt'
         - 'config:field.storage.user.field_user_name'
-  page_2:
+  page:
     display_plugin: page
-    id: page_2
+    id: page
     display_title: Page
     position: 1
     display_options:
-      path: admin/people/participants
-      show_admin_links: false
+      path: admin/people/attendees
       menu:
-        type: tab
+        type: normal
         title: Participants
-        description: 'Find and manage people interacting with your site.'
+        description: ''
         expanded: false
         parent: entity.user.collection
-        weight: -10
+        weight: 20
         context: '0'
         menu_name: admin
       tab_options:
@@ -731,7 +731,7 @@ display:
         menu_name: admin
         weight: 0
       defaults:
-        show_admin_links: false
+        show_admin_links: true
       display_extenders: {  }
     cache_metadata:
       contexts:
