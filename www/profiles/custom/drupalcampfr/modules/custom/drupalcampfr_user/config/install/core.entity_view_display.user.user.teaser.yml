@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.teaser
+    - field.field.user.user.field_entreprise
+    - field.field.user.user.field_indications_repas
     - field.field.user.user.field_souhaite_participer
     - field.field.user.user.field_taille_de_tshirt
     - field.field.user.user.field_user_is_attendee
@@ -33,6 +35,8 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  field_entreprise: true
+  field_indications_repas: true
   field_souhaite_participer: true
   field_taille_de_tshirt: true
   field_user_is_attendee: true

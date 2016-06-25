@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.storage.node.field_sponsor_link
     - field.storage.node.field_sponsor_logo
+    - image.style.max_325x325
     - node.type.sponsor
     - system.menu.main
   module:
