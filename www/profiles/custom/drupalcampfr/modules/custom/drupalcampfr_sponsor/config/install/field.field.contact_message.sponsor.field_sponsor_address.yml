@@ -1,0 +1,44 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.sponsor
+    - field.storage.contact_message.field_sponsor_address
+  module:
+    - address
+id: contact_message.sponsor.field_sponsor_address
+field_name: field_sponsor_address
+entity_type: contact_message
+bundle: sponsor
+label: 'Adresse postale'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    langcode: null
+    country_code: FR
+    administrative_area: null
+    locality: ''
+    dependent_locality: null
+    postal_code: ''
+    sorting_code: ''
+    address_line1: ''
+    address_line2: ''
+    organization: ''
+    recipient: ''
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  fields:
+    administrativeArea: administrativeArea
+    locality: locality
+    dependentLocality: dependentLocality
+    postalCode: postalCode
+    sortingCode: sortingCode
+    addressLine1: addressLine1
+    addressLine2: addressLine2
+    organization: organization
+    recipient: recipient
+  langcode_override: ''
+field_type: address

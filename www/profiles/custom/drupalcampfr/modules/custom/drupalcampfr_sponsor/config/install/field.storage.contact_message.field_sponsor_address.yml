@@ -2,14 +2,14 @@ langcode: fr
 status: true
 dependencies:
   module:
+    - address
     - contact
-id: contact_message.field_adresse_postale
-field_name: field_adresse_postale
+id: contact_message.field_sponsor_address
+field_name: field_sponsor_address
 entity_type: contact_message
-type: string_long
-settings:
-  case_sensitive: false
-module: core
+type: address
+settings: {  }
+module: address
 locked: false
 cardinality: 1
 translatable: true
