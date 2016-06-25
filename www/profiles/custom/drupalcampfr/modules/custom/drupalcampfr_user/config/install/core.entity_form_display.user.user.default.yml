@@ -2,12 +2,12 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_user_society
+    - field.field.user.user.field_user_is_attendee
     - field.field.user.user.field_user_meal_indication
+    - field.field.user.user.field_user_name
     - field.field.user.user.field_user_participate
     - field.field.user.user.field_user_shirt_size
-    - field.field.user.user.field_user_is_attendee
-    - field.field.user.user.field_user_name
+    - field.field.user.user.field_user_society
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -22,13 +22,12 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-  field_user_society:
-    weight: 2
+  field_user_is_attendee:
+    type: boolean_checkbox
+    weight: 4
     settings:
-      size: 60
-      placeholder: ''
+      display_label: false
     third_party_settings: {  }
-    type: string_textfield
   field_user_meal_indication:
     weight: 7
     settings:
@@ -36,6 +35,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
+  field_user_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   field_user_participate:
     weight: 6
     settings: {  }
@@ -46,14 +52,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
-  field_user_is_attendee:
-    type: boolean_checkbox
-    weight: 4
-    settings:
-      display_label: false
-    third_party_settings: {  }
-  field_user_name:
-    weight: 1
+  field_user_society:
+    weight: 2
     settings:
       size: 60
       placeholder: ''

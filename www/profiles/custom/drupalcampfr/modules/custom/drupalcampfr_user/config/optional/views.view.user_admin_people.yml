@@ -2,11 +2,11 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.user.field_user_society
-    - field.storage.user.field_user_participate
-    - field.storage.user.field_user_shirt_size
     - field.storage.user.field_user_is_attendee
     - field.storage.user.field_user_name
+    - field.storage.user.field_user_participate
+    - field.storage.user.field_user_shirt_size
+    - field.storage.user.field_user_society
   module:
     - options
     - user
@@ -1069,11 +1069,11 @@ display:
         - user.permissions
       max-age: 0
       tags:
-        - 'config:field.storage.user.field_user_society'
-        - 'config:field.storage.user.field_user_participate'
-        - 'config:field.storage.user.field_user_shirt_size'
         - 'config:field.storage.user.field_user_is_attendee'
         - 'config:field.storage.user.field_user_name'
+        - 'config:field.storage.user.field_user_participate'
+        - 'config:field.storage.user.field_user_shirt_size'
+        - 'config:field.storage.user.field_user_society'
   page:
     display_plugin: page
     id: page
@@ -1108,8 +1108,8 @@ display:
         - user.permissions
       max-age: 0
       tags:
-        - 'config:field.storage.user.field_user_society'
-        - 'config:field.storage.user.field_user_participate'
-        - 'config:field.storage.user.field_user_shirt_size'
         - 'config:field.storage.user.field_user_is_attendee'
         - 'config:field.storage.user.field_user_name'
+        - 'config:field.storage.user.field_user_participate'
+        - 'config:field.storage.user.field_user_shirt_size'
+        - 'config:field.storage.user.field_user_society'
