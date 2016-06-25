@@ -4,8 +4,31 @@ drupalcampfr_site.admin.attendance_certificates:
   base_route: entity.user.collection
   weight: 15
 
+drupalcampfr_site.admin.attendance_certificates.sub_tab:
+  title: 'Tableau'
+  route_name: view.attendance_certificate.page
+  parent_id: drupalcampfr_site.admin.attendance_certificates
+
+drupalcampfr_site.admin.attendance_certificates.sub_tab.csv:
+  title: 'Export CSV (non filtré)'
+  route_name: view.attendance_certificate.rest_export_csv
+  parent_id: drupalcampfr_site.admin.attendance_certificates
+  weight: 1
+
+
 drupalcampfr_site.admin.volunteer:
   title: 'Volontaires'
   route_name: view.volunteer.page
   base_route: entity.user.collection
   weight: 20
+
+drupalcampfr_site.admin.volunteer.sub_tab:
+  title: 'Tableau'
+  route_name: view.volunteer.page
+  parent_id: drupalcampfr_site.admin.volunteer
+
+drupalcampfr_site.admin.volunteer.sub_tab.csv:
+  title: 'Export CSV (non filtré)'
+  route_name: view.volunteer.rest_export_csv
+  parent_id: drupalcampfr_site.admin.volunteer
+  weight: 1

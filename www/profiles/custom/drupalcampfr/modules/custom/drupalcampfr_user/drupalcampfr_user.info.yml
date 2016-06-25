@@ -3,6 +3,7 @@ description: 'Provide User related configuration.'
 type: module
 core: 8.x
 dependencies:
+  - csv_serialization
   - drupalcampfr_core
   - drupalcampfr_user
   - field
@@ -11,6 +12,7 @@ dependencies:
   - node
   - options
   - path
+  - rest
   - user
   - views
 package: Drupalcampfr

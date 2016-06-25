@@ -7,6 +7,7 @@ dependencies:
   - ckeditor
   - contact
   - contact_storage
+  - csv_serialization
   - drupalcampfr_core
   - drupalcampfr_site
   - editor
@@ -15,6 +16,7 @@ dependencies:
   - filter
   - options
   - rdf
+  - rest
   - system
   - taxonomy
   - telephone

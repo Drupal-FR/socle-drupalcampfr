@@ -1,5 +1,16 @@
-drupalcampfr_site.admin.attendee:
+drupalcampfr_user.admin.attendee:
   title: 'Participants'
   route_name: view.user_attendee_admin.page
   base_route: entity.user.collection
   weight: 20
+
+drupalcampfr_user.admin.attendee.sub_tab:
+  title: 'Tableau'
+  route_name: view.user_attendee_admin.page
+  parent_id: drupalcampfr_user.admin.attendee
+
+drupalcampfr_user.admin.attendee.sub_tab.csv:
+  title: 'Export CSV (non filtré)'
+  route_name: view.user_attendee_admin.rest_export_csv
+  parent_id: drupalcampfr_user.admin.attendee
+  weight: 1

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "597c94b13131bbdba70f726935afea0a",
-    "content-hash": "892024bc68082b417a2942e8750230de",
+    "hash": "019722eea1666ef4b16204b29d76a06c",
+    "content-hash": "0d43d470bd9dfbdeb8cba69200f6ceab",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -902,7 +902,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/address-8.x-1.0-beta3.zip",
-                "reference": null,
+                "reference": "436f4f45c86e1c041110f05f9cfb35ac317f9f52",
                 "shasum": null
             },
             "require": {
@@ -1280,6 +1280,39 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2016-06-15 20:08:27"
+        },
+        {
+            "name": "drupal/csv_serialization",
+            "version": "8.1.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/csv_serialization.git",
+                "reference": "7e1e459cfa19ed82fc50273b802f7d3be36d4c04"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-1.0-alpha1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/serialization": "8.*",
+                "league/csv": "^7.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides CSV as a serialization format.",
+            "homepage": "https://www.drupal.org/project/csv_serialization",
+            "time": "2015-09-11 20:29:52"
         },
         {
             "name": "drupal/ctools",
@@ -2174,6 +2207,63 @@
                 }
             ],
             "time": "2015-04-20 18:58:01"
+        },
+        {
+            "name": "league/csv",
+            "version": "7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/csv.git",
+                "reference": "69bafa6ff924fbf9effe4275d6eb16be81a853ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/69bafa6ff924fbf9effe4275d6eb16be81a853ef",
+                "reference": "69bafa6ff924fbf9effe4275d6eb16be81a853ef",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "^1.9",
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Csv\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://github.com/nyamsprod/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Csv data manipulation made easy in PHP",
+            "homepage": "http://csv.thephpleague.com",
+            "keywords": [
+                "csv",
+                "export",
+                "filter",
+                "import",
+                "read",
+                "write"
+            ],
+            "time": "2015-11-02 07:36:25"
         },
         {
             "name": "masterminds/html5",
@@ -4139,7 +4229,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/config_inspector-8.x-1.0-beta1.zip",
-                "reference": null,
+                "reference": "9c2ee529375e15b648ad25c0b58cc658842cb45e",
                 "shasum": null
             },
             "require": {
@@ -4171,7 +4261,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/devel-8.x-1.0-alpha1.zip",
-                "reference": null,
+                "reference": "930b7b89c2fa2047ebbb0fb3ba53f45a67409242",
                 "shasum": null
             },
             "require": {
