@@ -2,10 +2,10 @@
 
 $databases['default']['default'] = array(
   'driver' => 'mysql',
-  'database' => 'drupalcampfr',
-  'username' => 'drupalcampfr',
-  'password' => 'drupalcampfr',
-  'host' => 'localhost',
+  'database' => 'drupal',
+  'username' => 'drupal',
+  'password' => 'drupal',
+  'host' => 'mysql',
   'prefix' => '',
 );
 

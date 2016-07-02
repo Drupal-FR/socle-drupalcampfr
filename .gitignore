@@ -39,3 +39,9 @@ backups/*
 
 # Node modules.
 node_modules
+
+# Data.
+data
+
+# Docker.
+docker-compose.yml
