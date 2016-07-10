@@ -1,1 +1,5 @@
 bundle: drupalcampfr
+excluded:
+  - system.theme
+  - seven.settings
+  - drupalcampfr_theme.settings

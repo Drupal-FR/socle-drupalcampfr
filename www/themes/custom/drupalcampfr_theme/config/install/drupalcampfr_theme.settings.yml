@@ -30,3 +30,4 @@ forms_smart_descriptions: 0
 tooltip_enabled: 0
 popover_enabled: 0
 modal_enabled: 0
+langcode: fr

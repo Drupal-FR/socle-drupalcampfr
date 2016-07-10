@@ -3,7 +3,7 @@ status: true
 dependencies: {  }
 name: Drupalcampfr
 machine_name: drupalcampfr
-description: 'Technical base for french drupalcamps.'
+description: 'Auto-generated bundle from package Drupalcampfr'
 assignments:
   base:
     types:
@@ -13,7 +13,7 @@ assignments:
       content:
         user: user
     enabled: true
-    weight: '-18'
+    weight: '-2'
   core:
     types:
       config:
@@ -26,37 +26,44 @@ assignments:
         user_role: user_role
         entity_view_mode: entity_view_mode
     enabled: true
-    weight: '-15'
+    weight: '5'
   dependency:
     enabled: true
-    weight: '-11'
+    weight: '15'
   exclude:
     types:
-      config: {  }
-    curated: 1
+      config:
+        action: action
+        features_bundle: features_bundle
+    curated: 0
     module:
       installed: 1
       profile: 1
       namespace: 1
+      namespace_any: 0
     enabled: true
-    weight: '-19'
+    weight: '-5'
   existing:
     enabled: true
-    weight: '-12'
-  namespace:
+    weight: '12'
+  forward_dependency:
     enabled: true
-    weight: '-16'
+    weight: '4'
+  namespace:
+    enabled: false
+    weight: '0'
   optional:
     types:
       config:
-        block: block
+        image_style: image_style
         migration: migration
         rdf_mapping: rdf_mapping
+        responsive_image_style: responsive_image_style
         search_page: search_page
         tour: tour
         view: view
     enabled: true
-    weight: '-17'
+    weight: '0'
   packages:
     enabled: true
     weight: '-20'
@@ -67,14 +74,14 @@ assignments:
       dependencies: 1
     types:
       config:
-        block: block
-        language_content_settings: language_content_settings
-        features_bundle: features_bundle
+#        block: block
+#        language_content_settings: language_content_settings
         configurable_language: configurable_language
-        migration: migration
-        tour: tour
+#        migration: migration
+#        shortcut_set: shortcut_set
+#        tour: tour
     enabled: true
-    weight: '-13'
+    weight: '10'
   site:
     types:
       config:
@@ -87,6 +94,6 @@ assignments:
         editor: editor
         filter_format: filter_format
     enabled: true
-    weight: '-14'
+    weight: '7'
 profile_name: drupalcampfr
 is_profile: true
