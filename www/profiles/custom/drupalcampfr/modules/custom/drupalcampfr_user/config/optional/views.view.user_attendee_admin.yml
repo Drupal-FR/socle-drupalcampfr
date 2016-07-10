@@ -725,6 +725,7 @@ display:
         weight: 20
         context: '0'
         menu_name: admin
+        enabled: true
       tab_options:
         type: normal
         title: People

@@ -1,6 +1,4 @@
 global-styling:
   css:
-    component:
-      assets/css/component/filter.css: {}
     theme:
       assets/css/theme/overrides.css: {}

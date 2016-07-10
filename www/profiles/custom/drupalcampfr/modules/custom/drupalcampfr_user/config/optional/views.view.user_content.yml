@@ -463,6 +463,7 @@ display:
         weight: 0
         context: '0'
         menu_name: account
+        enabled: true
     cache_metadata:
       max-age: 0
       contexts:

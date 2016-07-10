@@ -1354,11 +1354,12 @@ display:
         type: normal
         title: Sessions
         description: ''
-        expanded: true
+        expanded: false
         parent: system.admin_content
         weight: 5
         context: '0'
         menu_name: admin
+        enabled: true
     cache_metadata:
       max-age: 0
       contexts:

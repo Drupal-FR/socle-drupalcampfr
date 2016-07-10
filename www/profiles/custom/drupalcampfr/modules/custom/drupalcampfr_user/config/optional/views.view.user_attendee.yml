@@ -256,6 +256,7 @@ display:
         weight: 1
         context: '0'
         menu_name: footer-menu-2
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:
