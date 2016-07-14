@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "199c67c739f8d4c4a007ab1511009594",
-    "content-hash": "5fc033772263c2cdadb81530c82e1447",
+    "hash": "416c1520cc5ffaacd988901c24d6c490",
+    "content-hash": "db16006e63db97b9daddfee7eca59231",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1395,6 +1395,35 @@
             "description": "Allows users to collect entities in arbitrarily ordered lists.",
             "homepage": "https://www.drupal.org/project/entityqueue",
             "time": "2016-02-27 10:27:11"
+        },
+        {
+            "name": "drupal/eu_cookie_compliance",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/eu-cookie-compliance.git",
+                "reference": "76518a80c399629544134de5f035140858bb22f0"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/filter": "8.*"
+            },
+            "replace": {
+                "drupal/eu_cookie_compliance": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "This module aims at making the website compliant with the new EU cookie regulation",
+            "homepage": "https://www.drupal.org/project/eu-cookie-compliance",
+            "time": "2016-07-01 11:24:24"
         },
         {
             "name": "drupal/features",
@@ -4414,7 +4443,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/eu_cookie_compliance": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

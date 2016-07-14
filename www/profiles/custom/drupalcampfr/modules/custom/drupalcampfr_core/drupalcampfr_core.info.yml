@@ -8,6 +8,7 @@ dependencies:
   - contact
   - drupalcampfr_core
   - entityqueue
+  - eu_cookie_compliance
   - field
   - file
   - honeypot
