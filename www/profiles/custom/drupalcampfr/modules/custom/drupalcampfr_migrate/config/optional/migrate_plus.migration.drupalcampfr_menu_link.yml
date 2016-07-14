@@ -10,7 +10,7 @@ migration_tags:
   - drupalcampfr
 label: 'Menu link import'
 source:
-  plugin: csv
+  plugin: drupalcampfr_migrate_menu_link_csv
   path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/menu_link.csv
   keys:
     - id
@@ -34,6 +34,28 @@ source:
       expanded: Expanded
     -
       enabled: Enabled
+    -
+      attributes_title: Link attribute - title
+    -
+      attributes_id: Link attribute - id
+    -
+      attributes_name: Link attribute - name
+    -
+      attributes_rel: Link attribute - relation
+    -
+      attributes_class: Link attribute - class
+    -
+      attributes_style: Link attribute - style
+    -
+      attributes_target: Link attribute - target
+    -
+      attributes_accesskey: Link attribute - accesskey
+    -
+      item_attributes_id: Menu link attribute - id
+    -
+      item_attributes_class: Menu link attribute - class
+    -
+      item_attributes_style: Menu link attribute - style
 process:
   id: id
   # uuid: uuid
@@ -51,6 +73,7 @@ process:
   menu_name: menu_name
   expanded: expanded
   enabled: enabled
+  'link/options': options
 destination:
   plugin: entity:menu_link_content
 template: null

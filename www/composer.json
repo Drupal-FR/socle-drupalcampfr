@@ -47,7 +47,8 @@
     "drupal/pathauto": "8.1.0-alpha3",
     "drupal/r4032login": "8.1.*",
     "drupal/bootstrap": "8.3.0-rc1",
-    "abraham/twitteroauth": "0.6.2"
+    "abraham/twitteroauth": "0.6.2",
+    "drupal/menu_attributes": "8.1.*"
   },
   "require-dev": {
     "drupal/devel": "8.1.*",

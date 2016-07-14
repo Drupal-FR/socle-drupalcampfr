@@ -1,39 +1,45 @@
-Identifier,UUID,Title,URI,Parent,Weight,Menu name,Expanded,Enabled
-1,,Programme,entity:node/1,0,0,footer-menu-1,1,1
-2,,Keynotes,entity:node/2,0,2,footer-menu-1,1,1
-3,,Sprints,entity:node/3,0,3,footer-menu-1,1,1
-4,,Prises de notes collaboratives,entity:node/4,0,4,footer-menu-1,1,1
-5,,À propos,entity:node/6,0,0,footer-menu-2,1,1
-6,,Soirée communautaire,entity:node/7,0,2,footer-menu-2,1,1
-7,,Code de conduite,entity:node/8,0,3,footer-menu-2,1,1
-8,,Forfaits,entity:node/10,0,2,footer-menu-3,1,1
-9,,Lieu,entity:node/12,0,0,footer-menu-4,1,1
-10,,Accès,entity:node/13,0,1,footer-menu-4,1,1
-11,,Hébergements,entity:node/14,0,2,footer-menu-4,1,1
-12,,Se préparer,entity:node/15,0,3,footer-menu-4,1,1
-13,,Bons plans,entity:node/16,0,4,footer-menu-4,1,1
-14,,Programme,entity:node/1,0,0,main,1,1
-15,,Programme,entity:node/1,14,0,main,1,1
-16,,Sessions,internal:/programme/sessions,14,1,main,1,1
-17,,Keynotes,entity:node/2,14,2,main,1,1
-18,,Sprints,entity:node/3,14,3,main,1,1
-19,,Prises de notes collaboratives,entity:node/4,14,4,main,1,1
-20,,Guide aux conférencier•es,entity:node/5,14,7,main,1,1
-21,,Communauté,entity:node/6,0,1,main,1,1
-22,,À propos,entity:node/6,21,0,main,1,1
-23,,Participants,internal:/communaute/participants,21,1,main,1,1
-24,,Soirée communautaire,entity:node/7,21,2,main,1,1
-25,,Code de conduite,entity:node/8,21,3,main,1,1
-26,,Devenir volontaire,internal:/communaute/devenir-volontaire,21,5,main,1,1
-27,,Convaincre sa société,entity:node/9,21,6,main,1,1
-28,,Demander un certificat de présence,internal:/communaute/certificat-presence,21,7,main,1,1
-29,,Forfaits,entity:node/10,drupalcampfr_sponsor.main.sponsor,2,main,1,1
-30,,Devenir sponsor,internal:/sponsors/devenir-sponsor,drupalcampfr_sponsor.main.sponsor,5,main,1,1
-31,,Badges,entity:node/11,drupalcampfr_sponsor.main.sponsor,6,main,1,1
-32,,Infos pratiques,entity:node/12,0,3,main,1,1
-33,,Lieu,entity:node/12,32,0,main,1,1
-34,,Accès,entity:node/13,32,1,main,1,1
-35,,Hébergements,entity:node/14,32,2,main,1,1
-36,,Se préparer,entity:node/15,32,3,main,1,1
-37,,Bons plans,entity:node/16,32,4,main,1,1
-38,,Revue de presse,entity:node/17,drupalcampfr_news.main.news,1,main,1,1
+Identifier,UUID,Title,URI,Parent,Weight,Menu name,Expanded,Enabled,Link attribute – title,Link attribute –  id,Link attribute –  name,Link attribute –  relation,Link attribute –  class,Link attribute –  style,Link attribute –  target,Link attribute –  access key,Menu link attribute – id,Menu link attribute – class,Menu link attribute – style
+1,,Programme,entity:node/1,0,0,footer-menu-1,1,1,,,,,,,,,,,
+2,,Keynotes,entity:node/2,0,2,footer-menu-1,1,1,,,,,,,,,,,
+3,,Sprints,entity:node/3,0,3,footer-menu-1,1,1,,,,,,,,,,,
+4,,Prises de notes collaboratives,entity:node/4,0,4,footer-menu-1,1,1,,,,,,,,,,,
+5,,À propos,entity:node/6,0,0,footer-menu-2,1,1,,,,,,,,,,,
+6,,Soirée communautaire,entity:node/7,0,2,footer-menu-2,1,1,,,,,,,,,,,
+7,,Code de conduite,entity:node/8,0,3,footer-menu-2,1,1,,,,,,,,,,,
+8,,Forfaits,entity:node/10,0,2,footer-menu-3,1,1,,,,,,,,,,,
+9,,Lieu,entity:node/12,0,0,footer-menu-4,1,1,,,,,,,,,,,
+10,,Accès,entity:node/13,0,1,footer-menu-4,1,1,,,,,,,,,,,
+11,,Hébergements,entity:node/14,0,2,footer-menu-4,1,1,,,,,,,,,,,
+12,,Se préparer,entity:node/15,0,3,footer-menu-4,1,1,,,,,,,,,,,
+13,,Bons plans,entity:node/16,0,4,footer-menu-4,1,1,,,,,,,,,,,
+14,,Programme,entity:node/1,0,0,main,1,1,,,,,,,,,,,
+15,,Programme,entity:node/1,14,0,main,1,1,,,,,,,,,,,
+16,,Sessions,internal:/programme/sessions,14,1,main,1,1,,,,,,,,,,,
+17,,Keynotes,entity:node/2,14,2,main,1,1,,,,,,,,,,,
+18,,Sprints,entity:node/3,14,3,main,1,1,,,,,,,,,,,
+19,,Prises de notes collaboratives,entity:node/4,14,4,main,1,1,,,,,,,,,,,
+20,,Séparateur,internal:/,14,5,main,1,1,,,,nofollow,hidden,,,,,divider,
+21,,Soumettre une session,internal:/node/add/session,14,6,main,1,1,,,,,,,,,,,
+22,,Guide aux conférencier•es,entity:node/5,14,7,main,1,1,,,,,,,,,,,
+23,,Communauté,entity:node/6,0,1,main,1,1,,,,,,,,,,,
+24,,À propos,entity:node/6,23,0,main,1,1,,,,,,,,,,,
+25,,Participants,internal:/communaute/participants,23,1,main,1,1,,,,,,,,,,,
+26,,Soirée communautaire,entity:node/7,23,2,main,1,1,,,,,,,,,,,
+27,,Code de conduite,entity:node/8,23,3,main,1,1,,,,,,,,,,,
+28,,Séparateur,internal:/,23,4,main,1,1,,,,nofollow,hidden,,,,,divider,
+29,,Devenir volontaire,internal:/communaute/devenir-volontaire,23,5,main,1,1,,,,,,,,,,,
+30,,Convaincre sa société,entity:node/9,23,6,main,1,1,,,,,,,,,,,
+31,,Demander un certificat de présence,internal:/communaute/certificat-presence,23,7,main,1,1,,,,,,,,,,,
+32,,Forfaits,entity:node/10,drupalcampfr_sponsor.main.sponsor,2,main,1,1,,,,,,,,,,,
+33,,Séparateur,internal:/,drupalcampfr_sponsor.main.sponsor,4,main,1,1,,,,nofollow,hidden,,,,,divider,
+34,,Devenir sponsor,internal:/sponsors/devenir-sponsor,drupalcampfr_sponsor.main.sponsor,5,main,1,1,,,,,,,,,,,
+35,,Badges,entity:node/11,drupalcampfr_sponsor.main.sponsor,6,main,1,1,,,,,,,,,,,
+36,,Infos pratiques,entity:node/12,0,3,main,1,1,,,,,,,,,,,
+37,,Lieu,entity:node/12,36,0,main,1,1,,,,,,,,,,,
+38,,Accès,entity:node/13,36,1,main,1,1,,,,,,,,,,,
+39,,Hébergements,entity:node/14,36,2,main,1,1,,,,,,,,,,,
+40,,Se préparer,entity:node/15,36,3,main,1,1,,,,,,,,,,,
+41,,Bons plans,entity:node/16,36,4,main,1,1,,,,,,,,,,,
+42,,Revue de presse,entity:node/17,drupalcampfr_news.main.news,1,main,1,1,,,,,,,,,,,
+43,,Séparateur,internal:/,drupalcampfr_news.main.news,2,main,1,1,,,,nofollow,hidden,,,,,divider,
+44,,Séparateur,internal:/,drupalcampfr_user.account.compte,-8,account,1,1,,,,nofollow,hidden,,,,,divider,

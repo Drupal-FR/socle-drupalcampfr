@@ -59,6 +59,7 @@ dependencies:
   - entityqueue
   - features
   - honeypot
+  - menu_attributes
   - pathauto
   - r4032login
 
