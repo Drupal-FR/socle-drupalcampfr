@@ -9,7 +9,6 @@
  * Implements hook_install().
  */
 function drupalcampfr_sponsor_install() {
-  // TODO: Fix warning messages.
   // Generate path alias for contact forms.
   /** @var \Drupal\Core\Path\AliasStorageInterface $alias_storage */
   $alias_storage = \Drupal::getContainer()->get('path.alias_storage');

@@ -68,6 +68,7 @@ $DRUSH locale-update
 # breaking prod.
 if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
   $DRUSH en drupalcampfr_migrate -y
+  $DRUSH migrate-import drupalcampfr_file --update
   $DRUSH migrate-import drupalcampfr_page --update
   $DRUSH migrate-import drupalcampfr_news --update
   $DRUSH migrate-import drupalcampfr_sponsor_level --update
