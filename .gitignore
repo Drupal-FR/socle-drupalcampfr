@@ -41,7 +41,7 @@ backups/*
 node_modules
 
 # Data.
-data
+/data
 
 # Docker.
 docker-compose.yml
