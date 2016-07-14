@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a582fb872ae4fc74dbb9ef30ef0d2371",
-    "content-hash": "94c47d1d13fdf7b9a94b56313f9e88e8",
+    "hash": "199c67c739f8d4c4a007ab1511009594",
+    "content-hash": "5fc033772263c2cdadb81530c82e1447",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1023,7 +1023,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.0-rc1.zip",
-                "reference": null,
+                "reference": "af4f230e7cb01bc75b5a47b1070d8d261e9a7f50",
                 "shasum": null
             },
             "require": {
@@ -1118,16 +1118,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.1.5",
+            "version": "8.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "5e4ee1266c741ace5df7c9b8ac3ba1b0d592ee9d"
+                "reference": "a6555edbe58e0a6a1d107cbf8c6568dd5e4531a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/5e4ee1266c741ace5df7c9b8ac3ba1b0d592ee9d",
-                "reference": "5e4ee1266c741ace5df7c9b8ac3ba1b0d592ee9d",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/a6555edbe58e0a6a1d107cbf8c6568dd5e4531a2",
+                "reference": "a6555edbe58e0a6a1d107cbf8c6568dd5e4531a2",
                 "shasum": ""
             },
             "require": {
@@ -1284,7 +1284,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2016-07-07 09:38:59"
+            "time": "2016-07-11 13:07:34"
         },
         {
             "name": "drupal/csv_serialization",
@@ -1297,7 +1297,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-1.0-alpha1.zip",
-                "reference": null,
+                "reference": "7e1e459cfa19ed82fc50273b802f7d3be36d4c04",
                 "shasum": null
             },
             "require": {
@@ -1407,7 +1407,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta6.zip",
-                "reference": null,
+                "reference": "245b7175b971e4239e3ee5685ca7c92942bf8a6e",
                 "shasum": null
             },
             "require": {
