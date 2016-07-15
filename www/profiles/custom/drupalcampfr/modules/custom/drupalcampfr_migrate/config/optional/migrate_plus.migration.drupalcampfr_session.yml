@@ -80,6 +80,9 @@ process:
   field_session_date_start: start_date
   field_session_date_end: end_date
   status: published
+  uid:
+    plugin: default_value
+    default_value: 1
 destination:
   plugin: 'entity:node'
   type: session

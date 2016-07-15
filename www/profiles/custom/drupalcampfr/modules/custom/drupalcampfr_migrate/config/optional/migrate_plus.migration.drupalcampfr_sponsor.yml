@@ -48,6 +48,9 @@ process:
       migration: drupalcampfr_sponsor_level
   field_sponsor_link/uri: link_uri
   field_sponsor_link/title: link_title
+  uid:
+    plugin: default_value
+    default_value: 1
 destination:
   plugin: 'entity:node'
   type: sponsor

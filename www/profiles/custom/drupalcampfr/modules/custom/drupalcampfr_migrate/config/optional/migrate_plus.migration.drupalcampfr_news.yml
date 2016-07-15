@@ -52,6 +52,9 @@ process:
     source: creation_date
   status: published
   promote: promoted
+  uid:
+    plugin: default_value
+    default_value: 1
 destination:
   plugin: 'entity:node'
   type: news

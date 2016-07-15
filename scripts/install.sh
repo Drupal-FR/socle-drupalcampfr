@@ -64,6 +64,7 @@ $DRUSH locale-update
 # Import content.
 $DRUSH en drupalcampfr_migrate -y
 $DRUSH migrate-import drupalcampfr_file --update
+$DRUSH migrate-import drupalcampfr_user --update
 $DRUSH migrate-import drupalcampfr_page --update
 $DRUSH migrate-import drupalcampfr_news --update
 $DRUSH migrate-import drupalcampfr_sponsor_level --update

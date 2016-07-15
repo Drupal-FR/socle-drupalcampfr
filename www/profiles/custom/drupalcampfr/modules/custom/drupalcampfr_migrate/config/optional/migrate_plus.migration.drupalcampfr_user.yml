@@ -1,0 +1,52 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - migrate_plus
+    - migrate_source_csv
+    - user
+id: drupalcampfr_user
+migration_tags:
+  - drupalcampfr
+label: 'User import'
+source:
+  plugin: csv
+  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/user.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      id: Identifier
+    -
+      uuid: UUID
+    -
+      mail: Mail
+    -
+      status: Status
+    -
+      login: Login
+    -
+      name: Name
+    -
+      society: Society
+    -
+      is_attendee: 'Is attendee'
+    -
+      shirt_size: 'Shirt size'
+    -
+      meal_indication: 'Meal indication'
+process:
+  mail: mail
+  status: status
+  name: login
+  field_user_name: name
+  field_user_society: society
+  field_user_is_attendee: is_attendee
+  field_user_shirt_size: shirt_size
+  field_user_meal_indication: meal_indication
+destination:
+  plugin: 'entity:user'
+template: null
+migration_dependencies: {  }
+migration_group: drupalcampfr
