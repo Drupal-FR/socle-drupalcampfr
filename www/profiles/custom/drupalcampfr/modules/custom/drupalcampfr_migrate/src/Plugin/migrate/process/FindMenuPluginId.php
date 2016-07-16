@@ -53,10 +53,12 @@ class FindMenuPluginId extends ProcessPluginBase implements ContainerFactoryPlug
    * {@inheritdoc}
    */
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
-    /** @var \Drupal\menu_link_content\Entity\MenuLinkContent $menu */
-    $menu = $this->entityTypeManager->getStorage('menu_link_content')->load($value);
-    if ($menu) {
-      return $menu->getPluginId();
+    /** @var \Drupal\menu_link_content\Entity\MenuLinkContent[] $menu_links */
+    $menu_links = $this->entityTypeManager->getStorage('menu_link_content')->loadByProperties(array('uuid' => $value));
+
+    if (!empty($menu_links)) {
+      $menu_link = array_shift($menu_links);
+      return $menu_link->getPluginId();
     }
     else {
       return $value;
