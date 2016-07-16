@@ -33,6 +33,10 @@ source:
     -
       news_link_uri: 'Link URI'
     -
+      entityqueue: Entityqueue
+    -
+      entityqueue_position: 'Entityqueue position'
+    -
       body_summary: 'Body (summary)'
     -
       body_value: Body
