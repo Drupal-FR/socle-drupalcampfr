@@ -19,6 +19,8 @@ source:
     -
       id: Identifier
     -
+      uuid: UUID
+    -
       title: Title
     -
       published: Published
@@ -32,6 +34,7 @@ process:
   type:
     plugin: default_value
     default_value: sponsor
+  uuid: uuid
   title: title
   status: published
   field_sponsor_level:

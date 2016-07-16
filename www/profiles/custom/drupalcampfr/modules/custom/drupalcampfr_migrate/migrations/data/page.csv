@@ -1,19 +1,19 @@
-Identifier,Title,Path,Published,Body,Body format
-1,Programme,/programme,1,Lorem ipsum,basic_html
-2,Keynotes,/programme/keynotes,1,Lorem ipsum,basic_html
-3,Sprints,/programme/sprints,1,Lorem ipsum,basic_html
-4,Prises de notes collaboratives,/programme/prise-de-notes-collaboratives,1,Lorem ipsum,basic_html
-5,Guide aux conférencier•es,/programme/guide-aux-conferenciers,1,Lorem ipsum,basic_html
-6,À propos,/communaute/a-propos,1,Lorem ipsum,basic_html
-7,Soirée communautaire,/communaute/soiree-communautaire,1,Lorem ipsum,basic_html
-8,Code de conduite,/communaute/code-de-conduite,1,Lorem ipsum,basic_html
-9,Convaincre sa société,/communaute/convaincre-sa-societe,1,Lorem ipsum,basic_html
-10,Forfaits,/sponsors/forfaits,1,Lorem ipsum,basic_html
-11,Badges,/sponsors/badges,1,Lorem ipsum,basic_html
-12,Lieu,/informations-pratiques/lieu,1,Lorem ipsum,basic_html
-13,Accès,/informations-pratiques/acces,1,Lorem ipsum,basic_html
-14,Hébergements,/informations-pratiques/hebergements,1,Lorem ipsum,basic_html
-15,Se préparer,/informations-pratiques/se-preparer,1,Lorem ipsum,basic_html
-16,Bons plans,/informations-pratiques/bons-plans,1,Lorem ipsum,basic_html
-17,Revue de presse,/actualites/revue-de-presse,1,Lorem ipsum,basic_html
-18,Mentions légales,/mentions-legales,1,Lorem ipsum,basic_html
+Identifier,UUID,Title,Path,Published,Body,Body format
+1,page_1,Programme,/programme,1,Lorem ipsum,basic_html
+2,page_2,Keynotes,/programme/keynotes,1,Lorem ipsum,basic_html
+3,page_3,Sprints,/programme/sprints,1,Lorem ipsum,basic_html
+4,page_4,Prises de notes collaboratives,/programme/prise-de-notes-collaboratives,1,Lorem ipsum,basic_html
+5,page_5,Guide aux conférencier•es,/programme/guide-aux-conferenciers,1,Lorem ipsum,basic_html
+6,page_6,À propos,/communaute/a-propos,1,Lorem ipsum,basic_html
+7,page_7,Soirée communautaire,/communaute/soiree-communautaire,1,Lorem ipsum,basic_html
+8,page_8,Code de conduite,/communaute/code-de-conduite,1,Lorem ipsum,basic_html
+9,page_9,Convaincre sa société,/communaute/convaincre-sa-societe,1,Lorem ipsum,basic_html
+10,page_10,Forfaits,/sponsors/forfaits,1,Lorem ipsum,basic_html
+11,page_11,Badges,/sponsors/badges,1,Lorem ipsum,basic_html
+12,page_12,Lieu,/informations-pratiques/lieu,1,Lorem ipsum,basic_html
+13,page_13,Accès,/informations-pratiques/acces,1,Lorem ipsum,basic_html
+14,page_14,Hébergements,/informations-pratiques/hebergements,1,Lorem ipsum,basic_html
+15,page_15,Se préparer,/informations-pratiques/se-preparer,1,Lorem ipsum,basic_html
+16,page_16,Bons plans,/informations-pratiques/bons-plans,1,Lorem ipsum,basic_html
+17,page_17,Revue de presse,/actualites/revue-de-presse,1,Lorem ipsum,basic_html
+18,page_18,Mentions légales,/mentions-legales,1,Lorem ipsum,basic_html

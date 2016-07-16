@@ -19,6 +19,8 @@ source:
     -
       id: Identifier
     -
+      uuid: UUID
+    -
       title: Title
     -
       published: Published
@@ -35,6 +37,8 @@ source:
     -
       room: Room
     -
+      speakers: Speakers
+    -
       body_value: Body
     -
       body_format: 'Body format'
@@ -42,6 +46,7 @@ process:
   type:
     plugin: default_value
     default_value: session
+  uuid: uuid
   title: title
   body/value: body_value
   body/format: body_format
@@ -77,6 +82,17 @@ process:
     -
       plugin: migration
       migration: drupalcampfr_session_room
+  field_session_speaker:
+    -
+      plugin: explode
+      source: speakers
+      delimiter: ;
+    -
+      plugin: migration
+      migration: drupalcampfr_user
+    -
+      plugin: default_value
+      default_value: 1
   field_session_date_start: start_date
   field_session_date_end: end_date
   status: published

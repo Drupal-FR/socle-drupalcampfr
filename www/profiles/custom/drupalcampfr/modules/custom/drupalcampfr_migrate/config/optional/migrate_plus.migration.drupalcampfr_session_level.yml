@@ -19,6 +19,8 @@ source:
     -
       id: Identifier
     -
+      uuid: UUID
+    -
       name: Name
     -
       weight: Weight
@@ -26,6 +28,7 @@ process:
   vid:
     plugin: default_value
     default_value: session_levels
+  uuid: uuid
   name: name
   weight: weight
 destination:

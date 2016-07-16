@@ -37,6 +37,7 @@ source:
     -
       meal_indication: 'Meal indication'
 process:
+  uuid: uuid
   mail: mail
   status: status
   name: login

@@ -19,6 +19,8 @@ source:
     -
       id: Identifier
     -
+      uuid: UUID
+    -
       title: Title
     -
       path: Path
@@ -32,6 +34,7 @@ process:
   type:
     plugin: default_value
     default_value: page
+  uuid: uuid
   title: title
   body/value: body_value
   body/format: body_format

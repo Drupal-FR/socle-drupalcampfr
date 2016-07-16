@@ -19,6 +19,8 @@ source:
     -
       id: Identifier
     -
+      uuid: UUID
+    -
       title: Title
     -
       creation_date: 'Creation date'
@@ -40,6 +42,7 @@ process:
   type:
     plugin: default_value
     default_value: news
+  uuid: uuid
   title: title
   body/value: body_value
   body/summary: body_summary

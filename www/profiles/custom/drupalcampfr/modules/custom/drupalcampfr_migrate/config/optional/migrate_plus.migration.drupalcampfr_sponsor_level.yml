@@ -19,6 +19,8 @@ source:
     -
       id: Identifier
     -
+      uuid: UUID
+    -
       name: Name
     -
       weight: Weight
@@ -32,6 +34,7 @@ process:
   vid:
     plugin: default_value
     default_value: sponsor_levels
+  uuid: uuid
   name: name
   weight: weight
   field_sponsor_level_homepage: homepage
