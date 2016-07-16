@@ -60,8 +60,9 @@ process:
   id: id
   uuid: uuid
   title: title
-  # TODO: Get uri with uuid.
-  'link/uri': uri
+  'link/uri':
+    plugin: drupalcampfr_geturifromuuid
+    source: uri
   weight: weight
   parent:
     plugin: drupalcampfr_findmenupluginid
