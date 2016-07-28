@@ -62,6 +62,7 @@ dependencies:
   - menu_attributes
   - pathauto
   - r4032login
+  - redis
 
   # Custom modules
   - drupalcampfr_core

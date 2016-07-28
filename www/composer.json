@@ -47,6 +47,7 @@
     "drupal/migrate_tools": "8.2.0-beta1",
     "drupal/pathauto": "8.1.0-alpha3",
     "drupal/r4032login": "8.1.*",
+    "drupal/redis": "8.1.0-alpha1",
     "drupal/bootstrap": "8.3.0-rc1",
     "abraham/twitteroauth": "0.6.2"
   },

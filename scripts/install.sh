@@ -30,6 +30,9 @@ cd $WWW_PATH
 # Database backup.
 $DRUSH sql-dump --result-file="${PROJECT_PATH}/backups/${CURRENT_DATE}.sql" --gzip
 
+# Disable external cache.
+rm -f $WWW_PATH/sites/default/.cache_activated
+
 # Install Drupal.
 $DRUSH site-install $PROFILE \
   --account-mail=$ACCOUNT_MAIL \
@@ -76,6 +79,10 @@ $DRUSH migrate-import drupalcampfr_session_room --update
 $DRUSH migrate-import drupalcampfr_session --update
 $DRUSH migrate-import drupalcampfr_menu_link --update
 $DRUSH migrate-import drupalcampfr_basic_block --update
+
+# Enable external cache.
+touch $WWW_PATH/sites/default/.cache_activated
+$DRUSH cr
 
 # Back to the current directory.
 cd $CURRENT_PATH
