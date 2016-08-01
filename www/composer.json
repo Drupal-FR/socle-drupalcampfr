@@ -38,7 +38,7 @@
     "drupal/contact_storage": "8.1.0-beta4",
     "drupal/csv_serialization": "8.1.0-alpha1",
     "drupal/entityqueue": "8.1.0-alpha4",
-    "drupal/eu_cookie_compliance": "8.1.x-dev#76518a80c399629544134de5f035140858bb22f0",
+    "drupal/eu_cookie_compliance": "8.1.0-beta5",
     "drupal/features": "8.3.0-beta6",
     "drupal/honeypot": "8.1.23",
     "drupal/menu_attributes": "8.1.*",
