@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8b32b0066af356f74a2c8ea5b72062e0",
-    "content-hash": "ddc1498a80c01a6e6e1c903d05727d15",
+    "hash": "4e20c446ad345a6adf3d593322e3d308",
+    "content-hash": "9a4fb1f7fd83068f9e56fe7c66649f63",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1027,16 +1027,16 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "8.1.15",
+            "version": "8.1.16",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/admin_toolbar.git",
-                "reference": "f8380381183bc76babaec9dfe392511011d54904"
+                "reference": "53a3c9fbb3709d5629b0992df63ffb1f43c94d2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.15.zip",
-                "reference": "f8380381183bc76babaec9dfe392511011d54904",
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.16.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1067,7 +1067,7 @@
             ],
             "description": "Provides a drop-down menu interface to the core Drupal Toolbar.",
             "homepage": "http://drupal.org/project/admin_toolbar",
-            "time": "2016-05-23 11:35:45"
+            "time": "2016-07-28 09:57:05"
         },
         {
             "name": "drupal/block_visibility_groups",
@@ -1505,7 +1505,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.0-beta5.zip",
-                "reference": null,
+                "reference": "d7a8292ecc0682acdd225a8d2a18f93a9718638d",
                 "shasum": null
             },
             "require": {
