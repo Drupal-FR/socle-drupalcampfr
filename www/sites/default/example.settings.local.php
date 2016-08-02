@@ -13,6 +13,8 @@ $settings['install_profile'] = 'drupalcampfr';
 $settings['hash_salt'] = 'drupalcampfr';
 $settings['trusted_host_patterns'] = array(
   '^socle-drupalcampfr\.local$',
+  '^172\.19\.0\.2$',
+  '^172\.19\.0\.3$',
 );
 
 // External cache.
