@@ -7,7 +7,6 @@ services:
       - mysql
       - redis
       - mail
-      - solr
     volumes:
       - .:/project
     networks:
@@ -42,32 +41,18 @@ services:
         ipv4_address: 172.19.0.4
 
 
-  solr:
-    image: solr:6.1.0-alpine
-    volumes:
-      - ./conf/solr:/solr-drupal/conf
-    entrypoint:
-      - docker-entrypoint.sh
-      - solr-precreate
-      - drupal
-      - /solr-drupal
-    networks:
-      default:
-        ipv4_address: 172.19.0.5
-
-
   redis:
     image: redis:3.2.1-alpine
     networks:
       default:
-        ipv4_address: 172.19.0.6
+        ipv4_address: 172.19.0.5
 
 
   mail:
     image: djfarrelly/maildev
     networks:
       default:
-        ipv4_address: 172.19.0.7
+        ipv4_address: 172.19.0.6
 
 
 networks:
