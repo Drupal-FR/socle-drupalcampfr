@@ -36,13 +36,13 @@
     "drupal/address": "8.1.0-beta3",
     "drupal/block_visibility_groups": "8.1.0",
     "drupal/contact_storage": "8.1.0-beta4",
-    "drupal/csv_serialization": "8.1.0-alpha1",
+    "drupal/csv_serialization": "8.1.0",
     "drupal/entityqueue": "8.1.0-alpha4",
     "drupal/eu_cookie_compliance": "8.1.0-beta5",
-    "drupal/features": "8.3.0-beta6",
+    "drupal/features": "8.3.0-beta7",
     "drupal/honeypot": "8.1.23",
     "drupal/menu_attributes": "8.1.*",
-    "drupal/migrate_plus": "8.2.0-beta1",
+    "drupal/migrate_plus": "8.2.0-beta2",
     "drupal/migrate_source_csv": "8.2.*",
     "drupal/migrate_tools": "8.2.0-beta1",
     "drupal/pathauto": "8.1.0-alpha3",
@@ -85,6 +85,12 @@
         "Not detecting overrides in profile config files": "https://www.drupal.org/files/issues/features-not_detecting_profile_files-2668562-2.patch",
         "Drush export features do not overwrite the existing feature": "https://www.drupal.org/files/issues/features-drush_export_overwrite-2672406-5.patch",
         "Warning uasort in Features UI": "https://www.drupal.org/files/issues/features-warning_uasort-2672470-10.patch"
+      },
+      "drupal/bootstrap": {
+        "Alt text required for image without red mark": "https://www.drupal.org/files/issues/bootstrap-alt_text_image-2779755-3-from_rc2.patch"
+      },
+      "drupal/redis": {
+        "Currently Drush Cr or Cache Clear UI does not flush Redis cache": "https://www.drupal.org/files/issues/redis-drush_cr-2765895-4.patch"
       }
     }
   }

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6cbf7dc441277aad9ae885d727857e74",
-    "content-hash": "0cbb0ed86604c2dd5d5cc02b3f75fec0",
+    "hash": "eff943a50138583dcf17fda2be626ff1",
+    "content-hash": "53de8859479a7846d6a5eb200d4a309c",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -63,16 +63,16 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v0.8.2",
+            "version": "v0.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "93ddf176d7dd851edb0bb05694ed1614c5c67ef8"
+                "reference": "f8839e77aaf825fdc678182264be53e12bc9d3b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/93ddf176d7dd851edb0bb05694ed1614c5c67ef8",
-                "reference": "93ddf176d7dd851edb0bb05694ed1614c5c67ef8",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/f8839e77aaf825fdc678182264be53e12bc9d3b2",
+                "reference": "f8839e77aaf825fdc678182264be53e12bc9d3b2",
                 "shasum": ""
             },
             "require": {
@@ -83,6 +83,7 @@
             "require-dev": {
                 "mikey179/vfsstream": "1.*",
                 "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "2.*",
                 "symfony/intl": ">=2.3",
                 "symfony/validator": ">=2.3"
             },
@@ -122,7 +123,7 @@
                 "localization",
                 "postal"
             ],
-            "time": "2015-12-24 23:07:20"
+            "time": "2016-08-04 16:29:10"
         },
         {
             "name": "commerceguys/enum",
@@ -1131,6 +1132,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-3.x": "8.3.x-dev"
+                },
+                "patches_applied": {
+                    "Alt text required for image without red mark": "https://www.drupal.org/files/issues/bootstrap-alt_text_image-2779755-3-from_rc2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -1384,21 +1388,20 @@
         },
         {
             "name": "drupal/csv_serialization",
-            "version": "8.1.0-alpha1",
+            "version": "8.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/csv_serialization.git",
-                "reference": "7e1e459cfa19ed82fc50273b802f7d3be36d4c04"
+                "reference": "81aec56b486a71d614b5c321145704c5dd6f43c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-1.0-alpha1.zip",
-                "reference": "7e1e459cfa19ed82fc50273b802f7d3be36d4c04",
+                "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-1.0.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
                 "drupal/core": "8.*",
-                "drupal/serialization": "8.*",
                 "league/csv": "^7.1"
             },
             "type": "drupal-module",
@@ -1413,7 +1416,7 @@
             ],
             "description": "Provides CSV as a serialization format.",
             "homepage": "https://www.drupal.org/project/csv_serialization",
-            "time": "2015-09-11 20:29:52"
+            "time": "2016-08-05 13:47:49"
         },
         {
             "name": "drupal/ctools",
@@ -1529,16 +1532,16 @@
         },
         {
             "name": "drupal/features",
-            "version": "8.3.0-beta6",
+            "version": "8.3.0-beta7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/features",
-                "reference": "245b7175b971e4239e3ee5685ca7c92942bf8a6e"
+                "reference": "fd22277b68a2aa06ff0d86af954e694db68677a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta6.zip",
-                "reference": "245b7175b971e4239e3ee5685ca7c92942bf8a6e",
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta7.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1569,7 +1572,7 @@
             ],
             "description": "Enables administrators to package configuration into modules.",
             "homepage": "https://www.drupal.org/project/features",
-            "time": "2016-07-08 12:53:14"
+            "time": "2016-08-04 18:45:56"
         },
         {
             "name": "drupal/honeypot",
@@ -1644,16 +1647,16 @@
         },
         {
             "name": "drupal/migrate_plus",
-            "version": "8.2.0-beta1",
+            "version": "8.2.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/migrate_plus.git",
-                "reference": "5c7e48e4430226dec66a312a05f76d09d824819e"
+                "reference": "fc622f3d89cb99151a372cbf3068c2c2617cb75f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-2.0-beta1.zip",
-                "reference": "5c7e48e4430226dec66a312a05f76d09d824819e",
+                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-2.0-beta2.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1674,8 +1677,6 @@
                 "drupal/migrate": "Required by drupal/migrate_example, drupal/migrate_example_advanced",
                 "drupal/migrate_example_advanced_setup": "Required by drupal/migrate_example_advanced",
                 "drupal/migrate_example_setup": "Required by drupal/migrate_example",
-                "drupal/migrate_source_json": "Required by drupal/migrate_example_advanced",
-                "drupal/migrate_source_xml": "Required by drupal/migrate_example_advanced",
                 "drupal/options": "Required by drupal/migrate_example_setup",
                 "drupal/rest": "Required by drupal/migrate_example_advanced_setup",
                 "drupal/taxonomy": "Required by drupal/migrate_example_setup, drupal/migrate_example_advanced_setup",
@@ -1700,7 +1701,7 @@
             ],
             "description": "Enhancements to core migration support",
             "homepage": "https://www.drupal.org/project/migrate_plus",
-            "time": "2016-04-20 20:39:20"
+            "time": "2016-07-11 15:30:28"
         },
         {
             "name": "drupal/migrate_source_csv",
@@ -1837,7 +1838,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/redis-8.x-1.0-alpha1.zip",
-                "reference": "5e5a43dfabe32fd84438edaef20df2974cef5b3b",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1847,6 +1848,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "Currently Drush Cr or Cache Clear UI does not flush Redis cache": "https://www.drupal.org/files/issues/redis-drush_cr-2765895-4.patch"
                 }
             },
             "autoload": {
