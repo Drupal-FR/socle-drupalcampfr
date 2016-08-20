@@ -49,6 +49,8 @@ content:
     third_party_settings: {  }
   name:
     weight: -50
+  preview:
+    weight: 50
   subject:
     type: string_textfield
     weight: -10
