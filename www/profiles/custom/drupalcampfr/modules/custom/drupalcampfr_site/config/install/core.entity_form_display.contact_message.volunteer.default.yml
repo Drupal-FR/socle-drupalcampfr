@@ -49,4 +49,5 @@ content:
 hidden:
   copy: true
   langcode: true
+  preview: true
   subject: true

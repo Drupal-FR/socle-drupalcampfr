@@ -56,3 +56,4 @@ content:
 hidden:
   copy: true
   langcode: true
+  preview: true
