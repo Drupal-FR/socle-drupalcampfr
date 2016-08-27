@@ -1,5 +1,5 @@
 drupalcampfr_session.admin.session_admin:
   title: 'Sessions'
-  route_name: view.session_admin.page
+  route_name: view.session_admin.page_1
   base_route: system.admin_content
   weight: 5

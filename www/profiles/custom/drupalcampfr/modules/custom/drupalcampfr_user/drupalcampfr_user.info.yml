@@ -15,4 +15,5 @@ dependencies:
   - rest
   - user
   - views
+  - views_data_export
 package: Drupalcampfr

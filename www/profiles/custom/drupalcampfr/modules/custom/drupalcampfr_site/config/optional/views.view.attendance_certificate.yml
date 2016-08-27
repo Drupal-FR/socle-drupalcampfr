@@ -13,6 +13,7 @@ dependencies:
     - options
     - rest
     - user
+    - views_data_export
 id: attendance_certificate
 label: 'Drupalcampfr certificats de présence'
 module: views
@@ -701,78 +702,46 @@ display:
         - 'config:field.storage.contact_message.field_attendance_departure'
         - 'config:field.storage.contact_message.field_attendance_firstname'
         - 'config:field.storage.contact_message.field_attendance_lastname'
-  page:
-    display_plugin: page
-    id: page
-    display_title: Page
-    position: 1
-    display_options:
-      display_extenders: {  }
-      path: admin/people/attendance-certificates
-      menu:
-        type: normal
-        title: 'Certificats de présence'
-        description: ''
-        expanded: false
-        parent: entity.user.collection
-        weight: 10
-        context: '0'
-        menu_name: admin
-        enabled: true
-    cache_metadata:
-      max-age: 0
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url
-        - url.query_args
-        - user.permissions
-      tags:
-        - 'config:field.storage.contact_message.field_attendance_arrival'
-        - 'config:field.storage.contact_message.field_attendance_departure'
-        - 'config:field.storage.contact_message.field_attendance_firstname'
-        - 'config:field.storage.contact_message.field_attendance_lastname'
-  rest_export_csv:
-    display_plugin: rest_export
-    id: rest_export_csv
+  data_export_1:
+    display_plugin: data_export
+    id: data_export_1
     display_title: 'Export CSV'
     position: 2
     display_options:
       display_extenders: {  }
-      display_description: ''
       path: admin/people/attendance-certificates/csv
+      filename: attendance-certificates.csv
+      displays:
+        page_1: page_1
+        default: 0
       pager:
         type: none
         options:
           offset: 0
       style:
-        type: serializer
+        type: data_export
         options:
-          uses_fields: false
           formats:
             csv: csv
-      row:
-        type: data_field
-        options:
-          field_options:
-            field_attendance_lastname:
-              alias: ''
-              raw_output: false
-            field_attendance_firstname:
-              alias: ''
-              raw_output: false
-            field_attendance_arrival:
-              alias: ''
-              raw_output: false
-            field_attendance_departure:
-              alias: ''
-              raw_output: false
-            created:
-              alias: ''
-              raw_output: false
-            operations:
-              alias: ''
-              raw_output: false
+          csv_settings:
+            delimiter: ','
+            enclosure: '"'
+            escape_char: \
+            strip_tags: true
+            trim: true
+            encoding: utf8
+          xls_settings:
+            xls_format: Excel2007
+            metadata:
+              creator: ''
+              last_modified_by: ''
+              title: ''
+              description: ''
+              subject: ''
+              keywords: ''
+              category: ''
+              manager: ''
+              company: ''
       fields:
         field_attendance_lastname:
           id: field_attendance_lastname
@@ -1093,29 +1062,45 @@ display:
           plugin_id: field
       defaults:
         fields: false
-        filters: false
-        filter_groups: false
-      filters:
-        contact_form:
-          id: contact_form
-          table: contact_message
-          field: contact_form
-          value:
-            attendance_certificate: attendance_certificate
-          entity_type: contact_message
-          entity_field: contact_form
-          plugin_id: bundle
-          group: 1
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
+        - url
+        - user.permissions
+      tags:
+        - 'config:field.storage.contact_message.field_attendance_arrival'
+        - 'config:field.storage.contact_message.field_attendance_departure'
+        - 'config:field.storage.contact_message.field_attendance_firstname'
+        - 'config:field.storage.contact_message.field_attendance_lastname'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: admin/people/attendance-certificates
+      menu:
+        type: normal
+        title: 'Certificats de présence'
+        description: ''
+        expanded: false
+        parent: entity.user.collection
+        weight: 10
+        context: '0'
+        menu_name: admin
+        enabled: true
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
         - user.permissions
       tags:
         - 'config:field.storage.contact_message.field_attendance_arrival'

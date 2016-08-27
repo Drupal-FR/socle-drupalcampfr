@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5cf9933b51573fad259b196882911aac",
-    "content-hash": "2d74a17bbbfedad1b7f990d67a7b4a2e",
+    "hash": "0aeaf63b36ddc377f18cf7de23c0404f",
+    "content-hash": "3bb0696ccc6ec4ec4fcd262df6b9fc9b",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1508,7 +1508,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.0-beta7.zip",
-                "reference": null,
+                "reference": "e87a7bbd7e3f2966db5de7e44d95a4b6a9046c1f",
                 "shasum": null
             },
             "require": {
@@ -1898,6 +1898,39 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "time": "2016-08-09 07:03:16"
+        },
+        {
+            "name": "drupal/views_data_export",
+            "version": "8.1.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_data_export",
+                "reference": "9aa5e766207fea0437dd28ff0bddf702d34ef11d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_data_export-8.x-1.0-alpha2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/csv_serialization": "8.*",
+                "drupal/rest": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Plugin to export views data into various file formats.",
+            "homepage": "https://www.drupal.org/project/views_data_export",
+            "time": "2016-08-23 20:41:37"
         },
         {
             "name": "drush/drush",

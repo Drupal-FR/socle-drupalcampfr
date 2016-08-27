@@ -22,4 +22,5 @@ dependencies:
   - telephone
   - text
   - views
+  - views_data_export
 package: Drupalcampfr

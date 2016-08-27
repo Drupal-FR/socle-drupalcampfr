@@ -768,9 +768,9 @@ display:
         - 'config:field.storage.node.field_session_level'
         - 'config:field.storage.node.field_session_speaker'
         - 'config:field.storage.node.field_session_track'
-  page:
+  page_1:
     display_plugin: page
-    id: page
+    id: page_1
     display_title: Page
     position: 1
     display_options:

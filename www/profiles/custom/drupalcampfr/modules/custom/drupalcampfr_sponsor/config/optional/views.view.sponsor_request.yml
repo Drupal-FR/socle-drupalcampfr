@@ -765,9 +765,9 @@ display:
       tags:
         - 'config:field.storage.contact_message.field_sponsor_level'
         - 'config:field.storage.contact_message.field_sponsor_phone'
-  page:
+  page_1:
     display_plugin: page
-    id: page
+    id: page_1
     display_title: Page
     position: 1
     display_options:
