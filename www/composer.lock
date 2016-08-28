@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0aeaf63b36ddc377f18cf7de23c0404f",
-    "content-hash": "3bb0696ccc6ec4ec4fcd262df6b9fc9b",
+    "hash": "4f933193088be624312c3557545c9ef7",
+    "content-hash": "e8d2d5e5a01f8ee5c19bf2323ba013d3",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1422,16 +1422,16 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "8.3.0-alpha26",
+            "version": "8.3.0-alpha27",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "c14a5eee970c3d0aab02e88f6c6a4d18091439b8"
+                "reference": "231e2649678d58901368a9e5681f36865ce84e73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha26.zip",
-                "reference": "c14a5eee970c3d0aab02e88f6c6a4d18091439b8",
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha27.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1458,7 +1458,7 @@
             ],
             "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
             "homepage": "https://www.drupal.org/project/ctools",
-            "time": "2016-05-06 18:51:13"
+            "time": "2016-08-20 19:59:03"
         },
         {
             "name": "drupal/entityqueue",
@@ -4671,7 +4671,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/examples.git",
-                "reference": "88abab516874ed599a876b805ee514353c66cffa"
+                "reference": "9cb3ad3739f5c3ed29eb9692384883e39e5cf4d3"
             },
             "require": {
                 "drupal/core": "8.*",
@@ -4723,7 +4723,7 @@
             ],
             "description": "A variety of example code for you to learn from and hack upon.",
             "homepage": "https://www.drupal.org/project/examples",
-            "time": "2016-08-19 21:41:50"
+            "time": "2016-08-21 18:52:49"
         },
         {
             "name": "drupal/pistachio",
