@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4f933193088be624312c3557545c9ef7",
-    "content-hash": "e8d2d5e5a01f8ee5c19bf2323ba013d3",
+    "hash": "fabcdd0a62fb2ac84edf24f30fc06c05",
+    "content-hash": "30b6e186d1e43189f784b12413902bce",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -257,16 +257,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9"
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/a3595c5272a6f247228abb20076ed27321e4aae9",
-                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d78064c68299743e0161004f2de3a0204e33b804",
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804",
                 "shasum": ""
             },
             "require": {
@@ -313,6 +313,7 @@
                 "MODX Evo",
                 "Mautic",
                 "OXID",
+                "Plentymarkets",
                 "RadPHP",
                 "SMF",
                 "Thelia",
@@ -320,9 +321,11 @@
                 "agl",
                 "aimeos",
                 "annotatecms",
+                "attogram",
                 "bitrix",
                 "cakephp",
                 "chef",
+                "cockpit",
                 "codeigniter",
                 "concrete5",
                 "croogo",
@@ -346,29 +349,31 @@
                 "piwik",
                 "ppi",
                 "puppet",
+                "reindex",
                 "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
                 "typo3",
                 "wordpress",
+                "yawik",
                 "zend",
                 "zikula"
             ],
-            "time": "2016-07-05 06:18:20"
+            "time": "2016-08-13 20:53:52"
         },
         {
             "name": "composer/semver",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "03c9de5aa25e7672c4ad251eeaba0c47a06c8b98"
+                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/03c9de5aa25e7672c4ad251eeaba0c47a06c8b98",
-                "reference": "03c9de5aa25e7672c4ad251eeaba0c47a06c8b98",
+                "url": "https://api.github.com/repos/composer/semver/zipball/c7cb9a2095a074d131b65a8a0cd294479d785573",
+                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573",
                 "shasum": ""
             },
             "require": {
@@ -417,7 +422,7 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2016-06-02 09:04:51"
+            "time": "2016-08-30 16:08:34"
         },
         {
             "name": "consolidation/annotated-command",
@@ -1028,16 +1033,16 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "8.1.16",
+            "version": "8.1.17",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/admin_toolbar.git",
-                "reference": "53a3c9fbb3709d5629b0992df63ffb1f43c94d2d"
+                "reference": "195f503ee4350c8be74b9515c21e264384a2fcaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.16.zip",
-                "reference": "53a3c9fbb3709d5629b0992df63ffb1f43c94d2d",
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.17.zip",
+                "reference": "195f503ee4350c8be74b9515c21e264384a2fcaf",
                 "shasum": null
             },
             "require": {
@@ -1068,20 +1073,20 @@
             ],
             "description": "Provides a drop-down menu interface to the core Drupal Toolbar.",
             "homepage": "http://drupal.org/project/admin_toolbar",
-            "time": "2016-07-28 09:57:05"
+            "time": "2016-08-19 14:05:31"
         },
         {
             "name": "drupal/block_visibility_groups",
-            "version": "8.1.0",
+            "version": "8.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/block_visibility_groups.git",
-                "reference": "88e930b3e1e2a4520e77d56e4238251aed023376"
+                "reference": "a95c188811745165a80129e3d5b1e87a0d651ea6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_visibility_groups-8.x-1.0-rc1.zip",
-                "reference": "88e930b3e1e2a4520e77d56e4238251aed023376",
+                "url": "https://ftp.drupal.org/files/projects/block_visibility_groups-8.x-1.1.zip",
+                "reference": "a95c188811745165a80129e3d5b1e87a0d651ea6",
                 "shasum": null
             },
             "require": {
@@ -1104,12 +1109,12 @@
             "license": [
                 "GPL-2.0+"
             ],
-            "description": "My Awesome Module",
+            "description": "Allows the site administrator to easily manage complex visibility settings that apply to any block placed in a visibility group.",
             "homepage": "http://drupal.org/project/block_visibility_groups",
             "keywords": [
                 "Drupal"
             ],
-            "time": "2015-12-27 22:34:33"
+            "time": "2016-08-28 14:36:07"
         },
         {
             "name": "drupal/bootstrap",
@@ -1431,7 +1436,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha27.zip",
-                "reference": null,
+                "reference": "231e2649678d58901368a9e5681f36865ce84e73",
                 "shasum": null
             },
             "require": {
@@ -1707,11 +1712,17 @@
         },
         {
             "name": "drupal/migrate_source_csv",
-            "version": "dev-8.x-2.x",
+            "version": "8.2.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/migrate_source_csv.git",
                 "reference": "eb3336f04afe26f1d0d82954ef07d16cb0d17743"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_source_csv-8.x-2.0-beta1.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "drupal/core": "~8.1"
@@ -1910,7 +1921,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/views_data_export-8.x-1.0-alpha2.zip",
-                "reference": null,
+                "reference": "9aa5e766207fea0437dd28ff0bddf702d34ef11d",
                 "shasum": null
             },
             "require": {
