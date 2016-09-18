@@ -48,16 +48,7 @@ if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
 fi
 
 # Revert features.
-$DRUSH features-import -y --bundle=drupalcampfr core
-$DRUSH features-import -y --bundle=drupalcampfr site
-$DRUSH features-import -y --bundle=drupalcampfr user
-$DRUSH features-import -y --bundle=drupalcampfr homepage
-$DRUSH features-import -y --bundle=drupalcampfr news
-$DRUSH features-import -y --bundle=drupalcampfr page
-$DRUSH features-import -y --bundle=drupalcampfr sponsor
-$DRUSH features-import -y --bundle=drupalcampfr session
-# Waiting for https://www.drupal.org/node/2672490
-#$DRUSH features-import -y --bundle=drupalcampfr drupalcampfr
+$DRUSH features-import -y $PROFILE
 
 # Translation updates.
 $DRUSH locale-check
