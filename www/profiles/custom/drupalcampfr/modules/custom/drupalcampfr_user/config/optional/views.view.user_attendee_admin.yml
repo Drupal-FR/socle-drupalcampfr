@@ -9,8 +9,10 @@ dependencies:
     - field.storage.user.field_user_society
     - system.menu.admin
   module:
+    - csv_serialization
     - options
     - rest
+    - serialization
     - user
     - views_data_export
 id: user_attendee_admin

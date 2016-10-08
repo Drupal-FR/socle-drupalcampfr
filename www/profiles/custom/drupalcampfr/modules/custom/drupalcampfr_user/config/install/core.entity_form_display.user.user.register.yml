@@ -64,6 +64,7 @@ content:
 hidden:
   contact: true
   field_user_is_attendee: true
+  langcode: true
   language: true
   path: true
   timezone: true

@@ -72,5 +72,6 @@ content:
     weight: 3
 hidden:
   contact: true
+  langcode: true
   language: true
   path: true

@@ -34,4 +34,5 @@ hidden:
   field_user_participate: true
   field_user_shirt_size: true
   field_user_society: true
+  langcode: true
   member_for: true

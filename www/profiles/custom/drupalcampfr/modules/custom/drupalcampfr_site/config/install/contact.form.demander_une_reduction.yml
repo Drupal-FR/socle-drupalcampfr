@@ -12,3 +12,5 @@ recipients:
   - dcn2016@listes.drupalfr.org
 reply: ''
 weight: 0
+message: 'Your message has been sent.'
+redirect: ''

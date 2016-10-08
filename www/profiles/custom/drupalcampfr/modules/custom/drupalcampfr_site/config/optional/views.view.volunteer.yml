@@ -9,8 +9,10 @@ dependencies:
     - system.menu.admin
   module:
     - contact
+    - csv_serialization
     - options
     - rest
+    - serialization
     - user
     - views_data_export
 id: volunteer

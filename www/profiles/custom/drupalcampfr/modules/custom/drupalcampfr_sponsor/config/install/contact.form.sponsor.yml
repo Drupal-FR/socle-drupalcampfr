@@ -16,3 +16,5 @@ recipients:
   - dcn2016@listes.drupalfr.org
 reply: ''
 weight: 0
+message: 'Votre demande de sponsoring a été envoyée.'
+redirect: ''

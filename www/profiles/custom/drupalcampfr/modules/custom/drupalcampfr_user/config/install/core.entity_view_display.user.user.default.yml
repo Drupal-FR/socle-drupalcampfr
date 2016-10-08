@@ -45,4 +45,5 @@ hidden:
   field_user_meal_indication: true
   field_user_participate: true
   field_user_shirt_size: true
+  langcode: true
   member_for: true

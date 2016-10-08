@@ -1,6 +1,5 @@
 bundle: drupalcampfr
 excluded:
   - drupalcampfr_theme.settings
-  - seven.settings
   - system.cron
   - system.theme
