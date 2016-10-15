@@ -30,20 +30,20 @@
   "require": {
     "composer/installers": "^1.0.21",
     "cweagans/composer-patches": "~1.0",
-    "drupal/core": "8.2.0",
+    "drupal/core": "8.2.1",
     "drush/drush": "8.1.5",
     "drupal/address": "8.1.0-rc2",
     "drupal/admin_toolbar": "8.1.17",
     "drupal/block_visibility_groups": "8.1.1",
-    "drupal/contact_storage": "8.1.0-beta7",
+    "drupal/contact_storage": "8.1.0-beta8",
     "drupal/entityqueue": "8.1.0-alpha4",
     "drupal/eu_cookie_compliance": "8.1.0-beta7",
     "drupal/features": "8.3.0-rc1",
     "drupal/honeypot": "8.1.23",
     "drupal/menu_attributes": "8.1.*",
-    "drupal/migrate_plus": "8.2.0-beta2",
+    "drupal/migrate_plus": "8.3.0-beta1",
     "drupal/migrate_source_csv": "8.2.0-beta1",
-    "drupal/migrate_tools": "8.2.0-beta1",
+    "drupal/migrate_tools": "8.3.0-beta1",
     "drupal/pathauto": "8.1.0-beta1",
     "drupal/r4032login": "8.1.*",
     "drupal/redis": "8.1.0-alpha1",
@@ -75,14 +75,14 @@
       "libraries/{$name}": ["type:drupal-library"]
     },
     "patches": {
+      "drupal/bootstrap": {
+        "Alt text required for image without red mark": "https://www.drupal.org/files/issues/bootstrap-alt_text_image-2779755-3-from_rc2.patch"
+      },
       "drupal/entityqueue": {
         "Empty views cache when queue is updated - 1": "https://www.drupal.org/files/issues/2686623.patch",
         "Empty views cache when queue is updated - 2": "https://www.drupal.org/files/issues/2686623-7_0.patch",
         "Can't save view with entity queue relationship - 1": "https://www.drupal.org/files/issues/2643928-27-dev.patch",
         "Can't save view with entity queue relationship - 2": "https://www.drupal.org/files/issues/2643928-29.patch"
-      },
-      "drupal/bootstrap": {
-        "Alt text required for image without red mark": "https://www.drupal.org/files/issues/bootstrap-alt_text_image-2779755-3-from_rc2.patch"
       },
       "drupal/redis": {
         "Currently Drush Cr or Cache Clear UI does not flush Redis cache": "https://www.drupal.org/files/issues/redis-drush_cr-2765895-4.patch"
