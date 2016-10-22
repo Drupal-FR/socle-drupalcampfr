@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0bb865e58bf6f8683dc9981297a8c75e",
-    "content-hash": "71782412d81af0812ed4d1f14dca130f",
+    "hash": "01b3cb3a24bcad9903ee92c8cf72e5ca",
+    "content-hash": "d6c7ebcb2dc7630ae226a7854490274b",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1749,20 +1749,24 @@
         },
         {
             "name": "drupal/migrate_source_csv",
-            "version": "8.2.0-beta1",
+            "version": "8.2.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/migrate_source_csv.git",
-                "reference": "eb3336f04afe26f1d0d82954ef07d16cb0d17743"
+                "reference": "060fac275b8e3c17f226aee85aed9135a8f83216"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_source_csv-8.x-2.0-beta1.zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_source_csv-8.x-2.0-rc2.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "drupal/core": "~8.1"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1",
+                "phpunit/phpunit": "~4"
             },
             "type": "drupal-module",
             "extra": {
@@ -1783,7 +1787,7 @@
             ],
             "description": "CSV source migration.",
             "homepage": "https://www.drupal.org/project/migrate_source_csv",
-            "time": "2016-04-18 14:09:07"
+            "time": "2016-10-17 21:41:31"
         },
         {
             "name": "drupal/migrate_tools",
@@ -4923,7 +4927,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/examples.git",
-                "reference": "9cb3ad3739f5c3ed29eb9692384883e39e5cf4d3"
+                "reference": "a6bc7f966ba39795c38477f3fb06d4f04b715735"
             },
             "require": {
                 "drupal/core": "8.*",
@@ -4975,7 +4979,7 @@
             ],
             "description": "A variety of example code for you to learn from and hack upon.",
             "homepage": "https://www.drupal.org/project/examples",
-            "time": "2016-08-21 18:52:49"
+            "time": "2016-10-21 22:32:00"
         },
         {
             "name": "drupal/pistachio",
