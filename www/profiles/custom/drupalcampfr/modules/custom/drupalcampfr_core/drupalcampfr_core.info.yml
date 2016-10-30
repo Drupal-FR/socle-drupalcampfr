@@ -5,22 +5,33 @@ core: 8.x
 dependencies:
   - block
   - block_content
+  - commerce_order
+  - commerce_payment
+  - commerce_product
+  - commerce_promotion
+  - commerce_store
   - contact
   - drupalcampfr_core
   - entityqueue
   - eu_cookie_compliance
+  - features
   - field
   - file
+  - help
   - honeypot
   - image
+  - language
   - menu_link_content
   - node
   - options
+  - profile
   - responsive_image
   - system
   - taxonomy
   - telephone
   - tour
   - user
+  - views
+  - visualization
 package: Drupalcampfr
 configure: drupalcampfr_core.config_list

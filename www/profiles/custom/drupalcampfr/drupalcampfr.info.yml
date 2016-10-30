@@ -25,7 +25,6 @@ dependencies:
   - filter
   - help
   - image
-  - inline_form_errors
   - language
   - link
   - locale
@@ -51,6 +50,17 @@ dependencies:
   - user
   - views
 
+  # Experimental modules.
+#  - big_pipe
+#  - block_place
+#  - content_moderation
+#  - datetime_range
+  - inline_form_errors
+#  - migrate
+#  - migrate_drupal
+#  - migrate_drupal_ui
+#  - outside_in
+
   # Contrib modules.
   - admin_toolbar
   - admin_toolbar_tools
@@ -75,6 +85,7 @@ dependencies:
   - drupalcampfr_sponsor
   - drupalcampfr_session
   - drupalcampfr_newsletter
+  - drupalcampfr_ticket
 
   # Development modules. Enabled in the install/update scripts.
 #  - config_inspector

@@ -2,6 +2,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_user_is_attendee
     - field.field.user.user.field_user_meal_indication
     - field.field.user.user.field_user_name
@@ -41,9 +42,11 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  commerce_remote_id: true
   field_user_is_attendee: true
   field_user_meal_indication: true
   field_user_participate: true
   field_user_shirt_size: true
   langcode: true
   member_for: true
+  profile_customer: true

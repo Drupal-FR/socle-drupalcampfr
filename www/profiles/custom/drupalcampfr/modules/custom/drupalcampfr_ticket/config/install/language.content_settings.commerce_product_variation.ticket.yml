@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.ticket
+id: commerce_product_variation.ticket
+target_entity_type_id: commerce_product_variation
+target_bundle: ticket
+default_langcode: site_default
+language_alterable: false
