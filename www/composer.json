@@ -21,42 +21,42 @@
     "source": "https://github.com/Drupal-FR/socle-drupalcampfr",
     "docs": "https://github.com/Drupal-FR/socle-drupalcampfr/blob/8.x-1.x/README.md"
   },
-  "repositories": [
-    {
+  "repositories": {
+    "drupal": {
       "type": "composer",
-      "url": "https://packagist.drupal-composer.org"
+      "url": "https://packages.drupal.org/8"
     }
-  ],
+  },
   "require": {
     "composer/installers": "^1.0.21",
     "cweagans/composer-patches": "~1.0",
     "drupal/core": "8.2.1",
     "drush/drush": "8.1.5",
-    "drupal/address": "8.1.0-rc2",
-    "drupal/admin_toolbar": "8.1.17",
-    "drupal/block_visibility_groups": "8.1.1",
-    "drupal/contact_storage": "8.1.0-beta8",
-    "drupal/entityqueue": "8.1.0-alpha4",
-    "drupal/eu_cookie_compliance": "8.1.0-beta7",
-    "drupal/features": "8.3.0-rc1",
-    "drupal/honeypot": "8.1.23",
-    "drupal/menu_attributes": "8.1.*",
-    "drupal/migrate_plus": "8.3.0-beta1",
-    "drupal/migrate_source_csv": "8.2.0-rc2",
-    "drupal/migrate_tools": "8.3.0-beta1",
-    "drupal/pathauto": "8.1.0-beta1",
-    "drupal/r4032login": "8.1.*",
-    "drupal/redis": "8.1.0-alpha1",
-    "drupal/views_data_export": "8.1.0-alpha2",
-    "drupal/bootstrap": "8.3.0-rc2",
+    "drupal/address": "1.0.0-rc3",
+    "drupal/admin_toolbar": "1.17.0",
+    "drupal/block_visibility_groups": "1.1.0",
+    "drupal/contact_storage": "1.0.0-beta8",
+    "drupal/entityqueue": "1.0.0-alpha4",
+    "drupal/eu_cookie_compliance": "1.0.0-beta7",
+    "drupal/features": "3.0.0-rc1",
+    "drupal/honeypot": "1.23.0",
+    "drupal/menu_attributes": "1.*",
+    "drupal/migrate_plus": "3.0.0-beta1",
+    "drupal/migrate_source_csv": "2.0.0-rc2",
+    "drupal/migrate_tools": "3.0.0-beta1",
+    "drupal/pathauto": "1.0.0-beta1",
+    "drupal/r4032login": "1.*",
+    "drupal/redis": "1.0.0-alpha1",
+    "drupal/views_data_export": "1.0.0-alpha2",
+    "drupal/bootstrap": "3.0.0",
     "abraham/twitteroauth": "0.6.2"
   },
   "require-dev": {
-    "drupal/devel": "8.1.*",
-    "drupal/devel_a11y": "8.1.*",
-    "drupal/config_inspector": "8.1.*",
-    "drupal/examples": "8.1.*",
-    "drupal/pistachio": "8.1.*"
+    "drupal/devel": "1.*",
+    "drupal/devel_a11y": "1.*",
+    "drupal/config_inspector": "1.*",
+    "drupal/examples": "1.*",
+    "drupal/pistachio": "1.*"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -75,9 +75,6 @@
       "libraries/{$name}": ["type:drupal-library"]
     },
     "patches": {
-      "drupal/bootstrap": {
-        "Alt text required for image without red mark": "https://www.drupal.org/files/issues/bootstrap-alt_text_image-2779755-3-from_rc2.patch"
-      },
       "drupal/entityqueue": {
         "Empty views cache when queue is updated - 1": "https://www.drupal.org/files/issues/2686623.patch",
         "Empty views cache when queue is updated - 2": "https://www.drupal.org/files/issues/2686623-7_0.patch",
