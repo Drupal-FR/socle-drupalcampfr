@@ -13,7 +13,7 @@ third_party_settings:
 id: attendance_certificate
 label: 'Certificat de présence'
 recipients:
-  - dcn2016@listes.drupalfr.org
+  - example@example.com
 reply: ''
 weight: 0
 message: 'Votre demande de certificat de présence a été envoyée.'

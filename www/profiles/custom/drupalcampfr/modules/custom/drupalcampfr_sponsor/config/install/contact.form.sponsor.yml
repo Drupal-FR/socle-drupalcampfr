@@ -13,7 +13,7 @@ third_party_settings:
 id: sponsor
 label: 'Devenir sponsor'
 recipients:
-  - dcn2016@listes.drupalfr.org
+  - example@example.com
 reply: ''
 weight: 0
 message: 'Votre demande de sponsoring a été envoyée.'

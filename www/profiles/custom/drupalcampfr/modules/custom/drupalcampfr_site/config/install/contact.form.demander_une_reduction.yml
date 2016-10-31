@@ -9,7 +9,7 @@ third_party_settings:
 id: demander_une_reduction
 label: 'Demander une réduction'
 recipients:
-  - dcn2016@listes.drupalfr.org
+  - example@example.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'

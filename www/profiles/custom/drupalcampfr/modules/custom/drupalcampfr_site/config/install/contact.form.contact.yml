@@ -13,7 +13,7 @@ third_party_settings:
 id: contact
 label: Contact
 recipients:
-  - dcn2016@listes.drupalfr.org
+  - example@example.com
 reply: ''
 weight: 0
 message: 'Votre message a été envoyé.'
