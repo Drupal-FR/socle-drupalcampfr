@@ -71,19 +71,6 @@ process:
   mail: mail
   default_currency: default_currency
   default_langcode: default_langcode
-#  address__langcode: address__langcode
-#  address__country_code: address__country_code
-#  address__administrative_area: address__administrative_area
-#  address__locality: address__locality
-#  address__dependent_locality: address__dependent_locality
-#  address__postal_code: address__postal_code
-#  address__sorting_code: address__sorting_code
-#  address__address_line1: address__address_line1
-#  address__address_line2: address__address_line2
-#  address__organization: address__organization
-#  address__given_name: address__given_name
-#  address__additional_name: address__additional_name
-#  address__family_name: address__family_name
   'address/langcode': address__langcode
   'address/country_code': address__country_code
   'address/administrative_area': address__administrative_area
