@@ -74,6 +74,7 @@ $DRUSH migrate-import drupalcampfr_session_track --update
 $DRUSH migrate-import drupalcampfr_session_length --update
 $DRUSH migrate-import drupalcampfr_session_room --update
 $DRUSH migrate-import drupalcampfr_session --update
+$DRUSH migrate-import drupalcampfr_store --update
 $DRUSH migrate-import drupalcampfr_menu_link --update
 $DRUSH migrate-import drupalcampfr_basic_block --update
 

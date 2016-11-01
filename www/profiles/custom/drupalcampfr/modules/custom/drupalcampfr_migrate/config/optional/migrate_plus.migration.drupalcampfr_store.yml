@@ -1,0 +1,107 @@
+langcode: fr
+status: true
+dependencies:
+  enforced:
+    module:
+      - drupalcampfr_migrate
+  module:
+    - migrate_plus
+    - migrate_source_csv
+    - node
+id: drupalcampfr_store
+migration_tags:
+  - drupalcampfr
+label: 'Store import'
+source:
+  plugin: csv
+  path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/store.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      id: Identifier
+    -
+      uuid: UUID
+    -
+      name: Name
+    -
+      mail: Mail
+    -
+      default_currency: 'Default currency'
+    -
+      default_langcode: 'Default langcode'
+    -
+      address__langcode: 'Address langcode'
+    -
+      address__country_code: 'Address country code'
+    -
+      address__administrative_area: 'Address administrative area'
+    -
+      address__locality: 'Address locality'
+    -
+      address__dependent_locality: 'Address dependent locality'
+    -
+      address__postal_code: 'Address postal code'
+    -
+      address__sorting_code: 'Address sorting code'
+    -
+      address__address_line1: 'Address address line 1'
+    -
+      address__address_line2: 'Address address line 2'
+    -
+      address__organization: 'Address organization'
+    -
+      address__given_name: 'Address given name'
+    -
+      address__additional_name: 'Address additional name'
+    -
+      address__family_name: 'Address family name'
+    -
+      billing_countries: 'Billing countries'
+process:
+  type:
+    plugin: default_value
+    default_value: online
+  uuid: uuid
+  uid:
+    plugin: default_value
+    default_value: 1
+  name: name
+  mail: mail
+  default_currency: default_currency
+  default_langcode: default_langcode
+#  address__langcode: address__langcode
+#  address__country_code: address__country_code
+#  address__administrative_area: address__administrative_area
+#  address__locality: address__locality
+#  address__dependent_locality: address__dependent_locality
+#  address__postal_code: address__postal_code
+#  address__sorting_code: address__sorting_code
+#  address__address_line1: address__address_line1
+#  address__address_line2: address__address_line2
+#  address__organization: address__organization
+#  address__given_name: address__given_name
+#  address__additional_name: address__additional_name
+#  address__family_name: address__family_name
+  'address/langcode': address__langcode
+  'address/country_code': address__country_code
+  'address/administrative_area': address__administrative_area
+  'address/locality': address__locality
+  'address/dependent_locality': address__dependent_locality
+  'address/postal_code': address__postal_code
+  'address/sorting_code': address__sorting_code
+  'address/address_line1': address__address_line1
+  'address/address_line2': address__address_line2
+  'address/organization': address__organization
+  'address/given_name': address__given_name
+  'address/additional_name': address__additional_name
+  'address/family_name': address__family_name
+  billing_countries: billing_countries
+destination:
+  plugin: 'entity:commerce_store'
+  type: online
+  bundle: online
+template: null
+migration_dependencies: {  }
+migration_group: drupalcampfr
