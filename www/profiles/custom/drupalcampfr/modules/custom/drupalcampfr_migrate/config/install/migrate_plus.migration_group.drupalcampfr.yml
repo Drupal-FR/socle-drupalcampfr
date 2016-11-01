@@ -1,6 +1,9 @@
 langcode: fr
 status: true
-dependencies: {  }
+dependencies:
+  enforced:
+    module:
+      - drupalcampfr_migrate
 id: drupalcampfr
 label: Drupalcampfr
 description: 'A container for the drupalcampfr migrations.'
