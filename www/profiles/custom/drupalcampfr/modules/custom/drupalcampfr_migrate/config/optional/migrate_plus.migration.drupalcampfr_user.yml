@@ -27,11 +27,11 @@ source:
     -
       login: Login
     -
+      roles: Roles
+    -
       name: Name
     -
       society: Society
-    -
-      is_attendee: 'Is attendee'
     -
       shirt_size: 'Shirt size'
     -
@@ -41,9 +41,21 @@ process:
   mail: mail
   status: status
   name: login
+  roles:
+    -
+      plugin: explode
+      source: roles
+      delimiter: ;
+    -
+      plugin: static_map
+      map:
+        administrator: administrator
+        attendee: attendee
+        member: member
+        moderator: moderator
+      bypass: true
   field_user_name: name
   field_user_society: society
-  field_user_is_attendee: is_attendee
   field_user_shirt_size: shirt_size
   field_user_meal_indication: meal_indication
 destination:

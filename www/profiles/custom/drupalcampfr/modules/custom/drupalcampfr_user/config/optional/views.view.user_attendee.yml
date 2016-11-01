@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.user.teaser
     - system.menu.footer-menu-2
+    - user.role.attendee
   module:
     - user
 id: user_attendee
@@ -127,7 +128,7 @@ display:
           field_api_classes: false
       filters:
         status:
-          value: true
+          value: '1'
           table: users_field_data
           field: status
           plugin_id: boolean
@@ -137,15 +138,16 @@ display:
           expose:
             operator: ''
           group: 1
-        field_user_is_attendee_value:
-          id: field_user_is_attendee_value
-          table: user__field_user_is_attendee
-          field: field_user_is_attendee_value
+        roles_target_id:
+          id: roles_target_id
+          table: user__roles
+          field: roles_target_id
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '='
-          value: true
+          operator: or
+          value:
+            attendee: attendee
           group: 1
           exposed: false
           expose:
@@ -160,6 +162,7 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -172,7 +175,9 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: boolean
+          reduce_duplicates: false
+          entity_type: user
+          plugin_id: user_roles
       sorts:
         name:
           id: name

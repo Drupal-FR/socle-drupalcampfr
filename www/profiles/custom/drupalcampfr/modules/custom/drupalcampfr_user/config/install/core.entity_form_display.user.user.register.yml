@@ -4,7 +4,6 @@ dependencies:
   config:
     - core.entity_form_mode.user.register
     - field.field.user.user.commerce_remote_id
-    - field.field.user.user.field_user_is_attendee
     - field.field.user.user.field_user_meal_indication
     - field.field.user.user.field_user_name
     - field.field.user.user.field_user_participate
@@ -65,7 +64,6 @@ content:
 hidden:
   commerce_remote_id: true
   contact: true
-  field_user_is_attendee: true
   langcode: true
   language: true
   path: true

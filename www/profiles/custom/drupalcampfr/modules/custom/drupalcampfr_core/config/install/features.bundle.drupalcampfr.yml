@@ -23,7 +23,6 @@ assignments:
         image_style: image_style
         menu: menu
         responsive_image_style: responsive_image_style
-        user_role: user_role
         entity_view_mode: entity_view_mode
     enabled: true
     weight: '5'

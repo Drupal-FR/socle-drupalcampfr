@@ -8,6 +8,7 @@ dependencies:
     - field.storage.user.field_user_shirt_size
     - field.storage.user.field_user_society
     - system.menu.admin
+    - user.role.attendee
   module:
     - csv_serialization
     - options
@@ -612,48 +613,46 @@ display:
             group_items: {  }
           plugin_id: numeric
           entity_type: user
-        field_user_is_attendee_value:
-          id: field_user_is_attendee_value
-          table: user__field_user_is_attendee
-          field: field_user_is_attendee_value
+        roles_target_id:
+          id: roles_target_id
+          table: user__roles
+          field: roles_target_id
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '='
-          value: true
+          operator: or
+          value:
+            attendee: attendee
           group: 1
           exposed: false
           expose:
             operator_id: ''
-            label: Participe
+            label: ''
             description: ''
             use_operator: false
-            operator: field_user_is_attendee_value_op
-            identifier: attendee
+            operator: ''
+            identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              moderateur: '0'
+            reduce: false
           is_grouped: false
           group_info:
-            label: 'Participant ? (field_user_is_attendee)'
-            description: null
-            identifier: field_user_is_attendee_value
+            label: ''
+            description: ''
+            identifier: ''
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items:
-              1: {  }
-              2: {  }
-              3: {  }
-          plugin_id: boolean
+            group_items: {  }
+          reduce_duplicates: false
+          entity_type: user
+          plugin_id: user_roles
       sorts:
         created:
           id: created
