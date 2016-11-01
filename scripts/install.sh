@@ -55,14 +55,11 @@ if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
     devel_a11y \
     features_ui \
     field_ui \
+    kint \
     views_ui \
     webprofiler \
     -y
 fi
-
-# Translation updates.
-$DRUSH locale-check
-$DRUSH locale-update
 
 # Import content.
 $DRUSH en drupalcampfr_migrate -y
@@ -79,6 +76,10 @@ $DRUSH migrate-import drupalcampfr_session_room --update
 $DRUSH migrate-import drupalcampfr_session --update
 $DRUSH migrate-import drupalcampfr_menu_link --update
 $DRUSH migrate-import drupalcampfr_basic_block --update
+
+# Translation updates.
+$DRUSH locale-check
+$DRUSH locale-update
 
 # Enable external cache.
 touch $WWW_PATH/sites/default/.cache_activated

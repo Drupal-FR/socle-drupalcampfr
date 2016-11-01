@@ -42,6 +42,7 @@ if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
     devel_a11y \
     features_ui \
     field_ui \
+    kint \
     views_ui \
     webprofiler \
     -y
@@ -49,10 +50,6 @@ fi
 
 # Revert features.
 $DRUSH features-import -y $PROFILE
-
-# Translation updates.
-$DRUSH locale-check
-$DRUSH locale-update
 
 # Import content.
 # For update.sh import only content if the environment is dev to not risk
@@ -73,6 +70,10 @@ if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
   $DRUSH migrate-import drupalcampfr_menu_link --update
   $DRUSH migrate-import drupalcampfr_basic_block --update
 fi
+
+# Translation updates.
+$DRUSH locale-check
+$DRUSH locale-update
 
 # Back to the current directory.
 cd $CURRENT_PATH
