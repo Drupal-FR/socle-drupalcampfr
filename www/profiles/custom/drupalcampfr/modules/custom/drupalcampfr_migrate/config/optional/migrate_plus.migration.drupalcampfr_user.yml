@@ -17,10 +17,8 @@ source:
   path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/user.csv
   header_row_count: 1
   keys:
-    - id
+    - uuid
   column_names:
-    -
-      id: Identifier
     -
       uuid: UUID
     -

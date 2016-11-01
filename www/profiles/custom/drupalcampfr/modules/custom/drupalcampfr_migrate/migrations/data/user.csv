@@ -1,16 +1,16 @@
-Identifier,UUID,Mail,Status,Login,Roles,Name,Society,Shirt size,Meal indication
-1,user_1,example@example.com,0,user1,administrator;member;moderator,Prénom Nom 1 bloqué,Société 1,XS-F,Indication repas
-2,user_2,example@example.com,0,user2,attendee,Prénom Nom 2 bloqué participant,Société 2,XS-F,Indication repas
-3,user_3,example@example.com,1,user3,,Prénom Nom 3 actif,Société 3,XS-F,Indication repas
-4,user_4,example@example.com,1,user4,attendee;member,Prénom Nom 4 actif participant,Société 4,XS-F,Indication repas
-5,user_5,example@example.com,1,user5,attendee,Prénom Nom 5,Société 5,XS-F,Indication repas
-6,user_6,example@example.com,1,user6,attendee,Prénom Nom 6,Société 6,S-F,Indication repas
-7,user_7,example@example.com,1,user7,attendee,Prénom Nom 7,Société 7,M-F,Indication repas
-8,user_8,example@example.com,1,user8,attendee,Prénom Nom 8,Société 8,L-F,Indication repas
-9,user_9,example@example.com,1,user9,attendee,Prénom Nom 9,Société 9,XL-F,Indication repas
-10,user_10,example@example.com,1,user10,attendee,Prénom Nom 10,Société 10,XS-H,Indication repas
-11,user_11,example@example.com,1,user11,attendee,Prénom Nom 11,Société 11,S-H,Indication repas
-12,user_12,example@example.com,1,user12,,Prénom Nom 12,Société 12,M-H,Indication repas
-13,user_13,example@example.com,1,user13,,Prénom Nom 13,Société 13,L-H,Indication repas
-14,user_14,example@example.com,1,user14,,Prénom Nom 14,Société 14,XL-H,Indication repas
-15,user_15,example@example.com,1,user15,,Prénom Nom 15,Société 15,XXL-H,Indication repas
+UUID,Mail,Status,Login,Roles,Name,Society,Shirt size,Meal indication
+user_1,example@example.com,0,user1,administrator;member;moderator,Prénom Nom 1 bloqué,Société 1,XS-F,Indication repas
+user_2,example@example.com,0,user2,attendee,Prénom Nom 2 bloqué participant,Société 2,XS-F,Indication repas
+user_3,example@example.com,1,user3,,Prénom Nom 3 actif,Société 3,XS-F,Indication repas
+user_4,example@example.com,1,user4,attendee;member,Prénom Nom 4 actif participant,Société 4,XS-F,Indication repas
+user_5,example@example.com,1,user5,attendee,Prénom Nom 5,Société 5,XS-F,Indication repas
+user_6,example@example.com,1,user6,attendee,Prénom Nom 6,Société 6,S-F,Indication repas
+user_7,example@example.com,1,user7,attendee,Prénom Nom 7,Société 7,M-F,Indication repas
+user_8,example@example.com,1,user8,attendee,Prénom Nom 8,Société 8,L-F,Indication repas
+user_9,example@example.com,1,user9,attendee,Prénom Nom 9,Société 9,XL-F,Indication repas
+user_10,example@example.com,1,user10,attendee,Prénom Nom 10,Société 10,XS-H,Indication repas
+user_11,example@example.com,1,user11,attendee,Prénom Nom 11,Société 11,S-H,Indication repas
+user_12,example@example.com,1,user12,,Prénom Nom 12,Société 12,M-H,Indication repas
+user_13,example@example.com,1,user13,,Prénom Nom 13,Société 13,L-H,Indication repas
+user_14,example@example.com,1,user14,,Prénom Nom 14,Société 14,XL-H,Indication repas
+user_15,example@example.com,1,user15,,Prénom Nom 15,Société 15,XXL-H,Indication repas

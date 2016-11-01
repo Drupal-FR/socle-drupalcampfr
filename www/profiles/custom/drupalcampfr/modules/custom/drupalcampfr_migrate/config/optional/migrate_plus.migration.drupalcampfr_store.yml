@@ -7,7 +7,7 @@ dependencies:
   module:
     - migrate_plus
     - migrate_source_csv
-    - node
+    - commerce_store
 id: drupalcampfr_store
 migration_tags:
   - drupalcampfr
@@ -17,10 +17,8 @@ source:
   path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/store.csv
   header_row_count: 1
   keys:
-    - id
+    - uuid
   column_names:
-    -
-      id: Identifier
     -
       uuid: UUID
     -

@@ -16,11 +16,9 @@ source:
   plugin: drupalcampfr_migrate_menu_link_csv
   path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/menu_link.csv
   keys:
-    - id
+    - uuid
   header_row_count: 1
   column_names:
-    -
-      id: Identifier
     -
       uuid: UUID
     -

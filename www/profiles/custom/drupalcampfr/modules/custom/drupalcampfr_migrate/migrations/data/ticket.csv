@@ -1,0 +1,6 @@
+UUID,Title,Store,Variation,Body,Body format
+ticket_vendredi,Vendredi,store_1,vendredi,Lorem ipsum,basic_html
+ticket_samedi,Samedi,store_1,samedi,Lorem ipsum,basic_html
+ticket_dimanche,Dimanche,store_1,dimanche,Lorem ipsum,basic_html
+ticket_pack_3_jours,Pack 3 jours,store_1,pack-3-jours,Lorem ipsum,basic_html
+ticket_pack_vendredi_samedi,Pack vendredi / samedi,store_1,pack-vendredi-samedi,Lorem ipsum,basic_html

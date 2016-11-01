@@ -34,7 +34,7 @@ class MigrateEntityqueueSubscriber implements EventSubscriberInterface {
   public function setItemInEntityqueue(MigratePostRowSaveEvent $event) {
     /** @var \Drupal\migrate\row $row */
     $row = $event->getRow();
-    // The unique destination ID, as an array (accomodating multi-column keys),
+    // The unique destination ID, as an array (accommodating multi-column keys),
     // of the item just imported.
     $destination_id_values = $event->getDestinationIdValues();
     $destination_id = array_shift($destination_id_values);

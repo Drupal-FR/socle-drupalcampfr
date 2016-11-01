@@ -17,10 +17,8 @@ source:
   path: profiles/custom/drupalcampfr/modules/custom/drupalcampfr_migrate/migrations/data/news.csv
   header_row_count: 1
   keys:
-    - id
+    - uuid
   column_names:
-    -
-      id: Identifier
     -
       uuid: UUID
     -
@@ -54,7 +52,9 @@ process:
   body/value: body_value
   body/summary: body_summary
   body/format: body_format
-  field_news_link/uri: news_link_uri
+  field_news_link/uri:
+    plugin: drupalcampfr_geturifromuuid
+    source: news_link_uri
   field_news_link/title: news_link_title
   created:
     plugin: callback

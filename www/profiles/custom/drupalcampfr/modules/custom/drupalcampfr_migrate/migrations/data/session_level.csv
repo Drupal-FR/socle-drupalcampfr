@@ -1,4 +1,4 @@
-Identifier,UUID,Name,Weight
-1,session_level_1,Débutant,0
-2,session_level_2,Confirmé,1
-3,session_level_3,Expert,2
+UUID,Name,Weight
+session_level_1,Débutant,0
+session_level_2,Confirmé,1
+session_level_3,Expert,2
