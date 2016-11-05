@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7f1d42e47d851f98b9bfa0599753e52e",
-    "content-hash": "4862452c599e74b68474ab4771b9ff0f",
+    "hash": "2abdabfe89ae958e302e64c80cdbed9d",
+    "content-hash": "7b59706ae981bb6f7a9ccb2a9c564cb5",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1253,17 +1253,17 @@
         },
         {
             "name": "drupal/commerce",
-            "version": "2.0.0-beta2",
+            "version": "2.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/commerce",
-                "reference": "8.x-2.0-beta2"
+                "reference": "8.x-2.0-beta3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.0-beta2.zip",
+                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.0-beta3.zip",
                 "reference": null,
-                "shasum": "5962196a72b071a232efbd305d42a3d365779844"
+                "shasum": "9bbaec4e6296bdc90ab29f3b0fc152d92642beb8"
             },
             "require": {
                 "commerceguys/intl": "~0.7",
@@ -1271,9 +1271,9 @@
                 "drupal/core": "~8.2",
                 "drupal/entity": "1.x-dev",
                 "drupal/entity_reference_revisions": "~1.0",
-                "drupal/inline_entity_form": "1.x-dev",
+                "drupal/inline_entity_form": "~1.0",
                 "drupal/profile": "1.x-dev",
-                "drupal/state_machine": "1.x-dev"
+                "drupal/state_machine": "~1.0"
             },
             "suggest": {
                 "drupal/commerce_cart": "Required by drupal/commerce_checkout",
@@ -1294,8 +1294,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-beta2",
-                    "datestamp": "1475773739"
+                    "version": "8.x-2.0-beta3",
+                    "datestamp": "1477964040"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1920,17 +1920,17 @@
         },
         {
             "name": "drupal/features",
-            "version": "3.0.0-rc1",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/features",
-                "reference": "8.x-3.0-rc1"
+                "reference": "8.x-3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-rc1.zip",
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0.zip",
                 "reference": null,
-                "shasum": "bb7481ef6a487936e342bdbb8fbbf2b8896b8a2b"
+                "shasum": "7bde54c0f0445ea437959c2eb8e085470dcee215"
             },
             "require": {
                 "drupal/config_update": "*",
@@ -1942,8 +1942,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-rc1",
-                    "datestamp": "1475180939"
+                    "version": "8.x-3.0",
+                    "datestamp": "1478188444"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2040,11 +2040,17 @@
         },
         {
             "name": "drupal/inline_entity_form",
-            "version": "dev-1.x",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/inline_entity_form",
-                "reference": "8227e2879c9d4c19bf6d402cbba35d59350da56b"
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-beta1.zip",
+                "reference": null,
+                "shasum": "185ffc28a7b68d19cce057855d1c111f1741a3ea"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2058,8 +2064,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha6+13-dev",
-                    "datestamp": "1476832739"
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1477868343"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2092,8 +2098,7 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "http://cgit.drupalcode.org/inline_entity_form"
-            },
-            "time": "2016-10-18 23:16:30"
+            }
         },
         {
             "name": "drupal/menu_attributes",
@@ -2534,11 +2539,17 @@
         },
         {
             "name": "drupal/state_machine",
-            "version": "dev-1.x",
+            "version": "1.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/state_machine",
-                "reference": "7680ceb64915f4819037d42b11dd380fa4ea50da"
+                "reference": "8.x-1.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/state_machine-8.x-1.0-beta3.zip",
+                "reference": null,
+                "shasum": "9ca0101738db00673f2511707a76d6ea0c9ce4db"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2549,8 +2560,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2+5-dev",
-                    "datestamp": "1476794639"
+                    "version": "8.x-1.0-beta3",
+                    "datestamp": "1477868939"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2615,8 +2626,7 @@
             "homepage": "https://www.drupal.org/project/state_machine",
             "support": {
                 "source": "http://cgit.drupalcode.org/state_machine"
-            },
-            "time": "2016-10-18 12:43:00"
+            }
         },
         {
             "name": "drupal/token",
