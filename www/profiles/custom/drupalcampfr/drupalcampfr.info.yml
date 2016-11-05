@@ -64,13 +64,9 @@ dependencies:
   # Contrib modules.
   - admin_toolbar
   - admin_toolbar_tools
-  - block_visibility_groups
-  - contact_storage
-  - entityqueue
   - features
   - honeypot
   - menu_attributes
-  - pathauto
   - r4032login
   - redis
 
