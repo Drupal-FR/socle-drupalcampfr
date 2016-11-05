@@ -17,3 +17,4 @@ page_se_preparer,Se préparer,/informations-pratiques/se-preparer,1,Lorem ipsum,
 page_bons_plans,Bons plans,/informations-pratiques/bons-plans,1,Lorem ipsum,basic_html
 page_revue_de_presse,Revue de presse,/actualites/revue-de-presse,1,Lorem ipsum,basic_html
 page_mentions_legales,Mentions légales,/mentions-legales,1,Lorem ipsum,basic_html
+page_billeterie,Billeterie,/billeterie,1,"<p>Les différentes places disponibles :</p><ul><li><a href=""/billeterie/vendredi"">Vendredi</a></li><li><a href=""/billeterie/samedi"">Samedi</a></li><li><a href=""/billeterie/dimanche"">Dimanche</a></li><li><a href=""/billeterie/pack-3-jours"">Pack 3 jours</a></li><li><a href=""/billeterie/pack-vendredi-samedi"">Pack vendredi / samedi</a></li></ul>",basic_html

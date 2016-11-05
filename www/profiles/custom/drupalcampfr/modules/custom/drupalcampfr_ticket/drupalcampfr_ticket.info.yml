@@ -15,6 +15,7 @@ dependencies:
   - inline_entity_form
   - language
   - path
+  - pathauto
   - text
   - views
   - visualization

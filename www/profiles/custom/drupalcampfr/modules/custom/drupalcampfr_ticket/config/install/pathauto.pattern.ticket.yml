@@ -1,0 +1,22 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - ctools
+id: ticket
+label: Ticket
+type: 'canonical_entities:commerce_product'
+pattern: '/billeterie/[commerce_product:title]'
+selection_criteria:
+  abafd5ee-9035-4ee9-a326-ee28a6de8505:
+    id: 'entity_bundle:commerce_product'
+    bundles:
+      ticket: ticket
+    negate: false
+    context_mapping:
+      commerce_product: commerce_product
+    uuid: abafd5ee-9035-4ee9-a326-ee28a6de8505
+selection_logic: and
+weight: -5
+relationships: {  }
