@@ -9,6 +9,5 @@ permissions:
   - 'access site-wide contact form'
   - 'use text format restricted_html'
   - 'access content'
-  - 'search content'
   - 'access user profiles'
   - 'display eu cookie compliance popup'
