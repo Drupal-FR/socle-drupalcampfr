@@ -2,10 +2,11 @@
 
 namespace Drupal\drupalcampfr_migrate\EventSubscriber;
 
+use Drupal\entityqueue\Entity\EntitySubqueue;
 use Drupal\migrate\Event\MigrateEvents;
+use Drupal\migrate\Event\MigrateImportEvent;
 use Drupal\migrate\Event\MigratePostRowSaveEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Drupal\entityqueue\Entity\EntitySubqueue;
 
 /**
  * Class MigrateEntityqueueSubscriber.
@@ -18,7 +19,8 @@ class MigrateEntityqueueSubscriber implements EventSubscriberInterface {
    * {@inheritdoc}
    */
   public static function getSubscribedEvents() {
-    $events[MigrateEvents::POST_ROW_SAVE] = ['setItemInEntityqueue'];
+    $events[MigrateEvents::POST_ROW_SAVE] = ['setItemInEntityqueuePosition'];
+    $events[MigrateEvents::POST_IMPORT] = ['setItemInEntityqueue'];
 
     return $events;
   }
@@ -26,12 +28,12 @@ class MigrateEntityqueueSubscriber implements EventSubscriberInterface {
   /**
    * Function to react on migrate.post_row_save event.
    *
-   * Add items to entityqueues if 'entityqueue' source property is defined.
+   * Keep items positions in a key/value store.
    *
    * @param \Drupal\migrate\Event\MigratePostRowSaveEvent $event
    *   The event.
    */
-  public function setItemInEntityqueue(MigratePostRowSaveEvent $event) {
+  public function setItemInEntityqueuePosition(MigratePostRowSaveEvent $event) {
     /** @var \Drupal\migrate\row $row */
     $row = $event->getRow();
     // The unique destination ID, as an array (accommodating multi-column keys),
@@ -40,25 +42,65 @@ class MigrateEntityqueueSubscriber implements EventSubscriberInterface {
     $destination_id = array_shift($destination_id_values);
 
     $entity_subqueue = $row->getSourceProperty('entityqueue');
-    if (!is_null($entity_subqueue)) {
-      /** @var EntitySubqueue $entity_subqueue */
-      $entity_subqueue = EntitySubqueue::load($entity_subqueue);
-      $entity_subqueue_items = $entity_subqueue->get('items')->getValue();
+    if (!empty($entity_subqueue)) {
+      $drupalcampfr_migrate_entityqueues = \Drupal::keyValue('drupalcampfr_migrate.entityqueues');
+      $entity_subqueue_positions = $drupalcampfr_migrate_entityqueues->get($entity_subqueue, array());
       $entity_subqueue_position = $row->getSourceProperty('entityqueue_position');
 
-      // Add the item to the queue.
-      if (!is_null($entity_subqueue_position)) {
-        $entity_subqueue_items[$entity_subqueue_position] = array(
-          'target_id' => $destination_id,
-        );
+      // We need to insert element at a specific position.
+      if ($entity_subqueue_position == '0' || !empty($entity_subqueue_position)) {
+        $already_present_id = FALSE;
+
+        // Check if the position is already taken. If yes, keep already present
+        // id to push if later.
+        if (isset($entity_subqueue_positions[$entity_subqueue_position])) {
+          $already_present_id = $entity_subqueue_positions[$entity_subqueue_position];
+        }
+
+        $entity_subqueue_positions[$entity_subqueue_position] = $destination_id;
+
+        if ($already_present_id) {
+          array_push($entity_subqueue_positions, $already_present_id);
+        }
       }
+      // No specific position. Insert at the end.
       else {
-        // If no position is defined, add the item at the end of the queue.
-        $entity_subqueue_items[] = array('target_id' => $destination_id);
+        array_push($entity_subqueue_positions, $destination_id);
+      }
+
+      $drupalcampfr_migrate_entityqueues->set($entity_subqueue, $entity_subqueue_positions);
+    }
+  }
+
+  /**
+   * Function to react on migrate.post_import event.
+   *
+   * Add items to entityqueues from key/value store.
+   *
+   * @param \Drupal\migrate\Event\MigrateImportEvent $event
+   *   The event.
+   */
+  public function setItemInEntityqueue(MigrateImportEvent $event) {
+    $drupalcampfr_migrate_entityqueues = \Drupal::keyValue('drupalcampfr_migrate.entityqueues');
+    $entity_subqueues_positions = $drupalcampfr_migrate_entityqueues->getAll();
+
+    foreach ($entity_subqueues_positions as $entity_queue_id => $entity_subqueue_positions) {
+      /** @var EntitySubqueue $entity_subqueue */
+      $entity_subqueue = EntitySubqueue::load($entity_queue_id);
+      $entity_subqueue_items = $entity_subqueue->get('items')->getValue();
+
+      // Add the item to the queue.
+      foreach ($entity_subqueue_positions as $position => $entity_id) {
+        $entity_subqueue_items[$position] = array(
+          'target_id' => $entity_id,
+        );
       }
 
       $entity_subqueue->set('items', $entity_subqueue_items);
       $entity_subqueue->save();
+
+      // Remove entry from key/value store.
+      $drupalcampfr_migrate_entityqueues->delete($entity_queue_id);
     }
   }
 
