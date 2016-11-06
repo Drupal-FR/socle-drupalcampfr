@@ -20,3 +20,8 @@ permissions:
   - 'access cart'
   - 'access checkout'
   - 'view own commerce_order'
+  - 'manage own commerce_payment_method'
+  - 'view own customer profile'
+  - 'add own customer profile'
+  - 'delete own customer profile'
+  - 'edit own customer profile'
