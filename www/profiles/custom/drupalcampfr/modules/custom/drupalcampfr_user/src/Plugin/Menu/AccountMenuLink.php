@@ -11,7 +11,7 @@ class AccountMenuLink extends MyAccountCreateAccountMenuLink {
    * {@inheritdoc}
    */
   public function getTitle() {
-    return $this->t('Account');
+    return $this->t('Compte');
   }
 
 }

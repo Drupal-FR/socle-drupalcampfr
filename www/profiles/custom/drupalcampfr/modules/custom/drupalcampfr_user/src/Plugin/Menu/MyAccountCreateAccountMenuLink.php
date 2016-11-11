@@ -71,12 +71,12 @@ class MyAccountCreateAccountMenuLink extends MenuLinkDefault {
    */
   public function getTitle() {
     if ($this->currentUser->isAuthenticated()) {
-      return $this->t('My account');
+      return $this->t('Mon compte');
     }
     else {
       $user_settings = $this->configFactory->get('user.settings');
       if ($user_settings->get('register') != USER_REGISTER_ADMINISTRATORS_ONLY) {
-        return $this->t('Create an account');
+        return $this->t('Créer un compte');
       }
     }
 
