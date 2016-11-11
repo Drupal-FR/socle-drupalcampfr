@@ -18,7 +18,7 @@ class ThemeSuggestions extends BoostrapThemSuggestions {
    * {@inheritdoc}
    */
   public function alter(&$suggestions, &$context1 = NULL, &$hook = NULL) {
-    parent::alter($attachments, $context1, $hook);
+    parent::alter($suggestions, $context1, $hook);
 
     $variables = Variables::create($context1);
 
