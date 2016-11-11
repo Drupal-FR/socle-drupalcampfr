@@ -87,8 +87,9 @@ class MigrateEntityqueueSubscriber implements EventSubscriberInterface {
     foreach ($entity_subqueues_positions as $entity_queue_id => $entity_subqueue_positions) {
       /** @var EntitySubqueue $entity_subqueue */
       $entity_subqueue = EntitySubqueue::load($entity_queue_id);
-      $entity_subqueue_items = $entity_subqueue->get('items')->getValue();
 
+      // Reset the item in the entityqueue.
+      $entity_subqueue_items = array();
       // Add the item to the queue.
       foreach ($entity_subqueue_positions as $position => $entity_id) {
         $entity_subqueue_items[$position] = array(
