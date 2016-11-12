@@ -1,0 +1,45 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MarkupContext
+        - Drupal\DrupalExtension\Context\MessageContext
+  extensions:
+    Behat\MinkExtension:
+      goutte: ~
+#      javascript_session: selenium2
+#      selenium2:
+#        wd_host: http://local.dev:4444/wd/hub
+#        capabilities: {"browser": "firefox", "version": "44"}
+      base_url: http://172.19.0.2
+    Drupal\DrupalExtension:
+      blackbox: ~
+      region_map:
+#        breadcrumb: '#breadcrumb'
+#        branding: '#region-branding'
+#        branding_second: '#region-branding-second'
+#        content: '#region-content'
+#        content_zone: '#zone-content'
+#        footer_first: '#region-footer-first'
+#        footer_second: '#region-footer-second'
+#        footer_fourth: '#region-footer-fourth'
+#        menu: '#region-menu'
+#        page_bottom: '#region-page-bottom'
+#        page_top: '#region-page-top'
+#        sidebar_first: '#region-sidebar-first'
+#        sidebar_second: '#region-sidebar-second'
+        navigation: '.region-navigation'
+        navigation_collapsible: '.region-navigation-collapsible'
+        header: '.region-header'
+        highlighted: '.region-highlighted'
+        help: '.region-help'
+        content: '.region-content'
+        sidebar_first: '.region-sidebar-first'
+        sidebar_second: '.region-sidebar-second'
+        content_bottom: '.region-content-bottom'
+        footer: '.region-footer'
+        page_top: '.region-page-top'
+        page_bottom: '.region-page-bottom'
