@@ -77,6 +77,7 @@ fi
 # Translation updates.
 $DRUSH locale-check
 $DRUSH locale-update
+$DRUSH language-import fr $WWW_PATH/profiles/custom/drupalcampfr/translations/drupalcampfr.po --replace
 
 # Back to the current directory.
 cd $CURRENT_PATH

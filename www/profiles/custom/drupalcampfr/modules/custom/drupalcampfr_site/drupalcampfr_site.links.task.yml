@@ -1,11 +1,11 @@
 drupalcampfr_site.admin.attendance_certificates:
-  title: 'Certificats de présence'
+  title: 'Attendance certificates'
   route_name: view.attendance_certificate.page_1
   base_route: entity.user.collection
   weight: 15
 
 drupalcampfr_site.admin.volunteer:
-  title: 'Volontaires'
+  title: 'Volunteers'
   route_name: view.volunteer.page_1
   base_route: entity.user.collection
   weight: 20

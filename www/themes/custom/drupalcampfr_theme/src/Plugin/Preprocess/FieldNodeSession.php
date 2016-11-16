@@ -23,7 +23,7 @@ class FieldNodeSession extends PreprocessBase {
 
     if ($field_name == 'field_session_date_start') {
       // Change field session start date label for display.
-      $variables->offsetSet('label', $this->t('Créneaux horaires'));
+      $variables->offsetSet('label', $this->t('Slots'));
     }
 
     // Add icons on labels.

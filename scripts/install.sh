@@ -83,6 +83,7 @@ $DRUSH migrate-import drupalcampfr_basic_block --update
 # Translation updates.
 $DRUSH locale-check
 $DRUSH locale-update
+$DRUSH language-import fr $WWW_PATH/profiles/custom/drupalcampfr/translations/drupalcampfr.po --replace
 
 # Enable external cache.
 touch $WWW_PATH/sites/default/.cache_activated

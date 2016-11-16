@@ -15,7 +15,7 @@ function drupalcampfr_sponsor_form_contact_message_sponsor_form_alter(&$form, Fo
   $entity_query = \Drupal::getContainer()->get('entity.query');
 
   // Change subject label.
-  $form['subject']['widget'][0]['value']['#title'] = t("Nom de la société ou de l'organisation");
+  $form['subject']['widget'][0]['value']['#title'] = t('Name of the company or of the organization');
 
   // Disable checkboxes where sponsor level is disabled.
   if (isset($form['field_sponsor_level']) && isset($form['field_sponsor_level']['widget'])) {

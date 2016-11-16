@@ -1,0 +1,84 @@
+
+msgid ""
+msgstr ""
+
+msgid "Account"
+msgstr "Compte"
+
+msgid "My account"
+msgstr "Mon compte"
+
+msgid "Create an account"
+msgstr "Créer un compte"
+
+msgid "Attendees"
+msgstr "Participants"
+
+msgid "Sponsor requests"
+msgstr "Demandes de sponsor"
+
+msgid "Name of the company or of the organization"
+msgstr "Nom de la société ou de l'organisation"
+
+msgid "Sponsors"
+msgstr "Sponsors"
+
+msgid "All our sponsors."
+msgstr "Tous nos sponsors."
+
+msgid "Our sponsors"
+msgstr "Nos sponsors"
+
+msgid "Social"
+msgstr "Réseau sociaux"
+
+msgid "Twitter account of the drupalcamp."
+msgstr "Compte twitter du drupalcamp."
+
+msgid "Unable to request Twitter. Please check your <a href=\":url\">twitter connection settings</a>."
+msgstr "Impossible de contacter Twitter. Veuillez vérifier vos <a href=\":url\">paramètres de connection twitter</a>."
+
+msgid "These values are defined in the settings.php file."
+msgstr "Ces valeurs sont définies dans le fichier settings.php."
+
+msgid "Nous contacter"
+msgstr "Contact us"
+
+msgid "Attendance certificates"
+msgstr "Certificats de présence"
+
+msgid "Volunteers"
+msgstr "Volontaires"
+
+msgid "Administer Drupalcamp config."
+msgstr "Administrer la configuration du site Drupalcamp."
+
+msgid "News"
+msgstr "Actualités"
+
+msgid "All the news."
+msgstr "Toutes les actualités."
+
+msgid "Slots"
+msgstr "Créneaux horaires"
+
+msgid "Ticketing"
+msgstr "Billeterie"
+
+msgid "Sponsor"
+msgstr "Sponsoriser"
+
+msgid "Subscribe"
+msgstr "S'inscrire"
+
+msgid "Enter your email"
+msgstr "Saisir votre email"
+
+msgid "View larger map"
+msgstr "Afficher une carte plus grande"
+
+msgid "Drupal France banner"
+msgstr "Bannière Drupal France"
+
+msgid "Drupal France logo"
+msgstr "Logo Drupal France"
