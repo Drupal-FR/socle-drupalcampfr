@@ -12,9 +12,7 @@ $databases['default']['default'] = array(
 $settings['install_profile'] = 'drupalcampfr';
 $settings['hash_salt'] = 'drupalcampfr';
 $settings['trusted_host_patterns'] = array(
-  '^socle-drupalcampfr\.local$',
-  '^172\.19\.0\.2$',
-  '^172\.19\.0\.3$',
+  '^127\.0\.0\.1$',
 );
 
 // External cache.
