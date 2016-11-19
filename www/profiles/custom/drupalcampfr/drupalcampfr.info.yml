@@ -17,10 +17,12 @@ dependencies:
 #  - content_translation
   - contextual
   - datetime
+#  - dblog
   - dynamic_page_cache
   - editor
   - entity_reference
   - field
+#  - field_ui
   - file
   - filter
   - help
@@ -49,6 +51,7 @@ dependencies:
   - update
   - user
   - views
+#  - views_ui
 
   # Experimental modules.
 #  - big_pipe
@@ -82,18 +85,6 @@ dependencies:
   - drupalcampfr_session
   - drupalcampfr_newsletter
   - drupalcampfr_ticket
-
-  # Development modules. Enabled in the install/update scripts.
-#  - config_inspector
-#  - dblog
-#  - devel
-#  - devel_a11y
-#  - features_ui
-#  - field_ui
-#  - kint
-#  - views_ui
-#  - webprofiler
-#  - drupalcampfr_migrate
 themes:
   - drupalcampfr_theme
   - seven

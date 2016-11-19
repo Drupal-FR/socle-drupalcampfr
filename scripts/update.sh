@@ -10,19 +10,11 @@ PROJECT_PATH=$(dirname $(dirname $FILE_PATH))
 . $PROJECT_PATH/scripts/script-parameters.sh
 . $PROJECT_PATH/scripts/script-parameters.local.sh
 
-# Test that composer is installed.
-if ! hash "composer" 2> /dev/null; then
-    echo "ERROR: Composer needs to be installed. Aborting.";
-    exit 1;
-fi
+# Put the site in maintenance mode.
+$DRUSH state-set system.maintenance_mode 1
 
-# Update source.
-if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
-    composer install --working-dir=$WWW_PATH
-else
-    composer install --working-dir=$WWW_PATH --no-dev
-fi
-composer dump-autoload --working-dir=$WWW_PATH --optimize
+# Install sources.
+. $SCRIPTS_PATH/tasks/composer_install.sh
 
 # Without drush alias, change temporarily directory to www.
 cd $WWW_PATH
@@ -34,19 +26,7 @@ $DRUSH sql-dump --result-file="${PROJECT_PATH}/backups/${CURRENT_DATE}.sql" --gz
 $DRUSH updb --entity-updates -y
 
 # Enable development modules.
-if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
-  $DRUSH en \
-    config_inspector \
-    dblog \
-    devel \
-    devel_a11y \
-    features_ui \
-    field_ui \
-    kint \
-    views_ui \
-    webprofiler \
-    -y
-fi
+. $SCRIPTS_PATH/tasks/development_modules.sh
 
 # Revert features.
 $DRUSH features-import -y $PROFILE
@@ -55,29 +35,17 @@ $DRUSH features-import -y $PROFILE
 # For update.sh import only content if the environment is dev to not risk
 # breaking prod.
 if [ "${ENVIRONMENT_MODE}" = "dev" ]; then
-  $DRUSH en drupalcampfr_migrate -y
-  $DRUSH migrate-import drupalcampfr_file --update
-  $DRUSH migrate-import drupalcampfr_user --update
-  $DRUSH migrate-import drupalcampfr_page --update
-  $DRUSH migrate-import drupalcampfr_news --update
-  $DRUSH migrate-import drupalcampfr_sponsor_level --update
-  $DRUSH migrate-import drupalcampfr_sponsor --update
-  $DRUSH migrate-import drupalcampfr_session_level --update
-  $DRUSH migrate-import drupalcampfr_session_track --update
-  $DRUSH migrate-import drupalcampfr_session_length --update
-  $DRUSH migrate-import drupalcampfr_session_room --update
-  $DRUSH migrate-import drupalcampfr_session --update
-  $DRUSH migrate-import drupalcampfr_store --update
-  $DRUSH migrate-import drupalcampfr_ticket_variation --update
-  $DRUSH migrate-import drupalcampfr_ticket --update
-  $DRUSH migrate-import drupalcampfr_menu_link --update
-  $DRUSH migrate-import drupalcampfr_basic_block --update
+  . $SCRIPTS_PATH/tasks/migrate_imports.sh
 fi
 
 # Translation updates.
-$DRUSH locale-check
-$DRUSH locale-update
-$DRUSH language-import fr $WWW_PATH/profiles/custom/drupalcampfr/translations/drupalcampfr.po --replace
+. $SCRIPTS_PATH/tasks/update_translations.sh
+
+# Remove the maintenance mode.
+$DRUSH state-set system.maintenance_mode 0
+
+# Run CRON.
+$DRUSH cron
 
 # Back to the current directory.
 cd $CURRENT_PATH
