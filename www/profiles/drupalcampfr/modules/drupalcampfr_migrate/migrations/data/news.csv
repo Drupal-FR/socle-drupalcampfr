@@ -1,7 +1,7 @@
 UUID,Title,Creation date,Published,Promoted to front page,Link title,Link URI,Entityqueue,Entityqueue position,Body (summary),Body,Body format
 news_1,Appel à conférenciers,+1 week,1,0,Soumettre une session,entity:node:page_guide_conf,news_homepage,5,<p>Lorem ipsum dolor</p>,<p>Lorem ipsum dolor</p>,basic_html
-news_2,Sponsor,+2 weeks,1,0,Sponsorisez l'événement,http://example.com,news_homepage,0,<p>Lorem ipsum dolor</p>,<p>Lorem ipsum dolor</p>,basic_html
-news_3,Billeterie,+3 weeks,1,0,Achetez votre place,http://example.com,news_homepage,1,<p>La billeterie est ouverte !</p>,<p>Lorem ipsum dolor</p>,basic_html
+news_2,Sponsor,+2 weeks,1,0,Sponsorisez l'événement,internal:/sponsors/devenir-sponsor,news_homepage,0,<p>Lorem ipsum dolor</p>,<p>Lorem ipsum dolor</p>,basic_html
+news_3,Billeterie,+3 weeks,1,0,Achetez votre place,entity:node:page_billeterie,news_homepage,1,<p>La billeterie est ouverte !</p>,<p>Lorem ipsum dolor</p>,basic_html
 news_4,Goodies,+4 weeks,1,0,Voir les goodies,http://example.com,news_homepage,2,<p>N'hésitez pas à acheter des goodies dans notre boutique pour soutenir l'événement.</p>,<p>Lorem ipsum dolor</p>,basic_html
 news_5,Mentor,+5 weeks,1,0,Devenez mentor,entity:node:page_sprints,news_homepage,,<p>Lorem ipsum dolor</p>,<p>Lorem ipsum dolor</p>,basic_html
-news_6,Appel à volontaires,+6 weeks,1,0,Devenez bénévole,http://example.com,news_homepage,4,<p>Vous avez envie d'aider sur place le jour de l'événement ? Parce qu'on a toujours besoin de bras en plus :).</p>,<p>Lorem ipsum dolor</p>,basic_html
+news_6,Appel à volontaires,+6 weeks,1,0,Devenez bénévole,internal:/communaute/devenir-volontaire,news_homepage,4,<p>Vous avez envie d'aider sur place le jour de l'événement ? Parce qu'on a toujours besoin de bras en plus :).</p>,<p>Lorem ipsum dolor</p>,basic_html
