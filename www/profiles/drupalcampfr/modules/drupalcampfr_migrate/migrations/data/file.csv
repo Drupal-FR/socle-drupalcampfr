@@ -1,0 +1,3 @@
+"UUID","Filename","Filepath","Filemime","Status","URI"
+"default_sponsor_logo","default_sponsor_logo.png","profiles/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/files/default_sponsor_logo.png","image/png",1,"public://default_images/default_sponsor_logo.png"
+"default_user_picture","default_user_picture.png","profiles/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/files/default_user_picture.png","image/png",1,"public://default_images/default_user_picture.png"

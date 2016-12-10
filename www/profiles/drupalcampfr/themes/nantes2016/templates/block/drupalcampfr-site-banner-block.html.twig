@@ -1,0 +1,112 @@
+<div id="splash-title">
+  <div class="container">
+    <h1 class="col-sm-5">Craquez pour
+      <img src="/profiles/drupalcampfr/themes/nantes2016/assets/images/drupal.png" alt="Drupal">
+    </h1>
+
+    <div class="col-sm-4 col-sm-offset-3 text-center">
+      {% if 0 %}
+        {% if not logged_in %}
+          <a href="/user" class="btn btn-primary btn-lg">
+            S'inscrire pour acheter un ticket
+          </a>
+        {% elseif not user_is_attending %}
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#paypalModal">
+            Acheter un ticket
+          </button>
+        {% else %}
+          <a href="#" data-toggle="modal" data-target="#paypalModal">
+            Acheter un autre ticket
+          </a>
+        {% endif %}
+        <p class="text-primary">
+          <small>Tarifs : 10€/j ou 15€ les 2j, dimanche gratuit.<br>Repas et soirées compris.
+          </small>
+        </p>
+      {% endif %}
+      <h3 style="margin-top: 0" class="text-primary">
+        Merci à toutes et à tous pour votre participation !
+      </h3>
+      <a class="btn btn-primary btn-lg" href="/programme/sessions">
+        Voir les sessions
+      </a>
+    </div>
+  </div>
+</div>
+{% if 0 %}
+  <div class="modal fade" tabindex="-1" role="dialog" id="paypalModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="form-horizontal">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Acheter un ticket pour le DrupalCamp Nantes 2016</h4>
+          </div>
+          <div class="modal-body clearfix">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="XEJY9Z3RQC4SN">
+
+            <div class="alert alert-warning">
+              Si vous souhaitez bénéficier d'une réduction : adhérent ou étudiant/chomeur,
+              <a href="/contact/demander_une_reduction">veuillez
+                nous contacter directement</a> avec votre justificatif.
+            </div>
+            <div class="alert alert-info">
+              La journée du dimanche n'est pas payante, par contre, merci d'indiquer votre présence
+              <a href="/user">en cochant la case dans votre profil</a>.
+            </div>
+
+            <div class="form-group">
+              <label for="paypal-quantity" class="col-sm-2 control-label">Nombre de personnes</label>
+              <div class="col-sm-10">
+                <select class="form-control" name="quantity" id="paypal-quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="hidden" name="on0" value="Journées">
+              <label for="paypal-days" class="col-sm-2 control-label">Journées</label>
+              <div class="col-sm-10">
+                <select name="os0" id="paypal-days" class="form-control">
+                  <option value="Vendredi et Samedi">Vendredi 10 et Samedi 11 €15,00 EUR</option>
+                  <option value="Vendredi">Vendredi 10 juin €10,00 EUR</option>
+                  <option value="Samedi">Samedi 11 juin €10,00 EUR</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="hidden" name="on1" value="Votre pseudo et nom complet">
+              <label for="paypal-user-ref" class="col-sm-2 control-label">Référence</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="os1" maxlength="200" value="[{{ user_uid }}] {{ user_name }}">
+                <span class="help-block">
+                  Indiquer ici les noms de comptes des différents participants sur ce site,
+                  ceci nous sera utile pour valider votre inscription, pour gérer les tailles de T-Shirts et la présence aux soirées.
+                </span>
+              </div>
+            </div>
+            <input type="hidden" name="currency_code" value="EUR">
+            <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button name="submit" class="btn btn-primary">Payer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script></script>
+{% endif %}

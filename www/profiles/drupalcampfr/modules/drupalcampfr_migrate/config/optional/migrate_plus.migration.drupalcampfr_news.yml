@@ -1,0 +1,74 @@
+langcode: fr
+status: true
+dependencies:
+  enforced:
+    module:
+      - drupalcampfr_migrate
+  module:
+    - migrate_plus
+    - migrate_source_csv
+    - node
+id: drupalcampfr_news
+migration_tags:
+  - drupalcampfr
+label: 'News import'
+source:
+  plugin: csv
+  path: profiles/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/news.csv
+  header_row_count: 1
+  keys:
+    - uuid
+  column_names:
+    -
+      uuid: UUID
+    -
+      title: Title
+    -
+      creation_date: 'Creation date'
+    -
+      published: Published
+    -
+      promoted: 'Promoted to front page'
+    -
+      news_link_title: 'Link title'
+    -
+      news_link_uri: 'Link URI'
+    -
+      entityqueue: Entityqueue
+    -
+      entityqueue_position: 'Entityqueue position'
+    -
+      body_summary: 'Body (summary)'
+    -
+      body_value: Body
+    -
+      body_format: 'Body format'
+process:
+  type:
+    plugin: default_value
+    default_value: news
+  uuid: uuid
+  title: title
+  body/value: body_value
+  body/summary: body_summary
+  body/format: body_format
+  field_news_link/uri:
+    plugin: drupalcampfr_geturifromuuid
+    source: news_link_uri
+  field_news_link/title: news_link_title
+  created:
+    plugin: callback
+    callable: strtotime
+    source: creation_date
+  status: published
+  promote: promoted
+  uid:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:node'
+  type: news
+  bundle: news
+template: null
+migration_dependencies: {  }
+migration_group: drupalcampfr
