@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "528338af411ae04757ffa2b4ab1388a0",
-    "content-hash": "69db55d5f195c1c0df70a0e54378fb62",
+    "hash": "a324e84042ff417317e1a3d3d2cc913e",
+    "content-hash": "378ca8e3a402758a1d51f666993ad028",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2194,6 +2194,65 @@
             }
         },
         {
+            "name": "drupal/mailsystem",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/mailsystem",
+                "reference": "8.x-4.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/mailsystem-8.x-4.1.zip",
+                "reference": null,
+                "shasum": "318b87f1fdf96e6db30b04a98108af02a0fc3dcc"
+            },
+            "require": {
+                "drupal/core": "^8.0.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-4.1",
+                    "datestamp": "1467993646"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Les Lim",
+                    "homepage": "https://www.drupal.org/user/84263"
+                },
+                {
+                    "name": "Nafes",
+                    "homepage": "https://www.drupal.org/user/2489926"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                },
+                {
+                    "name": "pillarsdotnet",
+                    "homepage": "https://www.drupal.org/user/36148"
+                }
+            ],
+            "description": "Mail System",
+            "homepage": "https://www.drupal.org/project/mailsystem",
+            "support": {
+                "source": "http://cgit.drupalcode.org/mailsystem"
+            }
+        },
+        {
             "name": "drupal/menu_attributes",
             "version": "dev-1.x",
             "source": {
@@ -2719,6 +2778,63 @@
             "homepage": "https://www.drupal.org/project/state_machine",
             "support": {
                 "source": "http://cgit.drupalcode.org/state_machine"
+            }
+        },
+        {
+            "name": "drupal/swiftmailer",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/swiftmailer",
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/swiftmailer-8.x-1.0-alpha2.zip",
+                "reference": null,
+                "shasum": "f310121e60ca3f43547faf5e69626a82e9c5eb38"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/mailsystem": "*",
+                "html2text/html2text": "~4.0.1",
+                "swiftmailer/swiftmailer": "~5.4.0"
+            },
+            "suggest": {
+                "drupal/mailsystem": "Required by drupal/swiftmailer"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1474809988"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "B-Prod",
+                    "homepage": "https://www.drupal.org/user/407852"
+                },
+                {
+                    "name": "sbrattla",
+                    "homepage": "https://www.drupal.org/user/53422"
+                },
+                {
+                    "name": "webflo",
+                    "homepage": "https://www.drupal.org/user/254778"
+                }
+            ],
+            "description": "Swiftmailer",
+            "homepage": "https://www.drupal.org/project/swiftmailer",
+            "support": {
+                "source": "http://cgit.drupalcode.org/swiftmailer"
             }
         },
         {
@@ -3293,6 +3409,43 @@
                 "uri"
             ],
             "time": "2016-06-24 23:00:38"
+        },
+        {
+            "name": "html2text/html2text",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mtibben/html2text.git",
+                "reference": "f55104b7c9f99b0937f0e20fe051b19f9c0ecad1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mtibben/html2text/zipball/f55104b7c9f99b0937f0e20fe051b19f9c0ecad1",
+                "reference": "f55104b7c9f99b0937f0e20fe051b19f9c0ecad1",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance",
+                "symfony/polyfill-mbstring": "If you can't install ext-mbstring"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Html2Text\\": [
+                        "src/",
+                        "test/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2"
+            ],
+            "description": "Converts HTML to formatted plain text",
+            "time": "2016-03-16 23:24:34"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -3966,6 +4119,59 @@
                 "stack"
             ],
             "time": "2016-06-02 06:58:42"
+        },
+        {
+            "name": "swiftmailer/swiftmailer",
+            "version": "v5.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swiftmailer/swiftmailer.git",
+                "reference": "545ce9136690cea74f98f86fbb9c92dd9ab1a756"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/545ce9136690cea74f98f86fbb9c92dd9ab1a756",
+                "reference": "545ce9136690cea74f98f86fbb9c92dd9ab1a756",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.4-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "lib/swift_required.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Corbyn"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Swiftmailer, free feature-rich PHP mailer",
+            "homepage": "http://swiftmailer.org",
+            "keywords": [
+                "email",
+                "mail",
+                "mailer"
+            ],
+            "time": "2016-11-24 01:01:23"
         },
         {
             "name": "symfony-cmf/routing",
@@ -6550,7 +6756,8 @@
                 "source": "http://cgit.drupalcode.org/examples",
                 "issues": "https://www.drupal.org/project/issues/examples",
                 "documentation": "https://api.drupal.org/api/examples"
-            }
+            },
+            "time": "2016-12-03 02:28:49"
         },
         {
             "name": "drupal/pistachio",

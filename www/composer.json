@@ -53,6 +53,7 @@
     "drupal/pathauto": "1.0.0-beta1",
     "drupal/r4032login": "1.*",
     "drupal/redis": "1.0.0-alpha1",
+    "drupal/swiftmailer": "1.0.0-alpha2",
     "drupal/views_data_export": "1.0.0-alpha2",
     "drupal/visualization": "1.0.0-beta1",
     "drupal/bootstrap": "3.1.0",

@@ -27,6 +27,7 @@ dependencies:
   - profile
   - responsive_image
   - system
+  - swiftmailer
   - taxonomy
   - telephone
   - tour
