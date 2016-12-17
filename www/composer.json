@@ -42,9 +42,9 @@
     "drupal/block_visibility_groups": "1.1.0",
     "drupal/contact_storage": "1.0.0-beta8",
     "drupal/commerce": "2.0.0-beta4",
-    "drupal/entityqueue": "1.0.0-alpha4",
+    "drupal/entityqueue": "1.0.0-alpha5",
     "drupal/eu_cookie_compliance": "1.0.0-beta7",
-    "drupal/features": "3.1.0",
+    "drupal/features": "3.2.0",
     "drupal/honeypot": "1.23.0",
     "drupal/menu_attributes": "1.*",
     "drupal/migrate_plus": "3.0.0-beta1",
@@ -54,10 +54,10 @@
     "drupal/r4032login": "1.*",
     "drupal/redis": "1.0.0-alpha1",
     "drupal/swiftmailer": "1.0.0-alpha2",
-    "drupal/views_data_export": "1.0.0-alpha2",
+    "drupal/views_data_export": "1.0.0-alpha3",
     "drupal/visualization": "1.0.0-beta1",
     "drupal/bootstrap": "3.1.0",
-    "abraham/twitteroauth": "0.7.1"
+    "abraham/twitteroauth": "0.7.2"
   },
   "require-dev": {
     "drupal/devel": "1.*",
@@ -89,12 +89,6 @@
       "../drush/contrib/{$name}": ["type:drupal-drush"]
     },
     "patches": {
-      "drupal/entityqueue": {
-        "Empty views cache when queue is updated - 1": "https://www.drupal.org/files/issues/2686623.patch",
-        "Empty views cache when queue is updated - 2": "https://www.drupal.org/files/issues/2686623-7_0.patch",
-        "Can't save view with entity queue relationship - 1": "https://www.drupal.org/files/issues/2643928-27-dev.patch",
-        "Can't save view with entity queue relationship - 2": "https://www.drupal.org/files/issues/2643928-29.patch"
-      },
       "drupal/redis": {
         "Currently Drush Cr or Cache Clear UI does not flush Redis cache": "https://www.drupal.org/files/issues/redis-drush_cr-2765895-4.patch"
       }
