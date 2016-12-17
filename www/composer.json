@@ -42,7 +42,7 @@
     "drupal/block_visibility_groups": "1.1.0",
     "drupal/contact_storage": "1.0.0-beta8",
     "drupal/commerce": "2.0.0-beta4",
-    "drupal/entityqueue": "1.0.0-alpha5",
+    "drupal/entityqueue": "1.0.0-alpha6",
     "drupal/eu_cookie_compliance": "1.0.0-beta7",
     "drupal/features": "3.2.0",
     "drupal/honeypot": "1.23.0",

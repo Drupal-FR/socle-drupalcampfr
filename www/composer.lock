@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b393911e65a36a21ff6fa2e05366d2e6",
-    "content-hash": "52b8cdd99979788360a3ff70e9724fc7",
+    "hash": "9f21d255170684b4950001e5062f1001",
+    "content-hash": "75b638cdec281e691185dc2b73cb8754",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1877,17 +1877,17 @@
         },
         {
             "name": "drupal/entityqueue",
-            "version": "1.0.0-alpha5",
+            "version": "1.0.0-alpha6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entityqueue",
-                "reference": "8.x-1.0-alpha5"
+                "reference": "8.x-1.0-alpha6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entityqueue-8.x-1.0-alpha5.zip",
+                "url": "https://ftp.drupal.org/files/projects/entityqueue-8.x-1.0-alpha6.zip",
                 "reference": null,
-                "shasum": "55012d32eaadc494a52e00c5a023e39e9b9f3f88"
+                "shasum": "2f7c639020a4c688b419ca90e35ffe0d08b34639"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1898,8 +1898,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha5",
-                    "datestamp": "1481968083"
+                    "version": "8.x-1.0-alpha6",
+                    "datestamp": "1481985783"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
