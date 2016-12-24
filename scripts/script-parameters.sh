@@ -31,7 +31,3 @@ DEVELOPMENT_MODULES=(
   views_ui
   webprofiler
 )
-
-# External libraries version.
-HIGHLIGHT_JS_VERSION=9.3.0
-D3_VERSION=3.5.16
