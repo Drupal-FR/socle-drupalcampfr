@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "29e69905964fccb2bed6e5a07310d798",
-    "content-hash": "30fb7477edb328fe5b48a7ce1846c5bb",
+    "hash": "5e9e8ffe2e34d0ce8382ae8a3473f0ae",
+    "content-hash": "93ed32f190503bb12e85c98ab1b7a0c0",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1255,17 +1255,17 @@
         },
         {
             "name": "drupal/commerce",
-            "version": "2.0.0-beta4",
+            "version": "2.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/commerce",
-                "reference": "8.x-2.0-beta4"
+                "reference": "8.x-2.0-beta5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.0-beta4.zip",
+                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.0-beta5.zip",
                 "reference": null,
-                "shasum": "e5e17a0093e02ed56331ecef19e934f7bcc47766"
+                "shasum": "b800dec2702f48a9a4d45b2d78243ff77aaaef71"
             },
             "require": {
                 "commerceguys/intl": "~0.7",
@@ -1278,18 +1278,17 @@
                 "drupal/state_machine": "~1.0",
                 "ext-bcmath": "*"
             },
-            "suggest": {
-                "drupal/commerce_cart": "Required by drupal/commerce_checkout",
-                "drupal/commerce_order": "Required by drupal/commerce_cart",
-                "drupal/commerce_payment": "Required by drupal/commerce_payment_example",
-                "drupal/commerce_price": "Required by drupal/commerce_cart",
-                "drupal/commerce_product": "Required by drupal/commerce_cart",
-                "drupal/commerce_store": "Required by drupal/commerce_order",
-                "drupal/core": "Required by drupal/commerce_cart",
-                "drupal/entity_reference_revisions": "Required by drupal/commerce_order",
-                "drupal/inline_entity_form": "Required by drupal/commerce_promotion",
-                "drupal/profile": "Required by drupal/commerce_order",
-                "drupal/state_machine": "Required by drupal/commerce_order"
+            "require-dev": {
+                "drupal/commerce_cart": "*",
+                "drupal/commerce_order": "*",
+                "drupal/commerce_payment": "*",
+                "drupal/commerce_price": "*",
+                "drupal/commerce_product": "*",
+                "drupal/commerce_store": "*",
+                "drupal/entity_reference_revisions": "*",
+                "drupal/inline_entity_form": "*",
+                "drupal/profile": "*",
+                "drupal/state_machine": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -1297,8 +1296,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-beta4",
-                    "datestamp": "1480688520"
+                    "version": "8.x-2.0-beta5",
+                    "datestamp": "1482792853"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1441,16 +1440,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.2.4",
+            "version": "8.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "0741cbf486fc55721b5dab050b37c721c80df097"
+                "reference": "fbf10f63dba6b312e1d1b67bac521db1648384f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/0741cbf486fc55721b5dab050b37c721c80df097",
-                "reference": "0741cbf486fc55721b5dab050b37c721c80df097",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/fbf10f63dba6b312e1d1b67bac521db1648384f3",
+                "reference": "fbf10f63dba6b312e1d1b67bac521db1648384f3",
                 "shasum": ""
             },
             "require": {
@@ -1614,7 +1613,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2016-12-07 18:31:42"
+            "time": "2017-01-04 11:31:35"
         },
         {
             "name": "drupal/csv_serialization",
@@ -1748,12 +1747,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dawehner/drush_language.git",
-                "reference": "06119b6e8ab2c8f1558cc697a5bf676c59eaf712"
+                "reference": "ac6c178ce267b035851e1acdc6cb40a49295d0d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dawehner/drush_language/zipball/06119b6e8ab2c8f1558cc697a5bf676c59eaf712",
-                "reference": "06119b6e8ab2c8f1558cc697a5bf676c59eaf712",
+                "url": "https://api.github.com/repos/dawehner/drush_language/zipball/ac6c178ce267b035851e1acdc6cb40a49295d0d5",
+                "reference": "ac6c178ce267b035851e1acdc6cb40a49295d0d5",
                 "shasum": ""
             },
             "type": "drupal-drush",
@@ -1765,7 +1764,7 @@
                 "source": "https://github.com/dawehner/drush_language/tree/8.x-1.x",
                 "issues": "https://github.com/dawehner/drush_language/issues"
             },
-            "time": "2016-08-12 12:05:38"
+            "time": "2016-12-27 17:10:49"
         },
         {
             "name": "drupal/entity",
@@ -2833,17 +2832,17 @@
         },
         {
             "name": "drupal/token",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/token",
-                "reference": "8.x-1.0-beta2"
+                "reference": "8.x-1.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "b838318eddf46e4f382489de5516ab916257c393"
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-rc1.zip",
+                "reference": null,
+                "shasum": "204b2f18a3d770589d66656aa83121d2156d0a31"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2854,8 +2853,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1474367039"
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1483290542"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4116,23 +4115,24 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.4.4",
+            "version": "v5.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "545ce9136690cea74f98f86fbb9c92dd9ab1a756"
+                "reference": "cd142238a339459b10da3d8234220963f392540c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/545ce9136690cea74f98f86fbb9c92dd9ab1a756",
-                "reference": "545ce9136690cea74f98f86fbb9c92dd9ab1a756",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/cd142238a339459b10da3d8234220963f392540c",
+                "reference": "cd142238a339459b10da3d8234220963f392540c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "mockery/mockery": "~0.9.1"
+                "mockery/mockery": "~0.9.1",
+                "symfony/phpunit-bridge": "~3.2"
             },
             "type": "library",
             "extra": {
@@ -4165,7 +4165,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2016-11-24 01:01:23"
+            "time": "2016-12-29 10:02:40"
         },
         {
             "name": "symfony-cmf/routing",
@@ -5685,16 +5685,16 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.3.7",
+            "version": "1.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "969ff423d3f201da3ff718a5831bb999bb0669b0"
+                "reference": "d9c1fd7c4b024179d49faf367da544b4eef7cfe8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/969ff423d3f201da3ff718a5831bb999bb0669b0",
-                "reference": "969ff423d3f201da3ff718a5831bb999bb0669b0",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/d9c1fd7c4b024179d49faf367da544b4eef7cfe8",
+                "reference": "d9c1fd7c4b024179d49faf367da544b4eef7cfe8",
                 "shasum": ""
             },
             "require": {
@@ -5706,7 +5706,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.6 || ^5.5",
-                "squizlabs/php_codesniffer": "^2.3.1"
+                "zendframework/zend-coding-standard": "~1.0.0"
             },
             "type": "library",
             "extra": {
@@ -5731,7 +5731,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2016-10-11 13:25:21"
+            "time": "2017-01-05 21:44:28"
         },
         {
             "name": "zendframework/zend-escaper",
@@ -5887,21 +5887,22 @@
     "packages-dev": [
         {
             "name": "behat/behat",
-            "version": "v3.2.2",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Behat.git",
-                "reference": "30aa3836825416f28581ee55fcfe6a5b0cdeeb85"
+                "reference": "15a3a1857457eaa29cdf41564a5e421effb09526"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Behat/zipball/30aa3836825416f28581ee55fcfe6a5b0cdeeb85",
-                "reference": "30aa3836825416f28581ee55fcfe6a5b0cdeeb85",
+                "url": "https://api.github.com/repos/Behat/Behat/zipball/15a3a1857457eaa29cdf41564a5e421effb09526",
+                "reference": "15a3a1857457eaa29cdf41564a5e421effb09526",
                 "shasum": ""
             },
             "require": {
                 "behat/gherkin": "^4.4.4",
                 "behat/transliterator": "~1.0",
+                "container-interop/container-interop": "^1.1",
                 "ext-mbstring": "*",
                 "php": ">=5.3.3",
                 "symfony/class-loader": "~2.1||~3.0",
@@ -5964,7 +5965,7 @@
                 "symfony",
                 "testing"
             ],
-            "time": "2016-11-05 17:13:53"
+            "time": "2016-12-25 13:43:52"
         },
         {
             "name": "behat/gherkin",
@@ -6356,13 +6357,40 @@
         },
         {
             "name": "components/highlightjs",
-            "version": "9.7.0",
+            "version": "9.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/highlightjs",
-                "reference": "9.7.0"
+                "reference": "9.9.0"
             },
             "type": "drupal-library"
+        },
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
         },
         {
             "name": "d3/d3",
@@ -6675,14 +6703,14 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/examples",
-                "reference": "cd6017ca3bb3842d9e8251e9e90be18bfea0d08e"
+                "reference": "e8011d3df565f9e942be3a68927b26fc7ffeba42"
             },
             "require": {
                 "drupal/core": "*"
             },
-            "suggest": {
-                "drupal/core": "Required by drupal/block_example",
-                "drupal/simpletest_example": "Required by drupal/simpletest_example_test"
+            "require-dev": {
+                "drupal/simpletest_example": "*",
+                "drupal/stream_wrapper_example": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -6691,7 +6719,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1480732384"
+                    "datestamp": "1483730342"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6770,8 +6798,7 @@
                 "source": "http://cgit.drupalcode.org/examples",
                 "issues": "https://www.drupal.org/project/issues/examples",
                 "documentation": "https://api.drupal.org/api/examples"
-            },
-            "time": "2016-12-03 02:28:49"
+            }
         },
         {
             "name": "drupal/pistachio",
@@ -6933,16 +6960,16 @@
         },
         {
             "name": "fabpot/goutte",
-            "version": "v3.2.0",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/Goutte.git",
-                "reference": "8cc89de5e71daf84051859616891d3320d88a9e8"
+                "reference": "db5c28f4a010b4161d507d5304e28a7ebf211638"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/Goutte/zipball/8cc89de5e71daf84051859616891d3320d88a9e8",
-                "reference": "8cc89de5e71daf84051859616891d3320d88a9e8",
+                "url": "https://api.github.com/repos/FriendsOfPHP/Goutte/zipball/db5c28f4a010b4161d507d5304e28a7ebf211638",
+                "reference": "db5c28f4a010b4161d507d5304e28a7ebf211638",
                 "shasum": ""
             },
             "require": {
@@ -6978,7 +7005,7 @@
             "keywords": [
                 "scraper"
             ],
-            "time": "2016-11-15 16:27:29"
+            "time": "2017-01-03 13:21:43"
         },
         {
             "name": "instaclick/php-webdriver",

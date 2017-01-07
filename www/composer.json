@@ -47,12 +47,12 @@
       "type": "package",
       "package": {
         "name": "components/highlightjs",
-        "version": "9.7.0",
+        "version": "9.9.0",
         "type": "drupal-library",
         "source": {
           "url": "https://github.com/components/highlightjs",
           "type": "git",
-          "reference": "9.7.0"
+          "reference": "9.9.0"
         }
       }
     }
@@ -60,14 +60,14 @@
   "require": {
     "composer/installers": "^1.0.21",
     "cweagans/composer-patches": "~1.0",
-    "drupal/core": "8.2.4",
+    "drupal/core": "8.2.5",
     "drush/drush": "8.1.8",
     "drupal/drush_language": "dev-8.x-1.x",
     "drupal/address": "1.0.0-rc3",
     "drupal/admin_toolbar": "1.18.0",
     "drupal/block_visibility_groups": "1.1.0",
     "drupal/contact_storage": "1.0.0-beta8",
-    "drupal/commerce": "2.0.0-beta4",
+    "drupal/commerce": "2.0.0-beta5",
     "drupal/entityqueue": "1.0.0-alpha6",
     "drupal/eu_cookie_compliance": "1.0.0-beta7",
     "drupal/features": "3.2.0",
@@ -99,7 +99,7 @@
     "behat/mink-extension": "^2.2",
     "drupal/drupal-extension": "~3.0",
     "d3/d3": "3.5.*",
-    "components/highlightjs": "9.7.*"
+    "components/highlightjs": "9.9.*"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
