@@ -72,6 +72,12 @@ dependencies:
   - menu_attributes
   - r4032login
   - redis
+  - purge
+  - purge_drush
+  - purge_queuer_coretags
+  - purge_processor_cron
+  - varnish_purger
+  - varnish_purge_tags
 
   # Custom modules
   - drupalcampfr_core

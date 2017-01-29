@@ -25,6 +25,7 @@ dependencies:
   - node
   - options
   - profile
+  - purge
   - responsive_image
   - system
   - swiftmailer
@@ -32,6 +33,7 @@ dependencies:
   - telephone
   - tour
   - user
+  - varnish_purger
   - views
   - visualization
 package: Drupalcampfr
