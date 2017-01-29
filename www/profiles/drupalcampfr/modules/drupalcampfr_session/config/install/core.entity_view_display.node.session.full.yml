@@ -78,7 +78,7 @@ content:
     weight: 0
     label: inline
     settings:
-      link: false
+      link: true
     third_party_settings: {  }
   field_session_track:
     type: entity_reference_label
