@@ -15,6 +15,12 @@ $settings['trusted_host_patterns'] = array(
   '^127\.0\.0\.1$',
 );
 
+// Redis.
+$settings['redis.connection']['host'] = 'redis';
+
+// Varnish.
+$config['varnish_purger.settings.varnish']['hostname'] = 'varnish';
+
 // Twitter.
 // Go to https://apps.twitter.com to get these tokens.
 $config['drupalcampfr_social.twitter']['consumer_key'] = '';
