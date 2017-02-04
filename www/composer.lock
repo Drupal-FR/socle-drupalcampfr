@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "598ec929ab5fbd05c273217565a28a35",
+    "content-hash": "d6bfe19a66417954881ebe3caabfdced",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -467,16 +467,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "2.3.2",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "3074e408160e1b81bda5483f6d2342abc872ea1b"
+                "reference": "80afffd362bd1cf83bef60db690a8c50d8390803"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/3074e408160e1b81bda5483f6d2342abc872ea1b",
-                "reference": "3074e408160e1b81bda5483f6d2342abc872ea1b",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/80afffd362bd1cf83bef60db690a8c50d8390803",
+                "reference": "80afffd362bd1cf83bef60db690a8c50d8390803",
                 "shasum": ""
             },
             "require": {
@@ -515,7 +515,7 @@
                 }
             ],
             "description": "Initialize Symfony Console commands from annotated command class methods.",
-            "time": "2017-01-27T01:59:21+00:00"
+            "time": "2017-02-04T06:13:54+00:00"
         },
         {
             "name": "consolidation/output-formatters",
@@ -1437,16 +1437,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.2.5",
+            "version": "8.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "fbf10f63dba6b312e1d1b67bac521db1648384f3"
+                "reference": "6cd5d296125a4584d470d75d8e5218ff17c39c22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/fbf10f63dba6b312e1d1b67bac521db1648384f3",
-                "reference": "fbf10f63dba6b312e1d1b67bac521db1648384f3",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/6cd5d296125a4584d470d75d8e5218ff17c39c22",
+                "reference": "6cd5d296125a4584d470d75d8e5218ff17c39c22",
                 "shasum": ""
             },
             "require": {
@@ -1610,7 +1610,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-01-04T11:31:35+00:00"
+            "time": "2017-02-01T17:03:36+00:00"
         },
         {
             "name": "drupal/csv_serialization",
@@ -1819,17 +1819,17 @@
         },
         {
             "name": "drupal/entity_reference_revisions",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_reference_revisions",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.1.zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.2.zip",
                 "reference": null,
-                "shasum": "3767fd2245ab2731aaf0c992c586b5ddc6f7efe8"
+                "shasum": "15261a4237cc2a743522a7bd81e9f34e01d12843"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1843,8 +1843,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1485526384"
+                    "version": "8.x-1.2",
+                    "datestamp": "1485790085"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2444,17 +2444,17 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/pathauto",
-                "reference": "8.x-1.0-beta2"
+                "reference": "8.x-1.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-beta2.zip",
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-rc1.zip",
                 "reference": null,
-                "shasum": "08962a207e4273eaaf9d2edf79111db9fbcb8c8e"
+                "shasum": "2460339ac8739317b3c4e66e9ce7142cc02adac3"
             },
             "require": {
                 "drupal/core": "*",
@@ -2467,8 +2467,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1484781483"
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1485702484"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2677,17 +2677,17 @@
         },
         {
             "name": "drupal/redis",
-            "version": "1.0.0-alpha1",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/redis",
-                "reference": "8.x-1.0-alpha1"
+                "reference": "8.x-1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/redis-8.x-1.0-alpha1.zip",
-                "reference": "8.x-1.0-alpha1",
-                "shasum": "11629225944a30cdf27699d90f16bac7959361b0"
+                "url": "https://ftp.drupal.org/files/projects/redis-8.x-1.0-beta1.zip",
+                "reference": null,
+                "shasum": "c52dfdc675e95f04266e4ddd7c603c23f217e1f8"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2698,8 +2698,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha1",
-                    "datestamp": "1466403539"
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1485984783"
                 },
                 "patches_applied": {
                     "Currently Drush Cr or Cache Clear UI does not flush Redis cache": "https://www.drupal.org/files/issues/redis-drush_cr-2765895-4.patch"
@@ -3281,16 +3281,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "1.2.13",
+            "version": "1.2.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "b8bb147f46cc9790326ce2440a13be06cc5a63bb"
+                "reference": "5642614492f0ca2064c01d60cc33284cc2f731a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/b8bb147f46cc9790326ce2440a13be06cc5a63bb",
-                "reference": "b8bb147f46cc9790326ce2440a13be06cc5a63bb",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/5642614492f0ca2064c01d60cc33284cc2f731a9",
+                "reference": "5642614492f0ca2064c01d60cc33284cc2f731a9",
                 "shasum": ""
             },
             "require": {
@@ -3329,7 +3329,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2016-07-03T21:52:18+00:00"
+            "time": "2017-02-03T22:48:59+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -3792,16 +3792,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v3.0.2",
+            "version": "v3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "adf44419c0fc014a0f191db6f89d3e55d4211744"
+                "reference": "5b8182cc0abb4b0ff290ba9df6c0e1323286013a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/adf44419c0fc014a0f191db6f89d3e55d4211744",
-                "reference": "adf44419c0fc014a0f191db6f89d3e55d4211744",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/5b8182cc0abb4b0ff290ba9df6c0e1323286013a",
+                "reference": "5b8182cc0abb4b0ff290ba9df6c0e1323286013a",
                 "shasum": ""
             },
             "require": {
@@ -3839,7 +3839,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2016-12-06T11:30:35+00:00"
+            "time": "2017-02-03T21:57:31+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -6866,7 +6866,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/pistachio",
-                "reference": "42ebe8d00256aeda9580554c16c527a2bd9efaa0"
+                "reference": "87ab3888c1bc2195ad1ae84a348e69dade6ecb78"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -6878,7 +6878,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1468595939"
+                    "datestamp": "1485795782"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6893,6 +6893,10 @@
                 {
                     "name": "LewisNyman",
                     "homepage": "https://www.drupal.org/user/751964"
+                },
+                {
+                    "name": "adoo",
+                    "homepage": "https://www.drupal.org/user/49745"
                 },
                 {
                     "name": "davidhernandez",
@@ -6918,8 +6922,7 @@
             "homepage": "https://www.drupal.org/project/pistachio",
             "support": {
                 "source": "http://cgit.drupalcode.org/pistachio"
-            },
-            "time": "2016-07-15 15:15:16"
+            }
         },
         {
             "name": "drupal/renderviz",
