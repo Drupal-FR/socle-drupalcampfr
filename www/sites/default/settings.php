@@ -16,8 +16,17 @@ $settings['file_public_path'] = 'sites/default/files';
 
 $settings['container_yamls'][] = __DIR__ . '/services.yml';
 
+// Prevent deletion of orphan files.
+// TODO: Remove this line when the following issues will be fixed:
+// - https://www.drupal.org/node/2801777
+// - https://www.drupal.org/node/2708411
+// - https://www.drupal.org/node/1239558
+// - https://www.drupal.org/node/2666700
+// - https://www.drupal.org/node/2810355
+$config['system.file']['temporary_maximum_age'] = 0;
+
 // Performance.
-$config['system.performance']['cache']['page']['max_age'] = '86400';
+$config['system.performance']['cache']['page']['max_age'] = 86400;
 $config['system.performance']['css']['preprocess'] = TRUE;
 $config['system.performance']['js']['preprocess'] = TRUE;
 
