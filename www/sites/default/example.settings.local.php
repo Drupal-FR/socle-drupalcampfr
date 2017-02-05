@@ -13,6 +13,8 @@ $settings['install_profile'] = 'drupalcampfr';
 $settings['hash_salt'] = 'drupalcampfr';
 $settings['trusted_host_patterns'] = array(
   '^127\.0\.0\.1$',
+  'varnish',
+  'web',
 );
 
 // Redis.

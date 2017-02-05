@@ -10,7 +10,7 @@ default:
   extensions:
     Behat\MinkExtension:
       goutte: ~
-      base_url: http://172.19.0.2
+      base_url: http://varnish
     Drupal\DrupalExtension:
       blackbox: ~
       region_map:
