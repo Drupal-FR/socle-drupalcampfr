@@ -26,6 +26,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
   user_picture:
     type: image
     weight: 0
@@ -34,6 +35,7 @@ content:
       image_link: ''
     third_party_settings: {  }
     label: hidden
+    region: content
 hidden:
   commerce_remote_id: true
   field_user_meal_indication: true

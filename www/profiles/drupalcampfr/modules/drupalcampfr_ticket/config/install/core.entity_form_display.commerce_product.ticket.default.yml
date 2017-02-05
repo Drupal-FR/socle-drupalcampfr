@@ -24,21 +24,25 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+    region: content
   created:
     type: datetime_timestamp
     weight: 10
     settings: {  }
     third_party_settings: {  }
+    region: content
   langcode:
     type: language_select
     weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
     settings: {  }
     third_party_settings: {  }
+    region: content
   stores:
     type: commerce_entity_select
     weight: -10
@@ -47,6 +51,7 @@ content:
       autocomplete_size: 60
       autocomplete_placeholder: ''
     third_party_settings: {  }
+    region: content
   title:
     type: string_textfield
     weight: -5
@@ -54,6 +59,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5
@@ -62,6 +68,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   variations:
     type: inline_entity_form_complex
     weight: 10
@@ -74,5 +81,6 @@ content:
       allow_existing: false
       match_operator: CONTAINS
     third_party_settings: {  }
+    region: content
 hidden:
   status: true

@@ -23,6 +23,7 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_user_meal_indication:
     type: string_textarea
     weight: 5
@@ -30,6 +31,7 @@ content:
       rows: 2
       placeholder: ''
     third_party_settings: {  }
+    region: content
   field_user_name:
     type: string_textfield
     weight: 1
@@ -37,16 +39,19 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   field_user_participate:
     type: options_buttons
     weight: 4
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_user_shirt_size:
     type: options_select
     weight: 3
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_user_society:
     type: string_textfield
     weight: 2
@@ -54,6 +59,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   user_picture:
     type: image_image
     weight: 6
@@ -61,6 +67,7 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    region: content
 hidden:
   commerce_remote_id: true
   contact: true

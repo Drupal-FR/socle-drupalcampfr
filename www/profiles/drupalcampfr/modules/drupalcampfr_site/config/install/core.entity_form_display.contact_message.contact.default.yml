@@ -12,6 +12,7 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
+    region: content
   message:
     type: string_textarea
     weight: 3
@@ -19,10 +20,12 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+    region: content
   name:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
   subject:
     type: string_textfield
     weight: 2
@@ -30,6 +33,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
 hidden:
   copy: true
   langcode: true

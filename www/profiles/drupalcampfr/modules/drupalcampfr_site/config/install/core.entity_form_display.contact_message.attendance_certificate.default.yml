@@ -17,11 +17,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
   field_attendance_departure:
     weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
   field_attendance_firstname:
     weight: 1
     settings:
@@ -29,6 +31,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
   field_attendance_lastname:
     weight: 0
     settings:
@@ -36,6 +39,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
 hidden:
   copy: true
   langcode: true

@@ -15,6 +15,7 @@ mode: default
 content:
   copy:
     weight: 50
+    region: content
   field_commentaire:
     weight: 53
     settings:
@@ -22,24 +23,29 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
+    region: content
   field_justificatif:
     weight: 52
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    region: content
   field_type_de_reduction:
     weight: 51
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
   langcode:
     type: language_select
     weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
   mail:
     weight: -40
+    region: content
   message:
     type: string_textarea
     weight: 0
@@ -47,10 +53,13 @@ content:
       rows: 12
       placeholder: ''
     third_party_settings: {  }
+    region: content
   name:
     weight: -50
+    region: content
   preview:
     weight: 50
+    region: content
   subject:
     type: string_textfield
     weight: -10
@@ -58,4 +67,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
 hidden: {  }

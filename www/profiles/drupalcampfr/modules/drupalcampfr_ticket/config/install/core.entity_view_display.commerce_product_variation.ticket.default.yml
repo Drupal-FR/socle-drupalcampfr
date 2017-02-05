@@ -20,6 +20,7 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
   price:
     label: above
     type: commerce_price_default
@@ -28,6 +29,7 @@ content:
       strip_trailing_zeroes: false
       display_currency_code: false
     third_party_settings: {  }
+    region: content
   sku:
     label: hidden
     type: string
@@ -35,6 +37,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
   title:
     label: hidden
     type: string
@@ -42,6 +45,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
 hidden:
   langcode: true
   product_id: true

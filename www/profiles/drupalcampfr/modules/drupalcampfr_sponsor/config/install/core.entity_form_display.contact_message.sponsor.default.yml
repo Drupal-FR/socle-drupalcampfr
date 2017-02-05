@@ -20,21 +20,25 @@ content:
       default_country: FR
     third_party_settings: {  }
     type: address_default
+    region: content
   field_sponsor_level:
     weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
   field_sponsor_phone:
     weight: 2
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
+    region: content
   mail:
     weight: 1
     settings: {  }
     third_party_settings: {  }
+    region: content
   message:
     type: string_textarea
     weight: 6
@@ -42,10 +46,12 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+    region: content
   name:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
   subject:
     type: string_textfield
     weight: 3
@@ -53,6 +59,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
 hidden:
   copy: true
   langcode: true

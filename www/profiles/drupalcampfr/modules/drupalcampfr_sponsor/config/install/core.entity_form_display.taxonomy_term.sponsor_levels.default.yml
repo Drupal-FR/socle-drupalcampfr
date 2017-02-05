@@ -21,29 +21,34 @@ content:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
+    region: content
   field_sponsor_level_homepage:
     weight: 3
     settings:
       display_label: false
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
   field_sponsor_level_site_wide:
     weight: 4
     settings:
       display_label: false
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
   field_sponsor_level_status:
     weight: 5
     settings:
       display_label: false
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
   langcode:
     type: language_select
     weight: 1
     settings: {  }
     third_party_settings: {  }
+    region: content
   name:
     type: string_textfield
     weight: 0
@@ -51,9 +56,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 8
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden: {  }

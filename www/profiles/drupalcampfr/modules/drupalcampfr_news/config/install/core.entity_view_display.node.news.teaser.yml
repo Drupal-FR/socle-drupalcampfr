@@ -22,6 +22,7 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+    region: content
   field_news_link:
     type: link
     weight: 1
@@ -33,6 +34,7 @@ content:
       url_only: false
       url_plain: false
     third_party_settings: {  }
+    region: content
 hidden:
   langcode: true
   links: true
