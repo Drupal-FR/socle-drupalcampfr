@@ -16,6 +16,10 @@ $settings['file_public_path'] = 'sites/default/files';
 
 $settings['container_yamls'][] = __DIR__ . '/services.yml';
 
+// TODO: Remove this line when it will no more be added when installing with
+// Drush.
+$settings['install_profile'] = 'drupalcampfr';
+
 // Prevent deletion of orphan files.
 // TODO: Remove this line when the following issues will be fixed:
 // - https://www.drupal.org/node/2801777
