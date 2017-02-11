@@ -1,13 +1,7 @@
 #!/bin/bash
 
-function abspath() {
-    python -c "import sys, os;sys.stdout.write(os.path.abspath(\"$@\"))"
-}
-
-FILE_PATH=$(abspath "${0}")
-PROJECT_PATH=$(dirname $(dirname $FILE_PATH))
-
-. $PROJECT_PATH/scripts/script-parameters.sh
+. $(dirname ${BASH_SOURCE[0]})/script-parameters.sh
+. $(dirname ${BASH_SOURCE[0]})/script-parameters.local.sh
 
 # Run behat tests.
-$WWW_PATH/vendor/bin/behat --config=$SCRIPTS_PATH/tests/behat/behat.yml
+$PROJECT_PATH/bin/behat --config=$SCRIPTS_PATH/tests/behat/behat.yml

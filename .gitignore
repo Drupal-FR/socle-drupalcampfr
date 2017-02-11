@@ -1,13 +1,16 @@
+# From composer.
+/vendor
+/bin
+/drush
+
 # Contrib files.
 /www/core
 /www/modules/contrib
 /www/themes/contrib
 /www/libraries
-/www/vendor
 
 /www/autoload.php
 /www/index.php
-/www/update.php
 
 /www/.htaccess
 /www/robots.txt
@@ -16,7 +19,7 @@
 /www/.csslintrc
 /www/.editorconfig
 /www/.eslintignore
-/www/.eslintrc
+/www/.eslintrc.json
 /www/.gitattributes
 
 # Drupal's file directory.
@@ -40,11 +43,6 @@ backups/*
 # Node modules.
 node_modules
 
-# Data.
-/data
-
 # Docker.
 docker-compose.yml
-
-# Drush modules.
-drush
+/data

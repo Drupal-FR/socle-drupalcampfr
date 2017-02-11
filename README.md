@@ -12,7 +12,6 @@ Technical base for french Drupalcamps.
 * Adapt the following files to your configuration:
   * scripts/script-parameters.local.sh
   * www/sites/default/settings.local.php
-* In the **www** directory, execute: **composer install** to get the project's Drush.
 * Execute **scripts/install.sh**
 
 ## Additional steps to install with Docker compose

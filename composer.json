@@ -59,6 +59,7 @@
   },
   "require": {
     "composer/installers": "^1.0.21",
+    "drupal-composer/drupal-scaffold": "^2.2",
     "cweagans/composer-patches": "~1.0",
     "drupal/core": "8.3.0-alpha1",
     "drush/drush": "8.1.9",
@@ -101,19 +102,40 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
+  "config": {
+    "bin-dir": "bin",
+    "optimize-autoloader": true
+  },
   "scripts": {
+    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+    "post-create-project-cmd": [
+      "bash ./scripts/init.sh"
+    ],
     "post-install-cmd": [
-      "bash ../scripts/update-scaffold.sh"
+      "@drupal-scaffold"
+    ],
+    "post-update-cmd": [
+      "@drupal-scaffold"
     ]
   },
   "extra": {
     "installer-paths": {
-      "core": ["type:drupal-core"],
-      "modules/contrib/{$name}": ["type:drupal-module"],
-      "themes/contrib/{$name}": ["type:drupal-theme"],
-      "profiles/{$name}": ["type:drupal-profile"],
-      "libraries/{$name}": ["type:drupal-library"],
-      "../drush/contrib/{$name}": ["type:drupal-drush"]
+      "www/core": ["type:drupal-core"],
+      "www/modules/contrib/{$name}": ["type:drupal-module"],
+      "www/modules/custom/{$name}": ["type:drupal-custom-module"],
+      "www/themes/contrib/{$name}": ["type:drupal-theme"],
+      "www/themes/custom/{$name}": ["type:drupal-custom-theme"],
+      "www/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "www/libraries/{$name}": ["type:drupal-library"],
+      "drush/contrib/{$name}": ["type:drupal-drush"]
+    },
+    "drupal-scaffold": {
+      "excludes": [
+        "update.php",
+        "web.config",
+        "sites/development.services.yml",
+        "sites/example.settings.local.php"
+      ]
     },
     "patches": {
       "drupal/redis": {
