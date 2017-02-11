@@ -64,7 +64,7 @@
     "drupal/core": "8.3.0-alpha1",
     "drush/drush": "8.1.9",
     "drupal/drush_language": "dev-8.x-1.x",
-    "drupal/address": "1.0.0-rc3",
+    "drupal/address": "1.0.0-rc4",
     "drupal/admin_toolbar": "1.18.0",
     "drupal/block_visibility_groups": "1.1.0",
     "drupal/contact_storage": "1.0.0-beta8",
