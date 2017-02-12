@@ -1,7 +1,6 @@
 #!/bin/bash
 
 . $(dirname ${BASH_SOURCE[0]})/script-parameters.sh
-. $(dirname ${BASH_SOURCE[0]})/script-parameters.local.sh
 
 # Copy example files.
 rsync -avz --ignore-existing $PROJECT_PATH/example.docker-compose.yml           $PROJECT_PATH/docker-compose.yml
