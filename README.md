@@ -20,5 +20,5 @@ Technical base for french Drupalcamps.
 * Adapt the following files to your configuration:
   * docker-compose.yml
 * Execute: **docker-compose up**
-* In another tab, get a command-line in the container: **docker exec -it container_name_php_1 /bin/bash**
-* Execute scripts/install.sh
+* In another tab, get a command-line in the container: **docker exec -it container_name_web_1 /bin/bash**
+* Execute **scripts/install.sh**
