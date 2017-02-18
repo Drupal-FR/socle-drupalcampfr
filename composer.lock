@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1521e4013533ad4a292e79a238c8328f",
+    "content-hash": "2a3eadbd4ab980d8ce420aa7aa4cec2a",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1478,16 +1478,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.3.0-alpha1",
+            "version": "8.3.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "9cf9a8fb5a53674491efcd62f82a70b4cd138aee"
+                "reference": "7b628e88038c32482a5f9552ca400c8cbdef8c1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/9cf9a8fb5a53674491efcd62f82a70b4cd138aee",
-                "reference": "9cf9a8fb5a53674491efcd62f82a70b4cd138aee",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/7b628e88038c32482a5f9552ca400c8cbdef8c1c",
+                "reference": "7b628e88038c32482a5f9552ca400c8cbdef8c1c",
                 "shasum": ""
             },
             "require": {
@@ -1627,7 +1627,7 @@
             "require-dev": {
                 "behat/mink": "1.7.x-dev",
                 "behat/mink-goutte-driver": "~1.2",
-                "drupal/coder": "8.2.8",
+                "drupal/coder": "8.2.10",
                 "jcalderonzumba/gastonjs": "~1.0.2",
                 "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
                 "mikey179/vfsstream": "~1.2",
@@ -1656,7 +1656,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-02-01T16:59:40+00:00"
+            "time": "2017-02-15T16:16:18+00:00"
         },
         {
             "name": "drupal/csv_serialization",
@@ -1812,7 +1812,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity",
-                "reference": "879356bbf75608f86d8fb89d76a21dc1e99a39ae"
+                "reference": "eeb86a65793d4788e8459bd56b1427d929d14316"
             },
             "require": {
                 "drupal/core": "~8.1"
@@ -1858,7 +1858,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/entity"
             },
-            "time": "2016-10-12 10:12:36"
+            "time": "2017-02-14 11:02:54"
         },
         {
             "name": "drupal/entity_reference_revisions",
@@ -2867,26 +2867,23 @@
         },
         {
             "name": "drupal/swiftmailer",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/swiftmailer",
-                "reference": "8.x-1.0-alpha2"
+                "reference": "8.x-1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/swiftmailer-8.x-1.0-alpha2.zip",
-                "reference": "8.x-1.0-alpha2",
-                "shasum": "f310121e60ca3f43547faf5e69626a82e9c5eb38"
+                "url": "https://ftp.drupal.org/files/projects/swiftmailer-8.x-1.0-beta1.zip",
+                "reference": null,
+                "shasum": "d49a50638a629c24d681181b82255fd50c1b2642"
             },
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/mailsystem": "*",
                 "html2text/html2text": "~4.0.1",
-                "swiftmailer/swiftmailer": "~5.4.0"
-            },
-            "require-dev": {
-                "drupal/mailsystem": "*"
+                "swiftmailer/swiftmailer": "~5.4.5"
             },
             "type": "drupal-module",
             "extra": {
@@ -2894,8 +2891,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
-                    "datestamp": "1474809988"
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1487207830"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4258,16 +4255,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.4.5",
+            "version": "v5.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "cd142238a339459b10da3d8234220963f392540c"
+                "reference": "81fdccfaf8bdc5d5d7a1ef6bb3a61bbb1a6c4a3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/cd142238a339459b10da3d8234220963f392540c",
-                "reference": "cd142238a339459b10da3d8234220963f392540c",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/81fdccfaf8bdc5d5d7a1ef6bb3a61bbb1a6c4a3e",
+                "reference": "81fdccfaf8bdc5d5d7a1ef6bb3a61bbb1a6c4a3e",
                 "shasum": ""
             },
             "require": {
@@ -4308,7 +4305,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2016-12-29T10:02:40+00:00"
+            "time": "2017-02-13T07:52:53+00:00"
         },
         {
             "name": "symfony-cmf/routing",
@@ -7213,7 +7210,7 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v3.2.3",
+            "version": "v3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
@@ -7270,16 +7267,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v3.2.3",
+            "version": "v3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "2ffa7b84d647b8be1788d46b44e438cb3d62056c"
+                "reference": "9f99453e77771e629af8a25eeb0a6c4ed1e19da2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/2ffa7b84d647b8be1788d46b44e438cb3d62056c",
-                "reference": "2ffa7b84d647b8be1788d46b44e438cb3d62056c",
+                "url": "https://api.github.com/repos/symfony/config/zipball/9f99453e77771e629af8a25eeb0a6c4ed1e19da2",
+                "reference": "9f99453e77771e629af8a25eeb0a6c4ed1e19da2",
                 "shasum": ""
             },
             "require": {
@@ -7322,11 +7319,11 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2017-02-06T12:04:21+00:00"
+            "time": "2017-02-14T16:27:43+00:00"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v3.2.3",
+            "version": "v3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -7379,7 +7376,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.2.3",
+            "version": "v3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
