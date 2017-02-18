@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a3eadbd4ab980d8ce420aa7aa4cec2a",
+    "content-hash": "2e62cde55add3985cabd8e51e29ae0d8",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1783,26 +1783,55 @@
         },
         {
             "name": "drupal/drush_language",
-            "version": "dev-8.x-1.x",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dawehner/drush_language.git",
+                "url": "https://git.drupal.org/project/drush_language",
                 "reference": "ac6c178ce267b035851e1acdc6cb40a49295d0d5"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dawehner/drush_language/zipball/ac6c178ce267b035851e1acdc6cb40a49295d0d5",
-                "reference": "ac6c178ce267b035851e1acdc6cb40a49295d0d5",
-                "shasum": ""
+            "require": {
+                "drupal/core": "*"
             },
             "type": "drupal-drush",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1486165682"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "gurvan",
+                    "homepage": "https://www.drupal.org/user/852194"
+                },
+                {
+                    "name": "ndf",
+                    "homepage": "https://www.drupal.org/user/599438"
+                },
+                {
+                    "name": "the greenman",
+                    "homepage": "https://www.drupal.org/user/19836"
+                },
+                {
+                    "name": "xatoo",
+                    "homepage": "https://www.drupal.org/user/103227"
+                }
+            ],
             "description": "Provides drush commands",
+            "homepage": "https://www.drupal.org/project/drush_language",
             "support": {
-                "source": "https://github.com/dawehner/drush_language/tree/8.x-1.x",
-                "issues": "https://github.com/dawehner/drush_language/issues"
+                "source": "http://cgit.drupalcode.org/drush_language"
             },
             "time": "2016-12-27 17:10:49"
         },
@@ -7426,9 +7455,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "drupal/drush_language": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

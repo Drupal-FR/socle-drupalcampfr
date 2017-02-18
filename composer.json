@@ -26,10 +26,6 @@
       "type": "composer",
       "url": "https://packages.drupal.org/8"
     },
-    "drush_language": {
-      "type": "vcs",
-      "url": "git@github.com:dawehner/drush_language.git"
-    },
     "d3": {
       "type": "package",
       "package": {
@@ -63,7 +59,7 @@
     "cweagans/composer-patches": "~1.0",
     "drupal/core": "8.3.0-beta1",
     "drush/drush": "8.1.9",
-    "drupal/drush_language": "dev-8.x-1.x",
+    "drupal/drush_language": "1.*",
     "drupal/address": "1.0.0-rc4",
     "drupal/admin_toolbar": "1.18.0",
     "drupal/block_visibility_groups": "1.1.0",
