@@ -13,6 +13,10 @@ $settings['allow_authorize_operations'] = FALSE;
 
 $settings['file_public_path'] = 'sites/default/files';
 
+$settings['file_scan_ignore_directories'] = [
+  'node_modules',
+  'bower_components',
+];
 
 $settings['container_yamls'][] = __DIR__ . '/services.yml';
 
