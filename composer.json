@@ -55,8 +55,8 @@
   },
   "require": {
     "composer/installers": "^1.0.21",
-    "drupal-composer/drupal-scaffold": "^2.2",
     "cweagans/composer-patches": "~1.0",
+    "drupal-composer/drupal-scaffold": "^2.2",
     "drupal/core": "8.3.0-beta1",
     "drush/drush": "8.1.9",
     "drupal/drush_language": "1.*",
