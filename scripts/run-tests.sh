@@ -4,4 +4,4 @@
 . $(dirname ${BASH_SOURCE[0]})/script-parameters.local.sh
 
 # Run behat tests.
-$PROJECT_PATH/bin/behat --config=$SCRIPTS_PATH/tests/behat/behat.yml
+$PROJECT_PATH/vendor/bin/behat --config=$SCRIPTS_PATH/tests/behat/behat.yml
