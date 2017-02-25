@@ -58,7 +58,7 @@
     "cweagans/composer-patches": "~1.0",
     "drupal-composer/drupal-scaffold": "^2.2",
     "drupal/core": "8.3.0-beta1",
-    "drush/drush": "8.1.9",
+    "drush/drush": "8.1.10",
     "drupal/drush_language": "1.*",
     "drupal/address": "1.0.0-rc4",
     "drupal/admin_toolbar": "1.18.0",
@@ -67,7 +67,7 @@
     "drupal/commerce": "2.0.0-beta5",
     "drupal/entityqueue": "1.0.0-alpha6",
     "drupal/eu_cookie_compliance": "1.0.0-beta7",
-    "drupal/features": "3.2.0",
+    "drupal/features": "3.3.0",
     "drupal/honeypot": "1.23.0",
     "drupal/menu_attributes": "1.*",
     "drupal/migrate_plus": "3.0.0-beta1",
@@ -81,7 +81,7 @@
     "drupal/varnish_purge": "1.4.0",
     "drupal/views_data_export": "1.0.0-alpha4",
     "drupal/visualization": "1.0.0-beta1",
-    "drupal/bootstrap": "3.1.0",
+    "drupal/bootstrap": "3.2.0",
     "abraham/twitteroauth": "0.7.2"
   },
   "require-dev": {
