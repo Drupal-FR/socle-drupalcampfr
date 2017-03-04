@@ -1,18 +1,18 @@
-UUID,Title,Published,Link URL,Link title,Level
-sponsor_1,Sponsor 1,1,internal:/sponsors/devenir-sponsor,,sponsor_level_1
-sponsor_2,Sponsor 2,1,internal:/sponsors/devenir-sponsor,,sponsor_level_1
-sponsor_3,Sponsor 3,1,internal:/sponsors/devenir-sponsor,,sponsor_level_2
-sponsor_4,Sponsor 4,1,internal:/sponsors/devenir-sponsor,,sponsor_level_2
-sponsor_5,Sponsor 5,1,internal:/sponsors/devenir-sponsor,,sponsor_level_2
-sponsor_6,Sponsor 6,1,internal:/sponsors/devenir-sponsor,,sponsor_level_3
-sponsor_7,Sponsor 7,1,internal:/sponsors/devenir-sponsor,,sponsor_level_3;sponsor_level_5
-sponsor_8,Sponsor 8,1,internal:/sponsors/devenir-sponsor,,sponsor_level_3;sponsor_level_5
-sponsor_9,Sponsor 9,1,internal:/sponsors/devenir-sponsor,,sponsor_level_3
-sponsor_10,Sponsor 10,1,internal:/sponsors/devenir-sponsor,,sponsor_level_3
-sponsor_11,Sponsor 11,1,internal:/sponsors/devenir-sponsor,,sponsor_level_4
-sponsor_12,Sponsor 12,1,internal:/sponsors/devenir-sponsor,,sponsor_level_4
-sponsor_13,Sponsor 13,1,internal:/sponsors/devenir-sponsor,,sponsor_level_4
-sponsor_14,Sponsor 14,1,internal:/sponsors/devenir-sponsor,,sponsor_level_5
-sponsor_15,Sponsor 15,1,internal:/sponsors/devenir-sponsor,,sponsor_level_5
-sponsor_16,Sponsor 16,1,internal:/sponsors/devenir-sponsor,,sponsor_level_5
-sponsor_17,Sponsor 17,1,internal:/sponsors/devenir-sponsor,,sponsor_level_5
+UUID,Title,Published,Link URL,Link title,Level,Logo
+sponsor_1,Sponsor 1,1,internal:/sponsors/devenir-sponsor,,sponsor_level_1,default_sponsor_logo_1
+sponsor_2,Sponsor 2,1,internal:/sponsors/devenir-sponsor,,sponsor_level_1,default_sponsor_logo_2
+sponsor_3,Sponsor 3,1,internal:/sponsors/devenir-sponsor,,sponsor_level_2,default_sponsor_logo_3
+sponsor_4,Sponsor 4,1,internal:/sponsors/devenir-sponsor,,sponsor_level_2,default_sponsor_logo_1
+sponsor_5,Sponsor 5,1,internal:/sponsors/devenir-sponsor,,sponsor_level_2,default_sponsor_logo_2
+sponsor_6,Sponsor 6,1,internal:/sponsors/devenir-sponsor,,sponsor_level_2,default_sponsor_logo_3
+sponsor_7,Sponsor 7,1,internal:/sponsors/devenir-sponsor,,sponsor_level_3;sponsor_level_5,default_sponsor_logo_1
+sponsor_8,Sponsor 8,1,internal:/sponsors/devenir-sponsor,,sponsor_level_3;sponsor_level_5,default_sponsor_logo_2
+sponsor_9,Sponsor 9,1,internal:/sponsors/devenir-sponsor,,sponsor_level_3,default_sponsor_logo_3
+sponsor_10,Sponsor 10,1,internal:/sponsors/devenir-sponsor,,sponsor_level_3,default_sponsor_logo_1
+sponsor_11,Sponsor 11,1,internal:/sponsors/devenir-sponsor,,sponsor_level_4,default_sponsor_logo_2
+sponsor_12,Sponsor 12,1,internal:/sponsors/devenir-sponsor,,sponsor_level_4,default_sponsor_logo_3
+sponsor_13,Sponsor 13,1,internal:/sponsors/devenir-sponsor,,sponsor_level_4,default_sponsor_logo_1
+sponsor_14,Sponsor 14,1,internal:/sponsors/devenir-sponsor,,sponsor_level_5,default_sponsor_logo_2
+sponsor_15,Sponsor 15,1,internal:/sponsors/devenir-sponsor,,sponsor_level_5,default_sponsor_logo_3
+sponsor_16,Sponsor 16,1,internal:/sponsors/devenir-sponsor,,sponsor_level_5,default_sponsor_logo_1
+sponsor_17,Sponsor 17,1,internal:/sponsors/devenir-sponsor,,sponsor_level_5,default_sponsor_logo_2

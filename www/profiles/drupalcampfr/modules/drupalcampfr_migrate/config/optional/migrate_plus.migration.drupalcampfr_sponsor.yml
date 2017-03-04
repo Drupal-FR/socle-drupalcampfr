@@ -31,6 +31,8 @@ source:
       link_title: 'Link title'
     -
       level: Level
+    -
+      logo : Logo
 process:
   type:
     plugin: default_value
@@ -52,6 +54,14 @@ process:
       migration: drupalcampfr_sponsor_level
   field_sponsor_link/uri: link_uri
   field_sponsor_link/title: link_title
+  field_sponsor_logo:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: logo
+    -
+      plugin: migration
+      migration: drupalcampfr_file
   uid:
     plugin: default_value
     default_value: 1
