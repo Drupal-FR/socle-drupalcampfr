@@ -85,7 +85,7 @@ class MigrateEntityqueueSubscriber implements EventSubscriberInterface {
     $entity_subqueues_positions = $drupalcampfr_migrate_entityqueues->getAll();
 
     foreach ($entity_subqueues_positions as $entity_queue_id => $entity_subqueue_positions) {
-      /** @var EntitySubqueue $entity_subqueue */
+      /** @var \Drupal\entityqueue\Entity\EntitySubqueue $entity_subqueue */
       $entity_subqueue = EntitySubqueue::load($entity_queue_id);
 
       // Reset the item in the entityqueue.
