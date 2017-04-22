@@ -9,13 +9,13 @@
  * Implements hook_theme().
  */
 function drupalcampfr_social_theme($existing, $type, $theme, $path) {
-  return array(
-    'drupalcampfr_social_twitter_statuses' => array(
-      'variables' => array(
-        'statuses' => array(),
-      ),
-    ),
-  );
+  return [
+    'drupalcampfr_social_twitter_statuses' => [
+      'variables' => [
+        'statuses' => [],
+      ],
+    ],
+  ];
 }
 
 /**

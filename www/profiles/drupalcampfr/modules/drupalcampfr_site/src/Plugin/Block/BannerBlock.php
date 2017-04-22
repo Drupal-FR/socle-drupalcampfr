@@ -18,9 +18,9 @@ class BannerBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    $build = array(
+    $build = [
       '#theme' => 'drupalcampfr_site_banner_block',
-    );
+    ];
 
     return $build;
   }

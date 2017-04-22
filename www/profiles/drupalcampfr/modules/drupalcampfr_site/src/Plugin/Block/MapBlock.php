@@ -20,60 +20,60 @@ class MapBlock extends BlockBase {
    */
   public function blockForm($form, FormStateInterface $form_state) {
     // TODO: Add validation on latitudes and longitudes.
-    $form['latitude'] = array(
+    $form['latitude'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Latitude'),
       '#default_value' => $this->configuration['latitude'],
       '#required' => TRUE,
-    );
-    $form['longitude'] = array(
+    ];
+    $form['longitude'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Longitude'),
       '#default_value' => $this->configuration['longitude'],
       '#required' => TRUE,
-    );
-    $form['zoom_level'] = array(
+    ];
+    $form['zoom_level'] = [
       '#type' => 'number',
       '#title' => $this->t('Zoom level'),
       '#default_value' => $this->configuration['zoom_level'],
       '#required' => TRUE,
-    );
-    $form['box_bottom_left_latitude'] = array(
+    ];
+    $form['box_bottom_left_latitude'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Box bottom left latitude'),
       '#default_value' => $this->configuration['box_bottom_left_latitude'],
       '#required' => TRUE,
-    );
-    $form['box_bottom_left_longitude'] = array(
+    ];
+    $form['box_bottom_left_longitude'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Box bottom left longitude'),
       '#default_value' => $this->configuration['box_bottom_left_longitude'],
       '#required' => TRUE,
-    );
-    $form['box_top_right_latitude'] = array(
+    ];
+    $form['box_top_right_latitude'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Box top right latitude'),
       '#default_value' => $this->configuration['box_top_right_latitude'],
       '#required' => TRUE,
-    );
-    $form['box_top_right_longitude'] = array(
+    ];
+    $form['box_top_right_longitude'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Box top right longitude'),
       '#default_value' => $this->configuration['box_top_right_longitude'],
       '#required' => TRUE,
-    );
-    $form['marker_latitude'] = array(
+    ];
+    $form['marker_latitude'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Marker latitude'),
       '#default_value' => $this->configuration['marker_latitude'],
       '#required' => TRUE,
-    );
-    $form['marker_longitude'] = array(
+    ];
+    $form['marker_longitude'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Marker longitude'),
       '#default_value' => $this->configuration['marker_longitude'],
       '#required' => TRUE,
-    );
+    ];
 
     return $form;
   }
@@ -97,7 +97,7 @@ class MapBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    $build = array(
+    $build = [
       '#theme' => 'drupalcampfr_site_map_block',
       '#latitude' => $this->configuration['latitude'],
       '#longitude' => $this->configuration['longitude'],
@@ -108,7 +108,7 @@ class MapBlock extends BlockBase {
       '#box_top_right_longitude' => $this->configuration['box_top_right_longitude'],
       '#marker_latitude' => $this->configuration['marker_latitude'],
       '#marker_longitude' => $this->configuration['marker_longitude'],
-    );
+    ];
 
     return $build;
   }
@@ -117,7 +117,7 @@ class MapBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function defaultConfiguration() {
-    return array(
+    return [
       'latitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_LATITUDE,
       'longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_LONGITUDE,
       'zoom_level' => DRUPALCAMPFR_SITE_DEFAULT_MAP_ZOOM_LEVEL,
@@ -127,7 +127,7 @@ class MapBlock extends BlockBase {
       'box_top_right_longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_TOP_RIGHT_LONGITUDE,
       'marker_latitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LATITUDE,
       'marker_longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LONGITUDE,
-    );
+    ];
   }
 
 }

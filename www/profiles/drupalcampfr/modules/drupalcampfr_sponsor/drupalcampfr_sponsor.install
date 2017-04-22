@@ -13,9 +13,9 @@ function drupalcampfr_sponsor_install() {
   /** @var \Drupal\Core\Path\AliasStorageInterface $alias_storage */
   $alias_storage = \Drupal::getContainer()->get('path.alias_storage');
 
-  $aliases = array(
+  $aliases = [
     '/contact/sponsor' => '/sponsors/devenir-sponsor',
-  );
+  ];
 
   foreach ($aliases as $source => $alias) {
     if (!$alias_storage->aliasExists($alias, 'fr')) {

@@ -23,8 +23,8 @@ class MenuLink extends CSV {
     }
 
     // Prepare structure of options managed by menu_attributes.
-    $menu_attributes_options = array(
-      'attributes' => array(
+    $menu_attributes_options = [
+      'attributes' => [
         'title',
         'id',
         'name',
@@ -33,17 +33,17 @@ class MenuLink extends CSV {
         'style',
         'target',
         'accesskey',
-      ),
-      'item_attributes' => array(
+      ],
+      'item_attributes' => [
         'id',
         'class',
         'style',
-      ),
-    );
+      ],
+    ];
 
-    $menu_link_options = array();
+    $menu_link_options = [];
     foreach ($menu_attributes_options as $options_group_key => $options) {
-      $menu_link_options[$options_group_key] = array();
+      $menu_link_options[$options_group_key] = [];
       foreach ($options as $option) {
         $menu_link_options[$options_group_key][$option] = $row->getSourceProperty($options_group_key . '_' . $option);
       }

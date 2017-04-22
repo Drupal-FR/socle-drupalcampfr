@@ -23,9 +23,9 @@ class MenuAccount extends PreprocessBase {
     if (isset($variables['items']['drupalcampfr_user.account.compte'])) {
       $variables['items']['drupalcampfr_user.account.compte']['title'] = new FormattableMarkup(
         '<span class="glyphicon glyphicon-user" aria-hidden="true"></span> @original_title',
-        array(
+        [
           '@original_title' => $variables['items']['drupalcampfr_user.account.compte']['title'],
-        )
+        ]
       );
     }
 

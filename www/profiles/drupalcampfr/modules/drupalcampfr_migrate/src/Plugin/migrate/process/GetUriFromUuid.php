@@ -60,7 +60,7 @@ class GetUriFromUuid extends ProcessPluginBase implements ContainerFactoryPlugin
     }
 
     /** @var \Drupal\Core\Entity\EntityInterface[] $entities */
-    $entities = $this->entityTypeManager->getStorage($value_part[1])->loadByProperties(array('uuid' => $value_part[2]));
+    $entities = $this->entityTypeManager->getStorage($value_part[1])->loadByProperties(['uuid' => $value_part[2]]);
 
     if (!empty($entities)) {
       $entity = array_shift($entities);

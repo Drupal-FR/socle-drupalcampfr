@@ -21,12 +21,12 @@ class FieldFieldNewsLink extends PreprocessBase {
     // Add classes to link.
     if (isset($variables['items']) && is_array($variables['items'])) {
       foreach ($variables['items'] as $key => $item) {
-        $variables['items'][$key]['content']['#options']['attributes'] = array(
-          'class' => array(
+        $variables['items'][$key]['content']['#options']['attributes'] = [
+          'class' => [
             'btn',
             'btn-primary',
-          ),
-        );
+          ],
+        ];
       }
     }
 

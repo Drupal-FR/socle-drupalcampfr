@@ -11,10 +11,10 @@
  * Disable default links provided by the user module.
  */
 function drupalcampfr_user_menu_links_discovered_alter(&$links) {
-  $user_links = array(
+  $user_links = [
     'user.logout',
     'user.page',
-  );
+  ];
 
   foreach ($user_links as $user_link) {
     if (isset($links[$user_link])) {

@@ -27,21 +27,21 @@ class FieldNodeSession extends PreprocessBase {
     }
 
     // Add icons on labels.
-    $iconised_fields = array(
+    $iconised_fields = [
       'field_session_speaker' => 'bullhorn',
       'field_session_level' => 'star',
       'field_session_track' => 'tag',
       'field_session_length' => 'time',
       'field_session_date_start' => 'calendar',
       'field_session_room' => 'map-marker',
-    );
+    ];
 
     if (array_key_exists($field_name, $iconised_fields)) {
       $label = $variables->offsetGet('label');
-      $iconised_label = new FormattableMarkup('<i class="glyphicon glyphicon-:glyphicon" aria-hidden="true"></i> @label', array(
+      $iconised_label = new FormattableMarkup('<i class="glyphicon glyphicon-:glyphicon" aria-hidden="true"></i> @label', [
         '@label' => $label,
         ':glyphicon' => $iconised_fields[$field_name],
-      ));
+      ]);
 
       $variables->offsetSet('label', $iconised_label);
     }

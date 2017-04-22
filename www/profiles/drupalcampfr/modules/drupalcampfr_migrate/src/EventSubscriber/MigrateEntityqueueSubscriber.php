@@ -44,7 +44,7 @@ class MigrateEntityqueueSubscriber implements EventSubscriberInterface {
     $entity_subqueue = $row->getSourceProperty('entityqueue');
     if (!empty($entity_subqueue)) {
       $drupalcampfr_migrate_entityqueues = \Drupal::keyValue('drupalcampfr_migrate.entityqueues');
-      $entity_subqueue_positions = $drupalcampfr_migrate_entityqueues->get($entity_subqueue, array());
+      $entity_subqueue_positions = $drupalcampfr_migrate_entityqueues->get($entity_subqueue, []);
       $entity_subqueue_position = $row->getSourceProperty('entityqueue_position');
 
       // We need to insert element at a specific position.
@@ -89,12 +89,12 @@ class MigrateEntityqueueSubscriber implements EventSubscriberInterface {
       $entity_subqueue = EntitySubqueue::load($entity_queue_id);
 
       // Reset the item in the entityqueue.
-      $entity_subqueue_items = array();
+      $entity_subqueue_items = [];
       // Add the item to the queue.
       foreach ($entity_subqueue_positions as $position => $entity_id) {
-        $entity_subqueue_items[$position] = array(
+        $entity_subqueue_items[$position] = [
           'target_id' => $entity_id,
-        );
+        ];
       }
 
       $entity_subqueue->set('items', $entity_subqueue_items);

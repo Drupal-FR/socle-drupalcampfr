@@ -19,12 +19,12 @@ define('DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LONGITUDE', '2.361931800842285');
  * Implements hook_theme().
  */
 function drupalcampfr_site_theme($existing, $type, $theme, $path) {
-  return array(
-    'drupalcampfr_site_banner_block' => array(
-      'variables' => array(),
-    ),
-    'drupalcampfr_site_map_block' => array(
-      'variables' => array(
+  return [
+    'drupalcampfr_site_banner_block' => [
+      'variables' => [],
+    ],
+    'drupalcampfr_site_map_block' => [
+      'variables' => [
         'latitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_LATITUDE,
         'longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_LONGITUDE,
         'zoom_level' => DRUPALCAMPFR_SITE_DEFAULT_MAP_ZOOM_LEVEL,
@@ -34,7 +34,7 @@ function drupalcampfr_site_theme($existing, $type, $theme, $path) {
         'box_top_right_longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_BOX_TOP_RIGHT_LONGITUDE,
         'marker_latitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LATITUDE,
         'marker_longitude' => DRUPALCAMPFR_SITE_DEFAULT_MAP_MARKER_LONGITUDE,
-      ),
-    ),
-  );
+      ],
+    ],
+  ];
 }
