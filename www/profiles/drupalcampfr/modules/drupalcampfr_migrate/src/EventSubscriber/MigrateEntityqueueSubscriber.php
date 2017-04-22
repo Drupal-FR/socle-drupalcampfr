@@ -2,6 +2,7 @@
 
 namespace Drupal\drupalcampfr_migrate\EventSubscriber;
 
+use Drupal\Core\KeyValueStore\KeyValueFactoryInterface;
 use Drupal\entityqueue\Entity\EntitySubqueue;
 use Drupal\migrate\Event\MigrateEvents;
 use Drupal\migrate\Event\MigrateImportEvent;
@@ -14,6 +15,23 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  * @package Drupal\drupalcampfr_migrate
  */
 class MigrateEntityqueueSubscriber implements EventSubscriberInterface {
+
+  /**
+   * Key value factory service.
+   *
+   * @var \Drupal\Core\KeyValueStore\KeyValueFactoryInterface
+   */
+  protected $keyValueFactory;
+
+  /**
+   * Constructor.
+   *
+   * @param \Drupal\Core\KeyValueStore\KeyValueFactoryInterface $key_value_factory
+   *   Key value factory service.
+   */
+  public function __construct(KeyValueFactoryInterface $key_value_factory) {
+    $this->keyValueFactory = $key_value_factory;
+  }
 
   /**
    * {@inheritdoc}
@@ -43,7 +61,7 @@ class MigrateEntityqueueSubscriber implements EventSubscriberInterface {
 
     $entity_subqueue = $row->getSourceProperty('entityqueue');
     if (!empty($entity_subqueue)) {
-      $drupalcampfr_migrate_entityqueues = \Drupal::keyValue('drupalcampfr_migrate.entityqueues');
+      $drupalcampfr_migrate_entityqueues = $this->keyValueFactory->get('drupalcampfr_migrate.entityqueues');
       $entity_subqueue_positions = $drupalcampfr_migrate_entityqueues->get($entity_subqueue, []);
       $entity_subqueue_position = $row->getSourceProperty('entityqueue_position');
 
@@ -81,7 +99,7 @@ class MigrateEntityqueueSubscriber implements EventSubscriberInterface {
    *   The event.
    */
   public function setItemInEntityqueue(MigrateImportEvent $event) {
-    $drupalcampfr_migrate_entityqueues = \Drupal::keyValue('drupalcampfr_migrate.entityqueues');
+    $drupalcampfr_migrate_entityqueues = $this->keyValueFactory->get('drupalcampfr_migrate.entityqueues');
     $entity_subqueues_positions = $drupalcampfr_migrate_entityqueues->getAll();
 
     foreach ($entity_subqueues_positions as $entity_queue_id => $entity_subqueue_positions) {

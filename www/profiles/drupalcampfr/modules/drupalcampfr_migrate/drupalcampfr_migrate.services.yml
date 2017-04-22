@@ -1,6 +1,8 @@
 services:
   drupalcampfr_migrate.entityqueue:
     class: Drupal\drupalcampfr_migrate\EventSubscriber\MigrateEntityqueueSubscriber
+    arguments:
+      - @keyvalue
     tags:
       - { name: event_subscriber }
 
