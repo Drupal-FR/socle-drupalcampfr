@@ -32,10 +32,9 @@
         "name": "d3/d3",
         "version": "v3.5.17",
         "type": "drupal-library",
-        "source": {
-          "url": "https://github.com/d3/d3",
-          "type": "git",
-          "reference": "v3.5.17"
+        "dist": {
+          "url": "https://github.com/d3/d3/archive/v3.5.17.zip",
+          "type": "zip"
         }
       }
     },
@@ -45,10 +44,9 @@
         "name": "components/highlightjs",
         "version": "9.10.0",
         "type": "drupal-library",
-        "source": {
-          "url": "https://github.com/components/highlightjs",
-          "type": "git",
-          "reference": "9.10.0"
+        "dist": {
+          "url": "https://github.com/components/highlightjs/archive/9.10.0.zip",
+          "type": "zip"
         }
       }
     }
