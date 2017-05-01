@@ -3,7 +3,7 @@
 namespace Drupal\drupalcampfr_theme\Plugin\Alter;
 
 use Drupal\bootstrap\Utility\Variables;
-use Drupal\bootstrap\Plugin\Alter\ThemeSuggestions as BoostrapThemSuggestions;
+use Drupal\bootstrap\Plugin\Alter\ThemeSuggestions as BoostrapThemeSuggestions;
 
 /**
  * Implements hook_theme_suggestions_alter().
@@ -12,7 +12,7 @@ use Drupal\bootstrap\Plugin\Alter\ThemeSuggestions as BoostrapThemSuggestions;
  *
  * @BootstrapAlter("theme_suggestions")
  */
-class ThemeSuggestions extends BoostrapThemSuggestions {
+class ThemeSuggestions extends BoostrapThemeSuggestions {
 
   /**
    * {@inheritdoc}
