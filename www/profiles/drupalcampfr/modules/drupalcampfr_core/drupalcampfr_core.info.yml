@@ -26,7 +26,6 @@ dependencies:
   - options
   - profile
   - purge
-  - responsive_image
   - system
   - swiftmailer
   - taxonomy

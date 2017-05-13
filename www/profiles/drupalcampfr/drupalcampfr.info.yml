@@ -31,7 +31,6 @@ dependencies:
   - path
   - quickedit
   - rdf
-  - responsive_image
   - syslog
   - system
   - taxonomy

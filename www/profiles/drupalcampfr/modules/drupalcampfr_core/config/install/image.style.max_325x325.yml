@@ -1,9 +1,6 @@
 langcode: fr
 status: true
-dependencies:
-  enforced:
-    module:
-      - responsive_image
+dependencies: {  }
 name: max_325x325
 label: 'Max 325x325'
 effects:

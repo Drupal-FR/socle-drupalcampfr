@@ -22,7 +22,6 @@ assignments:
         entity_form_mode: entity_form_mode
         image_style: image_style
         menu: menu
-        responsive_image_style: responsive_image_style
         entity_view_mode: entity_view_mode
     enabled: true
     weight: 5
@@ -57,7 +56,6 @@ assignments:
         image_style: image_style
         migration: migration
         rdf_mapping: rdf_mapping
-        responsive_image_style: responsive_image_style
         tour: tour
         view: view
     enabled: true
