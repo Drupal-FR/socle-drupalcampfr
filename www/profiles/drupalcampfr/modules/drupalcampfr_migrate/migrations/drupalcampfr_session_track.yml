@@ -1,5 +1,8 @@
-langcode: fr
-status: true
+id: drupalcampfr_session_track
+label: 'Session track import'
+migration_group: drupalcampfr
+migration_tags:
+  - drupalcampfr
 dependencies:
   enforced:
     module:
@@ -8,13 +11,10 @@ dependencies:
     - migrate_plus
     - migrate_source_csv
     - taxonomy
-id: drupalcampfr_session_length
-migration_tags:
-  - drupalcampfr
-label: 'Session length import'
+migration_dependencies: {  }
 source:
   plugin: csv
-  path: profiles/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/session_length.csv
+  path: profiles/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/session_track.csv
   header_row_count: 1
   keys:
     - uuid
@@ -25,15 +25,12 @@ source:
       name: Name
     -
       weight: Weight
+destination:
+  plugin: 'entity:taxonomy_term'
 process:
   vid:
     plugin: default_value
-    default_value: session_lengths
+    default_value: session_tracks
   uuid: uuid
   name: name
   weight: weight
-destination:
-  plugin: 'entity:taxonomy_term'
-template: null
-migration_dependencies: {  }
-migration_group: drupalcampfr

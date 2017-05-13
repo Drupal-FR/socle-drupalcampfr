@@ -1,5 +1,8 @@
-langcode: fr
-status: true
+id: drupalcampfr_session
+label: 'Session import'
+migration_group: drupalcampfr
+migration_tags:
+  - drupalcampfr
 dependencies:
   enforced:
     module:
@@ -8,10 +11,13 @@ dependencies:
     - migrate_plus
     - migrate_source_csv
     - node
-id: drupalcampfr_session
-migration_tags:
-  - drupalcampfr
-label: 'Session import'
+migration_dependencies:
+  required:
+    - drupalcampfr_session_level
+    - drupalcampfr_session_track
+    - drupalcampfr_session_length
+    - drupalcampfr_session_room
+    - drupalcampfr_user
 source:
   plugin: csv
   path: profiles/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/session.csv
@@ -43,6 +49,8 @@ source:
       body_value: Body
     -
       body_format: 'Body format'
+destination:
+  plugin: 'entity:node'
 process:
   type:
     plugin: default_value
@@ -100,10 +108,3 @@ process:
   uid:
     plugin: default_value
     default_value: 1
-destination:
-  plugin: 'entity:node'
-  type: session
-  bundle: session
-template: null
-migration_dependencies: {  }
-migration_group: drupalcampfr

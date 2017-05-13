@@ -1,5 +1,8 @@
-langcode: fr
-status: true
+id: drupalcampfr_sponsor
+label: 'Sponsor import'
+migration_group: drupalcampfr
+migration_tags:
+  - drupalcampfr
 dependencies:
   enforced:
     module:
@@ -8,10 +11,10 @@ dependencies:
     - migrate_plus
     - migrate_source_csv
     - node
-id: drupalcampfr_sponsor
-migration_tags:
-  - drupalcampfr
-label: 'Sponsor import'
+migration_dependencies:
+  required:
+    - drupalcampfr_file
+    - drupalcampfr_sponsor_level
 source:
   plugin: csv
   path: profiles/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/sponsor.csv
@@ -33,6 +36,8 @@ source:
       level: Level
     -
       logo : Logo
+destination:
+  plugin: 'entity:node'
 process:
   type:
     plugin: default_value
@@ -65,10 +70,3 @@ process:
   uid:
     plugin: default_value
     default_value: 1
-destination:
-  plugin: 'entity:node'
-  type: sponsor
-  bundle: sponsor
-template: null
-migration_dependencies: {  }
-migration_group: drupalcampfr

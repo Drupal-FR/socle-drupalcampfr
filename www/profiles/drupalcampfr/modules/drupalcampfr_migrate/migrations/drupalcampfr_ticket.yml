@@ -1,5 +1,8 @@
-langcode: fr
-status: true
+id: drupalcampfr_ticket
+label: 'Ticket import'
+migration_group: drupalcampfr
+migration_tags:
+  - drupalcampfr
 dependencies:
   enforced:
     module:
@@ -8,10 +11,10 @@ dependencies:
     - migrate_plus
     - migrate_source_csv
     - commerce_product
-id: drupalcampfr_ticket
-migration_tags:
-  - drupalcampfr
-label: 'Ticket import'
+migration_dependencies:
+  required:
+    - drupalcampfr_store
+    - drupalcampfr_ticket_variation
 source:
   plugin: csv
   path: profiles/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/ticket.csv
@@ -31,6 +34,8 @@ source:
       body_value: Body
     -
       body_format: 'Body format'
+destination:
+  plugin: 'entity:commerce_product'
 process:
   uuid: uuid
   uid:
@@ -61,10 +66,3 @@ process:
       method: row
   body/value: body_value
   body/format: body_format
-destination:
-  plugin: 'entity:commerce_product'
-template: null
-migration_dependencies:
-  required:
-    - drupalcampfr_ticket_variation
-migration_group: drupalcampfr

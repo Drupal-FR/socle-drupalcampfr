@@ -1,5 +1,8 @@
-langcode: fr
-status: true
+id: drupalcampfr_user
+label: 'User import'
+migration_group: drupalcampfr
+migration_tags:
+  - drupalcampfr
 dependencies:
   enforced:
     module:
@@ -8,10 +11,7 @@ dependencies:
     - migrate_plus
     - migrate_source_csv
     - user
-id: drupalcampfr_user
-migration_tags:
-  - drupalcampfr
-label: 'User import'
+migration_dependencies: {  }
 source:
   plugin: csv
   path: profiles/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/user.csv
@@ -37,6 +37,8 @@ source:
       shirt_size: 'Shirt size'
     -
       meal_indication: 'Meal indication'
+destination:
+  plugin: 'entity:user'
 process:
   uuid: uuid
   mail: mail
@@ -59,8 +61,3 @@ process:
   field_user_society: society
   field_user_shirt_size: shirt_size
   field_user_meal_indication: meal_indication
-destination:
-  plugin: 'entity:user'
-template: null
-migration_dependencies: {  }
-migration_group: drupalcampfr

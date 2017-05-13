@@ -1,5 +1,8 @@
-langcode: fr
-status: true
+id: drupalcampfr_page
+label: 'Page import'
+migration_group: drupalcampfr
+migration_tags:
+  - drupalcampfr
 dependencies:
   enforced:
     module:
@@ -8,10 +11,7 @@ dependencies:
     - migrate_plus
     - migrate_source_csv
     - node
-id: drupalcampfr_page
-migration_tags:
-  - drupalcampfr
-label: 'Page import'
+migration_dependencies: {  }
 source:
   plugin: csv
   path: profiles/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/page.csv
@@ -31,6 +31,8 @@ source:
       body_value: Body
     -
       body_format: 'Body format'
+destination:
+  plugin: 'entity:node'
 process:
   type:
     plugin: default_value
@@ -48,10 +50,3 @@ process:
   uid:
     plugin: default_value
     default_value: 1
-destination:
-  plugin: 'entity:node'
-  type: page
-  bundle: page
-template: null
-migration_dependencies: {  }
-migration_group: drupalcampfr

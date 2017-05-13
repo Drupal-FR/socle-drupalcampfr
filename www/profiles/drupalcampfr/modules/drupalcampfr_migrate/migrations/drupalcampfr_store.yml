@@ -1,5 +1,8 @@
-langcode: fr
-status: true
+id: drupalcampfr_store
+label: 'Store import'
+migration_group: drupalcampfr
+migration_tags:
+  - drupalcampfr
 dependencies:
   enforced:
     module:
@@ -8,10 +11,7 @@ dependencies:
     - migrate_plus
     - migrate_source_csv
     - commerce_store
-id: drupalcampfr_store
-migration_tags:
-  - drupalcampfr
-label: 'Store import'
+migration_dependencies: {  }
 source:
   plugin: csv
   path: profiles/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/store.csv
@@ -57,6 +57,8 @@ source:
       address__family_name: 'Address family name'
     -
       billing_countries: 'Billing countries'
+destination:
+  plugin: 'entity:commerce_store'
 process:
   type:
     plugin: default_value
@@ -83,10 +85,3 @@ process:
   'address/additional_name': address__additional_name
   'address/family_name': address__family_name
   billing_countries: billing_countries
-destination:
-  plugin: 'entity:commerce_store'
-  type: online
-  bundle: online
-template: null
-migration_dependencies: {  }
-migration_group: drupalcampfr

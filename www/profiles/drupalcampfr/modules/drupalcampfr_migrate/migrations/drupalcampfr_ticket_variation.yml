@@ -1,5 +1,8 @@
-langcode: fr
-status: true
+id: drupalcampfr_ticket_variation
+label: 'Ticket variation import'
+migration_group: drupalcampfr
+migration_tags:
+  - drupalcampfr
 dependencies:
   enforced:
     module:
@@ -8,10 +11,7 @@ dependencies:
     - migrate_plus
     - migrate_source_csv
     - commerce_product
-id: drupalcampfr_ticket_variation
-migration_tags:
-  - drupalcampfr
-label: 'Ticket variation import'
+migration_dependencies: {  }
 source:
   plugin: csv
   path: profiles/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/ticket_variation.csv
@@ -25,6 +25,8 @@ source:
       price: Price
     -
       date: 'Date (yyyy-MM-dd)'
+destination:
+  plugin: 'entity:commerce_product_variation'
 process:
   sku: sku
   uid:
@@ -45,8 +47,3 @@ process:
       plugin: explode
       source: date
       delimiter: ;
-destination:
-  plugin: 'entity:commerce_product_variation'
-template: null
-migration_dependencies: {  }
-migration_group: drupalcampfr
