@@ -120,8 +120,8 @@
       {# Content #}
       {%
       set content_classes = [
-      page.sidebar_first and page.sidebar_second ? 'col-sm-6 col-md-push-3',
-      page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9 col-md-push-3',
+      page.sidebar_first and page.sidebar_second ? 'col-sm-6 col-sm-push-3',
+      page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9 col-sm-push-3',
       page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
       page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12',
       ]
@@ -169,8 +169,8 @@
         {%
         set sidebar_first_classes = [
         'col-sm-3',
-        page.content and page.sidebar_second ? 'col-md-pull-6',
-        page.content and page.sidebar_second is empty ? 'col-md-pull-9',
+        page.content and page.sidebar_second ? 'col-sm-pull-6',
+        page.content and page.sidebar_second is empty ? 'col-sm-pull-9',
         page.sidebar_second and page.content is empty ? '',
         page.content is empty and page.sidebar_second is empty ? '',
         ]
