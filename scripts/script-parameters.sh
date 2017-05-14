@@ -15,8 +15,8 @@ DRUSH=$PROJECT_PATH/vendor/bin/drush
 
 CURRENT_DATE=$(date "+%Y-%m-%d-%Hh%Mm%Ss")
 
-PROFILE=drupalcampfr
-DEFAULT_LANGUAGE=fr
+PROFILE="drupalcampfr"
+DEFAULT_LANGUAGE="fr"
 DEVELOPMENT_MODULES=(
   config_inspector
   dblog
