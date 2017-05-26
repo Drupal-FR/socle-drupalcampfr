@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f13a4aff4f8ef9420c25aeaa7cb0542",
+    "content-hash": "508cebe01ad308ec33ac617b1bd88dc8",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1011,6 +1011,50 @@
             "time": "2014-09-09T13:34:57+00:00"
         },
         {
+            "name": "drupal-composer/drupal-l10n",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlorentTorregrosa/drupal-l10n.git",
+                "reference": "1cb1be9ed287e49f7f9a56354c66545b12aca968"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlorentTorregrosa/drupal-l10n/zipball/1cb1be9ed287e49f7f9a56354c66545b12aca968",
+                "reference": "1cb1be9ed287e49f7f9a56354c66545b12aca968",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0.0",
+                "php": ">=5.4.5"
+            },
+            "require-dev": {
+                "composer/composer": "dev-master",
+                "phpunit/phpunit": "^4.4.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "DrupalComposer\\DrupalL10n\\Plugin",
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DrupalComposer\\DrupalL10n\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Composer Plugin for downloading Drupal translation files",
+            "support": {
+                "source": "https://github.com/FlorentTorregrosa/drupal-l10n/tree/master",
+                "issues": "https://github.com/FlorentTorregrosa/drupal-l10n/issues"
+            },
+            "time": "2017-05-25 16:59:39"
+        },
+        {
             "name": "drupal-composer/drupal-scaffold",
             "version": "2.3.0",
             "source": {
@@ -1217,7 +1261,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.5.zip",
-                "reference": null,
+                "reference": "8.x-3.5",
                 "shasum": "569f8a243ad6a2e04a86123a0b2a594783a09860"
             },
             "require": {
@@ -1271,7 +1315,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.0-beta7.zip",
-                "reference": null,
+                "reference": "8.x-2.0-beta7",
                 "shasum": "0fef31aac8156d5f279d345e34b2a8377f9533a9"
             },
             "require": {
@@ -1682,7 +1726,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0.zip",
-                "reference": null,
+                "reference": "8.x-3.0",
                 "shasum": "302e869ecd1e59fe55663673999fee2ccac5daa8"
             },
             "require": {
@@ -2136,7 +2180,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/honeypot-8.x-1.25.zip",
-                "reference": null,
+                "reference": "8.x-1.25",
                 "shasum": "9dfe6677c5b4a19e87fae143755949b79168b9d1"
             },
             "require": {
@@ -2359,7 +2403,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-4.0-beta1.zip",
-                "reference": null,
+                "reference": "8.x-4.0-beta1",
                 "shasum": "e64bac006e3ef9ae697b0f2c4b3744af0524e208"
             },
             "require": {
@@ -2470,7 +2514,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-4.0-beta1.zip",
-                "reference": null,
+                "reference": "8.x-4.0-beta1",
                 "shasum": "81ef335ea37053c26d4bcb4f5339fd77051e59e0"
             },
             "require": {
@@ -2514,7 +2558,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "4c82a5689a18421c8c73fcc8be7b333bb21ae02a"
             },
             "require": {
@@ -2571,7 +2615,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.0-alpha7.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha7",
                 "shasum": "8fe1cea29dd88215d0cf886b3bca9eccb025f531"
             },
             "require": {
@@ -2952,7 +2996,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "d24c7f1ffddbd0fc56bc92bacae1c4ff769a4442"
             },
             "require": {
@@ -3015,7 +3059,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/varnish_purge-8.x-1.5.zip",
-                "reference": null,
+                "reference": "8.x-1.5",
                 "shasum": "a5fba946f355e648883dc2729fd895017f638ed7"
             },
             "require": {
@@ -9264,6 +9308,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal-composer/drupal-l10n": 20,
         "behat/mink": 20
     },
     "prefer-stable": true,
