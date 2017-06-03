@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - drupalcampfr_theme
-id: drupalcampfr_theme_messages
-theme: drupalcampfr_theme
+    - bzh_theme
+id: bzh_theme_messages
+theme: bzh_theme
 region: header
 weight: -7
 provider: null

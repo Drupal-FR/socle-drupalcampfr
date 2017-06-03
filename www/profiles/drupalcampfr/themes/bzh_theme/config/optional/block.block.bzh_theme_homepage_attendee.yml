@@ -8,9 +8,9 @@ dependencies:
     - block_visibility_groups
     - views
   theme:
-    - drupalcampfr_theme
-id: drupalcampfr_theme_homepage_attendee
-theme: drupalcampfr_theme
+    - bzh_theme
+id: bzh_theme_homepage_attendee
+theme: bzh_theme
 region: content
 weight: -2
 provider: null

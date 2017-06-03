@@ -5,9 +5,9 @@ dependencies:
     - block_visibility_groups
     - drupalcampfr_site
   theme:
-    - drupalcampfr_theme
-id: drupalcampfr_theme_banner
-theme: drupalcampfr_theme
+    - bzh_theme
+id: bzh_theme_banner
+theme: bzh_theme
 region: header
 weight: -9
 provider: null

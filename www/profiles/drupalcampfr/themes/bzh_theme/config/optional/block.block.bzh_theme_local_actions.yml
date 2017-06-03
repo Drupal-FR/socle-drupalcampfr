@@ -2,9 +2,9 @@ langcode: fr
 status: true
 dependencies:
   theme:
-    - drupalcampfr_theme
-id: drupalcampfr_theme_local_actions
-theme: drupalcampfr_theme
+    - bzh_theme
+id: bzh_theme_local_actions
+theme: bzh_theme
 region: content
 weight: -8
 provider: null
