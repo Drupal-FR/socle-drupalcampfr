@@ -1,0 +1,19 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalcampfr_theme
+id: drupalcampfr_theme_breadcrumbs
+theme: drupalcampfr_theme
+region: content
+weight: -11
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

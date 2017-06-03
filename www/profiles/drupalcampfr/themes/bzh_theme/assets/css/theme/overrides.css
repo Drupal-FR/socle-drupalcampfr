@@ -1,0 +1,106 @@
+/**front**/
+.path-frontpage .container{
+	width:100%;
+	overflow:hidden;
+}
+.path-frontpage h1{
+	visibility:hidden;
+}
+.path-frontpage .main-container,
+.path-frontpage .main-container .row,
+.path-frontpage .main-container .row .col-sm-12{
+	margin:0 auto;
+	padding:0;
+	float:none;
+}
+.path-frontpage .col-sm-12{
+	padding:0;
+}
+/**NL**/
+#block-bzh-theme-newsletter-subscription{
+	margin: 0 auto 50px auto;
+	width:80%;
+}
+#block-bzh-theme-newsletter-subscription h3{
+	font-size:14px;
+	text-align:center;
+}
+#block-bzh-theme-newsletter-subscription .btn-success{
+	background-color:#699cb6;
+	border-color:#699cb6;
+}
+#block-bzh-theme-newsletter-subscription p.info{
+	font-style:italic;
+	font-size:11px;
+	padding:50px 0 10px 0;
+}
+/**
+ * As the field is wrapped in a div, CSS overrides of the bootstrap theme has a
+ * p:last-child selector which set margin-bottom to 0.
+ */
+article.news.teaser .field--type-text-with-summary {
+  margin-bottom: 10px;
+}
+
+/**
+ * Avoid white space between page content and navbar.
+ */
+.main-container {
+  margin-top: -15px;
+}
+
+/**
+ * Banner block.
+ */
+.region-header .banner:not(:last-child) {
+  margin-bottom: 10px;
+}
+#block-bzh-theme-banner .texte{
+    position: absolute;
+    top: 30%;
+    margin: 0 auto;
+    width: 87%;
+}
+#block-bzh-theme-banner .background{
+	position:relative;
+}
+#block-bzh-theme-banner{
+	position:relative;
+}
+#block-bzh-theme-banner h2{
+	text-align: right;
+}
+/* TODO: Better place for that? */
+.sponsor-view .view-content .views-row {
+  margin-bottom: 5px;
+}
+
+/* TODO: Better place for that? */
+/**********
+ * Session.
+ **********/
+.session.full .row.well {
+  margin-left: 0;
+  margin-right: 0;
+}
+/**
+ * Session: speaker field.
+ */
+.field--name-field-session-speaker .field--item {
+  display: inline;
+}
+.field--name-field-session-speaker .field--item:not(:last-child)::after {
+  content: ",";
+}
+/**
+ * Session: day, start date and end date fields.
+ */
+.field--name-field-session-date-start,
+.field--name-field-session-date-start .field--item,
+.field--name-field-session-date-end {
+  display: inline;
+}
+
+.region-navigation-collapsible .navbar-nav.navbar-right {
+  margin-right: 0;
+}

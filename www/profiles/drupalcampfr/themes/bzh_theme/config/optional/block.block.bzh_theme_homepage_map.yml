@@ -1,0 +1,36 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.homepage
+  module:
+    - block_visibility_groups
+    - drupalcampfr_site
+  theme:
+    - drupalcampfr_theme
+id: drupalcampfr_theme_homepage_map
+theme: drupalcampfr_theme
+region: content
+weight: -5
+provider: null
+plugin: map_block
+settings:
+  id: map_block
+  label: 'Plan d''accès'
+  provider: drupalcampfr_site
+  label_display: visible
+  latitude: '48.86771'
+  longitude: '2.36193'
+  zoom_level: '18'
+  box_bottom_left_latitude: '48.86618277284446'
+  box_bottom_left_longitude: '2.358391284942627'
+  box_top_right_latitude: '48.869242167070894'
+  box_top_right_longitude: '2.3654723167419434'
+  marker_latitude: '48.867713375517354'
+  marker_longitude: '2.361931800842285'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: homepage
+    context_mapping: {  }

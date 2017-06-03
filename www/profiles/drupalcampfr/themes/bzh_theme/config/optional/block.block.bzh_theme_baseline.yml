@@ -1,0 +1,30 @@
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:block_baseline'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - drupalcampfr_theme
+id: drupalcampfr_theme_baseline
+theme: drupalcampfr_theme
+region: footer
+weight: -7
+provider: null
+plugin: 'block_content:block_baseline'
+settings:
+  id: 'block_content:block_baseline'
+  label: Baseline
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

@@ -1,0 +1,23 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.footer-menu-2
+  module:
+    - system
+  theme:
+    - drupalcampfr_theme
+id: drupalcampfr_theme_footer_menu_2
+theme: drupalcampfr_theme
+region: footer
+weight: -10
+provider: null
+plugin: 'system_menu_block:footer-menu-2'
+settings:
+  id: 'system_menu_block:footer-menu-2'
+  label: Communauté
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

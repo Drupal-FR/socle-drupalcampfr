@@ -1,0 +1,25 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - drupalcampfr_site
+  theme:
+    - drupalcampfr_theme
+id: drupalcampfr_theme_banner
+theme: drupalcampfr_theme
+region: header
+weight: -9
+provider: null
+plugin: banner_block
+settings:
+  id: banner_block
+  label: 'Banner block'
+  provider: drupalcampfr_site
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

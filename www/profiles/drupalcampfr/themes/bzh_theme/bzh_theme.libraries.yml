@@ -1,0 +1,5 @@
+global-styling:
+  css:
+    theme:
+      assets/css/theme/overrides.css: {}
+      assets/css/theme/device.css: {}
