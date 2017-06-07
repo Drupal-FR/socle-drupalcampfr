@@ -75,7 +75,17 @@
 ******* pages de contenu***********
 **********************************/
 .path-node h1{
-	margin:25px 0:;
+	margin:25px 0;
+}
+.path-node .field--name-body{
+	padding:20px;
+	margin-bottom:40px;
+}
+.path-node .field--name-body h2{
+	font-size:23px;
+}
+.path-node .field--name-body h3{
+	font-size:20px;
 }
 /*** sidebar sponsor**/
 #block-bzh-theme-sitewide-sponsor h2{
@@ -87,6 +97,28 @@
 	font-size:16px;
 	
 }
-#block-bzh-theme-sitewide-sponsor .view-content{
-
+/**********************************
+**** devenir sponsor*******
+**********************************/
+.path-contact h1{
+	margin:25px 0;
+}
+#block-bzh-theme-newsletter-subscription{
+	margin-bottom:40px;
+}
+/**********************************
+**** style spécifique / node*******
+**********************************/
+#sponsor-grid th,
+#sponsor-grid td{
+	padding:5px;
+}
+#sponsor-grid thead th{
+	background-color:#ddd;
+}
+#sponsor-grid tr th{
+	padding-left:10px;
+}
+#sponsor-grid td{
+	text-align:center;
 }
