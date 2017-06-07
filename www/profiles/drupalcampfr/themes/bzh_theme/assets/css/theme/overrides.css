@@ -1,4 +1,7 @@
-/**front**/
+/*************************
+*********HOMEPAGE*********
+**************************/
+
 .path-frontpage .container {
   width: 100%;
   overflow: hidden;
@@ -17,7 +20,7 @@
   padding: 0;
 }
 
-/**NL**/
+/**bloc NL**/
 #block-bzh-theme-newsletter-subscription {
   margin: 0 auto 50px auto;
   width: 80%;
@@ -67,4 +70,23 @@
     margin: 20px 60px 40px 60px;
     font-style: italic;
 }
+
+/**********************************
+******* pages de contenu***********
+**********************************/
+.path-node h1{
+	margin:25px 0:;
+}
+/*** sidebar sponsor**/
+#block-bzh-theme-sitewide-sponsor h2{
+	font-size:18px;
+}
+#block-bzh-theme-sitewide-sponsor h3{
+	text-align:right;
+	border-bottom:1px solid #ddd;
+	font-size:16px;
 	
+}
+#block-bzh-theme-sitewide-sponsor .view-content{
+
+}
