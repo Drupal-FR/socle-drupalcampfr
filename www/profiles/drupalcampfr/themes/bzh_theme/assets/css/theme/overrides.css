@@ -70,7 +70,12 @@
     margin: 20px 60px 40px 60px;
     font-style: italic;
 }
-
+/**
+* SPonsor sidebar
+**/
+.sponsor-view .view-content .views-row {
+	margin:35px 0;
+}
 /**********************************
 ******* pages de contenu***********
 **********************************/
