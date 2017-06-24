@@ -22,7 +22,8 @@ $DRUSH updb --entity-updates -y
 . $SCRIPTS_PATH/tasks/development_modules.sh
 
 # Revert features.
-$DRUSH features-import -y $PROFILE
+# TODO: Uncomment after the Drupalcamp will be past.
+#$DRUSH features-import -y $PROFILE
 
 # Import content.
 # For update.sh import only content if the environment is dev to not risk
