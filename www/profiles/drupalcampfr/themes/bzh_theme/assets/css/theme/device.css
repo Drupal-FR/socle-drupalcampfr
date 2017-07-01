@@ -1,20 +1,8 @@
-/***************
-**** Tablette  *
-****************/
-@media screen and (max-width: 1090px) {
-	#block-bzh-theme-banner{
-		margin-bottom: 60px;
-	}
-}
-	
 /*******************
 ***** MOBILE********
 *******************/
 @media screen and (max-width: 768px) {
-	#block-bzh-theme-banner{
-		margin-bottom: 80px;
-	}
-	#block-bzh-theme-banner .texte{
-		top:42%;
-	}
+  .path-frontpage h1 {
+    height: 0;
+  }
 }
