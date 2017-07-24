@@ -3,3 +3,6 @@ global-styling:
     theme:
       assets/css/theme/overrides.css: {}
       assets/css/theme/device.css: {}
+      assets/css/theme/style.css: {}
+  js:
+    assets/js/main.js: {}

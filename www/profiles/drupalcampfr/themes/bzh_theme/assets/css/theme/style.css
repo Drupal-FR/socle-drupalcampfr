@@ -1,0 +1,672 @@
+/*!
+ * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+body {
+  overflow-x  : hidden;
+  font-family : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size   : 16px;
+  line-height : 2;
+}
+
+.text-muted {
+  color : #777777;
+}
+
+.text-primary {
+  color : #61798b;
+}
+
+p {
+  font-size   : 16px;
+  line-height : 2;
+  padding     : 10px 0;
+}
+
+p.large {
+  font-size : 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline : none;
+}
+
+a {
+  color : #61798b;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color : #fec503;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family    : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform : uppercase;
+  font-weight    : 700;
+}
+
+h3,
+.h3 {
+  font-size     : 22px;
+  margin-bottom : 20px;
+}
+
+hr {
+  margin-top    : 40px;
+  margin-bottom : 40px;
+  border        : 0;
+  border-top    : 1px solid #eeeeee;
+}
+
+.img-centered {
+  margin : 0 auto;
+}
+
+.bg-light-gray {
+  background-color : #eeeeee;
+}
+
+.bg-darkest-gray {
+  background-color : #222222;
+}
+
+.btn-primary {
+  color            : white;
+  background-color : #61798b;
+  border-color     : #61798b;
+  font-family      : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform   : uppercase;
+  font-weight      : 700;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color            : white;
+  background-color : #fec503;
+  border-color     : #f6bf01;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image : none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color : #61798b;
+  border-color     : #61798b;
+}
+
+.btn-primary .badge {
+  color            : #61798b;
+  background-color : white;
+}
+
+.btn-xl {
+  color            : white;
+  background-color : #61798b;
+  border-color     : #61798b;
+  font-family      : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform   : uppercase;
+  font-weight      : 700;
+  border-radius    : 3px;
+  font-size        : 18px;
+  padding          : 20px 40px;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  color            : white;
+  background-color : #fec503;
+  border-color     : #f6bf01;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  background-image : none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+  background-color : #61798b;
+  border-color     : #61798b;
+}
+
+.btn-xl .badge {
+  color            : #61798b;
+  background-color : white;
+}
+
+.navbar-custom {
+  background-color : #222222;
+  border-color     : transparent;
+}
+
+.navbar-custom .navbar-brand {
+  color       : #61798b;
+  font-family : "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  padding-top : 0;
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color : #fec503;
+}
+
+.navbar-custom .navbar-collapse {
+  border-color : rgba(255, 255, 255, 0.02);
+}
+
+.navbar-custom .navbar-toggle {
+  background-color : #61798b;
+  border-color     : #61798b;
+  font-family      : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform   : uppercase;
+  color            : white;
+  font-size        : 12px;
+}
+
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color : #61798b;
+}
+
+.navbar-custom .nav li a {
+  font-family    : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform : uppercase;
+  font-weight    : 400;
+  letter-spacing : 1px;
+  color          : white;
+  padding-top    : 20px;
+  padding-bottom : 10px;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+  color   : #61798b;
+  outline : none;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+  border-radius    : 0;
+  color            : white;
+  background-color : #61798b;
+}
+
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color            : white;
+  background-color : #fec503;
+}
+
+@media (min-width : 768px) {
+  .navbar-custom {
+    background-color   : transparent;
+    padding            : 25px 0;
+    -webkit-transition : padding 0.3s;
+    -moz-transition    : padding 0.3s;
+    transition         : padding 0.3s;
+    border             : none;
+  }
+
+  .navbar-custom .navbar-brand {
+    font-size          : 2em;
+    -webkit-transition : all 0.3s;
+    -moz-transition    : all 0.3s;
+    transition         : all 0.3s;
+  }
+
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius : 3px;
+  }
+}
+
+@media (min-width : 768px) {
+  .navbar-custom.affix {
+    background-color : #222222;
+    padding          : 10px 0;
+  }
+
+  .navbar-custom.affix .navbar-brand {
+    font-size : 1.5em;
+  }
+}
+@media (max-width : 768px) {
+  .navbar-brand > img {
+    max-width   : 60vw;
+    padding-top : 15px;
+  }
+}
+
+header {
+  background              : no-repeat scroll center center;
+  -webkit-background-size : cover;
+  -moz-background-size    : cover;
+  background-size         : cover;
+  -o-background-size      : cover;
+  text-align              : center;
+  color                   : white;
+}
+
+header .intro-text {
+  padding-top    : 100px;
+  padding-bottom : 50px;
+  text-shadow    : 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+header .intro-text img {
+  max-width: 100vw;
+}
+
+header .intro-text .intro-lead-in {
+  font-family   : "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style    : italic;
+  font-size     : 22px;
+  line-height   : 22px;
+  margin-bottom : 25px;
+}
+
+header .intro-text .intro-heading {
+  font-family    : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform : uppercase;
+  font-weight    : 700;
+  font-size      : 50px;
+  line-height    : 50px;
+  margin-bottom  : 25px;
+}
+
+header.homepage {
+  background-image : url('../../images/visuels/LannionHouses_banner.jpg');
+  min-height       : 100vh;
+}
+
+header.partnership {
+  background-image : url('../../images/banner-homepage.jpg');
+  min-height       : 10vh;
+}
+
+header.brezhonneg {
+  background-image : url('../../images/visuels/SeaWave_banner.jpg');
+  min-height       : 10vh;
+}
+
+header.contact {
+  background-image : url('../../images/visuels/SeaWave_banner.jpg');
+  min-height       : 10vh;
+}
+
+@media (min-width : 768px) {
+  header .intro-text {
+    background-color : rgba(0, 0, 0, .5);
+    margin-top       : 300px;
+    margin-bottom    : 200px;
+    padding          : 10px 0;
+  }
+
+  header.partnership .intro-text,
+  header.brezhonneg .intro-text,
+  header.contact .intro-text {
+    background-color : rgba(0, 0, 0, .5);
+    margin-top       : 150px;
+    margin-bottom    : 100px;
+    padding          : 10px 0;
+  }
+
+  header .intro-text .intro-lead-in {
+    font-family   : "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style    : italic;
+    font-size     : 40px;
+    line-height   : 40px;
+    margin-bottom : 25px;
+  }
+
+  header .intro-text .intro-heading {
+    font-family    : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform : uppercase;
+    font-weight    : 700;
+    font-size      : 75px;
+    line-height    : 75px;
+    margin-bottom  : 50px;
+  }
+}
+
+section {
+  padding : 100px 0;
+}
+
+section h2.section-heading {
+  font-size     : 40px;
+  margin-top    : 0;
+  margin-bottom : 15px;
+}
+
+section h3.section-subheading {
+  font-size      : 16px;
+  font-family    : "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform : none;
+  font-style     : italic;
+  font-weight    : 400;
+  margin-bottom  : 75px;
+}
+
+@media (min-width : 768px) {
+  section {
+    padding : 100px 0;
+  }
+}
+
+.service-heading {
+  margin         : 15px 0;
+  text-transform : none;
+}
+
+section.newsletter {
+  background-color : #eeeeee;
+}
+
+section.partnership {
+}
+
+section.partnership table > thead th {
+  font-size        : 24px;
+  background-color : #e30a17;
+  color            : white;
+  text-shadow      : 1px 1px 1px rgba(0, 0, 0, .5);
+  border-bottom    : 0;
+}
+
+section.partnership table > tbody > tr.info > th {
+  color            : white;
+  font-size        : 20px;
+  text-shadow      : 1px 1px 1px rgba(0, 0, 0, .5);
+  background-color : #fec503;
+}
+
+section.partnership table > tbody > tr.prices > th {
+  color            : white;
+  font-size        : 20px;
+  text-shadow      : 1px 1px 1px rgba(0, 0, 0, .5);
+  background-color : #fec503;
+}
+
+section.partnership table > tbody > tr.prices > td {
+  color     : #e30a17;
+  font-size : 20px;
+}
+
+aside.partners {
+  margin-bottom : 40px;
+}
+
+aside.partners img {
+  margin : 50px auto;
+}
+
+section#contact {
+  background : #222222 no-repeat center;
+}
+
+section#contact .section-heading {
+  color : white;
+}
+
+section#contact .form-group {
+  margin-bottom : 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding : 20px;
+}
+
+section#contact .form-group input.form-control {
+  height : auto;
+}
+
+section#contact .form-group textarea.form-control {
+  height : 236px;
+}
+
+section#contact .form-control:focus {
+  border-color : #61798b;
+  box-shadow   : none;
+}
+
+section#contact ::-webkit-input-placeholder {
+  font-family    : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform : uppercase;
+  font-weight    : 700;
+  color          : #eeeeee;
+}
+
+section#contact :-moz-placeholder {
+  /* Firefox 18- */
+  font-family    : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform : uppercase;
+  font-weight    : 700;
+  color          : #eeeeee;
+}
+
+section#contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family    : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform : uppercase;
+  font-weight    : 700;
+  color          : #eeeeee;
+}
+
+section#contact :-ms-input-placeholder {
+  font-family    : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform : uppercase;
+  font-weight    : 700;
+  color          : #eeeeee;
+}
+
+section#contact .text-danger {
+  color : #e74c3c;
+}
+
+footer {
+  padding    : 25px 0;
+  text-align : center;
+}
+
+footer span.copyright {
+  line-height    : 40px;
+  font-family    : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform : none;
+}
+
+footer ul.quicklinks {
+  margin-bottom  : 0;
+  line-height    : 40px;
+  font-family    : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform : none;
+}
+
+ul.social-buttons {
+  margin-bottom : 0;
+}
+
+ul.social-buttons li a {
+  display            : block;
+  background-color   : #222222;
+  height             : 40px;
+  width              : 40px;
+  border-radius      : 100%;
+  font-size          : 20px;
+  line-height        : 40px;
+  color              : white;
+  outline            : none;
+  -webkit-transition : all 0.3s;
+  -moz-transition    : all 0.3s;
+  transition         : all 0.3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color : #61798b;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline : none;
+}
+
+/*
+.portfolio-modal .modal-dialog {
+  margin : 0;
+  height : 100%;
+  width  : auto;
+}
+
+.portfolio-modal .modal-content {
+  border-radius      : 0;
+  background-clip    : border-box;
+  -webkit-box-shadow : none;
+  box-shadow         : none;
+  border             : none;
+  min-height         : 100%;
+  padding            : 100px 0;
+  text-align         : center;
+}
+
+.portfolio-modal .modal-content h2 {
+  margin-bottom : 15px;
+  font-size     : 3em;
+}
+
+.portfolio-modal .modal-content p {
+  margin-bottom : 30px;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+  margin      : 20px 0 30px;
+  font-family : "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style  : italic;
+  font-size   : 16px;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+  margin-bottom : 30px;
+  margin-top    : 0;
+}
+
+.portfolio-modal .modal-content img {
+  margin-bottom : 30px;
+}
+
+.portfolio-modal .close-modal {
+  position         : absolute;
+  width            : 75px;
+  height           : 75px;
+  background-color : transparent;
+  top              : 25px;
+  right            : 25px;
+  cursor           : pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+  opacity : 0.3;
+}
+
+.portfolio-modal .close-modal .lr {
+  height            : 75px;
+  width             : 1px;
+  margin-left       : 35px;
+  background-color  : #222222;
+  transform         : rotate(45deg);
+  -ms-transform     : rotate(45deg);
+  /* IE 9 * /
+  -webkit-transform : rotate(45deg);
+  /* Safari and Chrome * /
+  z-index           : 1051;
+}
+
+.portfolio-modal .close-modal .lr .rl {
+  height            : 75px;
+  width             : 1px;
+  background-color  : #222222;
+  transform         : rotate(90deg);
+  -ms-transform     : rotate(90deg);
+  / * IE 9 * /
+  -webkit-transform : rotate(90deg);
+  /* Safari and Chrome * /
+  z-index           : 1052;
+}
+
+.portfolio-modal .modal-backdrop {
+  opacity : 0;
+  display : none;
+}
+*/
+
+::-moz-selection {
+  text-shadow : none;
+  background  : #61798b;
+}
+
+::selection {
+  text-shadow : none;
+  background  : #61798b;
+}
+
+img::selection {
+  background : transparent;
+}
+
+img::-moz-selection {
+  background : transparent;
+}
