@@ -102,7 +102,7 @@
     {# Header #}
     {% if page.header %}
         {% block header %}
-            <div class="col-sm-12" role="heading">
+            <div role="heading">
                 {{ page.header }}
             </div>
         {% endblock header %}
@@ -118,42 +118,40 @@
     page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12',
     ]
     %}
-    <section{{ content_attributes.addClass(content_classes) }}>
 
-        {# Highlighted #}
-        {% if page.highlighted %}
-            {% block highlighted %}
-                <div class="highlighted">{{ page.highlighted }}</div>
-            {% endblock highlighted %}
-        {% endif %}
+    {# Highlighted #}
+    {% if page.highlighted %}
+        {% block highlighted %}
+            <div class="highlighted">{{ page.highlighted }}</div>
+        {% endblock highlighted %}
+    {% endif %}
 
-        {# Breadcrumbs #}
-        {% if breadcrumb %}
-            {% block breadcrumb %}
-                {{ breadcrumb }}
-            {% endblock breadcrumb %}
-        {% endif %}
+    {# Breadcrumbs #}
+    {% if breadcrumb %}
+        {% block breadcrumb %}
+            {{ breadcrumb }}
+        {% endblock breadcrumb %}
+    {% endif %}
 
-        {# Action Links #}
-        {% if action_links %}
-            {% block action_links %}
-                <ul class="action-links">{{ action_links }}</ul>
-            {% endblock action_links %}
-        {% endif %}
+    {# Action Links #}
+    {% if action_links %}
+        {% block action_links %}
+            <ul class="action-links">{{ action_links }}</ul>
+        {% endblock action_links %}
+    {% endif %}
 
-        {# Help #}
-        {% if page.help %}
-            {% block help %}
-                {{ page.help }}
-            {% endblock help %}
-        {% endif %}
+    {# Help #}
+    {% if page.help %}
+        {% block help %}
+            {{ page.help }}
+        {% endblock help %}
+    {% endif %}
 
-        {# Content #}
-        {% block content %}
-            <a id="main-content"></a>
-            {{ page.content }}
-        {% endblock content %}
-    </section>
+    {# Content #}
+    {% block content %}
+        <a id="main-content"></a>
+        {{ page.content }}
+    {% endblock content %}
 
     {# Override: Put sidebar_first after content for mobile. #}
     {# Sidebar First #}
