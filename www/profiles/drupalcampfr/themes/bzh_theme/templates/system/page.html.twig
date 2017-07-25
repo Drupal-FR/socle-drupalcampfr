@@ -183,9 +183,7 @@
 
     {% if page.content_bottom %}
         {% block content_bottom %}
-            <div class="col-sm-12" role="complementary">
-                {{ page.content_bottom }}
-            </div>
+            {{ page.content_bottom }}
         {% endblock content_bottom %}
     {% endif %}
 {% endblock main %}
