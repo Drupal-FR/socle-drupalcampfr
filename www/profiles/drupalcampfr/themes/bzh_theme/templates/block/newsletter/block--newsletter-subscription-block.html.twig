@@ -45,24 +45,23 @@
  * @ingroup templates
  */
 #}
-<section{{ attributes.addClass('block', 'clearfix') }}>
-  {{ title_prefix }}
-  {% if label %}
-    <div class="row">
-      <div class="col-md-12">
-        <h2{{ title_attributes.addClass('block-title', 'text-center') }}>{{ label }}</h2>
-		<h3>Pour ne pas louper une info sur le prochain camp, inscrivez-vous à la newsletter. Plus d'informations très bientôt.</h3>
+<section{{ attributes.addClass('newsletter') }}>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <h2>Inscrivez-vous à notre newsletter</h2>
+        <div class="lead">
+          Pour ne rater aucune info sur le prochain camp,<br>
+          inscrivez-vous à la newsletter.
+        </div>
       </div>
-    </div>
-  {% endif %}
-  {{ title_suffix }}
 
-  {% block content %}
-    <div class="row">
-      <div class="col-md-offset-3 col-md-6">
-        {{ content }}
-		<p class="info">Un évènement proposé par l'<a href="https://www.drupal.fr">association Drupal France et francophonie</a>.</p>
+      <div class="col-sm-12 col-md-6 col-md-offset-3">
+        {% block content %}
+          {{ content }}
+          <p class="info">Un évènement proposé par l'<a href="https://www.drupal.fr">association Drupal France et francophonie</a>.</p>
+        {% endblock content %}
       </div>
     </div>
-  {% endblock content %}
+  </div>
 </section>
