@@ -4,5 +4,6 @@ global-styling:
       assets/css/theme/overrides.css: {}
       assets/css/theme/device.css: {}
       assets/css/theme/style.css: {}
+      assets/css/theme/font-awesome.css: {}
   js:
     assets/js/main.js: {}
