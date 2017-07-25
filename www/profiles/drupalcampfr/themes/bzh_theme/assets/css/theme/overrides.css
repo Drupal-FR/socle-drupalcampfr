@@ -10,37 +10,6 @@
 }
 
 /**
- * Banner block.
- */
-@media screen and (min-width: 769px) {
-  #block-bzh-theme-banner .texte {
-    position: absolute;
-    top: 30%;
-    margin: 0 auto;
-    width: 87%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  #block-bzh-theme-banner .texte {
-    top: 35%;
-  }
-}
-
-#block-bzh-theme-banner .background {
-  position: relative;
-}
-#block-bzh-theme-banner {
-  position: relative;
-}
-#block-bzh-theme-banner h2 {
-  text-align: center;
-}
-@media screen and (min-width: 769px) {
-  #block-bzh-theme-banner h2 {
-    text-align: right;
-  }
-}
-/**
 * Sponsors block
 **/
 #block-bzh-theme-homepage-sponsor{
