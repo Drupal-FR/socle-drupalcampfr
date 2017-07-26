@@ -5,5 +5,9 @@ global-styling:
       assets/css/theme/device.css: {}
       assets/css/theme/style.css: {}
       assets/css/theme/font-awesome.css: {}
+      //fonts.googleapis.com/css?family=Montserrat:400,700: { type: external }
+      //fonts.googleapis.com/css?family=Kaushan+Script: { type: external }
+      //fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic: { type: external }
+      //fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700: { type: external }
   js:
     assets/js/main.js: {}
