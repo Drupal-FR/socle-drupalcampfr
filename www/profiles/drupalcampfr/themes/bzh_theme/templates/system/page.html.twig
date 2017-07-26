@@ -187,3 +187,33 @@
         {% endblock content_bottom %}
     {% endif %}
 {% endblock main %}
+
+
+
+{% if page.footer %}
+    {% block footer %}
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="copyright">Drupalcamp Lannion {{ "now"|date('Y') }}</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li>
+                                <a href="https://twitter.com/drupalcampfr"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <!--<li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>-->
+                        </ul>
+                    </div>
+                    {{ page.footer }}
+                </div>
+            </div>
+        </footer>
+    {% endblock footer %}
+{% endif %}
