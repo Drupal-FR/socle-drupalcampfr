@@ -150,7 +150,15 @@
     {# Content #}
     {% block content %}
         <a id="main-content"></a>
-        {{ page.content }}
+        {% if node and node.field_class.value %}
+            <section class="{{ node.field_class.value }}">
+                <div class="container">
+                    {{ page.content }}
+                </div>
+            </section>
+        {% else %}
+            {{ page.content }}
+        {% endif %}
     {% endblock content %}
 
     {# Override: Put sidebar_first after content for mobile. #}
