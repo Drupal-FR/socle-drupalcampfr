@@ -65,7 +65,14 @@ class ContactFormBlock extends BlockBase implements ContainerFactoryPluginInterf
         'contact_form' => 'contact',
       ));
 
-    return $this->entityFormBuilder->getForm($message);
+    $form = $this->entityFormBuilder->getForm($message);
+    $form['#attributes']['class'][] = 'col-lg-6';
+    $form['#attributes']['class'][] = 'col-lg-offset-3';
+    $form['#attributes']['class'][] = 'col-md-8';
+    $form['#attributes']['class'][] = 'col-md-offset-2';
+    $form['#attributes']['class'][] = 'col-sm-12';
+
+    return $form;
   }
 
   /**
