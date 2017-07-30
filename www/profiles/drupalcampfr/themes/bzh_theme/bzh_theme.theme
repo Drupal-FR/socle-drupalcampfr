@@ -5,10 +5,10 @@
  */
 function bzh_theme_preprocess_page_title(&$variables) {
   if ($node = \Drupal::routeMatch()->getParameter('node')) {
-    if ($node->get('field_intro') && $node->get('field_intro')->value) {
+    if ($node->hasField('field_intro') && $node->get('field_intro')->value) {
        $variables['intro'] = $node->get('field_intro')->value;
     }
-    if ($node->get('field_class') && $node->get('field_class')->value) {
+    if ($node->hasField('field_class') && $node->get('field_class')->value) {
        $variables['attributes']['class'] = $node->get('field_class')->value;
     }
   }
