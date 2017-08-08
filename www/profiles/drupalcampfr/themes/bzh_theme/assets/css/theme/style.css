@@ -242,7 +242,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color   : #61798b;
+  color   : #fcc500;
   outline : none;
 }
 
