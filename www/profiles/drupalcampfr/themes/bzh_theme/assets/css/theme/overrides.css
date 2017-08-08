@@ -51,6 +51,15 @@
 	margin-bottom:40px;
 }
 /**********************************
+**** contact form*******
+**********************************/
+. path-contact .region-content-bottom{
+	overflow:hidden;
+}
+.path-contact .col-sm-3{
+	display:none;
+}
+/**********************************
 **** style spécifique / node*******
 **********************************/
 #sponsor-grid th,
