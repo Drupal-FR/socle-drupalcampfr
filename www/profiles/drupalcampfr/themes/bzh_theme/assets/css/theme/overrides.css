@@ -65,7 +65,8 @@
 **********************************/
 .path-sponsors .view-id-sponsor,
 .path-actualites .view-display-id-page_news,
-.view-id-user .path-communaute{
+.path-communaute .view-id-user,
+.path-programme .view-id-session{
 	width:90%;
 	margin:0 auto 50px auto;	
 }
@@ -77,6 +78,9 @@
 .path-actualites .view-display-id-page_news footer{
     padding: 0 0 25px 0;
     text-align: left;	
+}
+.path-programme .view-id-session .view-filters{
+    margin: 10px 0 50px 0;	
 }
 /**********************************
 **** style spécifique / node*******
