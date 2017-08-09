@@ -59,6 +59,25 @@
 .path-contact .col-sm-3{
 	display:none;
 }
+
+/**********************************
+**** pages de listes *******
+**********************************/
+.path-sponsors .view-id-sponsor,
+.path-actualites .view-display-id-page_news,
+.view-id-user .path-communaute{
+	width:90%;
+	margin:0 auto 50px auto;	
+}
+
+.path-actualites .view-display-id-page_news article{
+	border-bottom: 1px solid #ddd;
+	padding-top:20px;	
+}
+.path-actualites .view-display-id-page_news footer{
+    padding: 0 0 25px 0;
+    text-align: left;	
+}
 /**********************************
 **** style spécifique / node*******
 **********************************/
