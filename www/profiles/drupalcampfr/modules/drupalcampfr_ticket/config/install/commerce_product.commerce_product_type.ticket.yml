@@ -2,7 +2,8 @@ langcode: fr
 status: true
 dependencies: {  }
 id: ticket
-label: 'Ticket'
+label: Ticket
 description: ''
 variationType: ticket
 injectVariationFields: true
+traits: {  }

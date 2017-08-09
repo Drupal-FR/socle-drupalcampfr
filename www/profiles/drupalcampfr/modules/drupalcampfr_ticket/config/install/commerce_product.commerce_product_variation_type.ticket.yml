@@ -5,3 +5,4 @@ id: ticket
 label: Ticket
 orderItemType: default
 generateTitle: true
+traits: {  }

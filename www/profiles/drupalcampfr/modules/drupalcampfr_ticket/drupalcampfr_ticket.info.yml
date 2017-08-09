@@ -7,9 +7,11 @@ dependencies:
   - commerce_checkout
   - commerce_payment
   - commerce_payment_example
+  - commerce_paypal
   - commerce_price
   - commerce_product
   - commerce_promotion
+  - ctools
   - datetime
   - field
   - inline_entity_form

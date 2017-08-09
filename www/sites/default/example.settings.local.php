@@ -44,6 +44,14 @@ $config['contact.form.demander_une_reduction']['recipients'] = [$contact_email];
 $config['contact.form.sponsor']['recipients']                = [$contact_email];
 $config['contact.form.volunteer']['recipients']              = [$contact_email];
 
+// Paypal.
+$config['commerce_payment.commerce_payment_gateway.paypal_test']['configuration']['api_username'] = '';
+$config['commerce_payment.commerce_payment_gateway.paypal_test']['configuration']['api_password'] = '';
+$config['commerce_payment.commerce_payment_gateway.paypal_test']['configuration']['signature'] = '';
+$config['commerce_payment.commerce_payment_gateway.paypal']['configuration']['api_username'] = '';
+$config['commerce_payment.commerce_payment_gateway.paypal']['configuration']['api_password'] = '';
+$config['commerce_payment.commerce_payment_gateway.paypal']['configuration']['signature'] = '';
+
 if (file_exists(__DIR__ . '/../development.settings.php')) {
   include __DIR__ . '/../development.settings.php';
 }
