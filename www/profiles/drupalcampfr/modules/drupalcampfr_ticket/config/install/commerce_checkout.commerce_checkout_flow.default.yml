@@ -1,0 +1,42 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_payment
+    - commerce_promotion
+id: default
+label: 'Par défaut'
+plugin: multistep_default
+configuration:
+  display_checkout_progress: true
+  panes:
+    login:
+      allow_guest_checkout: false
+      allow_registration: true
+      step: login
+      weight: 0
+    contact_information:
+      double_entry: true
+      step: order_information
+      weight: 1
+    review:
+      step: review
+      weight: 3
+    completion_message:
+      step: complete
+      weight: 4
+    order_summary:
+      view: commerce_checkout_order_summary
+      step: _sidebar
+      weight: 5
+    payment_process:
+      capture: true
+      step: payment
+      weight: 10
+    payment_information:
+      step: order_information
+      weight: 10
+    coupon_redemption:
+      allow_multiple: false
+      step: _sidebar
+      weight: 10
