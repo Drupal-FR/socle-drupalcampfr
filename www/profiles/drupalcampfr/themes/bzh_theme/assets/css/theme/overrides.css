@@ -29,7 +29,11 @@
 	font-size:23px;
 }
 .path-node .field--name-body h3{
-	font-size:20px;
+	font-size:18px;
+	color:#61798b;
+}
+.path-node .field--name-body ul{
+	margin-left:40px;	
 }
 /*** sidebar sponsor**/
 #block-bzh-theme-sitewide-sponsor h2{
@@ -38,8 +42,21 @@
 #block-bzh-theme-sitewide-sponsor h3{
 	text-align:right;
 	border-bottom:1px solid #ddd;
-	font-size:16px;
-	
+	font-size:16px;	
+}
+/***************************
+**** tableau programme******
+***************************/
+.path-node .programme-sessions{
+	margin:40px 0;	
+}
+.path-node .programme-sessions tr{}
+.path-node .programme-sessions th{
+	min-width:100px;
+	text-align:center;
+}
+.path-node .programme-sessions td{
+	padding:3px;
 }
 /**********************************
 **** devenir sponsor*******
