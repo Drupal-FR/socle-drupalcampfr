@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ee40d1ef9086c1fa392e216c389c174",
+    "content-hash": "1601758ab1d0581c7c84e742773b59a0",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1495,17 +1495,11 @@
         },
         {
             "name": "drupal/commerce_paypal",
-            "version": "1.0.0-beta1",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/commerce_paypal",
-                "reference": "8.x-1.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_paypal-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "cda8217fe8d72f24ffd94fa862b59eca82122950"
+                "reference": "1517211b5660a9710b875c7357be42ad479ff054"
             },
             "require": {
                 "drupal/commerce": "~2",
@@ -1518,8 +1512,15 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1499960643"
+                    "version": "8.x-1.0-beta1+1-dev",
+                    "datestamp": "1500018843",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                },
+                "patches_applied": {
+                    "No payment_gateway when returning to the website": "https://www.drupal.org/files/issues/commerce_paypal-no_payment_gateway-2900865-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1548,7 +1549,8 @@
             "homepage": "http://drupal.org/project/commerce_paypal",
             "support": {
                 "source": "http://cgit.drupalcode.org/commerce_paypal"
-            }
+            },
+            "time": "2017-07-14 07:50:06"
         },
         {
             "name": "drupal/commerce_price",
@@ -9874,6 +9876,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal-composer/drupal-l10n": 20,
+        "drupal/commerce_paypal": 20,
         "behat/mink": 20
     },
     "prefer-stable": true,
