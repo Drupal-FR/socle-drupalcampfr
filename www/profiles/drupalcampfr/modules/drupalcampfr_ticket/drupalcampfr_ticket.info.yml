@@ -13,6 +13,7 @@ dependencies:
   - commerce_promotion
   - ctools
   - datetime
+  - drupalcampfr_user
   - field
   - inline_entity_form
   - language

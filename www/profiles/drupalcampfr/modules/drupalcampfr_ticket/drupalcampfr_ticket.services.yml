@@ -1,0 +1,5 @@
+services:
+  drupalcampfr_ticket.assign_attendee_role_subscriber:
+    class: Drupal\drupalcampfr_ticket\EventSubscriber\AssignAttendeeRoleSubscriber
+    tags:
+      - { name: 'event_subscriber' }
