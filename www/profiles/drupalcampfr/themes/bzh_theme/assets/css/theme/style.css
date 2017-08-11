@@ -11,12 +11,12 @@ body {
 }
 
 body.navbar-is-fixed-top {
-  margin-top: 0;
+  margin-top : 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width : 768px) {
   body {
-    margin-top: 0;
+    margin-top : 0;
   }
 }
 
@@ -234,6 +234,7 @@ fieldset[disabled] .btn-xl.active {
   font-family    : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform : uppercase;
   font-weight    : 400;
+  font-size      : 1.2rem;
   letter-spacing : 1px;
   color          : white;
   padding-top    : 20px;
@@ -242,7 +243,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color   : #61798b;
+  color   : #fcc500;
   outline : none;
 }
 
@@ -258,6 +259,27 @@ fieldset[disabled] .btn-xl.active {
   background-color : #fec503;
 }
 
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color : rgba(0, 0, 0, .75);
+  color            : #fec503;
+}
+
+.navbar-custom .navbar-nav > li > .dropdown-menu {
+  background-color : rgba(0, 0, 0, .75);
+  border           : 1px solid rgba(0, 0, 0, .75);
+}
+
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a {
+  line-height    : 2rem;
+  padding-bottom : 20px;
+}
+
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a:hover {
+  background-color : rgba(0, 0, 0, .5);
+}
+
 @media (min-width : 768px) {
   .navbar-custom {
     background-color   : transparent;
@@ -267,14 +289,14 @@ fieldset[disabled] .btn-xl.active {
     transition         : padding 0.3s;
     border             : none;
   }
-
+  
   .navbar-custom .navbar-brand {
     font-size          : 2em;
     -webkit-transition : all 0.3s;
     -moz-transition    : all 0.3s;
     transition         : all 0.3s;
   }
-
+  
   .navbar-custom .navbar-nav > .active > a {
     border-radius : 3px;
   }
@@ -285,11 +307,12 @@ fieldset[disabled] .btn-xl.active {
     background-color : #222222;
     padding          : 10px 0;
   }
-
+  
   .navbar-custom.affix .navbar-brand {
     font-size : 1.5em;
   }
 }
+
 @media (max-width : 768px) {
   .navbar-brand > img {
     max-width   : 60vw;
@@ -314,7 +337,7 @@ header .intro-text {
 }
 
 header .intro-text img {
-  max-width: 100vw;
+  max-width : 100vw;
 }
 
 header .intro-text .intro-lead-in {
@@ -361,7 +384,7 @@ header.contact {
     margin-bottom    : 200px;
     padding          : 10px 0;
   }
-
+  
   header.partnership .intro-text,
   header.brezhonneg .intro-text,
   header.contact .intro-text {
@@ -370,7 +393,7 @@ header.contact {
     margin-bottom    : 100px;
     padding          : 10px 0;
   }
-
+  
   header .intro-text .intro-lead-in {
     font-family   : "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style    : italic;
@@ -378,7 +401,7 @@ header.contact {
     line-height   : 40px;
     margin-bottom : 25px;
   }
-
+  
   header .intro-text .intro-heading {
     font-family    : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform : uppercase;
