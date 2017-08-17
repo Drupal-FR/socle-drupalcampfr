@@ -63,6 +63,7 @@
     "drupal-composer/drupal-scaffold": "^2.2",
     "drupal/address": "1.1.0",
     "drupal/admin_toolbar": "1.19.0",
+    "drupal/backup_migrate": "4.x-dev#99c76201a1c64b2ebdd4c3fbb28ec8f676734853",
     "drupal/block_visibility_groups": "1.1.0",
     "drupal/bootstrap": "3.5.0",
     "drupal/commerce": "2.0.0-rc1",
