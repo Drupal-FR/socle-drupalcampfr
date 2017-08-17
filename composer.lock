@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1601758ab1d0581c7c84e742773b59a0",
+    "content-hash": "4a6d0faf74da9ccd97a1855a7bd91701",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1207,6 +1207,52 @@
                 "source": "http://cgit.drupalcode.org/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
             }
+        },
+        {
+            "name": "drupal/backup_migrate",
+            "version": "dev-4.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/backup_migrate",
+                "reference": "99c76201a1c64b2ebdd4c3fbb28ec8f676734853"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-4.0-alpha2+16-dev",
+                    "datestamp": "1494298688",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dgorton",
+                    "homepage": "https://www.drupal.org/user/19044"
+                },
+                {
+                    "name": "ronan",
+                    "homepage": "https://www.drupal.org/user/72815"
+                }
+            ],
+            "description": "Backup the Drupal database and files or migrate them to another environment.",
+            "homepage": "https://www.drupal.org/project/backup_migrate",
+            "support": {
+                "source": "http://cgit.drupalcode.org/backup_migrate"
+            },
+            "time": "2017-05-09 02:56:22"
         },
         {
             "name": "drupal/block_visibility_groups",
@@ -9876,6 +9922,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal-composer/drupal-l10n": 20,
+        "drupal/backup_migrate": 20,
         "drupal/commerce_paypal": 20,
         "behat/mink": 20
     },
