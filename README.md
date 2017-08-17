@@ -12,7 +12,7 @@ Technical base for french Drupalcamps.
 * Adapt the following files to your configuration:
   * scripts/script-parameters.local.sh
   * www/sites/default/settings.local.php
-* Execute `scripts/install.sh` (do not if using docker, see bellow)
+* Execute `scripts/install.sh` (do not if using docker, see below)
 
 ## Additional steps to install with Docker compose
 
