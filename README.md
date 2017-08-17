@@ -8,11 +8,11 @@ Technical base for french Drupalcamps.
 
 # Installation
 
-* Execute: `scripts/init.sh`  (do not if using docker)
+* Execute: `scripts/init.sh`
 * Adapt the following files to your configuration:
   * scripts/script-parameters.local.sh
   * www/sites/default/settings.local.php
-* Execute `scripts/install.sh`
+* Execute `scripts/install.sh` (do not if using docker, see bellow)
 
 ## Additional steps to install with Docker compose
 
