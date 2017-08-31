@@ -70,7 +70,7 @@
 /**********************************
 **** contact form*******
 **********************************/
-. path-contact .region-content-bottom{
+.path-contact .region-content-bottom{
 	overflow:hidden;
 }
 .path-contact .col-sm-3{
@@ -101,8 +101,9 @@
 .path-programme .view-id-session .view-filters{
     margin: 10px 0 50px 0;	
 }
-#block-bzh-theme-help{
-	padding:0;
+#block-bzh-theme-help {
+	padding: 0;
+}
 /**********************************
 **** style spécifique / node*******
 **********************************/
