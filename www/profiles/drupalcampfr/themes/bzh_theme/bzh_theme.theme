@@ -12,4 +12,11 @@ function bzh_theme_preprocess_page_title(&$variables) {
        $variables['attributes']['class'] = $node->get('field_class')->value;
     }
   }
+  elseif (\Drupal::routeMatch()->getRouteName() == 'entity.contact_form.canonical') {
+    if($form =  \Drupal::routeMatch()->getParameter('contact_form')) {
+      if (in_array($form->id(), ['sponsor', 'attendance_certificate', 'contact', 'demander_une_reduction', 'volunteer'])) {
+        $variables['attributes']['class'] = 'contact';
+      }
+    }
+  }
 }
