@@ -38,3 +38,10 @@ function drupalcampfr_site_theme($existing, $type, $theme, $path) {
     ],
   ];
 }
+
+function drupalcampfr_site_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if(preg_match('`^contact_message_`',$form_id)) {
+    $form['#prefix'] = '<div class="container">';
+    $form['#suffix'] = '</div>';
+  }
+}
