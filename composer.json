@@ -66,10 +66,10 @@
     "drupal/backup_migrate": "4.x-dev#99c76201a1c64b2ebdd4c3fbb28ec8f676734853",
     "drupal/block_visibility_groups": "1.1.0",
     "drupal/bootstrap": "3.5.0",
-    "drupal/commerce": "2.0.0-rc1",
+    "drupal/commerce": "2.0.0-rc2",
     "drupal/commerce_paypal": "1.x-dev#1517211b5660a9710b875c7357be42ad479ff054",
     "drupal/contact_storage": "1.0.0-beta9",
-    "drupal/core": "8.3.6",
+    "drupal/core": "8.3.7",
     "drupal/drush_language": "1.*",
     "drupal/entityqueue": "1.0.0-alpha6",
     "drupal/eu_cookie_compliance": "1.0.0-beta7",
@@ -80,14 +80,14 @@
     "drupal/migrate_source_csv": "2.0.0",
     "drupal/migrate_tools": "4.0.0-beta1",
     "drupal/pathauto": "1.0.0",
-    "drupal/purge": "3.0.0-beta7",
+    "drupal/purge": "3.0.0-beta8",
     "drupal/r4032login": "1.*",
     "drupal/redis": "1.0.0-beta1",
     "drupal/swiftmailer": "1.0.0-beta1",
     "drupal/varnish_purge": "1.5.0",
     "drupal/views_data_export": "1.0.0-alpha4",
     "drupal/visualization": "1.0.0-beta1",
-    "drush/drush": "8.1.12"
+    "drush/drush": "8.1.13"
   },
   "require-dev": {
     "behat/mink": "1.7.x-dev",
@@ -156,9 +156,6 @@
       ]
     },
     "patches": {
-      "drupal/commerce_paypal": {
-        "No payment_gateway when returning to the website": "https://www.drupal.org/files/issues/commerce_paypal-no_payment_gateway-2900865-3.patch"
-      },
       "drupal/redis": {
         "Add status page and some statistics": "https://www.drupal.org/files/issues/redis-statistics-7.patch"
       }
