@@ -1,20 +1,31 @@
 <?php
 
 /**
+ * @file
+ * Functions to support theming in the bzh_theme theme.
+ */
+
+/**
  * Implements hook_preprocess_HOOK().
  */
 function bzh_theme_preprocess_page_title(&$variables) {
   if ($node = \Drupal::routeMatch()->getParameter('node')) {
     if ($node->hasField('field_intro') && $node->get('field_intro')->value) {
-       $variables['intro'] = $node->get('field_intro')->value;
+      $variables['intro'] = $node->get('field_intro')->value;
     }
     if ($node->hasField('field_class') && $node->get('field_class')->value) {
-       $variables['attributes']['class'] = $node->get('field_class')->value;
+      $variables['attributes']['class'] = $node->get('field_class')->value;
     }
   }
   elseif (\Drupal::routeMatch()->getRouteName() == 'entity.contact_form.canonical') {
-    if($form =  \Drupal::routeMatch()->getParameter('contact_form')) {
-      if (in_array($form->id(), ['sponsor', 'attendance_certificate', 'contact', 'demander_une_reduction', 'volunteer'])) {
+    if ($form = \Drupal::routeMatch()->getParameter('contact_form')) {
+      if (in_array($form->id(), [
+        'sponsor',
+        'attendance_certificate',
+        'contact',
+        'demander_une_reduction',
+        'volunteer',
+      ])) {
         $variables['attributes']['class'] = 'contact';
       }
     }
