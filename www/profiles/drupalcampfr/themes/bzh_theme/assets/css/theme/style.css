@@ -367,6 +367,11 @@ header.partnership {
   min-height       : 10vh;
 }
 
+header.tickets {
+  background-image : url('../../images/banner-homepage.jpg');
+  min-height       : 10vh;
+}
+
 header.brezhonneg {
   background-image : url('../../images/visuels/SeaWave_banner.jpg');
   min-height       : 10vh;
@@ -387,7 +392,8 @@ header.contact {
   
   header.partnership .intro-text,
   header.brezhonneg .intro-text,
-  header.contact .intro-text {
+  header.contact .intro-text,
+  header.tickets .intro-text {
     background-color : rgba(0, 0, 0, .5);
     margin-top       : 150px;
     margin-bottom    : 100px;
