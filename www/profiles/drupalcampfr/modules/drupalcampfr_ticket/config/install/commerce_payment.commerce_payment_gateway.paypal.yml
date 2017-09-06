@@ -17,4 +17,12 @@ configuration:
   mode: live
   payment_method_types:
     - credit_card
-conditions: {  }
+conditions:
+  -
+    plugin: order_total_price
+    configuration:
+      operator: '>'
+      amount:
+        number: '0'
+        currency_code: EUR
+conditionOperator: AND

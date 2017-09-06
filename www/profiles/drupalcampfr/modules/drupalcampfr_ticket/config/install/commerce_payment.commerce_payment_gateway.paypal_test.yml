@@ -17,11 +17,17 @@ configuration:
   mode: test
   payment_method_types:
     - credit_card
-  redirect_method: post
-  _entity_id: null
 conditions:
   -
     plugin: order_customer_role
     configuration:
       roles:
         administrator: administrator
+  -
+    plugin: order_total_price
+    configuration:
+      operator: '>'
+      amount:
+        number: '0'
+        currency_code: EUR
+conditionOperator: AND

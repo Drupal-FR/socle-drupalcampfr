@@ -5,6 +5,7 @@ dependencies:
   - commerce
   - commerce_cart
   - commerce_checkout
+  - commerce_order
   - commerce_payment
   - commerce_payment_example
   - commerce_paypal
@@ -20,6 +21,7 @@ dependencies:
   - path
   - pathauto
   - text
+  - user
   - views
   - visualization
 package: Drupalcampfr

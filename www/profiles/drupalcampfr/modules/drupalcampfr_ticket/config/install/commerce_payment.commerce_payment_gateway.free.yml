@@ -1,0 +1,24 @@
+langcode: fr
+status: true
+dependencies: {  }
+id: free
+label: Free
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: ''
+    format: full_html
+  display_label: 'Commande sans paiement'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+conditions:
+  -
+    plugin: order_total_price
+    configuration:
+      operator: '=='
+      amount:
+        number: '0'
+        currency_code: EUR
+conditionOperator: AND
