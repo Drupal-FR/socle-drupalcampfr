@@ -52,7 +52,8 @@
 	font-size:18px;
 }
 #block-bzh-theme-sitewide-sponsor h3{
-	text-align:right;
+  text-align: left;
+  padding-bottom: 20px;
 	border-bottom:1px solid #ddd;
 	font-size:16px;	
 }
