@@ -1,0 +1,5 @@
+services:
+  drupalcampfr_core.route_subscriber:
+    class: Drupal\drupalcampfr_core\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
