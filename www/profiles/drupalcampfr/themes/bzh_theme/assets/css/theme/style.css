@@ -397,6 +397,11 @@ header.contact {
   min-height       : 10vh;
 }
 
+header.sponsor {
+  background-image : url('../../images/visuels/LannionHouses_banner.jpg');
+  min-height       : 10vh;
+}
+
 @media (min-width : 768px) {
   header .intro-text {
     background-color : rgba(0, 0, 0, .5);
@@ -411,7 +416,9 @@ header.contact {
   header.tickets .intro-text,
   header.product .intro-text,
   header.cart .intro-text,
-  header.checkout .intro-text {
+  header.checkout .intro-text,
+  header.sponsor .intro-text,
+  header.medium-height .intro-text{
     background-color : rgba(0, 0, 0, .5);
     margin-top       : 150px;
     margin-bottom    : 100px;

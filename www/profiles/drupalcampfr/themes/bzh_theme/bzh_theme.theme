@@ -12,16 +12,18 @@ use Drupal\Component\Utility\Html;
  */
 function bzh_theme_preprocess_page_title(&$variables) {
   $route_name = \Drupal::routeMatch()->getRouteName();
-  if ($node = \Drupal::routeMatch()->getParameter('node')) {
-    if ($node->hasField('field_intro') && $node->get('field_intro')->value) {
-      $variables['intro'] = $node->get('field_intro')->value;
-    }
-    if ($node->hasField('field_class') && $node->get('field_class')->value) {
-      $variables['attributes']['class'] = $node->get('field_class')->value;
-    }
+  
+  if ($route_name == 'view.sponsor.page_sponsor') {
+    $variables['attributes']['class'][] = 'sponsor';
   }
-  elseif ($product = \Drupal::routeMatch()->getParameter('commerce_product')) {
-    $variables['attributes']['class'][] = 'product';
+  elseif ($route_name == 'commerce_cart.page') {
+    $variables['attributes']['class'][] = 'cart';
+  }
+  elseif ($route_name == 'commerce_checkout.form') {
+    $variables['attributes']['class'][] = 'checkout';
+  }
+  elseif ($route_name == 'view.sponsor.page_sponsor') {
+    $variables['attributes']['class'][] = 'sponsor';
   }
   elseif ($route_name == 'entity.contact_form.canonical') {
     if ($form = \Drupal::routeMatch()->getParameter('contact_form')) {
@@ -36,12 +38,20 @@ function bzh_theme_preprocess_page_title(&$variables) {
       }
     }
   }
-  elseif ($route_name == 'commerce_cart.page') {
-    $variables['attributes']['class'][] = 'cart';
+
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    if ($node->hasField('field_intro') && $node->get('field_intro')->value) {
+      $variables['intro'] = $node->get('field_intro')->value;
+    }
+    if ($node->hasField('field_class') && $node->get('field_class')->value) {
+      $variables['attributes']['class'] = $node->get('field_class')->value;
+    }
   }
-  elseif ($route_name == 'commerce_checkout.form') {
-    $variables['attributes']['class'][] = 'checkout';
+  elseif ($product = \Drupal::routeMatch()->getParameter('commerce_product')) {
+    $variables['attributes']['class'][] = 'product';
   }
+
+
 }
 
 /**
