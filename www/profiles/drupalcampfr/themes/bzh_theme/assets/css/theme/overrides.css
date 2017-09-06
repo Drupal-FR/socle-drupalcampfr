@@ -151,3 +151,11 @@
 .layout-region-checkout-footer {
   margin-top: 20px;
 }
+
+/**********************************
+**** Footer *******
+**********************************/
+.footer-bottom ul li {
+  display: inline-block;
+  margin-top: 20px;
+}
