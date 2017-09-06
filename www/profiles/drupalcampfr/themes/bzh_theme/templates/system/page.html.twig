@@ -119,6 +119,9 @@
     ]
     %}
 
+    <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+      <div class="row">
+
     {# Highlighted #}
     {% if page.highlighted %}
         {% block highlighted %}
@@ -151,25 +154,21 @@
     {% block content %}
         <a id="main-content"></a>
         {% if node and node.field_class.value %}
-            <section class="{{ node.field_class.value }}">
-                <div class="container">
-                    {{ page.content }}
-                </div>
+            <section class="{{ content_classes|safe_join(' ') }} {{ node.field_class.value }}">
+              {{ page.content }}
             </section>
         {% elseif product %}
-          <section class="product">
-            <div class="container">
-              {{ page.content }}
-            </div>
+          <section class="{{ content_classes|safe_join(' ') }} product">
+            {{ page.content }}
           </section>
         {% elseif enable_container %}
-          <section {{ main_attributes }}>
-            <div class="container">
-              {{ page.content }}
-            </div>
+          <section {{ main_attributes.addClass(content_classes) }}>
+            {{ page.content }}
           </section>
         {% else %}
+          <section class="{{ content_classes|safe_join(' ') }}">
             {{ page.content }}
+          </section>
         {% endif %}
     {% endblock content %}
 
@@ -200,6 +199,9 @@
             </aside>
         {% endblock sidebar_second %}
     {% endif %}
+
+      </div>
+    </div>
 
     {% if page.content_bottom %}
         {% block content_bottom %}
