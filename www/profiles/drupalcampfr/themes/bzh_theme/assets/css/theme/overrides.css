@@ -131,3 +131,21 @@
 #sponsor-grid td{
 	text-align:center;
 }
+
+/**********************************
+**** Checkout *******
+**********************************/
+.checkout-pane .form-type-radio span.label-name {
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.checkout-pane input[type="radio"],
+.checkout-pane input[type="checkbox"] {
+  margin-top: 7px;
+}
+
+.layout-region-checkout-footer {
+  margin-top: 20px;
+}

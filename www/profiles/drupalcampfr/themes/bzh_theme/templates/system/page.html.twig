@@ -156,6 +156,18 @@
                     {{ page.content }}
                 </div>
             </section>
+        {% elseif product %}
+          <section class="product">
+            <div class="container">
+              {{ page.content }}
+            </div>
+          </section>
+        {% elseif enable_container %}
+          <section {{ main_attributes }}>
+            <div class="container">
+              {{ page.content }}
+            </div>
+          </section>
         {% else %}
             {{ page.content }}
         {% endif %}

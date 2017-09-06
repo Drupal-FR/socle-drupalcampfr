@@ -372,6 +372,21 @@ header.tickets {
   min-height       : 10vh;
 }
 
+header.product {
+  background-image : url('../../images/visuels/SeaWave_banner.jpg');
+  min-height       : 10vh;
+}
+
+header.cart {
+  background-image : url('../../images/visuels/SeaWave_banner.jpg');
+  min-height       : 10vh;
+}
+
+header.checkout {
+  background-image : url('../../images/visuels/SeaWave_banner.jpg');
+  min-height       : 10vh;
+}
+
 header.brezhonneg {
   background-image : url('../../images/visuels/SeaWave_banner.jpg');
   min-height       : 10vh;
@@ -393,7 +408,10 @@ header.contact {
   header.partnership .intro-text,
   header.brezhonneg .intro-text,
   header.contact .intro-text,
-  header.tickets .intro-text {
+  header.tickets .intro-text,
+  header.product .intro-text,
+  header.cart .intro-text,
+  header.checkout .intro-text {
     background-color : rgba(0, 0, 0, .5);
     margin-top       : 150px;
     margin-bottom    : 100px;
