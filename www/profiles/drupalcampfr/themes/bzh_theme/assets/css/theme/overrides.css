@@ -35,6 +35,17 @@
 .path-node .field--name-body ul{
 	margin-left:40px;	
 }
+.path-node .field--name-body ul.tickets{
+  margin-left:0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.path-node .field--name-body ul.tickets li{
+  flex: 1 1 auto;
+}
 /*** sidebar sponsor**/
 #block-bzh-theme-sitewide-sponsor h2{
 	font-size:18px;
