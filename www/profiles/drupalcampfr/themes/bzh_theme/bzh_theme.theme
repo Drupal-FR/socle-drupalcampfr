@@ -12,7 +12,7 @@ use Drupal\Component\Utility\Html;
  */
 function bzh_theme_preprocess_page_title(&$variables) {
   $route_name = \Drupal::routeMatch()->getRouteName();
-  
+
   if ($route_name == 'view.sponsor.page_sponsor') {
     $variables['attributes']['class'][] = 'sponsor';
   }
@@ -39,7 +39,7 @@ function bzh_theme_preprocess_page_title(&$variables) {
     }
   }
 
-  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+  elseif ($node = \Drupal::routeMatch()->getParameter('node')) {
     if ($node->hasField('field_intro') && $node->get('field_intro')->value) {
       $variables['intro'] = $node->get('field_intro')->value;
     }
@@ -49,6 +49,10 @@ function bzh_theme_preprocess_page_title(&$variables) {
   }
   elseif ($product = \Drupal::routeMatch()->getParameter('commerce_product')) {
     $variables['attributes']['class'][] = 'product';
+  }
+  // Stop to theme the header for each page. Fallback to a default header
+  else {
+    $variables['attributes']['class'][] = 'default';
   }
 
 

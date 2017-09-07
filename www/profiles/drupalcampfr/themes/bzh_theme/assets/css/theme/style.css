@@ -402,6 +402,11 @@ header.sponsor {
   min-height       : 10vh;
 }
 
+header.default {
+  background-image : url('../../images/visuels/LannionHouses_banner.jpg');
+  min-height       : 10vh;
+}
+
 @media (min-width : 768px) {
   header .intro-text {
     background-color : rgba(0, 0, 0, .5);
@@ -418,7 +423,7 @@ header.sponsor {
   header.cart .intro-text,
   header.checkout .intro-text,
   header.sponsor .intro-text,
-  header.medium-height .intro-text{
+  header.default .intro-text {
     background-color : rgba(0, 0, 0, .5);
     margin-top       : 150px;
     margin-bottom    : 100px;
