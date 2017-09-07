@@ -15,6 +15,24 @@
 .sponsor-view .view-content .views-row {
 	margin:35px 0;
 }
+
+/**********************************
+******* Navigation principale ***********
+**********************************/
+.navbar-custom ul.navbar-nav {
+  padding-top: 10px;
+}
+
+.navbar-custom .nav li a.highlight {
+  background: #fcc500;
+  transition: all 0.4s ease;
+}
+.navbar-custom .nav li a.highlight:hover,
+.navbar-custom .nav li a.highlight:focus {
+  background: #d49c00;
+  color: #ffffff;
+}
+
 /**********************************
 ******* pages de contenu***********
 **********************************/
