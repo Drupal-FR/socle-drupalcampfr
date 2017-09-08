@@ -169,6 +169,19 @@
   margin-top: 20px;
 }
 
+.checkout-order-summary table {
+  width: 100%;
+}
+
+.checkout-order-summary table tr td:nth-child(3) {
+  text-align: right;
+}
+
+.checkout-order-summary table tr td {
+  padding: 5px 10px;
+  line-height: 1.3;
+}
+
 /**********************************
 **** Footer *******
 **********************************/
