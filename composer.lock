@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9084e1fb325bb4b4184d2830db1a1d9",
+    "content-hash": "98bd9d68ecc15ba67abf89929c37557c",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1406,6 +1406,9 @@
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Display payment method in the CheckoutPane Payment informations even if only single payement method available": "https://www.drupal.org/files/issues/2907504-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

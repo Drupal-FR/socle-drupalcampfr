@@ -156,6 +156,9 @@
       ]
     },
     "patches": {
+      "drupal/commerce": {
+        "Display payment method in the CheckoutPane Payment informations even if only single payement method available": "https://www.drupal.org/files/issues/2907504-2.patch"
+      },
       "drupal/redis": {
         "Add status page and some statistics": "https://www.drupal.org/files/issues/redis-statistics-7.patch"
       }
