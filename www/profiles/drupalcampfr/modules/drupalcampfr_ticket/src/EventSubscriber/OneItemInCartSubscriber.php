@@ -36,7 +36,10 @@ class OneItemInCartSubscriber implements EventSubscriberInterface {
     foreach ($cart_items as $cart_item) {
       $cart_purchased_entity_id = $cart_item->getPurchasedEntity()->id();
       if ($cart_purchased_entity_id != $purchased_entity_id) {
-        $cart->removeItem($cart_item);
+        // Remove and delete properly the previous order item created.
+        /** @var \Drupal\commerce_cart\CartManagerInterface $cart_manager */
+        $cart_manager = \Drupal::service('commerce_cart.cart_manager');
+        $cart_manager->removeOrderItem($cart, $cart_item);
       }
     }
 
