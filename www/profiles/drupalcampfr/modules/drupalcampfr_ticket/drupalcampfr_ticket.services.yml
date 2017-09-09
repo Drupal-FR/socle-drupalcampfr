@@ -3,8 +3,8 @@ services:
     class: Drupal\drupalcampfr_ticket\EventSubscriber\AssignAttendeeRoleSubscriber
     tags:
       - { name: 'event_subscriber' }
-  drupalcampfr_ticket.redirect_to_checkout_subscriber:
-    class: Drupal\drupalcampfr_ticket\EventSubscriber\RedirectToCheckoutSubscriber
+  drupalcampfr_ticket.redirect_to_cart_subscriber:
+    class: Drupal\drupalcampfr_ticket\EventSubscriber\RedirectToCartSubscriber
     arguments: ['@request_stack']
     tags:
       - { name: 'event_subscriber' }

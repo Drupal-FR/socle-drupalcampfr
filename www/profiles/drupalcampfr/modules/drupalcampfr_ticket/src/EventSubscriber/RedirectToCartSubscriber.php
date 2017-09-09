@@ -13,9 +13,9 @@ use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
 /**
- * Class RedirectCartSubscriber.
+ * Class RedirectToCartSubscriber.
  */
-class RedirectToCheckoutSubscriber implements EventSubscriberInterface {
+class RedirectToCartSubscriber implements EventSubscriberInterface {
 
   /**
    * The request stack.
@@ -41,7 +41,7 @@ class RedirectToCheckoutSubscriber implements EventSubscriberInterface {
    *   The cart event.
    */
   public function onProductAdded(CartEntityAddEvent $event) {
-    $this->requestStack->getCurrentRequest()->attributes->set('_checkout_redirect_cart', $event->getCart());
+    $this->requestStack->getCurrentRequest()->attributes->set('_redirect_cart', $event->getCart());
   }
 
   /**
@@ -54,9 +54,9 @@ class RedirectToCheckoutSubscriber implements EventSubscriberInterface {
    */
   public function checkRedirectIssued(FilterResponseEvent $event) {
     $request = $event->getRequest();
-    $cart = $request->attributes->get('_checkout_redirect_cart');
+    $cart = $request->attributes->get('_redirect_cart');
     if (isset($cart) && $cart instanceof OrderInterface) {
-      $url = Url::fromRoute('commerce_checkout.form', ['commerce_order' => $cart->id()]);
+      $url = Url::fromRoute('commerce_cart.page');
       $response = new TrustedRedirectResponse($url->toString());
       $response->addCacheableDependency($cart);
       $event->setResponse($response);
