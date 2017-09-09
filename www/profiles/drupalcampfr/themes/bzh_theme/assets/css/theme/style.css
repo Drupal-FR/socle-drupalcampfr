@@ -357,6 +357,10 @@ header .intro-text .intro-heading {
   margin-bottom  : 25px;
 }
 
+header h1.section-heading .field--label-inline .field--label {
+   float: none;
+}
+
 header.homepage {
   background-image : url('../../images/visuels/LannionHouses_banner.jpg');
   min-height       : 100vh;
