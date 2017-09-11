@@ -516,6 +516,28 @@ section.partnership table > tbody > tr.prices > td {
   font-size : 20px;
 }
 
+.sponsor-view .views-field-field-sponsor-logo {
+}
+
+.sponsor-view .views-field-field-sponsor-logo .field-content {
+  height: 200px; /*can be anything*/
+  width: 165px; /*can be anything*/
+  position: relative;
+}
+
+.sponsor-view .views-field-field-sponsor-logo .field-content img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 aside.partners {
   margin-bottom : 40px;
 }
