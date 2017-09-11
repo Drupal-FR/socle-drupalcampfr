@@ -203,6 +203,8 @@ fieldset[disabled] .btn-xl.active {
   color       : #61798b;
   font-family : "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
   padding-top : 0;
+  height: auto;
+  padding: 0;
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -223,6 +225,10 @@ fieldset[disabled] .btn-xl.active {
   text-transform   : uppercase;
   color            : white;
   font-size        : 12px;
+  float:right;
+  position: absolute;
+  top : 5px;
+  right : 5px;
 }
 
 .navbar-custom .navbar-toggle:hover,
@@ -237,8 +243,7 @@ fieldset[disabled] .btn-xl.active {
   font-size      : 1.2rem;
   letter-spacing : 1px;
   color          : white;
-  padding-top    : 10px;
-  padding-bottom : 10px;
+  padding        : 10px;
 }
 
 .navbar-custom .nav li a:hover,
@@ -514,6 +519,28 @@ section.partnership table > tbody > tr.prices > th {
 section.partnership table > tbody > tr.prices > td {
   color     : #e30a17;
   font-size : 20px;
+}
+
+.sponsor-view .views-field-field-sponsor-logo {
+}
+
+.sponsor-view .views-field-field-sponsor-logo .field-content {
+  height: 200px; /*can be anything*/
+  width: 165px; /*can be anything*/
+  position: relative;
+}
+
+.sponsor-view .views-field-field-sponsor-logo .field-content img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 aside.partners {
