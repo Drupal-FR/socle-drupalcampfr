@@ -82,14 +82,14 @@
                         <img src="/profiles/drupalcampfr/themes/bzh_theme/assets/images/logos/logo-dcl-topbar.png">
                     </a>
                 </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
+                    <i class="fa fa-bars"></i>
+                </button>
                 <div class="collapse navbar-collapse" id="navbar-collapse-main-menu">
                     {{ page.navigation }}
                     {#.btn-navbar is used as the toggle for collapsed navbar content #}
                     {% if page.navigation_collapsible %}
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
-                            Menu <i class="fa fa-bars"></i>
-                        </button>
                     {% endif %}
                 </div>
             </div>

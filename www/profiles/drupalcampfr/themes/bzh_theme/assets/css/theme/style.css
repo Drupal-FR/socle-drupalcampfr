@@ -203,6 +203,8 @@ fieldset[disabled] .btn-xl.active {
   color       : #61798b;
   font-family : "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
   padding-top : 0;
+  height: auto;
+  padding: 0;
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -223,6 +225,10 @@ fieldset[disabled] .btn-xl.active {
   text-transform   : uppercase;
   color            : white;
   font-size        : 12px;
+  float:right;
+  position: absolute;
+  top : 5px;
+  right : 5px;
 }
 
 .navbar-custom .navbar-toggle:hover,
@@ -237,8 +243,7 @@ fieldset[disabled] .btn-xl.active {
   font-size      : 1.2rem;
   letter-spacing : 1px;
   color          : white;
-  padding-top    : 10px;
-  padding-bottom : 10px;
+  padding        : 10px;
 }
 
 .navbar-custom .nav li a:hover,
