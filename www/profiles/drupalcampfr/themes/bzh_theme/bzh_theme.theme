@@ -37,6 +37,9 @@ function bzh_theme_preprocess_page_title(&$variables) {
         $variables['attributes']['class'] = 'contact';
       }
     }
+    else {
+      $variables['attributes']['class'][] = 'default';
+    }
   }
 
   elseif ($node = \Drupal::routeMatch()->getParameter('node')) {
@@ -45,6 +48,9 @@ function bzh_theme_preprocess_page_title(&$variables) {
     }
     if ($node->hasField('field_class') && $node->get('field_class')->value) {
       $variables['attributes']['class'] = $node->get('field_class')->value;
+    }
+    else {
+      $variables['attributes']['class'][] = 'default';
     }
   }
   elseif ($product = \Drupal::routeMatch()->getParameter('commerce_product')) {
