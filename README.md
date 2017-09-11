@@ -44,7 +44,14 @@ Note : you have to "be" in the docroot folder (eg : `/project/www`)
 
 #### How to import a custom dump
 
-Put the dump in the `backups` folder and then in the **web** container you can use the following command :
+Put the dump in the `backups` folder and then in the **web** container you can use the following commands :
+
+#### Gziped dump
 ```
 zcat /project/backups/DUMP_NAME.sql.gz | mysql -u drupal -pdrupal -h mysql drupal
+```
+
+#### « regular » dump (without compression)
+```
+cat /project/backups/DUMP_NAME.sql.gz | mysql -u drupal -pdrupal -h mysql drupal
 ```
