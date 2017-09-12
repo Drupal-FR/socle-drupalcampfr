@@ -229,6 +229,7 @@ fieldset[disabled] .btn-xl.active {
   position: absolute;
   top : 5px;
   right : 5px;
+  padding: 2px 10px;
 }
 
 .navbar-custom .navbar-toggle:hover,
