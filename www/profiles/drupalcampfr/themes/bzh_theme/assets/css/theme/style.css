@@ -20,6 +20,22 @@ body.navbar-is-fixed-top {
   }
 }
 
+.node-preview-container {
+  position: fixed;
+  top:0;
+  left:0;
+  width : 100%;
+  z-index: 20000;
+}
+.node-preview-container form {
+  margin: 15px auto;
+  width : 600px;
+}
+
+body.navbar-is-fixed-top .node-preview-container {
+  top:70px;
+}
+
 .text-muted {
   color : #777777;
 }
