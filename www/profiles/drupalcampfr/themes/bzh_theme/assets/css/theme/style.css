@@ -699,3 +699,35 @@ img::selection {
 img::-moz-selection {
   background : transparent;
 }
+
+table.programme {
+  border-radius: 5px;
+  border: solid 1px #fec503;
+  border-collapse: collapse;
+}
+
+table.programme td,
+table.programme th {
+  border: solid 1px #fec503;
+  padding :2px 5px;
+}
+
+table.programme th {
+  background-color:  #fec503;
+  text-align: center;
+  /*color : #e30a17;*/
+}
+
+table.programme tr td:first-child {
+  text-align: center;
+}
+
+table.programme td.debutant {
+  background-color: rgba(187, 254, 3,0.7);
+}
+table.programme td.confirme {
+  background-color: rgba(129, 186, 255, 0.7);
+}
+table.programme td.expert {
+  background-color: rgba(254, 70, 3, 0.7);
+}
