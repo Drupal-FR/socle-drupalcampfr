@@ -731,3 +731,6 @@ table.programme td.confirme {
 table.programme td.expert {
   background-color: rgba(254, 70, 3, 0.7);
 }
+table.programme td.empty {
+  background-color: rgba(99, 99, 99, 0.7);
+}
