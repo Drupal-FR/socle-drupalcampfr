@@ -723,14 +723,20 @@ table.programme tr td:first-child {
 }
 
 table.programme td.debutant {
-  background-color: rgba(187, 254, 3,0.7);
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
 }
 table.programme td.confirme {
-  background-color: rgba(129, 186, 255, 0.7);
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
 }
 table.programme td.expert {
-  background-color: rgba(254, 70, 3, 0.7);
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
 }
 table.programme td.empty {
-  background-color: rgba(99, 99, 99, 0.7);
+  background-color: #d6d8d9;
 }
