@@ -25,6 +25,7 @@ function drupalcampfr_social_preprocess_drupalcampfr_social_twitter_statuses(&$v
   /** @var Drupal\Core\Datetime\DateFormatterInterface $date_formatter */
   $date_formatter = \Drupal::service('date.formatter');
 
+  $variables['statuses'] = $variables['statuses']->statuses;
   foreach ($variables['statuses'] as $key => $status) {
     // Format creation date.
     $created_at = \DateTime::createFromFormat('D M d H:i:s O Y', $variables['statuses'][$key]->created_at);
