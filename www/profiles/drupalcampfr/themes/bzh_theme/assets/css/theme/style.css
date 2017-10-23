@@ -740,3 +740,8 @@ table.programme td.expert {
 table.programme td.empty {
   background-color: #d6d8d9;
 }
+
+
+#block-bzh-theme-homepage-twitter div.row > .col-md-4 {
+  margin-bottom : 3em;
+}
