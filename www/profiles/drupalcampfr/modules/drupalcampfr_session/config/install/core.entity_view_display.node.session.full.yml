@@ -52,7 +52,7 @@ content:
     weight: 5
     label: inline
     settings:
-      timezone_override: UTC
+      timezone_override: ''
       format_type: day_and_time
     third_party_settings: {  }
     region: content

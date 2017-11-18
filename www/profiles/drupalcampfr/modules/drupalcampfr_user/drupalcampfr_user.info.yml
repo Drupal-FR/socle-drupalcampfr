@@ -5,7 +5,6 @@ core: 8.x
 dependencies:
   - csv_serialization
   - drupalcampfr_core
-  - drupalcampfr_user
   - field
   - file
   - image

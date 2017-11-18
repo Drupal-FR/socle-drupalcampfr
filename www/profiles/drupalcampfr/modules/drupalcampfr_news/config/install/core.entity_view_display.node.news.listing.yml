@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.listing
     - field.field.node.news.body
+    - field.field.node.news.field_attachment
     - field.field.node.news.field_news_link
     - node.type.news
   module:
@@ -27,5 +28,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_attachment: true
   field_news_link: true
   langcode: true

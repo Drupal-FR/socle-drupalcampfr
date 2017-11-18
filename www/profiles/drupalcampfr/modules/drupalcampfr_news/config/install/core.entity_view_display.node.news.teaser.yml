@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.news.body
+    - field.field.node.news.field_attachment
     - field.field.node.news.field_news_link
     - node.type.news
   module:
@@ -35,10 +36,7 @@ content:
       url_plain: false
     third_party_settings: {  }
     region: content
-  links:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  field_attachment: true
   langcode: true
+  links: true
