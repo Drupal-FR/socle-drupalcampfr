@@ -398,7 +398,7 @@
         "drupal/commerce_paypal": "1.x-dev#1517211b5660a9710b875c7357be42ad479ff054",
         "drupal/contact_storage": "1.0.0-beta9",
         "drupal/core": "8.4.2",
-        "drupal/drush_language": "1.*",
+        "drupal/drush_language": "1.x-dev#b1a7b7e98eaecc26f198e58b99362937832d4319",
         "drupal/entityqueue": "1.0.0-alpha7",
         "drupal/eu_cookie_compliance": "1.0.0-beta7",
         "drupal/features": "3.5.0",
@@ -406,7 +406,7 @@
         "drupal/menu_attributes": "1.*",
         "drupal/migrate_plus": "4.0.0-beta1",
         "drupal/migrate_source_csv": "2.0.0",
-        "drupal/migrate_tools": "4.0.0-beta1",
+        "drupal/migrate_tools": "4.x-dev#05f820df91affd94bab705d243c9b281f5e1b6ca",
         "drupal/pathauto": "1.0.0",
         "drupal/purge": "3.0.0-beta8",
         "drupal/r4032login": "1.*",
@@ -416,7 +416,7 @@
         "drupal/views_data_export": "1.0.0-alpha4",
         "drupal/visualization": "1.0.0-beta1",
         "drupal/webform": "5.0.0-beta24",
-        "drush/drush": "8.1.15",
+        "drush/drush": "9.0.0-beta9",
         "jquery/geocomplete": "1.7.0",
         "jquery/icheck": "1.0.2 ",
         "jquery/image-picker": "0.3.0",
@@ -482,7 +482,8 @@
                 "type:drupal-core"
             ],
             "www/modules/contrib/{$name}": [
-                "type:drupal-module"
+                "type:drupal-module",
+                "type:drupal-drush"
             ],
             "www/modules/custom/{$name}": [
                 "type:drupal-custom-module"
@@ -498,9 +499,6 @@
             ],
             "www/libraries/{$name}": [
                 "type:drupal-library"
-            ],
-            "drush/contrib/{$name}": [
-                "type:drupal-drush"
             ]
         },
         "drupal-scaffold": {
@@ -524,8 +522,17 @@
             "drupal/commerce": {
                 "Display payment method in the CheckoutPane Payment informations even if only single payement method available": "https://www.drupal.org/files/issues/2907504-2.patch"
             },
+            "drupal/drush_language": {
+                "Convert for Drush 9": "https://www.drupal.org/files/issues/drush_language-drush_9-2914081-8.patch"
+            },
+            "drupal/features": {
+                "Drush 9 Incompatibility": "https://www.drupal.org/files/issues/2913651-drush9-21.patch"
+            },
             "drupal/redis": {
                 "Add status page and some statistics": "https://www.drupal.org/files/issues/redis-statistics-7.patch"
+            },
+            "drupal/webform": {
+                "Drush 9 support": "https://www.drupal.org/files/issues/webform-drush_9-2916800-4.patch"
             }
         }
     }

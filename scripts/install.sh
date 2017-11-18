@@ -9,14 +9,18 @@
 # Without drush alias, change temporarily directory to www.
 cd $WWW_PATH
 
-# Database backup.
-$DRUSH sql-dump --result-file="${PROJECT_PATH}/backups/${CURRENT_DATE}.sql" --gzip --structure-tables-key=common
+# Clear Drush cache in case of update.
+$DRUSH cache:clear drush
 
-# Disable external cache.
-rm -f $WWW_PATH/sites/default/.cache_activated
+# Database backup.
+$DRUSH sql:dump --result-file="${PROJECT_PATH}/backups/${CURRENT_DATE}.sql" --gzip --structure-tables-key="common"
+
+# Clear Redis cache because otherwise it is no emptied on site-install and it
+# provokes errors.
+$REDIS_FLUSH_COMMAND
 
 # Install Drupal.
-$DRUSH site-install $PROFILE \
+$DRUSH site:install $PROFILE \
   --account-mail=$ACCOUNT_MAIL \
   --account-name=$ACCOUNT_NAME \
   --account-pass=$ACCOUNT_PASS \
@@ -25,19 +29,22 @@ $DRUSH site-install $PROFILE \
   --locale=$DEFAULT_LANGUAGE \
   -y
 
+# TODO: workaround since https://www.drupal.org/node/2916090 is not fixed.
+$DRUSH user:password $ACCOUNT_NAME $ACCOUNT_PASS
+$DRUSH config:set system.site mail $SITE_MAIL -y
+
 # Launch updates. Ensure that the database schema is up-to-date.
-$DRUSH updb --entity-updates -y
+$DRUSH updatedb --entity-updates -y
 
 . $SCRIPTS_PATH/tasks/development_modules.sh
 . $SCRIPTS_PATH/tasks/migrate_imports.sh
 . $SCRIPTS_PATH/tasks/update_translations.sh
 
 # Run CRON.
-$DRUSH cron
+$DRUSH core:cron
 
-# Enable external cache.
-touch $WWW_PATH/sites/default/.cache_activated
-$DRUSH cr
+# Flush caches to be clean.
+$DRUSH cache:rebuild
 
 # Back to the current directory.
 cd $CURRENT_PATH
