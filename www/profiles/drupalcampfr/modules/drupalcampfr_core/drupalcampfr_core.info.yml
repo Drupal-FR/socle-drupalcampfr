@@ -10,7 +10,6 @@ dependencies:
   - commerce_product
   - commerce_promotion
   - commerce_store
-  - contact
   - drupalcampfr_core
   - entityqueue
   - eu_cookie_compliance

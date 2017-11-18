@@ -1,7 +1,9 @@
 drupalcampfr_site.main.contact:
   title: 'Contact'
   description: 'Contact us'
-  route_name: contact.site_page
+  route_name: entity.webform.canonical
+  route_parameters:
+    webform: 'contact'
   weight: 5
   menu_name: main
   expanded: true

@@ -77,7 +77,6 @@ assignments:
     types:
       config:
         action: action
-        contact_form: contact_form
         block_content_type: block_content_type
         rdf_mapping: rdf_mapping
         taxonomy_vocabulary: taxonomy_vocabulary

@@ -5,8 +5,6 @@ core: 8.x
 dependencies:
   - address
   - block_visibility_groups
-  - contact
-  - contact_storage
   - drupalcampfr_core
   - drupalcampfr_site
   - drupalcampfr_sponsor

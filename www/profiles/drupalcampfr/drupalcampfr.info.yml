@@ -9,7 +9,6 @@ dependencies:
   - breakpoint
   - ckeditor
   - config
-  - contact
   - contextual
   - datetime
   - dynamic_page_cache
@@ -20,6 +19,7 @@ dependencies:
   - filter
   - help
   - image
+  - inline_form_errors
   - language
   - link
   - locale
@@ -37,13 +37,9 @@ dependencies:
   - telephone
   - text
   - toolbar
-  - tour
   - update
   - user
   - views
-
-  # Experimental modules.
-  - inline_form_errors
 
   # Contrib modules.
   - admin_toolbar

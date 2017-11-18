@@ -5,9 +5,6 @@ core: 8.x
 dependencies:
   - block_content
   - ckeditor
-  - contact
-  - contact_storage
-  - csv_serialization
   - drupalcampfr_core
   - drupalcampfr_site
   - editor
@@ -21,6 +18,4 @@ dependencies:
   - taxonomy
   - telephone
   - text
-  - views
-  - views_data_export
 package: Drupalcampfr

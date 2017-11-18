@@ -1,0 +1,147 @@
+langcode: fr
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1
+template: false
+id: sponsor
+title: 'Devenir sponsor du drupalcamp'
+description: ''
+category: ''
+elements: "name:\n  '#type': textfield\n  '#title': 'Votre nom'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Votre adresse de courriel'\n  '#default_value': '[current-user:mail]'\n  '#required': true\nphone:\n  '#type': tel\n  '#title': 'Numéro de téléphone'\norganism:\n  '#type': textfield\n  '#title': 'Nom de la société ou de l''organisation'\n  '#required': true\naddress:\n  '#type': webform_address\n  '#title': 'Adresse postale'\n  '#default_value':\n    address: ''\n    address_2: ''\n    city: ''\n    postal_code: ''\n    country: France\n    state_province: ''\n  '#required': true\n  '#address__required': true\n  '#address_2__required': true\n  '#city__title': Ville\n  '#city__required': true\n  '#state_province__access': false\n  '#postal_code__title': 'Code postal'\n  '#postal_code__required': true\n  '#country__required': true\nlevel:\n  '#type': webform_term_checkboxes\n  '#title': 'Niveau de sponsor'\n  '#description': 'S&eacute;lectionnez le (ou les) niveau(x) de sponsor qui vous int&eacute;resse(nt) le plus.'\n  '#required': true\n  '#vocabulary': sponsor_levels\n  '#breadcrumb_delimiter': ''\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#wrapper_attributes':\n    class:\n      - form-group\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Soumettre\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: /sponsors/devenir-sponsor
+  page_confirm_path: ''
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  submission_label: ''
+  submission_log: false
+  submission_user_columns: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_start_label: ''
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  purge: none
+  purge_days: null
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email_notification:
+    id: email
+    label: 'Notification par courriel'
+    handler_id: email_notification
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: default
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:name:raw]'
+      subject: '[Drupalcampfr] Demande de sponsoring : [webform_submission:values:name]'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      html: false
+      attachments: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''

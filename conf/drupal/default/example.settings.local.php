@@ -43,14 +43,6 @@ $config['drupalcampfr_social.twitter']['consumer_secret'] = '';
 $config['drupalcampfr_social.twitter']['access_token'] = '';
 $config['drupalcampfr_social.twitter']['access_token_secret'] = '';
 
-// Contact email.
-$contact_email = 'example@example.org';
-
-$config['contact.form.attendance_certificate']['recipients'] = [$contact_email];
-$config['contact.form.contact']['recipients']                = [$contact_email];
-$config['contact.form.sponsor']['recipients']                = [$contact_email];
-$config['contact.form.volunteer']['recipients']              = [$contact_email];
-
 // Paypal.
 $config['commerce_payment.commerce_payment_gateway.paypal_test']['configuration']['api_username'] = '';
 $config['commerce_payment.commerce_payment_gateway.paypal_test']['configuration']['api_password'] = '';
