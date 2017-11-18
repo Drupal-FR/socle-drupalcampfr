@@ -2,12 +2,12 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_page_attachment
+    - field.storage.node.field_attachment
     - node.type.page
   module:
     - file
-id: node.page.field_page_attachment
-field_name: field_page_attachment
+id: node.page.field_attachment
+field_name: field_attachment
 entity_type: node
 bundle: page
 label: 'Pièces jointes'

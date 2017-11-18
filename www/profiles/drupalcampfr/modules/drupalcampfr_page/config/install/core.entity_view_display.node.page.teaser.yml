@@ -4,7 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
-    - field.field.node.page.field_page_attachment
+    - field.field.node.page.field_attachment
     - node.type.page
   module:
     - text
@@ -28,5 +28,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_page_attachment: true
+  field_attachment: true
   langcode: true
