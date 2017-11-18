@@ -23,4 +23,5 @@ dependencies:
   - text
   - user
   - views
+  - webform
 package: Drupalcampfr

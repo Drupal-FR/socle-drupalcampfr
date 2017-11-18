@@ -55,6 +55,9 @@ dependencies:
   - redis
   - varnish_purger
   - varnish_purge_tags
+  - webform
+  - webform_ui
+  - webform_bootstrap
 
   # Custom modules
   - drupalcampfr_core

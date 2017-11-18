@@ -35,5 +35,6 @@ dependencies:
   - varnish_purger
   - views
   - visualization
+  - webform
 package: Drupalcampfr
 configure: drupalcampfr_core.config_list
