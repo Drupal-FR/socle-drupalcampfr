@@ -384,7 +384,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-      title: 'Nos partenaires'
+      title: 'Nos sponsors'
       header: {  }
       footer: {  }
       empty: {  }
@@ -418,7 +418,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      title: 'Nos partenaires'
+      title: Sponsors
       defaults:
         title: false
         filters: false
@@ -513,7 +513,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      title: 'Nos partenaires'
+      title: Sponsors
       defaults:
         title: false
         filters: false
@@ -601,11 +601,11 @@ display:
       path: sponsors
       menu:
         type: normal
-        title: 'Nos partenaires'
+        title: 'Nos sponsors'
         description: ''
         expanded: false
-        parent: 'menu_link_content:813a16e8-3345-4890-bc59-8caae61dda6d'
-        weight: -48
+        parent: drupalcampfr_sponsor.main.sponsor
+        weight: 0
         context: '0'
         menu_name: main
         enabled: true

@@ -3,7 +3,12 @@ favicon:
   path: ''
   url: 'http://socle-drupalcampfr.local/profiles/drupalcampfr/themes/bzh_theme/favicon.ico'
   use_default: 1
-schema: '8000'
+schemas:
+  bootstrap: 8000
+  bzh_theme: 8000
+  drupalcampfr_theme: 8000
+_core:
+  default_config_hash: pk93v5yPe2Q5GKFZ5JnwOZLS3XzwamTMLi2axwWED3M
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -13,26 +18,4 @@ logo:
   path: ''
   url: ''
   use_default: 1
-region_wells:
-  navigation: ''
-  navigation_collapsible: ''
-  header: ''
-  highlighted: ''
-  help: ''
-  content: ''
-  sidebar_first: ''
-  sidebar_second: ''
-  content_bottom: ''
-  footer: ''
-navbar_position: fixed-top
-breadcrumb_home: 1
-forms_smart_descriptions: 0
-tooltip_enabled: 0
-popover_enabled: 0
-modal_enabled: 0
-schemas:
-  bootstrap: 8000
-  bzh_theme: 8000
-table_responsive: '-1'
-table: ''
 langcode: fr

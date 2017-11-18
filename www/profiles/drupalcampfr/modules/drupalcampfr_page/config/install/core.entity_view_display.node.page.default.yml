@@ -3,8 +3,6 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_class
-    - field.field.node.page.field_intro
     - field.field.node.page.field_page_attachment
     - node.type.page
   module:
@@ -36,6 +34,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_class: true
-  field_intro: true
   langcode: true

@@ -6,8 +6,6 @@ dependencies:
     - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_user_meal_indication
     - field.field.user.user.field_user_name
-    - field.field.user.user.field_user_participate
-    - field.field.user.user.field_user_shirt_size
     - field.field.user.user.field_user_society
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -21,9 +19,9 @@ mode: register
 content:
   account:
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_user_meal_indication:
     type: string_textarea
     weight: 5
@@ -59,8 +57,6 @@ content:
 hidden:
   commerce_remote_id: true
   contact: true
-  field_user_participate: true
-  field_user_shirt_size: true
   langcode: true
   language: true
   path: true

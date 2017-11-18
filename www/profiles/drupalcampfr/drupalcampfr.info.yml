@@ -73,7 +73,7 @@ dependencies:
   - drupalcampfr_newsletter
   - drupalcampfr_ticket
 themes:
-  - bzh_theme
+  - drupalcampfr_theme
   - seven
 package: 'Drupalcampfr'
 #distribution:

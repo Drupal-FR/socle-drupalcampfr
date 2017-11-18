@@ -2,12 +2,10 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.user.user_picture
-    - image.style.thumbnail
+    - core.entity_view_mode.user.teaser
     - system.menu.footer-menu-2
     - user.role.attendee
   module:
-    - image
     - user
 id: user_attendee
 label: 'Drupalcampfr participants'
@@ -52,7 +50,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 30
+          items_per_page: 48
           offset: 0
           id: 0
           total_pages: null
@@ -71,108 +69,17 @@ display:
             offset_label: Offset
           quantity: 9
       style:
-        type: table
+        type: default
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          override: true
-          sticky: false
-          caption: ''
-          summary: ''
-          description: ''
-          columns:
-            user_picture: user_picture
-            name: name
-          info:
-            user_picture:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            name:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          default: '-1'
-          empty_table: false
+          row_class: col-md-3
+          default_row_class: false
+          uses_fields: false
       row:
-        type: fields
+        type: 'entity:user'
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
-      fields:
-        user_picture:
-          id: user_picture
-          table: user__user_picture
-          field: user_picture
           relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_style: thumbnail
-            image_link: ''
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
+          view_mode: teaser
+      fields:
         name:
           id: name
           table: users_field_data
@@ -294,14 +201,13 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
         - user.permissions
-      tags:
-        - 'config:field.storage.user.user_picture'
+      tags: {  }
   block_home:
     display_plugin: block
     id: block_home
@@ -337,8 +243,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
-      tags:
-        - 'config:field.storage.user.user_picture'
+      tags: {  }
   page_1:
     display_plugin: page
     id: page_1
@@ -358,11 +263,10 @@ display:
         menu_name: footer-menu-2
         enabled: true
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
         - user.permissions
-      tags:
-        - 'config:field.storage.user.user_picture'
+      tags: {  }

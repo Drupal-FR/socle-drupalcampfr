@@ -62,10 +62,8 @@ class TwitterBlock extends BlockBase implements ContainerFactoryPluginInterface 
    * {@inheritdoc}
    */
   public function build() {
-    $statuses = $this->twitterService->getStatuses('search/tweets', [
-      'q' => '#dclannion-filter:retweets',
-      'count' => 6,
-      'result_type' => 'recent',
+    $statuses = $this->twitterService->getStatuses('statuses/user_timeline', [
+      'count' => 3,
       'exclude_replies' => FALSE,
     ]);
 
