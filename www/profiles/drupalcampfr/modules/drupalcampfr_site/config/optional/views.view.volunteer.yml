@@ -848,7 +848,7 @@ display:
       filename: volunteers.csv
       displays:
         page_1: page_1
-        default: 0
+        default: '0'
       fields:
         name:
           id: name

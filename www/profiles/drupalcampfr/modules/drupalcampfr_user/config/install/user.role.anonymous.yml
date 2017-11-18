@@ -15,3 +15,4 @@ permissions:
   - 'display eu cookie compliance popup'
   - 'use text format restricted_html'
   - 'view any commerce_product'
+  - 'view commerce_product'

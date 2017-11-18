@@ -23,6 +23,7 @@ permissions:
   - 'use text format basic_html'
   - 'use text format restricted_html'
   - 'view any commerce_product'
+  - 'view commerce_product'
   - 'view own commerce_order'
   - 'view own customer profile'
   - 'view own unpublished content'

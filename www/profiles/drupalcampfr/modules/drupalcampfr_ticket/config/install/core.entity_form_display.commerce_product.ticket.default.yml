@@ -34,13 +34,21 @@ content:
   langcode:
     type: language_select
     weight: 2
-    settings: {  }
+    settings:
+      include_locked: true
     third_party_settings: {  }
     region: content
   path:
     type: path
     weight: 30
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 31
     third_party_settings: {  }
     region: content
   stores:
@@ -82,5 +90,4 @@ content:
       match_operator: CONTAINS
     third_party_settings: {  }
     region: content
-hidden:
-  status: true
+hidden: {  }

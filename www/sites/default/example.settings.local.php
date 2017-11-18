@@ -40,7 +40,6 @@ $contact_email = 'example@example.org';
 
 $config['contact.form.attendance_certificate']['recipients'] = [$contact_email];
 $config['contact.form.contact']['recipients']                = [$contact_email];
-$config['contact.form.demander_une_reduction']['recipients'] = [$contact_email];
 $config['contact.form.sponsor']['recipients']                = [$contact_email];
 $config['contact.form.volunteer']['recipients']              = [$contact_email];
 
