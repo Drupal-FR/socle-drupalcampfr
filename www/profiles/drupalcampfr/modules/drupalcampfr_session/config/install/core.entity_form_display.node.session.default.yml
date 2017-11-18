@@ -127,7 +127,7 @@ content:
     weight: 0
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Titre de la présentation/conférence'
     third_party_settings: {  }
     region: content
   uid:

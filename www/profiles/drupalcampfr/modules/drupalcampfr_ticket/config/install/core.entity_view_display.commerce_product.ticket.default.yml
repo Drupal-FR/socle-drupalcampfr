@@ -24,7 +24,7 @@ content:
   variations:
     type: commerce_add_to_cart
     weight: 10
-    label: above
+    label: hidden
     settings:
       combine: true
     third_party_settings: {  }

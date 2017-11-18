@@ -1,0 +1,20 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro
+    - node.type.page
+  module:
+    - text
+id: node.page.field_intro
+field_name: field_intro
+entity_type: node
+bundle: page
+label: Intro
+description: 'Permet d''ajouter une intro au niveau du titre / image de header.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

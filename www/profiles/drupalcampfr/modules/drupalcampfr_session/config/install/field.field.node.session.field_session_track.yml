@@ -9,8 +9,8 @@ id: node.session.field_session_track
 field_name: field_session_track
 entity_type: node
 bundle: session
-label: Thème
-description: ''
+label: 'Thème, sujet'
+description: 'Quel est le sujet de votre présentation ? De quoi allez-vous nous parler ? N''hésitez pas à le préciser plus en détail dans la description de votre conférence.'
 required: true
 translatable: false
 default_value: {  }
@@ -23,4 +23,5 @@ settings:
     sort:
       field: _none
     auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

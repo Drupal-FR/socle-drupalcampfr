@@ -9,7 +9,7 @@ field_name: field_session_speaker
 entity_type: node
 bundle: session
 label: Présentateur(s)/rice(s)
-description: ''
+description: "Envie de présenter seul(e) ou accompagné(e) ?\r\nDemandez à vos co-présentateur(trice) leur compte sur le site pour les ajouter. Si vous ne les trouvez pas, vous pouvez aussi nous le préciser dans la description."
 required: true
 translatable: false
 default_value: {  }
@@ -23,4 +23,5 @@ settings:
     target_bundles: null
     sort:
       field: _none
+    auto_create: false
 field_type: entity_reference

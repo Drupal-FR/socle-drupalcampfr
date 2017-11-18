@@ -12,10 +12,10 @@ third_party_settings:
     maximum_submissions_user: 0
     page_autoreply_format: plain_text
 id: sponsor
-label: 'Devenir sponsor'
+label: 'Devenir partenaire du drupalcamp'
 recipients:
   - example@example.com
 reply: ''
 weight: 0
-message: 'Votre demande de sponsoring a été envoyée.'
+message: 'Votre demande de partenariat a été envoyée.'
 redirect: ''

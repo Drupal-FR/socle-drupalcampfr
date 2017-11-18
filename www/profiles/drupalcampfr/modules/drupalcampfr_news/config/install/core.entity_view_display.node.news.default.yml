@@ -3,9 +3,11 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_attachment
     - field.field.node.news.field_news_link
     - node.type.news
   module:
+    - file
     - link
     - text
     - user
@@ -21,6 +23,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_attachment:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
   field_news_link:
     weight: 1
     label: hidden
@@ -35,8 +44,8 @@ content:
     region: content
   links:
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   langcode: true

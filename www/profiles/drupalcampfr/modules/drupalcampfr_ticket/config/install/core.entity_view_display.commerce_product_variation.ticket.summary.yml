@@ -3,16 +3,24 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.ticket
+    - core.entity_view_mode.commerce_product_variation.summary
     - field.field.commerce_product_variation.ticket.field_ticket_date
-id: commerce_product_variation.ticket.default
+id: commerce_product_variation.ticket.summary
 targetEntityType: commerce_product_variation
 bundle: ticket
-mode: default
-content: {  }
+mode: summary
+content:
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   field_ticket_date: true
   langcode: true
   price: true
   product_id: true
   sku: true
-  title: true

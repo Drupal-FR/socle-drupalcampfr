@@ -10,7 +10,7 @@ field_name: field_user_meal_indication
 entity_type: user
 bundle: user
 label: 'Indications repas'
-description: 'Si vous avez des indications particulières concernant les repas (allergies, régimes spéciaux, végétarien, halal, casher, ...), merci de nous l''indiquer, nous essaierons de correspondre à vos besoins.'
+description: 'Si vous avez des indications particulières concernant les repas (allergies, régimes spéciaux, végétarien, halal, casher, ...), merci de nous l''indiquer, nous essaierons de correspondre à vos besoins. Attention, en créant ce compte vous n''êtes pas inscrit pour l''événement ! Pour réserver un pack week-end, veuillez compléter votre panier et le confirmer.'
 required: false
 translatable: false
 default_value: {  }

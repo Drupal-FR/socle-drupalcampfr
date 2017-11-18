@@ -10,8 +10,8 @@ id: user.user.user_picture
 field_name: user_picture
 entity_type: user
 bundle: user
-label: Picture
-description: 'Cette image sera affichée dans la liste des participants.'
+label: 'Image de profil'
+description: 'Cette image sera affichée dans la liste des participants, alors montrez vous sous votre plus beau visage.'
 required: false
 translatable: true
 default_value: {  }

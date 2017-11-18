@@ -10,7 +10,7 @@ field_name: field_session_level
 entity_type: node
 bundle: session
 label: Niveau
-description: ''
+description: 'A quel public s''adresse votre conférence ? Quel maitrise de Drupal votre auditoire doit-il avoir pour profiter au maximum de cette présentation ?'
 required: true
 translatable: false
 default_value: {  }
@@ -23,4 +23,5 @@ settings:
     sort:
       field: _none
     auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

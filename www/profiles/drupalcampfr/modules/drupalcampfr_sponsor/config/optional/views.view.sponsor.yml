@@ -335,7 +335,7 @@ display:
           plugin_id: field
       filters:
         status:
-          value: true
+          value: '1'
           table: node_field_data
           field: status
           plugin_id: boolean
@@ -384,7 +384,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-      title: 'Nos sponsors'
+      title: 'Nos partenaires'
       header: {  }
       footer: {  }
       empty: {  }
@@ -418,7 +418,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      title: Sponsors
+      title: 'Nos partenaires'
       defaults:
         title: false
         filters: false
@@ -428,7 +428,7 @@ display:
       display_description: ''
       filters:
         status:
-          value: true
+          value: '1'
           table: node_field_data
           field: status
           plugin_id: boolean
@@ -455,7 +455,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: true
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -491,7 +491,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: 'col-md-6 text-center'
+          row_class: 'col-sm-2 text-center'
           default_row_class: true
       row:
         type: fields
@@ -513,7 +513,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      title: Sponsors
+      title: 'Nos partenaires'
       defaults:
         title: false
         filters: false
@@ -522,7 +522,7 @@ display:
       display_description: ''
       filters:
         status:
-          value: true
+          value: '1'
           table: node_field_data
           field: status
           plugin_id: boolean
@@ -549,7 +549,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: true
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -601,11 +601,11 @@ display:
       path: sponsors
       menu:
         type: normal
-        title: 'Nos sponsors'
+        title: 'Nos partenaires'
         description: ''
         expanded: false
-        parent: drupalcampfr_sponsor.main.sponsor
-        weight: 0
+        parent: 'menu_link_content:813a16e8-3345-4890-bc59-8caae61dda6d'
+        weight: -48
         context: '0'
         menu_name: main
         enabled: true

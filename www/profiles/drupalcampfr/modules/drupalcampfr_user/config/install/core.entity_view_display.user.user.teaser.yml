@@ -22,11 +22,11 @@ content:
   field_user_name:
     type: string
     weight: 1
-    label: hidden
+    region: content
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    region: content
   user_picture:
     type: image
     weight: 0

@@ -11,7 +11,7 @@ field_name: field_session_attachment
 entity_type: node
 bundle: session
 label: 'Pièces jointes'
-description: ''
+description: 'Après votre présentation, nous ajouterons les PDF de vos diapositives.'
 required: false
 translatable: false
 default_value: {  }

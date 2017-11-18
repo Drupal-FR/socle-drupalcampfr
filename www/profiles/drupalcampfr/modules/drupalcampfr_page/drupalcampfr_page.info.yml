@@ -3,6 +3,7 @@ description: 'Provide Page content type and related configuration.'
 type: module
 core: 8.x
 dependencies:
+  - drupalcampfr_core
   - field
   - file
   - language

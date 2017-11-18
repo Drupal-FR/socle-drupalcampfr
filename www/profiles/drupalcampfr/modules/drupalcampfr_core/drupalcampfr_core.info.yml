@@ -26,10 +26,11 @@ dependencies:
   - options
   - profile
   - purge
-  - system
   - swiftmailer
+  - system
   - taxonomy
   - telephone
+  - text
   - tour
   - user
   - varnish_purger

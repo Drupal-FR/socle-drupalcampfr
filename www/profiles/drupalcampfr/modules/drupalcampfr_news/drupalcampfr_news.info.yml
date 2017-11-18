@@ -8,6 +8,7 @@ dependencies:
   - drupalcampfr_news
   - entityqueue
   - field
+  - file
   - language
   - link
   - menu_ui

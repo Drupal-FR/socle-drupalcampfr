@@ -82,3 +82,6 @@ msgstr "Bannière Drupal France"
 
 msgid "Drupal France logo"
 msgstr "Logo Drupal France"
+
+msgid "My shopping cart"
+msgstr "Mon panier"

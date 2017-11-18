@@ -20,7 +20,7 @@ content:
     type: text_summary_or_trimmed
     weight: 0
     settings:
-      trim_length: 600
+      trim_length: 200
     third_party_settings: {  }
     region: content
   field_news_link:
@@ -35,6 +35,10 @@ content:
       url_plain: false
     third_party_settings: {  }
     region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true
-  links: true

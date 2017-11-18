@@ -11,5 +11,7 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'access user profiles'
+  - 'create default commerce_order'
   - 'display eu cookie compliance popup'
   - 'use text format restricted_html'
+  - 'view any commerce_product'

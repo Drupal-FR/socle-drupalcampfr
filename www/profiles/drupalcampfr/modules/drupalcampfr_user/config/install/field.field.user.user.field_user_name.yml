@@ -10,7 +10,7 @@ field_name: field_user_name
 entity_type: user
 bundle: user
 label: 'Prénom Nom'
-description: ''
+description: 'Si vous souscrivez à un pack week-end, nous utiliserons ces informations pour imprimer votre badge.'
 required: false
 translatable: false
 default_value: {  }

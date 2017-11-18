@@ -39,18 +39,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_user_participate:
-    weight: 6
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_user_shirt_size:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_user_society:
     weight: 3
     settings:
@@ -75,6 +63,8 @@ content:
 hidden:
   commerce_remote_id: true
   contact: true
+  field_user_participate: true
+  field_user_shirt_size: true
   langcode: true
   language: true
   path: true

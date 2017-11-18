@@ -129,7 +129,7 @@ display:
           field_api_classes: false
       filters:
         status:
-          value: true
+          value: '1'
           table: node_field_data
           field: status
           plugin_id: boolean
@@ -172,7 +172,10 @@ display:
       arguments: {  }
       display_extenders: {  }
       link_url: ''
-      link_display: page_1
+      link_display: '0'
+      use_more: false
+      use_more_always: true
+      use_more_text: 'Voir toutes les actualités'
     cache_metadata:
       max-age: -1
       contexts:
@@ -204,6 +207,8 @@ display:
         row: false
         relationships: false
         sorts: false
+        link_display: true
+        link_url: true
       block_description: 'Block home news'
       display_description: ''
       style:
@@ -222,24 +227,26 @@ display:
           relationship: none
           group_type: group
           admin_label: 'Content queue'
-          required: true
+          required: false
           limit_queue: news_homepage
           entity_type: node
           plugin_id: entity_queue
       sorts:
-        entityqueue_relationship:
-          id: entityqueue_relationship
+        created_1:
+          id: created_1
           table: node_field_data
-          field: entityqueue_relationship
+          field: created
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: false
           expose:
             label: ''
+          granularity: hour
           entity_type: node
-          plugin_id: entity_queue_position
+          entity_field: created
+          plugin_id: date
     cache_metadata:
       max-age: -1
       contexts:
@@ -264,11 +271,11 @@ display:
         title: Actualités
         description: 'Toutes les actualités.'
         expanded: false
-        parent: drupalcampfr_news.main.news
-        weight: -50
+        parent: 'menu_link_content:main_communaute'
+        weight: -47
         context: '0'
         menu_name: main
-        enabled: true
+        enabled: false
     cache_metadata:
       max-age: -1
       contexts:
