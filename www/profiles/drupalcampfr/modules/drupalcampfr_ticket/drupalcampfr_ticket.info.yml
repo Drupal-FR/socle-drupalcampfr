@@ -14,6 +14,7 @@ dependencies:
   - commerce_promotion
   - ctools
   - datetime
+  - drupalcampfr_core
   - drupalcampfr_user
   - field
   - inline_entity_form
