@@ -1,167 +1,183 @@
 {
-  "name": "Drupal-FR/socle-drupalcampfr",
-  "description": "Technical base for french drupalcamps. Template inspired from drupal-composer/drupal-project.",
-  "type": "project",
-  "homepage": "http://drupalcamp.fr",
-  "license": "GPL-2.0+",
-  "authors": [
-    {
-      "name": "Florent Torregrosa",
-      "homepage": "http://drupal.fr/user/40695",
-      "role": "Developer"
-    },
-    {
-      "name": "Sébastien Corbin",
-      "homepage": "http://drupal.fr/user/13044",
-      "role": "Themer (Nantes 2016)"
-    }
-  ],
-  "support": {
-    "issues": "https://github.com/Drupal-FR/socle-drupalcampfr/issues",
-    "source": "https://github.com/Drupal-FR/socle-drupalcampfr",
-    "docs": "https://github.com/Drupal-FR/socle-drupalcampfr/blob/8.x-1.x/README.md"
-  },
-  "repositories": {
-    "drupal": {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    },
-    "d3": {
-      "type": "package",
-      "package": {
-        "name": "d3/d3",
-        "version": "v3.5.17",
-        "type": "drupal-library",
-        "dist": {
-          "url": "https://github.com/d3/d3/archive/v3.5.17.zip",
-          "type": "zip"
+    "name": "Drupal-FR/socle-drupalcampfr",
+    "description": "Technical base for french drupalcamps. Template inspired from drupal-composer/drupal-project.",
+    "type": "project",
+    "homepage": "http://drupalcamp.fr",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Florent Torregrosa",
+            "homepage": "http://drupal.fr/user/40695",
+            "role": "Developer"
+        },
+        {
+            "name": "Sébastien Corbin",
+            "homepage": "http://drupal.fr/user/13044",
+            "role": "Themer (Nantes 2016)"
         }
-      }
+    ],
+    "support": {
+        "issues": "https://github.com/Drupal-FR/socle-drupalcampfr/issues",
+        "source": "https://github.com/Drupal-FR/socle-drupalcampfr",
+        "docs": "https://github.com/Drupal-FR/socle-drupalcampfr/blob/8.x-1.x/README.md"
     },
-    "highlightjs": {
-      "type": "package",
-      "package": {
-        "name": "components/highlightjs",
-        "version": "9.12.0",
-        "type": "drupal-library",
-        "dist": {
-          "url": "https://github.com/components/highlightjs/archive/9.12.0.zip",
-          "type": "zip"
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "d3": {
+            "type": "package",
+            "package": {
+                "name": "d3/d3",
+                "version": "v3.5.17",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/d3/d3/archive/v3.5.17.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "highlightjs": {
+            "type": "package",
+            "package": {
+                "name": "components/highlightjs",
+                "version": "9.12.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/components/highlightjs/archive/9.12.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "drupal-l10n": {
+            "type": "vcs",
+            "url": "https://github.com/FlorentTorregrosa/drupal-l10n"
         }
-      }
     },
-    "drupal-l10n": {
-      "type": "vcs",
-      "url": "https://github.com/FlorentTorregrosa/drupal-l10n"
+    "require": {
+        "abraham/twitteroauth": "0.7.4",
+        "composer/installers": "^1.0.21",
+        "cweagans/composer-patches": "~1.0",
+        "drupal-composer/drupal-l10n": "dev-master",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/address": "1.1.0",
+        "drupal/admin_toolbar": "1.19.0",
+        "drupal/backup_migrate": "4.x-dev#99c76201a1c64b2ebdd4c3fbb28ec8f676734853",
+        "drupal/block_visibility_groups": "1.1.0",
+        "drupal/bootstrap": "3.5.0",
+        "drupal/commerce": "2.0.0-rc2",
+        "drupal/commerce_paypal": "1.x-dev#1517211b5660a9710b875c7357be42ad479ff054",
+        "drupal/contact_storage": "1.0.0-beta9",
+        "drupal/core": "8.3.7",
+        "drupal/drush_language": "1.*",
+        "drupal/entityqueue": "1.0.0-alpha6",
+        "drupal/eu_cookie_compliance": "1.0.0-beta7",
+        "drupal/features": "3.5.0",
+        "drupal/honeypot": "1.27.0",
+        "drupal/menu_attributes": "1.*",
+        "drupal/migrate_plus": "4.0.0-beta1",
+        "drupal/migrate_source_csv": "2.0.0",
+        "drupal/migrate_tools": "4.0.0-beta1",
+        "drupal/pathauto": "1.0.0",
+        "drupal/purge": "3.0.0-beta8",
+        "drupal/r4032login": "1.*",
+        "drupal/redis": "1.0.0-beta1",
+        "drupal/swiftmailer": "1.0.0-beta1",
+        "drupal/varnish_purge": "1.5.0",
+        "drupal/views_data_export": "1.0.0-alpha4",
+        "drupal/visualization": "1.0.0-beta1",
+        "drush/drush": "8.1.13"
+    },
+    "require-dev": {
+        "behat/mink": "1.7.x-dev",
+        "behat/mink-goutte-driver": "~1.2",
+        "components/highlightjs": "9.12.*",
+        "d3/d3": "3.5.*",
+        "drupal/coder": "8.2.*",
+        "drupal/config_inspector": "1.*",
+        "drupal/console": "1.*",
+        "drupal/devel": "1.*",
+        "drupal/devel_a11y": "1.*",
+        "drupal/drupal-extension": "3.*",
+        "drupal/examples": "1.*",
+        "drupal/pistachio": "1.*",
+        "drupal/renderviz": "1.*",
+        "drupal/search_kint": "1.*",
+        "jcalderonzumba/gastonjs": "~1.0.2",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "mikey179/vfsStream": "~1.2",
+        "phpunit/phpunit": ">=4.8.28 <5",
+        "symfony/browser-kit": ">=2.8.13 <3.0",
+        "symfony/css-selector": "~2.8"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "drupal-l10n": "DrupalComposer\\DrupalL10n\\Plugin::download",
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "post-create-project-cmd": [
+            "bash ./scripts/init.sh"
+        ],
+        "post-install-cmd": [
+            "@drupal-scaffold"
+        ],
+        "post-update-cmd": [
+            "@drupal-scaffold"
+        ]
+    },
+    "extra": {
+        "installer-paths": {
+            "www/core": [
+                "type:drupal-core"
+            ],
+            "www/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "www/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "www/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "www/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "www/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "www/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        },
+        "drupal-scaffold": {
+            "excludes": [
+                "update.php",
+                "web.config",
+                "sites/development.services.yml",
+                "sites/example.settings.local.php"
+            ]
+        },
+        "drupal-l10n": {
+            "destination": "translations/contrib",
+            "languages": [
+                "fr"
+            ]
+        },
+        "patches": {
+            "drupal/commerce": {
+                "Display payment method in the CheckoutPane Payment informations even if only single payement method available": "https://www.drupal.org/files/issues/2907504-2.patch"
+            },
+            "drupal/redis": {
+                "Add status page and some statistics": "https://www.drupal.org/files/issues/redis-statistics-7.patch"
+            }
+        }
     }
-  },
-  "require": {
-    "abraham/twitteroauth": "0.7.4",
-    "composer/installers": "^1.0.21",
-    "cweagans/composer-patches": "~1.0",
-    "drupal-composer/drupal-l10n": "dev-master",
-    "drupal-composer/drupal-scaffold": "^2.2",
-    "drupal/address": "1.1.0",
-    "drupal/admin_toolbar": "1.19.0",
-    "drupal/backup_migrate": "4.x-dev#99c76201a1c64b2ebdd4c3fbb28ec8f676734853",
-    "drupal/block_visibility_groups": "1.1.0",
-    "drupal/bootstrap": "3.5.0",
-    "drupal/commerce": "2.0.0-rc2",
-    "drupal/commerce_paypal": "1.x-dev#1517211b5660a9710b875c7357be42ad479ff054",
-    "drupal/contact_storage": "1.0.0-beta9",
-    "drupal/core": "8.3.7",
-    "drupal/drush_language": "1.*",
-    "drupal/entityqueue": "1.0.0-alpha6",
-    "drupal/eu_cookie_compliance": "1.0.0-beta7",
-    "drupal/features": "3.5.0",
-    "drupal/honeypot": "1.27.0",
-    "drupal/menu_attributes": "1.*",
-    "drupal/migrate_plus": "4.0.0-beta1",
-    "drupal/migrate_source_csv": "2.0.0",
-    "drupal/migrate_tools": "4.0.0-beta1",
-    "drupal/pathauto": "1.0.0",
-    "drupal/purge": "3.0.0-beta8",
-    "drupal/r4032login": "1.*",
-    "drupal/redis": "1.0.0-beta1",
-    "drupal/swiftmailer": "1.0.0-beta1",
-    "drupal/varnish_purge": "1.5.0",
-    "drupal/views_data_export": "1.0.0-alpha4",
-    "drupal/visualization": "1.0.0-beta1",
-    "drush/drush": "8.1.13"
-  },
-  "require-dev": {
-    "behat/mink": "1.7.x-dev",
-    "behat/mink-goutte-driver": "~1.2",
-    "components/highlightjs": "9.12.*",
-    "d3/d3": "3.5.*",
-    "drupal/coder": "8.2.*",
-    "drupal/config_inspector": "1.*",
-    "drupal/console": "1.*",
-    "drupal/devel": "1.*",
-    "drupal/devel_a11y": "1.*",
-    "drupal/drupal-extension": "3.*",
-    "drupal/examples": "1.*",
-    "drupal/pistachio": "1.*",
-    "drupal/renderviz": "1.*",
-    "drupal/search_kint": "1.*",
-    "jcalderonzumba/gastonjs": "~1.0.2",
-    "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
-    "mikey179/vfsStream": "~1.2",
-    "phpunit/phpunit": ">=4.8.28 <5",
-    "symfony/browser-kit": ">=2.8.13 <3.0",
-    "symfony/css-selector": "~2.8"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "config": {
-    "optimize-autoloader": true,
-    "sort-packages": true
-  },
-  "scripts": {
-    "drupal-l10n": "DrupalComposer\\DrupalL10n\\Plugin::download",
-    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-    "post-create-project-cmd": [
-      "bash ./scripts/init.sh"
-    ],
-    "post-install-cmd": [
-      "@drupal-scaffold"
-    ],
-    "post-update-cmd": [
-      "@drupal-scaffold"
-    ]
-  },
-  "extra": {
-    "installer-paths": {
-      "www/core": ["type:drupal-core"],
-      "www/modules/contrib/{$name}": ["type:drupal-module"],
-      "www/modules/custom/{$name}": ["type:drupal-custom-module"],
-      "www/themes/contrib/{$name}": ["type:drupal-theme"],
-      "www/themes/custom/{$name}": ["type:drupal-custom-theme"],
-      "www/profiles/contrib/{$name}": ["type:drupal-profile"],
-      "www/libraries/{$name}": ["type:drupal-library"],
-      "drush/contrib/{$name}": ["type:drupal-drush"]
-    },
-    "drupal-scaffold": {
-      "excludes": [
-        "update.php",
-        "web.config",
-        "sites/development.services.yml",
-        "sites/example.settings.local.php"
-      ]
-    },
-    "drupal-l10n": {
-      "destination": "translations/contrib",
-      "languages": [
-        "fr"
-      ]
-    },
-    "patches": {
-      "drupal/commerce": {
-        "Display payment method in the CheckoutPane Payment informations even if only single payement method available": "https://www.drupal.org/files/issues/2907504-2.patch"
-      },
-      "drupal/redis": {
-        "Add status page and some statistics": "https://www.drupal.org/files/issues/redis-statistics-7.patch"
-      }
-    }
-  }
 }
