@@ -93,7 +93,7 @@
         {% if page.navigation_collapsible %}
           <div class="navbar-collapse collapse">
             <a class="btn btn-primary navbar-btn navbar-right" href="/billeterie">{{ 'Ticketing'|t }}</a>
-            <a class="btn btn-primary navbar-btn navbar-right" href="{{ path('entity.contact_form.canonical', {'contact_form': 'sponsor'}) }}">{{ 'Sponsor'|t }}</a>
+            <a class="btn btn-primary navbar-btn navbar-right" href="{{ path('entity.webform.canonical', {'webform': 'sponsor'}) }}">{{ 'Sponsor'|t }}</a>
             {{ page.navigation_collapsible }}
           </div>
         {% endif %}
