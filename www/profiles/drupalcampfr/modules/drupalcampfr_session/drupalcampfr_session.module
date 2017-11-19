@@ -5,17 +5,17 @@
  * Contains hook implementations for drupalcampfr_session module.
  */
 
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Field\FieldDefinitionInterface;
+use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Session\AccountInterface;
 use Drupal\user\Entity\User;
 
 /**
  * Implements hook_form_FORM_ID_alter().
- *
- * Hide fields to users.
  */
 function drupalcampfr_session_form_node_session_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  drupalcampfr_session_session_hide_fields_to_user($form, $form_state, $form_id);
-
   // Set default value for speaker field.
   if (isset($form['field_session_speaker'])) {
     $current_user = \Drupal::currentUser();
@@ -25,33 +25,24 @@ function drupalcampfr_session_form_node_session_form_alter(&$form, FormStateInte
 }
 
 /**
- * Implements hook_form_FORM_ID_alter().
+ * Implements hook_entity_field_access().
  *
  * Hide fields to users.
  */
-function drupalcampfr_session_form_node_session_edit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  drupalcampfr_session_session_hide_fields_to_user($form, $form_state, $form_id);
-}
-
-/**
- * Helper function to hide fields on session forms.
- */
-function drupalcampfr_session_session_hide_fields_to_user(&$form, FormStateInterface $form_state, $form_id) {
-  $current_user = \Drupal::currentUser();
-  if (!$current_user->hasPermission('administer nodes')) {
-    $fields_to_hide = [
-      'field_session_status',
-      'field_session_date_start',
-      'field_session_date_end',
-      'field_session_room',
-      'field_session_length',
-      'revision_log',
-    ];
-
-    foreach ($fields_to_hide as $field_name) {
-      if (isset($form[$field_name])) {
-        $form[$field_name]['#access'] = FALSE;
-      }
+function drupalcampfr_session_entity_field_access($operation, FieldDefinitionInterface $field_definition, AccountInterface $account, FieldItemListInterface $items = NULL) {
+  $result = AccessResult::neutral();
+  $fields_to_hide = [
+    'field_session_status',
+    'field_session_date_start',
+    'field_session_date_end',
+    'field_session_room',
+    'field_session_length',
+    'revision_log',
+  ];
+  if (in_array($field_definition->getName(), $fields_to_hide)) {
+    if ($operation == 'edit' && !$account->hasPermission('administer nodes')) {
+      $result = AccessResult::forbidden();
     }
   }
+  return $result->addCacheContexts(['user.permissions']);
 }
