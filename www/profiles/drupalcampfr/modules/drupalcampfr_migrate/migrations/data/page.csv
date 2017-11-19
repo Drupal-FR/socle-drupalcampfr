@@ -1,20 +1,20 @@
-UUID,Title,Path,Published,Body,Body format
-page_programme,Programme,/programme,1,Lorem ipsum,basic_html
-page_keynotes,Keynotes,/programme/keynotes,1,Lorem ipsum,basic_html
-page_sprints,Sprints,/programme/sprints,1,Lorem ipsum,basic_html
-page_collab,Prises de notes collaboratives,/programme/prise-de-notes-collaboratives,1,Lorem ipsum,basic_html
-page_guide_conf,Guide aux conférencier•es,/programme/guide-aux-conferenciers,1,Lorem ipsum,basic_html
-page_communaute,Communauté,/communaute,1,Lorem ipsum,basic_html
-page_soiree_communautaire,Soirée communautaire,/communaute/soiree-communautaire,1,Lorem ipsum,basic_html
-page_code_de_conduite,Code de conduite,/communaute/code-de-conduite,1,Lorem ipsum,basic_html
-page_convaincre_sa_societe,Convaincre sa société,/communaute/convaincre-sa-societe,1,Lorem ipsum,basic_html
-page_forfaits,Forfaits,/sponsors/forfaits,1,Lorem ipsum,basic_html
-page_badges,Badges,/sponsors/badges,1,Lorem ipsum,basic_html
-page_lieu,Lieu,/informations-pratiques/lieu,1,Lorem ipsum,basic_html
-page_acces,Accès,/informations-pratiques/acces,1,Lorem ipsum,basic_html
-page_hebergements,Hébergements,/informations-pratiques/hebergements,1,Lorem ipsum,basic_html
-page_se_preparer,Se préparer,/informations-pratiques/se-preparer,1,Lorem ipsum,basic_html
-page_bons_plans,Bons plans,/informations-pratiques/bons-plans,1,Lorem ipsum,basic_html
-page_revue_de_presse,Revue de presse,/actualites/revue-de-presse,1,Lorem ipsum,basic_html
-page_mentions_legales,Mentions légales,/mentions-legales,1,Lorem ipsum,basic_html
-page_billeterie,Billeterie,/billeterie,1,"<p>Les différentes places disponibles :</p><ul><li><a href=""/billeterie/vendredi"">Vendredi</a></li><li><a href=""/billeterie/samedi"">Samedi</a></li><li><a href=""/billeterie/dimanche"">Dimanche</a></li><li><a href=""/billeterie/pack-3-jours"">Pack 3 jours</a></li><li><a href=""/billeterie/pack-vendredi-samedi"">Pack vendredi / samedi</a></li></ul>",basic_html
+"UUID","Title","Path","Published","Body","Body format"
+"page_programme","Programme","/programme",1,"Lorem ipsum","basic_html"
+"page_keynotes","Keynotes","/programme/keynotes",1,"Lorem ipsum","basic_html"
+"page_sprints","Sprints","/programme/sprints",1,"Lorem ipsum","basic_html"
+"page_collab","Prises de notes collaboratives","/programme/prise-de-notes-collaboratives",1,"Lorem ipsum","basic_html"
+"page_guide_conf","Guide aux conférencier•es","/programme/guide-aux-conferenciers",1,"Lorem ipsum","basic_html"
+"page_communaute","Communauté","/communaute",1,"Lorem ipsum","basic_html"
+"page_soiree_communautaire","Soirée communautaire","/communaute/soiree-communautaire",1,"Lorem ipsum","basic_html"
+"page_code_de_conduite","Code de conduite","/communaute/code-de-conduite",1,"Lorem ipsum","basic_html"
+"page_convaincre_sa_societe","Convaincre sa société","/communaute/convaincre-sa-societe",1,"Lorem ipsum","basic_html"
+"page_forfaits","Forfaits","/sponsors/forfaits",1,"Lorem ipsum","basic_html"
+"page_badges","Badges","/sponsors/badges",1,"Lorem ipsum","basic_html"
+"page_lieu","Lieu","/informations-pratiques/lieu",1,"Lorem ipsum","basic_html"
+"page_acces","Accès","/informations-pratiques/acces",1,"Lorem ipsum","basic_html"
+"page_hebergements","Hébergements","/informations-pratiques/hebergements",1,"Lorem ipsum","basic_html"
+"page_se_preparer","Se préparer","/informations-pratiques/se-preparer",1,"Lorem ipsum","basic_html"
+"page_bons_plans","Bons plans","/informations-pratiques/bons-plans",1,"Lorem ipsum","basic_html"
+"page_revue_de_presse","Revue de presse","/actualites/revue-de-presse",1,"Lorem ipsum","basic_html"
+"page_mentions_legales","Mentions légales","/mentions-legales",1,"Lorem ipsum","basic_html"
+"page_billeterie","Billeterie","/billeterie",1,"<p>Les différentes places disponibles :</p><ul><li><a href=""/billeterie/vendredi"">Vendredi</a></li><li><a href=""/billeterie/samedi"">Samedi</a></li><li><a href=""/billeterie/dimanche"">Dimanche</a></li><li><a href=""/billeterie/pack-3-jours"">Pack 3 jours</a></li><li><a href=""/billeterie/pack-vendredi-samedi"">Pack vendredi / samedi</a></li></ul>","basic_html"

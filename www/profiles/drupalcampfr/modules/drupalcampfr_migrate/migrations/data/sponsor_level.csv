@@ -1,7 +1,7 @@
-UUID,Name,Weight,Displayed on homepage,Displayed site wide,Status
-sponsor_level_1,Platine,0,1,1,1
-sponsor_level_2,Or,1,1,1,1
-sponsor_level_3,Argent,2,0,1,1
-sponsor_level_4,Bronze,3,0,0,1
-sponsor_level_5,Sprint,4,0,0,1
-sponsor_level_6,Spéciaux,5,0,0,1
+"UUID","Name","Weight","Displayed on homepage","Displayed site wide","Status"
+"sponsor_level_1","Platine",0,1,1,1
+"sponsor_level_2","Or",1,1,1,1
+"sponsor_level_3","Argent",2,0,1,1
+"sponsor_level_4","Bronze",3,0,0,1
+"sponsor_level_5","Sprint",4,0,0,1
+"sponsor_level_6","Spéciaux",5,0,0,1

@@ -1,5 +1,5 @@
-UUID,Name,Weight
-session_length_1,20 minutes,0
-session_length_2,40 minutes,1
-session_length_3,1 heure,2
-session_length_4,2 heures (atelier),3
+"UUID","Name","Weight"
+"session_length_1","20 minutes",0
+"session_length_2","40 minutes",1
+"session_length_3","1 heure",2
+"session_length_4","2 heures (atelier)",3

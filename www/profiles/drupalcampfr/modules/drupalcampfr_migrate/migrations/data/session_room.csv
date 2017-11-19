@@ -1,6 +1,6 @@
-UUID,Name,Weight
-session_room_1,Salle 101,0
-session_room_2,Salle 102,1
-session_room_3,Salle 103,2
-session_room_4,Amphithéâtre 1,3
-session_room_5,Amphithéâtre 2,4
+"UUID","Name","Weight"
+"session_room_1","Salle 101",0
+"session_room_2","Salle 102",1
+"session_room_3","Salle 103",2
+"session_room_4","Amphithéâtre 1",3
+"session_room_5","Amphithéâtre 2",4

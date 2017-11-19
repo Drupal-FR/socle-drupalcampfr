@@ -1,6 +1,6 @@
-SKU,Price,Date (yyyy-MM-dd)
-vendredi,20,2016-06-10
-samedi,30,2016-06-11
-dimanche,10,2016-06-12
-pack-3-jours,45,2016-06-10;2016-06-11;2016-06-12
-pack-vendredi-samedi,40,2016-06-10;2016-06-11
+"SKU","Price","Date (yyyy-MM-dd)"
+"vendredi",20,"2016-06-10"
+"samedi",30,"2016-06-11"
+"dimanche",10,"2016-06-12"
+"pack-3-jours",45,"2016-06-10;2016-06-11;2016-06-12"
+"pack-vendredi-samedi",40,"2016-06-10;2016-06-11"

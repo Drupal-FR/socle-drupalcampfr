@@ -1,13 +1,13 @@
-UUID,Name,Weight
-session_track_1,Commerce,0
-session_track_2,Communauté,1
-session_track_3,Découverte,2
-session_track_4,Développement,3
-session_track_5,"Étude de cas, Retours d'expérience",4
-session_track_6,"Gestion de projet, Méthodologie",5
-session_track_7,Industrialisation,6
-session_track_8,Performances,7
-session_track_9,Présentation de modules,8
-session_track_10,Site building,9
-session_track_11,"Theming, Mobile, Design",10
-session_track_12,Autre,11
+"UUID","Name","Weight"
+"session_track_1","Commerce",0
+"session_track_2","Communauté",1
+"session_track_3","Découverte",2
+"session_track_4","Développement",3
+"session_track_5","Étude de cas, Retours d'expérience",4
+"session_track_6","Gestion de projet, Méthodologie",5
+"session_track_7","Industrialisation",6
+"session_track_8","Performances",7
+"session_track_9","Présentation de modules",8
+"session_track_10","Site building",9
+"session_track_11","Theming, Mobile, Design",10
+"session_track_12","Autre",11

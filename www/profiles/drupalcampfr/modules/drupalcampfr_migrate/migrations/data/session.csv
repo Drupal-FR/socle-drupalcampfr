@@ -1,18 +1,18 @@
-UUID,Title,Published,Level,Track,Length,Start (yyyy-MM-ddTHH:mm:ss),End (yyyy-MM-ddTHH:mm:ss),Room,Speakers,Body,Body format
-session_1,Session 1,1,session_level_1,session_track_1,session_length_1,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_1,user_1,Lorem ipsum,basic_html
-session_2,Session 2,1,session_level_1,session_track_2,session_length_1,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_1,user_2,Lorem ipsum,basic_html
-session_3,Session 3,1,session_level_1,session_track_3,session_length_1,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_1,user_3,Lorem ipsum,basic_html
-session_4,Session 4,1,session_level_1,session_track_4,session_length_1,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_1,user_4,Lorem ipsum,basic_html
-session_5,Session 5,1,session_level_1,session_track_5,session_length_2,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_1,user_5,Lorem ipsum,basic_html
-session_6,Session 6,1,session_level_1,session_track_6,session_length_2,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_2,user_6,Lorem ipsum,basic_html
-session_7,Session 7,1,session_level_2,session_track_7,session_length_2,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_2,user_7,Lorem ipsum,basic_html
-session_8,Session 8,1,session_level_2,session_track_8,session_length_2,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_2,user_8,Lorem ipsum,basic_html
-session_9,Session 9,1,session_level_2,session_track_9,session_length_3,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_2,user_9,Lorem ipsum,basic_html
-session_10,Session 10,1,session_level_2,session_track_10,session_length_3,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_3,user_10,Lorem ipsum,basic_html
-session_11,Session 11,1,session_level_2,session_track_11,session_length_3,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_3,user_1;user_2;user_3;user_4,Lorem ipsum,basic_html
-session_12,Session 12,1,session_level_2,session_track_12,session_length_3,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_3,user_1;user_2;user_3;user_4,Lorem ipsum,basic_html
-session_13,Session 13,1,session_level_2,session_track_1,session_length_1,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_4,user_1;user_2;user_3;user_4,Lorem ipsum,basic_html
-session_14,Session 14,1,session_level_3,session_track_2,session_length_1,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_4,user_5;user_6,Lorem ipsum,basic_html
-session_15,Session 15,1,session_level_3,session_track_3,session_length_2,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_4,user_5;user_7,Lorem ipsum,basic_html
-session_16,Session 16,1,session_level_3,session_track_4,session_length_3,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_5,user_5;user_8,Lorem ipsum,basic_html
-session_17,Session 17,1,session_level_3,session_track_5,session_length_4,2016-01-01T10:30:00,2016-01-01T11:30:00,session_room_5,user_5;user_9,Lorem ipsum,basic_html
+"UUID","Title","Published","Level","Track","Length","Start (yyyy-MM-ddTHH:mm:ss)","End (yyyy-MM-ddTHH:mm:ss)","Room","Speakers","Body","Body format"
+"session_1","Session 1",1,"session_level_1","session_track_1","session_length_1","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_1","user_1","Lorem ipsum","basic_html"
+"session_2","Session 2",1,"session_level_1","session_track_2","session_length_1","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_1","user_2","Lorem ipsum","basic_html"
+"session_3","Session 3",1,"session_level_1","session_track_3","session_length_1","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_1","user_3","Lorem ipsum","basic_html"
+"session_4","Session 4",1,"session_level_1","session_track_4","session_length_1","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_1","user_4","Lorem ipsum","basic_html"
+"session_5","Session 5",1,"session_level_1","session_track_5","session_length_2","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_1","user_5","Lorem ipsum","basic_html"
+"session_6","Session 6",1,"session_level_1","session_track_6","session_length_2","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_2","user_6","Lorem ipsum","basic_html"
+"session_7","Session 7",1,"session_level_2","session_track_7","session_length_2","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_2","user_7","Lorem ipsum","basic_html"
+"session_8","Session 8",1,"session_level_2","session_track_8","session_length_2","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_2","user_8","Lorem ipsum","basic_html"
+"session_9","Session 9",1,"session_level_2","session_track_9","session_length_3","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_2","user_9","Lorem ipsum","basic_html"
+"session_10","Session 10",1,"session_level_2","session_track_10","session_length_3","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_3","user_10","Lorem ipsum","basic_html"
+"session_11","Session 11",1,"session_level_2","session_track_11","session_length_3","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_3","user_1;user_2;user_3;user_4","Lorem ipsum","basic_html"
+"session_12","Session 12",1,"session_level_2","session_track_12","session_length_3","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_3","user_1;user_2;user_3;user_4","Lorem ipsum","basic_html"
+"session_13","Session 13",1,"session_level_2","session_track_1","session_length_1","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_4","user_1;user_2;user_3;user_4","Lorem ipsum","basic_html"
+"session_14","Session 14",1,"session_level_3","session_track_2","session_length_1","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_4","user_5;user_6","Lorem ipsum","basic_html"
+"session_15","Session 15",1,"session_level_3","session_track_3","session_length_2","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_4","user_5;user_7","Lorem ipsum","basic_html"
+"session_16","Session 16",1,"session_level_3","session_track_4","session_length_3","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_5","user_5;user_8","Lorem ipsum","basic_html"
+"session_17","Session 17",1,"session_level_3","session_track_5","session_length_4","2016-01-01T10:30:00","2016-01-01T11:30:00","session_room_5","user_5;user_9","Lorem ipsum","basic_html"
