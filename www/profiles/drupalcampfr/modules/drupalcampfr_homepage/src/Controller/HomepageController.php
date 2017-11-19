@@ -14,8 +14,8 @@ class HomepageController extends ControllerBase {
   /**
    * Index.
    *
-   * @return string
-   *   Return empty string.
+   * @return array
+   *   Return empty renderable array.
    */
   public function index() {
     return [
