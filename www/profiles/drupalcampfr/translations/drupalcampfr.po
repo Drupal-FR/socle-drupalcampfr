@@ -47,8 +47,8 @@ msgstr "Actualités"
 msgid "All the news."
 msgstr "Toutes les actualités."
 
-msgid "Slots"
-msgstr "Créneaux horaires"
+msgid "Slot"
+msgstr "Créneau horaire"
 
 msgid "Ticketing"
 msgstr "Billeterie"
