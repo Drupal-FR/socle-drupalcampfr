@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.commerce_remote_id
+    - field.field.user.user.field_user_attendee_list
     - field.field.user.user.field_user_meal_indication
     - field.field.user.user.field_user_name
     - field.field.user.user.field_user_society
@@ -43,6 +44,7 @@ content:
     region: content
 hidden:
   commerce_remote_id: true
+  field_user_attendee_list: true
   field_user_meal_indication: true
   langcode: true
   member_for: true

@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_form_mode.user.register
     - field.field.user.user.commerce_remote_id
+    - field.field.user.user.field_user_attendee_list
     - field.field.user.user.field_user_meal_indication
     - field.field.user.user.field_user_name
     - field.field.user.user.field_user_society
@@ -22,9 +23,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_user_attendee_list:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_user_meal_indication:
     type: string_textarea
-    weight: 5
+    weight: 4
     settings:
       rows: 2
       placeholder: ''
@@ -48,7 +56,7 @@ content:
     region: content
   user_picture:
     type: image_image
-    weight: 6
+    weight: 5
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
