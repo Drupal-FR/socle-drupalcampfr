@@ -34,8 +34,6 @@ source:
     -
       society: Society
     -
-      shirt_size: 'Shirt size'
-    -
       meal_indication: 'Meal indication'
 destination:
   plugin: 'entity:user'
@@ -59,5 +57,4 @@ process:
       bypass: true
   field_user_name: name
   field_user_society: society
-  field_user_shirt_size: shirt_size
   field_user_meal_indication: meal_indication
