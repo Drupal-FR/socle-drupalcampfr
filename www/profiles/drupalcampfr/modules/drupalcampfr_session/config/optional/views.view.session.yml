@@ -564,7 +564,7 @@ display:
           type: datetime_default
           settings:
             timezone_override: ''
-            format_type: day_and_time
+            format_type: html_time_without_second
           group_column: value
           group_columns: {  }
           group_rows: true
