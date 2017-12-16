@@ -29,10 +29,6 @@ $DRUSH site:install $PROFILE \
   --locale=$DEFAULT_LANGUAGE \
   -y
 
-# TODO: workaround since https://www.drupal.org/node/2916090 is not fixed.
-$DRUSH user:password $ACCOUNT_NAME $ACCOUNT_PASS
-$DRUSH config:set system.site mail $SITE_MAIL -y
-
 # Launch updates. Ensure that the database schema is up-to-date.
 $DRUSH updatedb --entity-updates -y
 
