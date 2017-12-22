@@ -22,18 +22,12 @@ source:
   keys:
     - uuid
   column_names:
-    -
-      uuid: UUID
-    -
-      title: Title
-    -
-      store: Store
-    -
-      variation: Variation
-    -
-      body_value: Body
-    -
-      body_format: 'Body format'
+    - uuid: UUID
+    - title: Title
+    - store: Store
+    - variation: Variation
+    - body_value: Body
+    - body_format: 'Body format'
 destination:
   plugin: 'entity:commerce_product'
 process:

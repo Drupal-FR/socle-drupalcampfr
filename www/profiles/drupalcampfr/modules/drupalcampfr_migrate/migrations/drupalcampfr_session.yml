@@ -25,30 +25,18 @@ source:
   keys:
     - uuid
   column_names:
-    -
-      uuid: UUID
-    -
-      title: Title
-    -
-      published: Published
-    -
-      level: Level
-    -
-      track: Track
-    -
-      length: Length
-    -
-      start_date: 'Start date (yyyy-MM-ddTHH:mm:ss)'
-    -
-      end_date: 'End date (yyyy-MM-ddTHH:mm:ss)'
-    -
-      room: Room
-    -
-      speakers: Speakers
-    -
-      body_value: Body
-    -
-      body_format: 'Body format'
+    - uuid: UUID
+    - title: Title
+    - published: Published
+    - level: Level
+    - track: Track
+    - length: Length
+    - start_date: 'Start date (yyyy-MM-ddTHH:mm:ss)'
+    - end_date: 'End date (yyyy-MM-ddTHH:mm:ss)'
+    - room: Room
+    - speakers: Speakers
+    - body_value: Body
+    - body_format: 'Body format'
 destination:
   plugin: 'entity:node'
 process:

@@ -19,24 +19,15 @@ source:
   keys:
     - uuid
   column_names:
-    -
-      uuid: UUID
-    -
-      mail: Mail
-    -
-      status: Status
-    -
-      login: Login
-    -
-      roles: Roles
-    -
-      name: Name
-    -
-      society: Society
-    -
-      attendee_list: 'Appear in attendee list'
-    -
-      meal_indication: 'Meal indication'
+    - uuid: UUID
+    - mail: Mail
+    - status: Status
+    - login: Login
+    - roles: Roles
+    - name: Name
+    - society: Society
+    - attendee_list: 'Appear in attendee list'
+    - meal_indication: 'Meal indication'
 destination:
   plugin: 'entity:user'
 process:

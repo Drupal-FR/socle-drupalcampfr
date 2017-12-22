@@ -19,18 +19,12 @@ source:
   keys:
     - uuid
   column_names:
-    -
-      uuid: UUID
-    -
-      title: Title
-    -
-      path: Path
-    -
-      published: Published
-    -
-      body_value: Body
-    -
-      body_format: 'Body format'
+    - uuid: UUID
+    - title: Title
+    - path: Path
+    - published: Published
+    - body_value: Body
+    - body_format: 'Body format'
 destination:
   plugin: 'entity:node'
 process:

@@ -19,12 +19,9 @@ source:
   keys:
     - sku
   column_names:
-    -
-      sku: SKU
-    -
-      price: Price
-    -
-      date: 'Date (yyyy-MM-dd)'
+    - sku: SKU
+    - price: Price
+    - date: 'Date (yyyy-MM-dd)'
 destination:
   plugin: 'entity:commerce_product_variation'
 process:

@@ -19,30 +19,18 @@ source:
   keys:
     - uuid
   column_names:
-    -
-      uuid: UUID
-    -
-      title: Title
-    -
-      creation_date: 'Creation date'
-    -
-      published: Published
-    -
-      promoted: 'Promoted to front page'
-    -
-      news_link_title: 'Link title'
-    -
-      news_link_uri: 'Link URI'
-    -
-      entityqueue: Entityqueue
-    -
-      entityqueue_position: 'Entityqueue position'
-    -
-      body_summary: 'Body (summary)'
-    -
-      body_value: Body
-    -
-      body_format: 'Body format'
+    - uuid: UUID
+    - title: Title
+    - creation_date: 'Creation date'
+    - published: Published
+    - promoted: 'Promoted to front page'
+    - news_link_title: 'Link title'
+    - news_link_uri: 'Link URI'
+    - entityqueue: Entityqueue
+    - entityqueue_position: 'Entityqueue position'
+    - body_summary: 'Body (summary)'
+    - body_value: Body
+    - body_format: 'Body format'
 destination:
   plugin: 'entity:node'
 process:

@@ -19,12 +19,9 @@ source:
   keys:
     - uuid
   column_names:
-    -
-      uuid: UUID
-    -
-      name: Name
-    -
-      weight: Weight
+    - uuid: UUID
+    - name: Name
+    - weight: Weight
 destination:
   plugin: 'entity:taxonomy_term'
 process:

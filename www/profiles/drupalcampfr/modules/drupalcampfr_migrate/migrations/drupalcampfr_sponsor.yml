@@ -22,20 +22,13 @@ source:
   keys:
     - uuid
   column_names:
-    -
-      uuid: UUID
-    -
-      title: Title
-    -
-      published: Published
-    -
-      link_uri: 'Link URL'
-    -
-      link_title: 'Link title'
-    -
-      level: Level
-    -
-      logo : Logo
+    - uuid: UUID
+    - title: Title
+    - published: Published
+    - link_uri: 'Link URL'
+    - link_title: 'Link title'
+    - level: Level
+    - logo : Logo
 destination:
   plugin: 'entity:node'
 process:
