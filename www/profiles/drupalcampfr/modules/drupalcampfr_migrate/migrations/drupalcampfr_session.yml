@@ -65,7 +65,7 @@ process:
       method: process
       source: level
     -
-      plugin: migration
+      plugin: migration_lookup
       migration: drupalcampfr_session_level
   field_session_track:
     -
@@ -73,7 +73,7 @@ process:
       method: process
       source: track
     -
-      plugin: migration
+      plugin: migration_lookup
       migration: drupalcampfr_session_track
   field_session_length:
     -
@@ -81,7 +81,7 @@ process:
       method: process
       source: length
     -
-      plugin: migration
+      plugin: migration_lookup
       migration: drupalcampfr_session_length
   field_session_room:
     -
@@ -89,7 +89,7 @@ process:
       method: process
       source: room
     -
-      plugin: migration
+      plugin: migration_lookup
       migration: drupalcampfr_session_room
   field_session_speaker:
     -
@@ -97,7 +97,7 @@ process:
       source: speakers
       delimiter: ;
     -
-      plugin: migration
+      plugin: migration_lookup
       migration: drupalcampfr_user
     -
       plugin: default_value

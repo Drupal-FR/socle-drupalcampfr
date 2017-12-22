@@ -51,7 +51,7 @@ process:
       source: store
       delimiter: ;
     -
-      plugin: migration
+      plugin: migration_lookup
       migration: drupalcampfr_store
   variations:
     -
@@ -59,7 +59,7 @@ process:
       source: variation
       delimiter: ;
     -
-      plugin: migration
+      plugin: migration_lookup
       migration: drupalcampfr_ticket_variation
     -
       plugin: skip_on_empty
