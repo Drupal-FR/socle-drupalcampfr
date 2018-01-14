@@ -123,9 +123,15 @@
                 "name": "d3/d3",
                 "version": "v3.5.17",
                 "type": "drupal-library",
+                "extra": {
+                    "installer-name": "d3"
+                },
                 "dist": {
                     "url": "https://github.com/d3/d3/archive/v3.5.17.zip",
                     "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
                 }
             }
         },
@@ -143,9 +149,15 @@
                 "name": "components/highlightjs",
                 "version": "9.12.0",
                 "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highlightjs"
+                },
                 "dist": {
                     "url": "https://github.com/components/highlightjs/archive/9.12.0.zip",
                     "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
                 }
             }
         },
