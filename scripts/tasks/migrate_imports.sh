@@ -3,7 +3,7 @@
 . $(dirname $(dirname ${BASH_SOURCE[0]}))/script-parameters.sh
 . $(dirname $(dirname ${BASH_SOURCE[0]}))/script-parameters.local.sh
 
-# Import content.
+echo -e "${LIGHT_GREEN}Import content.${NC}"
 $DRUSH pm:enable drupalcampfr_migrate -y
 $DRUSH migrate:import drupalcampfr_file --update
 $DRUSH migrate:import drupalcampfr_user --update
