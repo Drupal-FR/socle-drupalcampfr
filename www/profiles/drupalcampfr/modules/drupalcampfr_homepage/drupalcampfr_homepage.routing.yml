@@ -1,6 +1,6 @@
 
 drupalcampfr_homepage.homepage_controller_index:
-  path: 'home'
+  path: '/home'
   defaults:
     _controller: '\Drupal\drupalcampfr_homepage\Controller\HomepageController::index'
     _title: 'Home'
