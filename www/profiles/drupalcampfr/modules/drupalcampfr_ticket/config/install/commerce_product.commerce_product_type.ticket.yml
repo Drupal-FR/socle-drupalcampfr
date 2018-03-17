@@ -7,3 +7,4 @@ description: ''
 variationType: ticket
 injectVariationFields: true
 traits: {  }
+locked: false

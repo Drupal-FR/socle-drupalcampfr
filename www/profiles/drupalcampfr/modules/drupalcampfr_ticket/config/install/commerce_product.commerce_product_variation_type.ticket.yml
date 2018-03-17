@@ -6,3 +6,4 @@ label: Ticket
 orderItemType: default
 generateTitle: true
 traits: {  }
+locked: false
