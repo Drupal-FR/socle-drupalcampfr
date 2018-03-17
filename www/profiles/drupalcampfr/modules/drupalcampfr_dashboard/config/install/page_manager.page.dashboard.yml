@@ -1,0 +1,20 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+id: dashboard
+label: 'Drupalcampfr Dashboard'
+description: ''
+use_admin_theme: true
+path: /admin/dashboard
+access_logic: and
+access_conditions:
+  -
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: current_user
+parameters: {  }

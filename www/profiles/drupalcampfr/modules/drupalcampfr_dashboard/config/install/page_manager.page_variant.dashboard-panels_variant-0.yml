@@ -1,0 +1,96 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - page_manager.page.dashboard
+    - views.view.dashboard_content
+    - views.view.dashboard_order_items
+  module:
+    - panels
+    - views
+id: dashboard-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    6f010230-c433-40ee-a17c-09c01197bf51:
+      id: 'views_block:dashboard_content-block_session_level'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: second
+      weight: -1
+      uuid: 6f010230-c433-40ee-a17c-09c01197bf51
+      context_mapping: {  }
+    77af7c96-ad72-4806-82cf-50df6638fde1:
+      id: 'views_block:dashboard_content-block_content_type'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: second
+      weight: -2
+      uuid: 77af7c96-ad72-4806-82cf-50df6638fde1
+      context_mapping: {  }
+    d571becc-a02f-47b3-aa9b-b101c1bf6277:
+      id: 'views_block:dashboard_content-block_session_track'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: second
+      weight: 0
+      uuid: d571becc-a02f-47b3-aa9b-b101c1bf6277
+      context_mapping: {  }
+    706ce498-195b-43ba-b786-f4b6d5bb9e83:
+      id: 'views_block:dashboard_content-block_session_status'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: first
+      weight: -8
+      uuid: 706ce498-195b-43ba-b786-f4b6d5bb9e83
+      context_mapping: {  }
+    1f38772d-35b7-4478-ba22-871b4ee8744b:
+      id: 'views_block:dashboard_content-block_sponsor_niveau'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: first
+      weight: -9
+      uuid: 1f38772d-35b7-4478-ba22-871b4ee8744b
+      context_mapping: {  }
+    e73a1000-6e19-4794-af0b-eb2a3d59b7f9:
+      id: 'views_block:dashboard_order_items-block_ticket_per_day'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: first
+      weight: -10
+      uuid: e73a1000-6e19-4794-af0b-eb2a3d59b7f9
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 4a3bda59-592e-476e-9de0-5a8c0a81f3b2
+  label: null
+  weight: 0
+  layout: layout_threecol_33_34_33
+  layout_settings: {  }
+  page_title: 'Tableau de bord'
+  storage_type: page_manager
+  storage_id: dashboard-panels_variant-0
+  builder: standard
+page: dashboard
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

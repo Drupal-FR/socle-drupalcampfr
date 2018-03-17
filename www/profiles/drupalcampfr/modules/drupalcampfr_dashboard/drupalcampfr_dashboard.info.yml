@@ -1,0 +1,21 @@
+name: Dashboard
+type: module
+core: 8.x
+dependencies:
+  - charts
+  - charts_highcharts
+  - commerce_order
+  - commerce_product
+  - datetime
+  - drupalcampfr_session
+  - drupalcampfr_sponsor
+  - drupalcampfr_ticket
+  - node
+  - options
+  - page_manager
+  - panels
+  - state_machine
+  - taxonomy
+  - user
+  - views
+package: Drupalcampfr

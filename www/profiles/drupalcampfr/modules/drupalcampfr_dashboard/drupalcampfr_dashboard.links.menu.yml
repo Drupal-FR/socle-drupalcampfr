@@ -1,0 +1,5 @@
+drupalcampfr_dashboard.dashboard:
+  title: 'Dashboard'
+  route_name: 'page_manager.page_view_dashboard_dashboard-panels_variant-0'
+  parent: 'system.admin'
+  weight: -15

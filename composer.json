@@ -162,6 +162,96 @@
             "type": "vcs",
             "url": "https://github.com/FlorentTorregrosa/drupal-l10n"
         },
+        "highcharts": {
+            "type": "package",
+            "package": {
+                "name": "highcharts/highcharts",
+                "version": "6.0.4",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/6.0.4/highcharts.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "highcharts_more": {
+            "type": "package",
+            "package": {
+                "name": "highcharts/more",
+                "version": "6.0.4",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts_more"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/6.0.4/highcharts-more.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "highcharts_exporting": {
+            "type": "package",
+            "package": {
+                "name": "highcharts/exporting",
+                "version": "6.0.4",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts_exporting"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/6.0.4/modules/exporting.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "highcharts_export_data": {
+            "type": "package",
+            "package": {
+                "name": "highcharts/export-data",
+                "version": "6.0.4",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts_export-data"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/6.0.4/modules/export-data.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "highcharts_accessibility": {
+            "type": "package",
+            "package": {
+                "name": "highcharts/accessibility",
+                "version": "6.0.4",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts_accessibility"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/6.0.4/modules/accessibility.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
         "highlightjs": {
             "type": "package",
             "package": {
@@ -407,6 +497,7 @@
         "drupal/backup_migrate": "4.0.0-rc1",
         "drupal/block_visibility_groups": "1.2.0",
         "drupal/bootstrap": "3.11.0",
+        "drupal/charts": "3.0.0-alpha8",
         "drupal/commerce": "2.5.0",
         "drupal/commerce_paypal": "1.x-dev#0f326dbf5dde4e19addcead9140ef94d3c924ea7",
         "drupal/core": "8.5.0",
@@ -419,6 +510,8 @@
         "drupal/migrate_plus": "4.0.0-beta3",
         "drupal/migrate_source_csv": "2.0.0",
         "drupal/migrate_tools": "4.0.0-beta3",
+        "drupal/page_manager": "4.0.0-beta2",
+        "drupal/panels": "4.2.0",
         "drupal/pathauto": "1.1.0",
         "drupal/purge": "3.0.0-beta8",
         "drupal/r4032login": "1.x-dev#391f10d69b9b8c466a2fddac2a6b99f1289e7781",
@@ -426,9 +519,13 @@
         "drupal/swiftmailer": "1.0.0-beta2",
         "drupal/varnish_purge": "1.10.0",
         "drupal/views_data_export": "1.0.0-alpha4",
-        "drupal/visualization": "1.0.0-beta1",
         "drupal/webform": "5.0.0-rc6",
         "drush/drush": "9.2.1",
+        "highcharts/accessibility": "6.0.4",
+        "highcharts/export-data": "6.0.4",
+        "highcharts/exporting": "6.0.4",
+        "highcharts/highcharts": "6.0.4",
+        "highcharts/more": "6.0.4",
         "jquery/geocomplete": "1.7.0",
         "jquery/icheck": "1.0.2 ",
         "jquery/inputmask": "3.3.10",
@@ -520,8 +617,14 @@
             ]
         },
         "patches": {
+            "drupal/config_inspector": {
+                "Filter entities with schema errors": "https://www.drupal.org/files/issues/filter_entities_with-2843729-7.patch"
+            },
             "drupal/commerce": {
                 "Display payment method in the CheckoutPane Payment informations even if only single payement method available": "https://www.drupal.org/files/issues/2907504-2.patch"
+            },
+            "drupal/page_manager": {
+                "Update 'page_manager.variant_route_filter' service according to core changes": "https://www.drupal.org/files/issues/2918564-22.patch"
             },
             "drupal/redis": {
                 "Add status page and some statistics": "https://www.drupal.org/files/issues/redis-statistics-7.patch"

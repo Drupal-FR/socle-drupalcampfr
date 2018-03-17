@@ -73,3 +73,9 @@ msgstr "Logo Drupal France"
 
 msgid "My shopping cart"
 msgstr "Mon panier"
+
+msgid "Sponsor"
+msgstr "Sponsor"
+
+msgid "Dashboard"
+msgstr "Tableau de bord"

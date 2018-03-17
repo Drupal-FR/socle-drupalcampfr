@@ -71,6 +71,7 @@ dependencies:
   - drupalcampfr_session
   - drupalcampfr_newsletter
   - drupalcampfr_ticket
+  - drupalcampfr_dashboard
 themes:
   - drupalcampfr_theme
   - seven

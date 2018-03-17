@@ -3,16 +3,15 @@ status: true
 dependencies:
   config:
     - field.storage.commerce_product_variation.field_ticket_date
-    - system.menu.admin
   module:
+    - charts
     - commerce_order
     - commerce_product
     - datetime
     - state_machine
     - user
-    - visualization
-id: ticket_report
-label: 'Drupalcampfr ventes'
+id: dashboard_order_items
+label: 'Drupalcampfr tableau de bord ventes'
 module: views
 description: ''
 tag: Drupalcampfr
@@ -57,25 +56,106 @@ display:
           items_per_page: null
           offset: 0
       style:
-        type: visualization
+        type: chart
         options:
-          row_class: ''
-          default_row_class: true
+          grouping: {  }
+          library: highcharts
           type: column
+          label_field: field_ticket_date
           fields:
-            field_ticket_date:
-              enabled: 0
-            field_ticket_date_1:
-              enabled: 1
-              sort: '0'
-          xAxis:
-            labelField: field_ticket_date
-            invert: 0
-          yAxis:
-            title: ''
+            table: ''
+          data_fields:
+            field_ticket_date: 0
+            field_ticket_date_1: field_ticket_date_1
+          field_colors:
+            field_ticket_date: '#2f7ed8'
+            field_ticket_date_1: '#ff1818'
+          title: ''
+          title_position: out
+          tooltips: 'TRUE'
+          data_labels: 'TRUE'
+          legend_position: ''
+          background: ''
+          three_dimensional: 0
+          polar: 0
+          width: ''
+          height: ''
+          xaxis_title: ''
+          xaxis_labels_rotation: '0'
+          yaxis_title: ''
+          yaxis_min: ''
+          yaxis_max: ''
+          yaxis_prefix: ''
+          yaxis_suffix: ''
+          yaxis_decimal_count: ''
+          yaxis_labels_rotation: '0'
       row:
         type: fields
       fields:
+        field_ticket_date:
+          id: field_ticket_date
+          table: commerce_product_variation__field_ticket_date
+          field: field_ticket_date
+          relationship: commerce_product_variation
+          group_type: group
+          admin_label: ''
+          label: Date
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ field_ticket_date }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: html_date
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_ticket_date_1:
           id: field_ticket_date_1
           table: commerce_product_variation__field_ticket_date
@@ -137,78 +217,14 @@ display:
           settings:
             timezone_override: ''
             format_type: medium
-          group_column: value
-          group_columns: {  }
+          group_column: null
+          group_columns: null
           group_rows: false
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          field_api_classes: false
-          plugin_id: field
-        field_ticket_date:
-          id: field_ticket_date
-          table: commerce_product_variation__field_ticket_date
-          field: field_ticket_date
-          relationship: commerce_product_variation
-          group_type: group
-          admin_label: ''
-          label: Date
-          exclude: false
-          alter:
-            alter_text: true
-            text: '{{ field_ticket_date }} ({{ field_ticket_date_1 }})'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: datetime_default
-          settings:
-            timezone_override: ''
-            format_type: html_date
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
           field_api_classes: false
           plugin_id: field
       filters:
@@ -266,7 +282,7 @@ display:
             label: ''
           granularity: day
           plugin_id: datetime
-      title: 'Drupalcampfr ventes'
+      title: 'Nombre de places vendues par jour'
       header: {  }
       footer: {  }
       empty: {  }
@@ -295,6 +311,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       group_by: true
+      show_admin_links: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -303,23 +320,14 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.commerce_product_variation.field_ticket_date'
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Page
+  block_ticket_per_day:
+    display_plugin: block
+    id: block_ticket_per_day
+    display_title: 'Block ticket par jour'
     position: 1
     display_options:
       display_extenders: {  }
-      path: admin/commerce/ticket-report
-      menu:
-        type: normal
-        title: 'Rapport des ventes'
-        description: ''
-        expanded: false
-        parent: commerce.admin_commerce
-        weight: 0
-        context: '0'
-        menu_name: admin
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
