@@ -35,4 +35,5 @@ schemas:
   drupalcampfr_theme: 8000
 table_responsive: '-1'
 table: ''
+modal_jquery_ui_bridge: 0
 langcode: fr
