@@ -472,6 +472,9 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -577,7 +580,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user.permissions
-      max-age: 0
+      max-age: -1
       tags:
         - 'config:field.storage.user.field_user_meal_indication'
         - 'config:field.storage.user.field_user_name'
@@ -1012,7 +1015,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user.permissions
-      max-age: 0
+      max-age: -1
       tags:
         - 'config:field.storage.user.field_user_meal_indication'
         - 'config:field.storage.user.field_user_name'

@@ -3,3 +3,4 @@ respect_format: true
 convert_mode: true
 character_set: UTF-8
 langcode: fr
+filter_format: plain_text

@@ -27,13 +27,32 @@
             "type": "package",
             "package": {
                 "name": "ckeditor/autogrow",
-                "version": "4.7.2",
+                "version": "4.8.0",
                 "type": "drupal-library",
                 "extra": {
                     "installer-name": "ckeditor.autogrow"
                 },
                 "dist": {
-                    "url": "https://download.ckeditor.com/autogrow/releases/autogrow_4.7.2.zip",
+                    "url": "https://download.ckeditor.com/autogrow/releases/autogrow_4.8.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "ckeditor.codemirror": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "ckeditor/codemirror",
+                "version": "v1.17.3",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor.codemirror"
+                },
+                "dist": {
+                    "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.3/CKEditor-CodeMirror-Plugin.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -46,13 +65,13 @@
             "type": "package",
             "package": {
                 "name": "ckeditor/fakeobjects",
-                "version": "4.7.2",
+                "version": "4.8.0",
                 "type": "drupal-library",
                 "extra": {
                     "installer-name": "ckeditor.fakeobjects"
                 },
                 "dist": {
-                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.7.2.zip",
+                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.8.0.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -65,13 +84,13 @@
             "type": "package",
             "package": {
                 "name": "ckeditor/image",
-                "version": "4.7.2",
+                "version": "4.8.0",
                 "type": "drupal-library",
                 "extra": {
                     "installer-name": "ckeditor.image"
                 },
                 "dist": {
-                    "url": "https://download.ckeditor.com/image/releases/image_4.7.2.zip",
+                    "url": "https://download.ckeditor.com/image/releases/image_4.8.0.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -192,25 +211,6 @@
                 },
                 "dist": {
                     "url": "https://github.com/fronteed/icheck/archive/1.0.2.zip",
-                    "type": "zip"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
-        "jquery.image-picker": {
-            "_webform": true,
-            "type": "package",
-            "package": {
-                "name": "jquery/image-picker",
-                "version": "0.3.0",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "jquery.image-picker"
-                },
-                "dist": {
-                    "url": "https://github.com/rvera/image-picker/archive/0.3.0.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -392,9 +392,10 @@
     },
     "require": {
         "abraham/twitteroauth": "0.7.4",
-        "ckeditor/autogrow": "4.7.2",
-        "ckeditor/fakeobjects": "4.7.2",
-        "ckeditor/image": "4.7.2",
+        "ckeditor/autogrow": "4.8.0",
+        "ckeditor/codemirror": "v1.17.3",
+        "ckeditor/fakeobjects": "4.8.0",
+        "ckeditor/image": "4.8.0",
         "ckeditor/link": "4.6.2",
         "codemirror/codemirror": "5.31.0",
         "composer/installers": "^1.0.21",
@@ -402,35 +403,34 @@
         "drupal-composer/drupal-l10n": "dev-master",
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/address": "1.3.0",
-        "drupal/admin_toolbar": "1.22.0",
-        "drupal/backup_migrate": "4.0.0-beta3",
-        "drupal/block_visibility_groups": "1.1.0",
-        "drupal/bootstrap": "3.7.0",
-        "drupal/commerce": "2.3.0",
-        "drupal/commerce_paypal": "1.x-dev#1517211b5660a9710b875c7357be42ad479ff054",
-        "drupal/core": "8.4.4",
-        "drupal/drush_language": "1.x-dev#b1a7b7e98eaecc26f198e58b99362937832d4319",
+        "drupal/admin_toolbar": "1.23.0",
+        "drupal/backup_migrate": "4.0.0-rc1",
+        "drupal/block_visibility_groups": "1.2.0",
+        "drupal/bootstrap": "3.11.0",
+        "drupal/commerce": "2.5.0",
+        "drupal/commerce_paypal": "1.x-dev#0f326dbf5dde4e19addcead9140ef94d3c924ea7",
+        "drupal/core": "8.5.0",
+        "drupal/drush_language": "1.0.0-rc1",
         "drupal/entityqueue": "1.0.0-alpha7",
-        "drupal/eu_cookie_compliance": "1.0.0-beta7",
-        "drupal/features": "3.5.0",
+        "drupal/eu_cookie_compliance": "1.0.0-beta12",
+        "drupal/features": "3.7.0",
         "drupal/honeypot": "1.27.0",
         "drupal/menu_attributes": "1.x-dev#4364d4671b6ae20d97783603889d15e88a5bae43",
-        "drupal/migrate_plus": "4.0.0-beta2",
+        "drupal/migrate_plus": "4.0.0-beta3",
         "drupal/migrate_source_csv": "2.0.0",
-        "drupal/migrate_tools": "4.0.0-beta2",
-        "drupal/pathauto": "1.0.0",
+        "drupal/migrate_tools": "4.0.0-beta3",
+        "drupal/pathauto": "1.1.0",
         "drupal/purge": "3.0.0-beta8",
         "drupal/r4032login": "1.x-dev#391f10d69b9b8c466a2fddac2a6b99f1289e7781",
         "drupal/redis": "1.0.0-rc2",
-        "drupal/swiftmailer": "1.0.0-beta1",
-        "drupal/varnish_purge": "1.9.0",
+        "drupal/swiftmailer": "1.0.0-beta2",
+        "drupal/varnish_purge": "1.10.0",
         "drupal/views_data_export": "1.0.0-alpha4",
         "drupal/visualization": "1.0.0-beta1",
-        "drupal/webform": "5.0.0-beta25",
-        "drush/drush": "9.0.0-rc2",
+        "drupal/webform": "5.0.0-rc6",
+        "drush/drush": "9.2.1",
         "jquery/geocomplete": "1.7.0",
         "jquery/icheck": "1.0.2 ",
-        "jquery/image-picker": "0.3.0",
         "jquery/inputmask": "3.3.10",
         "jquery/intl-tel-input": "12.1.0",
         "jquery/rateit": "1.1.1",
@@ -443,8 +443,6 @@
     },
     "require-dev": {
         "anam/phantomjs-linux-x86-binary": "~2.1.1",
-        "behat/mink": "1.7.x-dev",
-        "behat/mink-goutte-driver": "~1.2",
         "components/highlightjs": "9.12.*",
         "d3/d3": "3.5.*",
         "drupal/coder": "8.2.*",
@@ -457,13 +455,7 @@
         "drupal/pistachio": "1.*",
         "drupal/renderviz": "1.*",
         "drupal/search_kint": "1.*",
-        "jcalderonzumba/gastonjs": "~1.0.2",
-        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
-        "mikey179/vfsStream": "~1.2",
-        "phpunit/phpunit": ">=4.8.35 <5",
-        "phpspec/prophecy": "^1.4",
-        "symfony/css-selector": "~3.2.8",
-        "symfony/phpunit-bridge": "~3.2.8"
+        "webflo/drupal-core-require-dev": "~8.5"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -514,6 +506,7 @@
         },
         "drupal-scaffold": {
             "excludes": [
+                ".ht.router.php",
                 "update.php",
                 "web.config",
                 "sites/development.services.yml",
@@ -530,17 +523,8 @@
             "drupal/commerce": {
                 "Display payment method in the CheckoutPane Payment informations even if only single payement method available": "https://www.drupal.org/files/issues/2907504-2.patch"
             },
-            "drupal/drush_language": {
-                "Convert for Drush 9": "https://www.drupal.org/files/issues/drush_language-drush_9-2914081-8.patch"
-            },
-            "drupal/features": {
-                "Drush 9 Incompatibility": "https://www.drupal.org/files/issues/2913651-drush9-21.patch"
-            },
             "drupal/redis": {
                 "Add status page and some statistics": "https://www.drupal.org/files/issues/redis-statistics-7.patch"
-            },
-            "drupal/webform": {
-                "Drush 9 support": "https://www.drupal.org/files/issues/webform-drush_9-2916800-4.patch"
             }
         }
     }

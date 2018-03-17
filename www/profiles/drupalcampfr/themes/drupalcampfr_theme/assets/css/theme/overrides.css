@@ -37,16 +37,21 @@ article.news.teaser .field--type-text-with-summary {
 /**
  * Session: speaker field.
  */
-.field--name-field-session-speaker .field--item {
+.field--name-field-session-speaker .field--items {
+  float: none;
+}
+.field--name-field-session-speaker .field--items .field--item {
   display: inline;
 }
-.field--name-field-session-speaker .field--item:not(:last-child)::after {
+.field--name-field-session-speaker .field--items .field--item:not(:last-child)::after {
   content: ",";
 }
 /**
  * Session: day, start date and end date fields.
  */
-.field--name-field-session-date-start,
+.field--name-field-session-date-start {
+  display: inline-block;
+}
 .field--name-field-session-date-start .field--item,
 .field--name-field-session-date-end {
   display: inline;

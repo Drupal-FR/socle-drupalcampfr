@@ -3,8 +3,6 @@ type: theme
 description: Sub theme for a bzh camp
 package: Drupalcampfr
 core: 8.x
-libraries:
-  - bzh_theme/global-styling
 
 base theme: drupalcampfr_theme
 
@@ -21,3 +19,7 @@ regions:
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+
+libraries-extend:
+  drupalcampfr_theme/framework:
+    - bzh_theme/framework

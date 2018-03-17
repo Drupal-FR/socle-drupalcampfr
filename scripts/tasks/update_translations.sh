@@ -11,4 +11,4 @@ $DRUSH locale:update
 
 echo -e "${LIGHT_GREEN}Import custom translations.${NC}"
 $DRUSH pm:enable drush_language
-$DRUSH language:import:translations $DEFAULT_LANGUAGE $WWW_PATH/profiles/$PROFILE/translations/$PROFILE.po --replace
+$DRUSH language:import:translations --langcode=$DEFAULT_LANGUAGE $WWW_PATH/profiles/$PROFILE/translations/$PROFILE.po

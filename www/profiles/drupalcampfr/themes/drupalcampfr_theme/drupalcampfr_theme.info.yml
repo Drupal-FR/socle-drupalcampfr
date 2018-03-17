@@ -3,8 +3,6 @@ type: theme
 description: Base theme for the french Drupalcamps.
 package: Drupalcampfr
 core: 8.x
-libraries:
-  - drupalcampfr_theme/global-styling
 
 base theme: bootstrap
 
@@ -21,3 +19,7 @@ regions:
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+
+libraries-extend:
+  bootstrap/framework:
+    - drupalcampfr_theme/framework
