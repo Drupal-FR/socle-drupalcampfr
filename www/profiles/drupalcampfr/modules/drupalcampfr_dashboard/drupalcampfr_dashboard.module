@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations for drupalcampfr_dashboard module.
+ */
+
+/**
+ * Implements hook_page_attachments().
+ *
+ * Load libraries on administrative theme seven.
+ */
+function drupalcampfr_dashboard_page_attachments(array &$attachments) {
+  /** @var \Drupal\Core\Theme\ThemeManagerInterface $theme_manager */
+  $theme_manager = \Drupal::service('theme.manager');
+  $active_theme = $theme_manager->getActiveTheme();
+
+  // Logic of detection copied from WebformThemeManager.
+  if (in_array('seven', array_reverse(array_merge([$active_theme->getName()], array_keys($active_theme->getBaseThemes()))))) {
+    $attachments['#attached']['library'][] = 'drupalcampfr_dashboard/charts';
+  }
+}

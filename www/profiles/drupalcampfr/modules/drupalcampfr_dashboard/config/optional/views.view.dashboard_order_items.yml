@@ -285,7 +285,20 @@ display:
       title: 'Nombre de places vendues par jour'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<p>Aucune place vendue.</p>'
+            format: full_html
+          plugin_id: text
       relationships:
         commerce_product_variation:
           id: commerce_product_variation
@@ -312,6 +325,7 @@ display:
       display_extenders: {  }
       group_by: true
       show_admin_links: false
+      css_class: drupalcampfr-dashboard-charts
     cache_metadata:
       max-age: -1
       contexts:

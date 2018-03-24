@@ -1,0 +1,7 @@
+/*
+ * This CSS is needed for charts because otherwise they occupied some pixels on
+ * the next panel's column.
+ */
+.drupalcampfr-dashboard-charts .view-content {
+  max-width: 99%;
+}

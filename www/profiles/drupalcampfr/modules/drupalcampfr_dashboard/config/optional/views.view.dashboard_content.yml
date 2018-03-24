@@ -260,7 +260,20 @@ display:
       title: 'Nombre de contenus par type'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<p>Aucun contenu publié.</p>'
+            format: full_html
+          plugin_id: text
       relationships:
         field_session_level:
           id: field_session_level
@@ -271,6 +284,7 @@ display:
       display_extenders: {  }
       group_by: true
       show_admin_links: false
+      css_class: drupalcampfr-dashboard-charts
     cache_metadata:
       max-age: -1
       contexts:
@@ -364,6 +378,7 @@ display:
         title: false
         style: false
         row: false
+        empty: false
       filter_groups:
         operator: AND
         groups:
@@ -567,6 +582,20 @@ display:
       row:
         type: fields
         options: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<p>Aucune session publiée avec un niveau renseigné.</p>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
@@ -644,6 +673,7 @@ display:
         title: false
         style: false
         row: false
+        empty: false
       filter_groups:
         operator: AND
         groups:
@@ -820,6 +850,20 @@ display:
       row:
         type: fields
         options: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<p>Aucune session publiée avec un statut de validation renseigné.</p>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
@@ -898,6 +942,7 @@ display:
         title: false
         style: false
         row: false
+        empty: false
       filter_groups:
         operator: AND
         groups:
@@ -1101,6 +1146,20 @@ display:
       row:
         type: fields
         options: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<p>Aucune session publiée avec un thème renseigné.</p>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
@@ -1178,6 +1237,7 @@ display:
         title: false
         style: false
         row: false
+        empty: false
       filter_groups:
         operator: AND
         groups:
@@ -1375,6 +1435,20 @@ display:
       row:
         type: fields
         options: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<p>Aucun sponsor publié avec un niveau renseigné.</p>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:

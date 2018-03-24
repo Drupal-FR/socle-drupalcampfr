@@ -1,0 +1,4 @@
+charts:
+  css:
+    theme:
+      assets/css/drupalcampfr_dashboard_charts.css: {}

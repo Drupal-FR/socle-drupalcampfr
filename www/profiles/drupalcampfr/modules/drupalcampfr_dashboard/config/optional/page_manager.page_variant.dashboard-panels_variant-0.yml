@@ -20,7 +20,7 @@ variant_settings:
       label_display: visible
       views_label: ''
       items_per_page: none
-      region: second
+      region: third
       weight: -1
       uuid: 6f010230-c433-40ee-a17c-09c01197bf51
       context_mapping: {  }
@@ -31,7 +31,7 @@ variant_settings:
       label_display: visible
       views_label: ''
       items_per_page: none
-      region: second
+      region: third
       weight: -2
       uuid: 77af7c96-ad72-4806-82cf-50df6638fde1
       context_mapping: {  }
@@ -43,7 +43,7 @@ variant_settings:
       views_label: ''
       items_per_page: none
       region: second
-      weight: 0
+      weight: -9
       uuid: d571becc-a02f-47b3-aa9b-b101c1bf6277
       context_mapping: {  }
     706ce498-195b-43ba-b786-f4b6d5bb9e83:
@@ -54,7 +54,7 @@ variant_settings:
       views_label: ''
       items_per_page: none
       region: first
-      weight: -8
+      weight: -9
       uuid: 706ce498-195b-43ba-b786-f4b6d5bb9e83
       context_mapping: {  }
     1f38772d-35b7-4478-ba22-871b4ee8744b:
@@ -64,8 +64,8 @@ variant_settings:
       label_display: visible
       views_label: ''
       items_per_page: none
-      region: first
-      weight: -9
+      region: second
+      weight: -10
       uuid: 1f38772d-35b7-4478-ba22-871b4ee8744b
       context_mapping: {  }
     e73a1000-6e19-4794-af0b-eb2a3d59b7f9:
