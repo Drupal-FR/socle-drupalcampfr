@@ -32,7 +32,7 @@ DEVELOPMENT_MODULES=(
 #  search_kint
   speedboxes
   views_ui
-  webprofiler
+#  webprofiler
 )
 
 WEBSERVER_USER='www-data'
