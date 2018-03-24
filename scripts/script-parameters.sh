@@ -30,6 +30,7 @@ DEVELOPMENT_MODULES=(
   purge_ui
 #  renderviz
 #  search_kint
+  speedboxes
   views_ui
   webprofiler
 )
