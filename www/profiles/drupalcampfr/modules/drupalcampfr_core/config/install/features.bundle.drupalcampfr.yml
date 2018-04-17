@@ -53,7 +53,7 @@ assignments:
   optional:
     types:
       config:
-        image_style: image_style
+        block: block
         migration: migration
         rdf_mapping: rdf_mapping
         tour: tour

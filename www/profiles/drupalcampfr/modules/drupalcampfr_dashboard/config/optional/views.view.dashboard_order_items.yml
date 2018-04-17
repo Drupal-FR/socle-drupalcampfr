@@ -5,6 +5,7 @@ dependencies:
     - field.storage.commerce_product_variation.field_ticket_date
   module:
     - charts
+    - charts_highcharts
     - commerce_order
     - commerce_product
     - datetime
