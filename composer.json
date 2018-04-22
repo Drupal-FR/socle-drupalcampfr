@@ -166,6 +166,24 @@
                 }
             }
         },
+        "highcharts_3d":{
+            "type": "package",
+            "package": {
+                "name": "highcharts/3d",
+                "version": "6.0.4",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts_3d"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/6.0.4/highcharts-3d.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
         "highcharts_accessibility": {
             "type": "package",
             "package": {
@@ -489,6 +507,7 @@
         "drupal/views_data_export": "1.0.0-alpha4",
         "drupal/webform": "5.0.0-rc11",
         "drush/drush": "9.2.3",
+        "highcharts/3d": "6.0.4",
         "highcharts/accessibility": "6.0.4",
         "highcharts/export-data": "6.0.4",
         "highcharts/exporting": "6.0.4",

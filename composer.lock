@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a69dd81fa413823404bd3f017b4677b4",
+    "content-hash": "45005ff58173bc2a0e7e3a14ae5dd885",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4840,6 +4840,23 @@
                 "url"
             ],
             "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "highcharts/3d",
+            "version": "6.0.4",
+            "dist": {
+                "type": "file",
+                "url": "https://code.highcharts.com/6.0.4/highcharts-3d.js",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "highcharts_3d"
+            }
         },
         {
             "name": "highcharts/accessibility",
