@@ -166,7 +166,7 @@
                 }
             }
         },
-        "highcharts_3d":{
+        "highcharts_3d": {
             "type": "package",
             "package": {
                 "name": "highcharts/3d",
@@ -486,7 +486,7 @@
         "drupal/charts": "3.0.0-alpha9",
         "drupal/commerce": "2.6.0",
         "drupal/commerce_paypal": "1.x-dev#0f326dbf5dde4e19addcead9140ef94d3c924ea7",
-        "drupal/core": "8.5.2",
+        "drupal/core": "8.5.3",
         "drupal/drush_language": "1.0.0-rc2",
         "drupal/entityqueue": "1.0.0-alpha7",
         "drupal/eu_cookie_compliance": "1.0.0",
@@ -498,14 +498,14 @@
         "drupal/migrate_tools": "4.0.0-beta3",
         "drupal/page_manager": "4.0.0-beta3",
         "drupal/panels": "4.3.0",
-        "drupal/pathauto": "1.1.0",
+        "drupal/pathauto": "1.2.0",
         "drupal/purge": "3.0.0-beta8",
         "drupal/r4032login": "1.x-dev#391f10d69b9b8c466a2fddac2a6b99f1289e7781",
         "drupal/redis": "1.0.0-rc2",
         "drupal/swiftmailer": "1.0.0-beta2",
         "drupal/varnish_purge": "1.10.0",
         "drupal/views_data_export": "1.0.0-alpha4",
-        "drupal/webform": "5.0.0-rc11",
+        "drupal/webform": "5.0.0-rc12",
         "drush/drush": "9.2.3",
         "highcharts/3d": "6.0.4",
         "highcharts/accessibility": "6.0.4",
