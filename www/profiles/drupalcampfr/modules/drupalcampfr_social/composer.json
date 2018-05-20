@@ -1,0 +1,7 @@
+{
+  "name": "drupalfr/drupalcampfr_social",
+  "type": "drupal-custom-module",
+  "require": {
+    "abraham/twitteroauth": "0.7.4"
+  }
+}
