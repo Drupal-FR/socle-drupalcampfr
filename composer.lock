@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "43579e55634d3e2986aee0ca54f0ef28",
+    "content-hash": "aed13bc97c71378b851813a9fde0527d",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1821,6 +1821,9 @@
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Improve installation of JS chart libraries": "https://www.drupal.org/files/issues/2018-05-20/charts-composer_merge_plugin-2879200-21.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

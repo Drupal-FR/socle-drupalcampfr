@@ -148,114 +148,6 @@
             "type": "vcs",
             "url": "https://github.com/FlorentTorregrosa/drupal-l10n"
         },
-        "highcharts": {
-            "type": "package",
-            "package": {
-                "name": "highcharts/highcharts",
-                "version": "6.0.4",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "highcharts"
-                },
-                "dist": {
-                    "url": "https://code.highcharts.com/6.0.4/highcharts.js",
-                    "type": "file"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
-        "highcharts_3d": {
-            "type": "package",
-            "package": {
-                "name": "highcharts/3d",
-                "version": "6.0.4",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "highcharts_3d"
-                },
-                "dist": {
-                    "url": "https://code.highcharts.com/6.0.4/highcharts-3d.js",
-                    "type": "file"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
-        "highcharts_accessibility": {
-            "type": "package",
-            "package": {
-                "name": "highcharts/accessibility",
-                "version": "6.0.4",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "highcharts_accessibility"
-                },
-                "dist": {
-                    "url": "https://code.highcharts.com/6.0.4/modules/accessibility.js",
-                    "type": "file"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
-        "highcharts_export_data": {
-            "type": "package",
-            "package": {
-                "name": "highcharts/export-data",
-                "version": "6.0.4",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "highcharts_export-data"
-                },
-                "dist": {
-                    "url": "https://code.highcharts.com/6.0.4/modules/export-data.js",
-                    "type": "file"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
-        "highcharts_exporting": {
-            "type": "package",
-            "package": {
-                "name": "highcharts/exporting",
-                "version": "6.0.4",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "highcharts_exporting"
-                },
-                "dist": {
-                    "url": "https://code.highcharts.com/6.0.4/modules/exporting.js",
-                    "type": "file"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
-        "highcharts_more": {
-            "type": "package",
-            "package": {
-                "name": "highcharts/more",
-                "version": "6.0.4",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "highcharts_more"
-                },
-                "dist": {
-                    "url": "https://code.highcharts.com/6.0.4/highcharts-more.js",
-                    "type": "file"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
         "jquery.geocomplete": {
             "_webform": true,
             "type": "package",
@@ -506,12 +398,6 @@
         "drupal/views_data_export": "1.0.0-alpha4",
         "drupal/webform": "5.0.0-rc12",
         "drush/drush": "9.2.3",
-        "highcharts/3d": "6.0.4",
-        "highcharts/accessibility": "6.0.4",
-        "highcharts/export-data": "6.0.4",
-        "highcharts/exporting": "6.0.4",
-        "highcharts/highcharts": "6.0.4",
-        "highcharts/more": "6.0.4",
         "jquery/geocomplete": "1.7.0",
         "jquery/icheck": "1.0.2 ",
         "jquery/inputmask": "3.3.11",
@@ -619,13 +505,17 @@
                 "www/modules/custom/*/composer.json",
                 "www/profiles/custom/*/composer.json",
                 "www/themes/custom/*/composer.json",
-                "www/profiles/*/composer.json"
+                "www/profiles/*/composer.json",
+                "www/modules/contrib/charts/modules/charts_highcharts/composer.json"
             ],
             "merge-extra": true,
             "merge-extra-deep": true,
             "merge-scripts": true
         },
         "patches": {
+            "drupal/charts": {
+                "Improve installation of JS chart libraries": "https://www.drupal.org/files/issues/2018-05-20/charts-composer_merge_plugin-2879200-21.patch"
+            },
             "drupal/config_inspector": {
                 "Filter entities with schema errors": "https://www.drupal.org/files/issues/filter_entities_with-2843729-7.patch"
             },
