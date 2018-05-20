@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "aed13bc97c71378b851813a9fde0527d",
+    "content-hash": "941291d8bc3370f30c8f2018c93ee218",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4294,6 +4294,9 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
+                },
+                "patches_applied": {
+                    "Composer merge plugin support": "https://www.drupal.org/files/issues/2018-05-20/webform-composer_merge_plugin-2974114-5.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
