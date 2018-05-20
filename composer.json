@@ -619,8 +619,7 @@
                 "www/modules/custom/*/composer.json",
                 "www/profiles/custom/*/composer.json",
                 "www/themes/custom/*/composer.json",
-                "www/profiles/*/modules/*/composer.json",
-                "www/profiles/*/themes/*/composer.json"
+                "www/profiles/*/composer.json"
             ],
             "merge-extra": true,
             "merge-extra-deep": true,
