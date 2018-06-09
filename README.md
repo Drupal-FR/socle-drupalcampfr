@@ -23,7 +23,7 @@ Technical base for french Drupalcamps.
 * In another tab, get a command-line in the container:
 `docker exec -it container_name_web_1 /bin/bash` (*container_name* should be remplaced by the name of the **web** container)
 * Execute:
-  * `cd ..`
+  * `cd /project (if necessary)`
   * `./scripts/install.sh`
 
 The website **should** be located at this address: `http://127.0.0.1:8091/*`
