@@ -54,8 +54,10 @@ assignments:
     types:
       config:
         block: block
-        migration: migration
         rdf_mapping: rdf_mapping
+        migration: migration
+        page: page
+        page_variant: page_variant
         tour: tour
         view: view
     enabled: true

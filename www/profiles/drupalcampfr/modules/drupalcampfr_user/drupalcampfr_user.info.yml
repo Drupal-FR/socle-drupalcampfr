@@ -12,6 +12,7 @@ dependencies:
   - options
   - path
   - rest
+  - serialization
   - user
   - views
   - views_data_export

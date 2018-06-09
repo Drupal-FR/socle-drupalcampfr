@@ -58,6 +58,7 @@ content:
       autocomplete_threshold: 7
       autocomplete_size: 60
       autocomplete_placeholder: ''
+      hide_single_entity: true
     third_party_settings: {  }
     region: content
   title:
@@ -81,11 +82,14 @@ content:
     type: inline_entity_form_complex
     weight: 10
     settings:
+      form_mode: default
       override_labels: true
       label_singular: variation
       label_plural: variations
-      form_mode: default
+      collapsible: true
+      collapsed: true
       allow_new: true
+      allow_duplicate: true
       allow_existing: false
       match_operator: CONTAINS
     third_party_settings: {  }

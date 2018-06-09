@@ -8,11 +8,12 @@ open: null
 close: null
 uid: null
 template: false
+archive: false
 id: contact
 title: Contact
 description: 'Basic email contact webform.'
 category: ''
-elements: "name:\n  '#type': textfield\n  '#title': 'Votre nom'\n  '#default_value': '[webform-authenticated-user:display-name]'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Votre adresse de courriel'\n  '#default_value': '[webform-authenticated-user:mail]'\n  '#required': true\nsubject:\n  '#type': textfield\n  '#title': Objet\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#wrapper_attributes':\n    class:\n      - form-group\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Envoyer le message'\n"
+elements: "name:\n  '#type': textfield\n  '#title': 'Votre nom'\n  '#default_value': '[current-user:display-name]'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Votre adresse de courriel'\n  '#default_value': '[current-user:mail]'\n  '#required': true\nsubject:\n  '#type': textfield\n  '#title': Objet\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#wrapper_attributes':\n    class:\n      - form-group\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Envoyer le message'\n"
 css: ''
 javascript: ''
 settings:
@@ -52,6 +53,8 @@ settings:
   submission_login_message: ''
   submission_exception_message: ''
   submission_locked_message: ''
+  previous_submission_message: ''
+  previous_submissions_message: ''
   autofill: false
   autofill_message: ''
   autofill_excluded_elements: {  }
@@ -69,6 +72,7 @@ settings:
   preview_attributes: {  }
   preview_excluded_elements: {  }
   preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
   draft: none
   draft_multiple: false
   draft_auto_save: false
@@ -167,6 +171,7 @@ handlers:
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
+      exclude_empty_checkbox: false
       html: false
       attachments: false
       twig: false
@@ -199,6 +204,7 @@ handlers:
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
+      exclude_empty_checkbox: false
       html: false
       attachments: false
       twig: false

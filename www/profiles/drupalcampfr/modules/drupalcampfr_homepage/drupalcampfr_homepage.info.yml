@@ -4,6 +4,8 @@ type: module
 core: 8.x
 dependencies:
   - block_visibility_groups
+  - node
   - system
+  - user
   - views
 package: Drupalcampfr
