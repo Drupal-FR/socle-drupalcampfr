@@ -521,6 +521,9 @@
             "drupal/redis": {
                 "Add status page and some statistics": "https://www.drupal.org/files/issues/redis-statistics-7.patch"
             }
+        },
+        "patchLevel": {
+            "drupal/core": "-p2"
         }
     }
 }
