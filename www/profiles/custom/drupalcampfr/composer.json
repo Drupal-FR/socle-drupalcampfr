@@ -1,0 +1,15 @@
+{
+  "name": "drupalfr/drupalcampfr",
+  "type": "drupal-custom-profile",
+  "extra": {
+    "merge-plugin": {
+      "include": [
+        "www/profiles/custom/drupalcampfr/modules/*/composer.json",
+        "www/profiles/custom/drupalcampfr/themes/*/composer.json"
+      ],
+      "merge-extra": true,
+      "merge-extra-deep": true,
+      "merge-scripts": true
+    }
+  }
+}

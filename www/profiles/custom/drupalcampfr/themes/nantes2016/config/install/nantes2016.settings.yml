@@ -1,0 +1,33 @@
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://socle-drupalcampfr.local/profiles/custom/drupalcampfr/themes/nantes2016/favicon.ico'
+  use_default: 1
+schema: '8000'
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: '/profiles/custom/drupalcampfr/themes/nantes2016/logo.png'
+  use_default: 0
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  content_bottom: ''
+  footer: ''
+navbar_position: fixed-top
+navbar_inverse: 1
+breadcrumb_home: 1
+forms_smart_descriptions: 0
+tooltip_enabled: 0
+popover_enabled: 0
+modal_enabled: 0
+cdn_provider: ''

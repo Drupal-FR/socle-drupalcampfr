@@ -1,0 +1,46 @@
+id: drupalcampfr_ticket_variation
+label: 'Ticket variation import'
+migration_group: drupalcampfr
+migration_tags:
+  - drupalcampfr
+dependencies:
+  enforced:
+    module:
+      - drupalcampfr_migrate
+  module:
+    - migrate_plus
+    - migrate_source_csv
+    - commerce_product
+migration_dependencies: {  }
+source:
+  plugin: csv
+  path: profiles/custom/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/ticket_variation.csv
+  header_row_count: 1
+  keys:
+    - sku
+  column_names:
+    - sku: SKU
+    - price: Price
+    - date: 'Date (yyyy-MM-dd)'
+destination:
+  plugin: 'entity:commerce_product_variation'
+process:
+  sku: sku
+  uid:
+    plugin: default_value
+    default_value: 1
+  title:
+    plugin: default_value
+    default_value: null
+  type:
+    plugin: default_value
+    default_value: ticket
+  price/number: price
+  price/currency_code:
+    plugin: default_value
+    default_value: 'EUR'
+  field_ticket_date:
+    -
+      plugin: explode
+      source: date
+      delimiter: ;

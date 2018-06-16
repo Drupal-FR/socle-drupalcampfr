@@ -505,7 +505,6 @@
                 "www/modules/custom/*/composer.json",
                 "www/profiles/custom/*/composer.json",
                 "www/themes/custom/*/composer.json",
-                "www/profiles/*/composer.json",
                 "www/modules/contrib/charts/modules/charts_highcharts/composer.json"
             ],
             "merge-extra": true,

@@ -1,0 +1,6 @@
+"UUID","Filename","Filepath","Filemime","Status","URI"
+"default_sponsor_logo","default_sponsor_logo.png","profiles/custom/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/files/default_sponsor_logo.png","image/png",1,"public://default_images/default_sponsor_logo.png"
+"default_sponsor_logo_1","default_sponsor_logo_1.png","profiles/custom/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/files/default_sponsor_logo_1.png","image/png",1,"public://default_images/default_sponsor_logo_1.png"
+"default_sponsor_logo_2","default_sponsor_logo_2.png","profiles/custom/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/files/default_sponsor_logo_2.png","image/png",1,"public://default_images/default_sponsor_logo_2.png"
+"default_sponsor_logo_3","default_sponsor_logo_3.png","profiles/custom/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/files/default_sponsor_logo_3.png","image/png",1,"public://default_images/default_sponsor_logo_3.png"
+"default_user_picture","default_user_picture.png","profiles/custom/drupalcampfr/modules/drupalcampfr_migrate/migrations/data/files/default_user_picture.png","image/png",1,"public://default_images/default_user_picture.png"
