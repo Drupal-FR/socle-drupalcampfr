@@ -23,7 +23,7 @@ $DRUSH updatedb --entity-updates -y
 . $SCRIPTS_PATH/tasks/development_modules.sh
 
 echo -e "${LIGHT_GREEN}Revert features.${NC}"
-$DRUSH features:import:all --bundle=$PROFILE -y
+$DRUSH features:import:all --bundle="${PROFILE}" -y
 
 # For update.sh import only content if the environment is dev to not risk
 # breaking prod.

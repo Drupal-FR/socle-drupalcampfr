@@ -18,13 +18,13 @@ echo -e "${LIGHT_GREEN}Clear Redis cache because otherwise it is no emptied on s
 $REDIS_FLUSH_COMMAND
 
 echo -e "${LIGHT_GREEN}Install Drupal.${NC}"
-$DRUSH site:install $PROFILE \
-  --account-mail=$ACCOUNT_MAIL \
-  --account-name=$ACCOUNT_NAME \
-  --account-pass=$ACCOUNT_PASS \
-  --site-mail=$SITE_MAIL \
-  --site-name=$SITE_NAME \
-  --locale=$DEFAULT_LANGUAGE \
+$DRUSH site:install "${PROFILE}" \
+  --account-mail="${ACCOUNT_MAIL}" \
+  --account-name="${ACCOUNT_NAME}" \
+  --account-pass="${ACCOUNT_PASS}" \
+  --site-mail="${SITE_MAIL}" \
+  --site-name="${SITE_NAME}" \
+  --locale="${DEFAULT_LANGUAGE}" \
   -y
 
 echo -e "${LIGHT_GREEN}Launch updates. Ensure that the database schema is up-to-date.${NC}"
