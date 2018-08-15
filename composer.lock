@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf20d8f9b6ab1f100ae10bba22d6295b",
+    "content-hash": "9b5720a4ba3859af323fa49e3816e66f",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -111,6 +111,66 @@
                 "stack"
             ],
             "time": "2017-12-20T14:37:45+00:00"
+        },
+        {
+            "name": "bower-asset/blazy",
+            "version": "1.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dinbror/blazy.git",
+                "reference": "5becad405976695e6016ba301be4f22ba61d5b95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dinbror/blazy/zipball/5becad405976695e6016ba301be4f22ba61d5b95",
+                "reference": "5becad405976695e6016ba301be4f22ba61d5b95",
+                "shasum": null
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/bootstrap-sass",
+            "version": "v3.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap-sass.git",
+                "reference": "5d6b2ebba0c2a5885ce2f0e01e9218db3d3b5e47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap-sass/zipball/5d6b2ebba0c2a5885ce2f0e01e9218db3d3b5e47",
+                "reference": "5d6b2ebba0c2a5885ce2f0e01e9218db3d3b5e47",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.9.1,<4.0"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/jquery",
+            "version": "3.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jquery/jquery-dist.git",
+                "reference": "9e8ec3d10fad04748176144f108d7355662ae75e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/9e8ec3d10fad04748176144f108d7355662ae75e",
+                "reference": "9e8ec3d10fad04748176144f108d7355662ae75e",
+                "shasum": null
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -1923,6 +1983,65 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/backup_migrate",
                 "issues": "https://www.drupal.org/project/issues/backup_migrate"
+            }
+        },
+        {
+            "name": "drupal/blazy",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/blazy",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/blazy-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "242f3022b039c6fd3b98f6ce1955d295119b4b5a"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1495745283",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Gaus Surahman",
+                    "homepage": "https://www.drupal.org/u/gausarts",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/2663268/committers",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "Provides basic bLazy integration for lazy loading and multi-serving images.",
+            "homepage": "https://drupal.org/project/blazy",
+            "keywords": [
+                "Drupal",
+                "bLazy",
+                "lazyload"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/blazy",
+                "issues": "https://drupal.org/project/issues/blazy"
             }
         },
         {
@@ -4477,6 +4596,53 @@
             "homepage": "https://www.drupal.org/project/varnish_purge",
             "support": {
                 "source": "http://cgit.drupalcode.org/varnish_purge"
+            }
+        },
+        {
+            "name": "drupal/views_custom_cache_tag",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_custom_cache_tag",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_custom_cache_tag-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "24ce7e216367f89ba315bb32a4ed9088dd39a779"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1471704539",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                }
+            ],
+            "description": "Add views custom cache tag.",
+            "homepage": "https://www.drupal.org/project/views_custom_cache_tag",
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_custom_cache_tag"
             }
         },
         {

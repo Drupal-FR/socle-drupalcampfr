@@ -336,6 +336,8 @@
         }
     },
     "require": {
+        "bower-asset/blazy": "1.8.2",
+        "bower-asset/bootstrap-sass": "3.3.7",
         "ckeditor/autogrow": "4.8.0",
         "ckeditor/codemirror": "v1.17.5",
         "ckeditor/fakeobjects": "4.8.0",
@@ -349,6 +351,7 @@
         "drupal/address": "1.4.0",
         "drupal/admin_toolbar": "1.24.0",
         "drupal/backup_migrate": "4.0.0",
+        "drupal/blazy": "1.0.0-rc2",
         "drupal/block_visibility_groups": "1.2.0",
         "drupal/bootstrap": "3.12.0",
         "drupal/charts": "3.0.0-beta1",
@@ -372,6 +375,7 @@
         "drupal/redis": "1.0.0",
         "drupal/swiftmailer": "1.0.0-beta2",
         "drupal/varnish_purge": "1.11.0",
+        "drupal/views_custom_cache_tag": "1.0.0",
         "drupal/views_data_export": "1.0.0-beta1",
         "drupal/webform": "5.0.0-rc18",
         "drush/drush": "9.3.0",
