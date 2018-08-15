@@ -17,6 +17,7 @@ dependencies:
     - taxonomy
     - text
     - user
+    - views_custom_cache_tag
 id: session
 label: 'Drupalcampfr session'
 module: views
@@ -37,8 +38,9 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: custom_tag
+        options:
+          custom_tag: 'note:type:session'
       query:
         type: views_query
         options:

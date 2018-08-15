@@ -23,5 +23,6 @@ dependencies:
   - text
   - user
   - views
+  - views_custom_cache_tag
   - webform
 package: Drupalcampfr

@@ -12,6 +12,7 @@ dependencies:
     - options
     - taxonomy
     - user
+    - views_custom_cache_tag
 id: dashboard_content
 label: 'Drupalcampfr tableau de bord contenus'
 module: views
@@ -313,6 +314,9 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
+      relationships: {  }
+      defaults:
+        relationships: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -391,6 +395,7 @@ display:
         style: false
         row: false
         empty: false
+        cache: false
       filter_groups:
         operator: AND
         groups:
@@ -619,6 +624,10 @@ display:
             value: '<p>Aucune session publiée avec un niveau renseigné.</p>'
             format: full_html
           plugin_id: text
+      cache:
+        type: custom_tag
+        options:
+          custom_tag: "node:type:session\ntaxonomy_term:vid:session_levels"
     cache_metadata:
       max-age: -1
       contexts:
@@ -697,6 +706,7 @@ display:
         style: false
         row: false
         empty: false
+        cache: false
       filter_groups:
         operator: AND
         groups:
@@ -898,6 +908,10 @@ display:
             value: '<p>Aucune session publiée avec un statut de validation renseigné.</p>'
             format: full_html
           plugin_id: text
+      cache:
+        type: custom_tag
+        options:
+          custom_tag: 'node:type:session'
     cache_metadata:
       max-age: -1
       contexts:
@@ -977,6 +991,7 @@ display:
         style: false
         row: false
         empty: false
+        cache: false
       filter_groups:
         operator: AND
         groups:
@@ -1205,6 +1220,10 @@ display:
             value: '<p>Aucune session publiée avec un thème renseigné.</p>'
             format: full_html
           plugin_id: text
+      cache:
+        type: custom_tag
+        options:
+          custom_tag: "node:type:session\ntaxonomy_term:vid:session_tracks"
     cache_metadata:
       max-age: -1
       contexts:
@@ -1283,6 +1302,7 @@ display:
         style: false
         row: false
         empty: false
+        cache: false
       filter_groups:
         operator: AND
         groups:
@@ -1505,6 +1525,10 @@ display:
             value: '<p>Aucun sponsor publié avec un niveau renseigné.</p>'
             format: full_html
           plugin_id: text
+      cache:
+        type: custom_tag
+        options:
+          custom_tag: "node:type:sponsor\ntaxonomy_term:vid:sponsor_levels"
     cache_metadata:
       max-age: -1
       contexts:

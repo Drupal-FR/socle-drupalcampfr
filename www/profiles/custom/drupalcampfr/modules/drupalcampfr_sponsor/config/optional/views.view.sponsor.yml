@@ -13,6 +13,7 @@ dependencies:
     - node
     - taxonomy
     - user
+    - views_custom_cache_tag
 id: sponsor
 label: 'Drupalcampfr sponsor'
 module: views
@@ -33,8 +34,9 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: custom_tag
+        options:
+          custom_tag: "node:type:sponsor\ntaxonomy_term:vid:sponsor_levels"
       query:
         type: views_query
         options:
@@ -425,6 +427,7 @@ display:
         filter_groups: false
         style: false
         row: false
+        cache: true
       display_description: ''
       filters:
         status:

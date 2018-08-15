@@ -18,4 +18,5 @@ dependencies:
   - taxonomy
   - user
   - views
+  - views_custom_cache_tag
 package: Drupalcampfr

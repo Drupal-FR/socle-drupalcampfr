@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations for drupalcampfr_core module.
+ */
+
+use Drupal\Core\Cache\Cache;
+use Drupal\node\NodeInterface;
+use Drupal\taxonomy\TermInterface;
+
+/**
+ * Implements hook_node_presave().
+ *
+ * Basic implementation of "Views Custom Cache Tag".
+ */
+function drupalcampfr_core_node_presave(NodeInterface $node) {
+  $cache_tag = 'node:type:' . $node->getType();
+  Cache::invalidateTags([$cache_tag]);
+}
+
+/**
+ * Implements hook_node_delete().
+ *
+ * See https://www.drupal.org/node/2917531.
+ */
+function drupalcampfr_core_node_delete(NodeInterface $node) {
+  $cache_tag = 'node:type:' . $node->getType();
+  Cache::invalidateTags([$cache_tag]);
+}
+
+/**
+ * Implements hook_taxonomy_term_presave().
+ *
+ * Basic implementation of "Views Custom Cache Tag".
+ */
+function drupalcampfr_core_taxonomy_term_presave(TermInterface $taxonomy_term) {
+  $cache_tag = 'taxonomy_term:vid:' . $taxonomy_term->bundle();
+  Cache::invalidateTags([$cache_tag]);
+}
+
+/**
+ * Implements hook_taxonomy_term_delete().
+ *
+ * See https://www.drupal.org/node/2917531.
+ */
+function drupalcampfr_core_taxonomy_term_delete(TermInterface $taxonomy_term) {
+  $cache_tag = 'taxonomy_term:vid:' . $taxonomy_term->bundle();
+  Cache::invalidateTags([$cache_tag]);
+}

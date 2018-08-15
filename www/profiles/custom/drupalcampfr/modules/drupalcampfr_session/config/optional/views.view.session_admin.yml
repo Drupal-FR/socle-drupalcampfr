@@ -22,6 +22,7 @@ dependencies:
     - options
     - taxonomy
     - user
+    - views_custom_cache_tag
 id: session_admin
 label: 'Drupalcampfr session admin'
 module: views
@@ -42,8 +43,9 @@ display:
         options:
           perm: 'administer nodes'
       cache:
-        type: tag
-        options: {  }
+        type: custom_tag
+        options:
+          custom_tag: 'node:type:session'
       query:
         type: views_query
         options:
