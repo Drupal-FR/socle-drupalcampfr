@@ -4,11 +4,10 @@ dependencies:
   config:
     - field.storage.node.field_sponsor_link
     - field.storage.node.field_sponsor_logo
-    - image.style.max_325x325
     - node.type.sponsor
     - system.menu.main
   module:
-    - image
+    - blazy
     - link
     - node
     - taxonomy
@@ -320,10 +319,39 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: blazy
           settings:
+            background: false
+            caption:
+              title: '0'
+              alt: '0'
             image_style: max_325x325
-            image_link: ''
+            thumbnail_style: ''
+            media_switch: ''
+            ratio: ''
+            sizes: ''
+            breakpoints:
+              xs:
+                image_style: ''
+                width: ''
+                breakpoint: ''
+              sm:
+                image_style: ''
+                width: ''
+                breakpoint: ''
+              md:
+                image_style: ''
+                width: ''
+                breakpoint: ''
+              lg:
+                image_style: ''
+                width: ''
+                breakpoint: ''
+              xl:
+                image_style: ''
+                width: ''
+                breakpoint: ''
+            current_view_mode: _custom
           group_column: ''
           group_columns: {  }
           group_rows: true

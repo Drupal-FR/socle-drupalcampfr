@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_lengths
+id: taxonomy_term.session_lengths.default
+targetEntityType: taxonomy_term
+bundle: session_lengths
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

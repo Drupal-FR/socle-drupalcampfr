@@ -3,6 +3,7 @@ description: 'Provide site components.'
 type: module
 core: 8.x
 dependencies:
+  - blazy
   - block_content
   - ckeditor
   - drupalcampfr_core

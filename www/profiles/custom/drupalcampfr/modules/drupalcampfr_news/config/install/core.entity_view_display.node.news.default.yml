@@ -26,7 +26,8 @@ content:
   field_attachment:
     weight: 3
     label: hidden
-    settings: {  }
+    settings:
+      use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
     region: content

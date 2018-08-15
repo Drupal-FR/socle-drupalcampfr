@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_rooms
+id: taxonomy_term.session_rooms.default
+targetEntityType: taxonomy_term
+bundle: session_rooms
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

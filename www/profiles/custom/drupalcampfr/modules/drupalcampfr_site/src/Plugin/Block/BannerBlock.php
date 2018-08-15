@@ -20,6 +20,11 @@ class BannerBlock extends BlockBase {
   public function build() {
     $build = [
       '#theme' => 'drupalcampfr_site_banner_block',
+      '#attached' => [
+        'library' => [
+          'blazy/blazy',
+        ],
+      ],
     ];
 
     return $build;

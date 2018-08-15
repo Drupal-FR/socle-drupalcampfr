@@ -2,17 +2,20 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_attachment
-    - node.type.page
+    - core.entity_view_mode.node.full
+    - field.field.node.news.body
+    - field.field.node.news.field_attachment
+    - field.field.node.news.field_news_link
+    - node.type.news
   module:
     - file
+    - link
     - text
     - user
-id: node.page.default
+id: node.news.full
 targetEntityType: node
-bundle: page
-mode: default
+bundle: news
+mode: full
 content:
   body:
     label: hidden
@@ -22,12 +25,24 @@ content:
     third_party_settings: {  }
     region: content
   field_attachment:
-    weight: 1
-    label: above
+    weight: 3
+    label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
+    region: content
+  field_news_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 2

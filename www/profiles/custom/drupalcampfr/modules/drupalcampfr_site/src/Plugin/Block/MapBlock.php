@@ -108,6 +108,11 @@ class MapBlock extends BlockBase {
       '#box_top_right_longitude' => $this->configuration['box_top_right_longitude'],
       '#marker_latitude' => $this->configuration['marker_latitude'],
       '#marker_longitude' => $this->configuration['marker_longitude'],
+      '#attached' => [
+        'library' => [
+          'blazy/blazy',
+        ],
+      ],
     ];
 
     return $build;

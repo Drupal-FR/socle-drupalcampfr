@@ -18,6 +18,7 @@ CURRENT_DATE=$(date "+%Y-%m-%d-%Hh%Mm%Ss")
 PROFILE="drupalcampfr"
 DEFAULT_LANGUAGE="fr"
 DEVELOPMENT_MODULES=(
+  blazy_ui
   config_inspector
   dblog
   devel

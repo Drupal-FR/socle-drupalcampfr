@@ -1,5 +1,5 @@
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -26,9 +26,9 @@ content:
     region: content
   links:
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_sponsor_level: true
   field_sponsor_link: true

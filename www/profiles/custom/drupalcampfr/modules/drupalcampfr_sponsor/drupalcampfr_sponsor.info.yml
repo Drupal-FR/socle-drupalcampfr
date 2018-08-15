@@ -4,6 +4,7 @@ type: module
 core: 8.x
 dependencies:
   - address
+  - blazy
   - block_visibility_groups
   - drupalcampfr_core
   - drupalcampfr_site

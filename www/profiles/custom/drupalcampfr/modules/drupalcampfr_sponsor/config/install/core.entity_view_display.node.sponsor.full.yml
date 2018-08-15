@@ -1,21 +1,23 @@
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.sponsor.body
     - field.field.node.sponsor.field_sponsor_level
     - field.field.node.sponsor.field_sponsor_link
     - field.field.node.sponsor.field_sponsor_logo
+    - image.style.max_1300x1300
     - node.type.sponsor
   module:
-    - blazy
+    - image
     - link
     - text
     - user
-id: node.sponsor.default
+id: node.sponsor.full
 targetEntityType: node
 bundle: sponsor
-mode: default
+mode: full
 content:
   body:
     label: hidden
@@ -49,60 +51,14 @@ content:
     label: hidden
     settings:
       image_style: max_1300x1300
-      thumbnail_style: ''
-      media_switch: ''
-      ratio: ''
-      sizes: ''
-      breakpoints:
-        xs:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-        sm:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-        md:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-        lg:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-        xl:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-      current_view_mode: default
-      background: false
-      caption:
-        title: '0'
-        alt: '0'
-      iframe_lazy: true
-      icon: ''
-      layout: ''
-      view_mode: ''
-      cache: 0
-      optionset: default
-      skin: ''
-      style: ''
-      box_caption: ''
-      box_caption_custom: ''
-      box_style: ''
-      box_media_style: ''
-      responsive_image_style: ''
-      grid: 0
-      grid_header: ''
-      grid_medium: 0
-      grid_small: 0
+      image_link: ''
     third_party_settings: {  }
-    type: blazy
+    type: image
     region: content
   links:
     weight: 4
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   langcode: true
