@@ -126,13 +126,13 @@
             "type": "package",
             "package": {
                 "name": "codemirror/codemirror",
-                "version": "5.36.0",
+                "version": "5.39.2",
                 "type": "drupal-library",
                 "extra": {
                     "installer-name": "codemirror"
                 },
                 "dist": {
-                    "url": "https://github.com/components/codemirror/archive/5.36.0.zip",
+                    "url": "https://github.com/components/codemirror/archive/5.39.2.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -187,13 +187,13 @@
             "type": "package",
             "package": {
                 "name": "jquery/inputmask",
-                "version": "3.3.11",
+                "version": "4.0.0",
                 "type": "drupal-library",
                 "extra": {
                     "installer-name": "jquery.inputmask"
                 },
                 "dist": {
-                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.11.zip",
+                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/4.0.0.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -206,13 +206,13 @@
             "type": "package",
             "package": {
                 "name": "jquery/intl-tel-input",
-                "version": "12.1.12",
+                "version": "13.0.0",
                 "type": "drupal-library",
                 "extra": {
                     "installer-name": "jquery.intl-tel-input"
                 },
                 "dist": {
-                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v12.1.12.zip",
+                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v13.0.0.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -258,6 +258,25 @@
                 }
             }
         },
+        "jquery.textcounter": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "jquery/textcounter",
+                "version": "0.8.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.textcounter"
+                },
+                "dist": {
+                    "url": "https://github.com/ractoon/jQuery-Text-Counter/archive/0.8.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
         "jquery.timepicker": {
             "_webform": true,
             "type": "package",
@@ -270,44 +289,6 @@
                 },
                 "dist": {
                     "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.13.zip",
-                    "type": "zip"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
-        "jquery.toggles": {
-            "_webform": true,
-            "type": "package",
-            "package": {
-                "name": "jquery/toggles",
-                "version": "4.0.0",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "jquery.toggles"
-                },
-                "dist": {
-                    "url": "https://github.com/simontabor/jquery-toggles/archive/v4.0.0.zip",
-                    "type": "zip"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
-        "jquery.word-and-character-counter": {
-            "_webform": true,
-            "type": "package",
-            "package": {
-                "name": "jquery/word-and-character-counter",
-                "version": "2.5.1",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "jquery.word-and-character-counter"
-                },
-                "dist": {
-                    "url": "https://github.com/qwertypants/jQuery-Word-and-Character-Counter-Plugin/archive/2.5.1.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -360,7 +341,7 @@
         "ckeditor/fakeobjects": "4.8.0",
         "ckeditor/image": "4.8.0",
         "ckeditor/link": "4.8.0",
-        "codemirror/codemirror": "5.36.0",
+        "codemirror/codemirror": "5.39.2",
         "composer/installers": "^1.0.21",
         "cweagans/composer-patches": "~1.0",
         "drupal-composer/drupal-l10n": "^1.0",
@@ -369,16 +350,16 @@
         "drupal/admin_toolbar": "1.24.0",
         "drupal/backup_migrate": "4.0.0",
         "drupal/block_visibility_groups": "1.2.0",
-        "drupal/bootstrap": "3.11.0",
-        "drupal/charts": "3.0.0-alpha10",
-        "drupal/commerce": "2.7.0",
+        "drupal/bootstrap": "3.12.0",
+        "drupal/charts": "3.0.0-beta1",
+        "drupal/commerce": "2.8.0",
         "drupal/commerce_paypal": "1.0.0-beta2",
-        "drupal/core": "8.5.5",
+        "drupal/core": "8.5.6",
         "drupal/drush_language": "1.0.0-rc2",
         "drupal/entityqueue": "1.0.0-alpha7",
         "drupal/eu_cookie_compliance": "1.2.0",
         "drupal/features": "3.7.0",
-        "drupal/honeypot": "1.27.0",
+        "drupal/honeypot": "1.28.0",
         "drupal/menu_attributes": "1.x-dev#4364d4671b6ae20d97783603889d15e88a5bae43",
         "drupal/migrate_plus": "4.0.0-beta3",
         "drupal/migrate_source_csv": "2.2.0",
@@ -387,22 +368,21 @@
         "drupal/panels": "4.3.0",
         "drupal/pathauto": "1.2.0",
         "drupal/purge": "3.0.0-beta8",
-        "drupal/r4032login": "1.0.0",
+        "drupal/r4032login": "1.1.0",
         "drupal/redis": "1.0.0",
         "drupal/swiftmailer": "1.0.0-beta2",
         "drupal/varnish_purge": "1.11.0",
         "drupal/views_data_export": "1.0.0-beta1",
-        "drupal/webform": "5.0.0-rc16",
+        "drupal/webform": "5.0.0-rc18",
         "drush/drush": "9.3.0",
         "jquery/geocomplete": "1.7.0",
         "jquery/icheck": "1.0.2 ",
-        "jquery/inputmask": "3.3.11",
-        "jquery/intl-tel-input": "12.1.12",
+        "jquery/inputmask": "4.0.0",
+        "jquery/intl-tel-input": "13.0.0",
         "jquery/rateit": "1.1.1",
         "jquery/select2": "4.0.5",
+        "jquery/textcounter": "0.8.0",
         "jquery/timepicker": "1.11.13",
-        "jquery/toggles": "4.0.0",
-        "jquery/word-and-character-counter": "2.5.1",
         "oomphinc/composer-installers-extender": "^1.1",
         "progress-tracker/progress-tracker": "1.4.0",
         "signature_pad/signature_pad": "2.3.0",

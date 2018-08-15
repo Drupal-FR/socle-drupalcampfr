@@ -75,12 +75,23 @@ display:
           title_position: out
           tooltips: 'TRUE'
           data_labels: 'TRUE'
+          data_markers: 'FALSE'
           legend_position: ''
           background: ''
           three_dimensional: 0
           polar: 0
           width: ''
+          width_units: '%'
           height: ''
+          height_units: px
+          max: '100'
+          min: '0'
+          green_from: '85'
+          green_to: '100'
+          yellow_from: '50'
+          yellow_to: '85'
+          red_from: '0'
+          red_to: '50'
           xaxis_title: ''
           xaxis_labels_rotation: '0'
           yaxis_title: ''

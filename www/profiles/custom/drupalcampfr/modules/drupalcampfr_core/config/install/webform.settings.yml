@@ -5,7 +5,7 @@ settings:
   default_form_close_message: 'Sorry...This form is closed to new submissions.'
   default_form_exception_message: 'Unable to display this webform. Please contact the site administrator.'
   default_submit_button_label: Soumettre
-  default_reset_button_label: Réinitialiser
+  default_reset_button_label: Reset
   default_form_submit_once: false
   default_form_confidential_message: 'This form is confidential. You must <a href="[site:login-url]/logout?destination=[current-page:url:relative]">Log out</a> to submit it.'
   default_form_login_message: 'Please login to access this webform.'
@@ -23,7 +23,7 @@ settings:
   default_wizard_next_button_label: 'Page suivante >'
   default_wizard_start_label: Début
   default_wizard_confirmation_label: Terminé
-  default_preview_next_button_label: Aperçu
+  default_preview_next_button_label: Preview
   default_preview_prev_button_label: '< Précédent'
   default_preview_label: Preview
   default_preview_title: '[webform:title] : Prévisualisation'
@@ -110,7 +110,8 @@ element:
     password_confirm: password_confirm
 html_editor:
   disabled: false
-  format: ''
+  element_format: ''
+  mail_format: ''
   tidy: true
 file:
   file_public: false
@@ -152,6 +153,7 @@ ui:
 libraries:
   excluded_libraries:
     - jquery.chosen
+    - jquery.toggles
 requirements:
   cdn: true
   bootstrap: true
