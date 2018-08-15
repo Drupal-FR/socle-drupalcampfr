@@ -6,6 +6,7 @@ dependencies:
       - webform
 open: null
 close: null
+weight: 0
 uid: null
 template: false
 archive: false
