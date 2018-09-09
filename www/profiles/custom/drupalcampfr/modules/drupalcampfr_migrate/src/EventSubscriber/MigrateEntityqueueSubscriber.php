@@ -106,11 +106,14 @@ class MigrateEntityqueueSubscriber implements EventSubscriberInterface {
       /** @var \Drupal\entityqueue\Entity\EntitySubqueue $entity_subqueue */
       $entity_subqueue = EntitySubqueue::load($entity_queue_id);
 
-      // Reset the item in the entityqueue.
+      // Sort by position.
+      ksort($entity_subqueue_positions);
+
+      // Reset the items in the entityqueue.
       $entity_subqueue_items = [];
       // Add the item to the queue.
-      foreach ($entity_subqueue_positions as $position => $entity_id) {
-        $entity_subqueue_items[$position] = [
+      foreach ($entity_subqueue_positions as $entity_id) {
+        $entity_subqueue_items[] = [
           'target_id' => $entity_id,
         ];
       }
