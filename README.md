@@ -43,6 +43,10 @@ drush @docker.default.local status
 
 Note: you have to "be" in the docroot folder (eg: `/project/www`)
 
+#### How to dump the database
+```
+mysqldump -u drupal -pdrupal -h mysql drupal | gzip -9 > "/project/backups/`date +%Y-%m-%d_%H-%M-%S`-dcp2019.sql.gz"
+```
 #### How to import a custom dump?
 
 Put the dump in the `backups` folder and then in the **web** container you can use the following commands:
