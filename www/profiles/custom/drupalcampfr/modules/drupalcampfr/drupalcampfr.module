@@ -2,7 +2,7 @@
 use Drupal\Core\Render\Markup;
 
 
-function kgaut_emails_mail_alter(&$message) {
+function drupalcampfr_emails_mail_alter(&$message) {
   switch ($message['key']) {
     case 'password_reset':
     case 'register_no_approval_required':
