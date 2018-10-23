@@ -1,2 +1,14 @@
 <?php
+use Drupal\Core\Render\Markup;
 
+
+function kgaut_emails_mail_alter(&$message) {
+  switch ($message['key']) {
+    case 'password_reset':
+    case 'register_no_approval_required':
+      $message['body'][0] = Markup::create($message['body'][0]);
+      break;
+  }
+
+
+}
