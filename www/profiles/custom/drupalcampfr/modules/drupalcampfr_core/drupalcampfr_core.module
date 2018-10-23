@@ -8,6 +8,22 @@
 use Drupal\Core\Cache\Cache;
 use Drupal\node\NodeInterface;
 use Drupal\taxonomy\TermInterface;
+use Drupal\Core\Render\Markup;
+
+
+/**
+ * Implements hook_mail_alter().
+ *
+ * Enable html for user emails
+ */
+function drupalcampfr_core_mail_alter(&$message) {
+  switch ($message['key']) {
+    case 'password_reset':
+    case 'register_no_approval_required':
+      $message['body'][0] = Markup::create($message['body'][0]);
+      break;
+  }
+}
 
 /**
  * Implements hook_node_presave().
