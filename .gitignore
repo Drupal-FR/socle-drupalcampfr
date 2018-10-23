@@ -46,6 +46,7 @@
 
 # Backups.
 backups/*
+files/*
 
 # Node modules.
 node_modules
