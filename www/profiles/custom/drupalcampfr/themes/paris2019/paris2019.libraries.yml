@@ -1,0 +1,6 @@
+framework:
+  css:
+    theme:
+      assets/css/style.css: {}
+  js:
+    assets/js/main.js: {}

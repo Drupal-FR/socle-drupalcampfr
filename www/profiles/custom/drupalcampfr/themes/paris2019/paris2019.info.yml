@@ -22,4 +22,5 @@ regions:
 
 libraries-extend:
   drupalcampfr_theme/framework:
-    - nantes2016/framework
+    - paris2019/framework
+
