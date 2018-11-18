@@ -94,6 +94,18 @@ a {
 	background:#fac42b;
 }
 
+table {
+	text-align: center;
+	width : 100%;
+}
+table tr  {
+
+}
+
+table tr th {
+	font-weight: bold;
+}
+
 
 /* NAVBAR */
 
