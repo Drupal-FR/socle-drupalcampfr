@@ -64,7 +64,7 @@ section {
 }
 
 .main-container.not-front {
-
+	padding-top : 130px;
 }
 body.not-front #nav-primary-sticky-wrapper {
 	top :0;
