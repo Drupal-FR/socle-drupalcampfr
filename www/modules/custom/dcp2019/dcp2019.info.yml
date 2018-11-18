@@ -1,0 +1,5 @@
+name: 'dcp2019'
+type: module
+description: 'Drupalcamp Paris 2019'
+core: 8.x
+package: 'Custom'
