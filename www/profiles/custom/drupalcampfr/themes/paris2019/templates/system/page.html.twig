@@ -203,3 +203,13 @@
     </div>
   </div>
 {% endblock main %}
+{% if page.footer %}
+    {% block footer %}
+        <footer class="footer" role="contentinfo">
+            <div class="container">
+                {{ page.footer }}
+
+            </div>
+        </footer>
+    {% endblock %}
+{% endif %}
