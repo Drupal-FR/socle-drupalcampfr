@@ -7,6 +7,16 @@ function dcp2019_theme() {
     'variables' => [
     ],
   ];
+  $theme['hp_place'] = [
+    'template' => 'hp-place',
+    'variables' => [
+    ],
+  ];
+  $theme['hp_inscription'] = [
+    'template' => 'hp-inscription',
+    'variables' => [
+    ],
+  ];
   return $theme;
 }
 
