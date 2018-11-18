@@ -48,7 +48,6 @@
   set body_classes = [
     logged_in ? 'user-logged-in',
     not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
-    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
     is_front ? 'front' : 'not-front',
     db_offline ? 'db-offline',
     theme.settings.navbar_position ? 'navbar-is-' ~ theme.settings.navbar_position,
@@ -66,9 +65,7 @@
   <body{{ attributes.addClass(body_classes) }}>
   {% if is_front %}
     <div id="preload">
-      <div class="preload">
-        <div class="spinner"></div>
-      </div>
+        <div class="dcp-spinner"></div>
     </div>
   {% endif %}
     {{ page_top }}

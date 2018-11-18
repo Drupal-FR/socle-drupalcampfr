@@ -47,8 +47,10 @@
       soloArrowRightVOffset: 0,
 
       shadow: 0,
-      fullWidth: "off",
-      fullScreen: "on",
+      fullWidth: "on",
+        forceFullWidth: "on",
+        fullScreenAlignForce: "off",
+        minFullScreenHeight: "400",
 
       spinner: "spinner0",
 
@@ -59,9 +61,6 @@
       shuffle: "off",
 
 
-      forceFullWidth: "off",
-      fullScreenAlignForce: "off",
-      minFullScreenHeight: "400",
 
       hideThumbsOnMobile: "off",
       hideNavDelayOnMobile: 1500,
