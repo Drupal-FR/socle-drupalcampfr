@@ -73,9 +73,8 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
-      {# Override: Add div.container #}
-      <div class="container">
+<nav id="nav-primary" class="navbar navbar-custom" role="navigation">
+    <div class="container">
         <div class="navbar-header">
           {{ page.navigation }}
           {#.btn-navbar is used as the toggle for collapsed navbar content #}
@@ -88,7 +87,6 @@
             </button>
           {% endif %}
         </div>
-
         {#Navigation (collapsible) #}
         {% if page.navigation_collapsible %}
           <div class="navbar-collapse collapse">
@@ -99,23 +97,21 @@
         {% endif %}
       </div>
     </header>
+</nav>
   {% endblock navbar %}
 {% endif %}
 
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+    {% if page.header %}
+        {% block header %}
+            {{ page.header }}
+        {% endblock header %}
+    {% endif %}
+  <div role="main" class="main-container {% if not is_front %}container not-front {% endif %} js-quickedit-main-content">
     <div class="row">
 
       {# Header #}
-      {% if page.header %}
-        {% block header %}
-          <div class="col-sm-12" role="heading">
-            {{ page.header }}
-          </div>
-        {% endblock header %}
-      {% endif %}
-
       {# Override: Add class col-md-push-3 for mobile. #}
       {# Content #}
       {%
@@ -159,7 +155,12 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
-          {{ page.content }}
+
+            {% if is_front %}
+                <div class="container">
+                    {{ page.content }}
+                </div>
+            {% endif %}
         {% endblock content %}
       </section>
 

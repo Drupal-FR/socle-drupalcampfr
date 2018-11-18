@@ -1,6 +1,34 @@
 framework:
   css:
     theme:
-      assets/css/style.css: {}
+      css/pe-icon-7-stroke.css: {}
+      css/helper.css: {}
+      css/animate.min.css: {}
+      css/font-awesome.css: {}
+      css/font.css: {}
+      css/salvattore.css: {}
+      css/jquery.countdown.css: {}
+      css/magnific-popup.css: {}
+      #css/jquery.mCustomScrollbar.css: {}
+      css/owl.carousel.css: {}
+      css/owl.theme.css: {}
+      css/owl.transitions.css: {}
+      css/revolution.css: {}
+      css/revolution-extralayers.css: {}
+      css/overrides.css: {}
+      css/main.css: {}
+      '//fonts.googleapis.com/css?family=Open+Sans:400,300': { type: external, minified: true }
+
   js:
-    assets/js/main.js: {}
+    js/jquery.themepunch.tools.min.js: {}
+    js/jquery.themepunch.revolution.min.js: {}
+    js/jquery.sticky.js: {}
+    js/jquery.magnific-popup.min.js: {}
+    js/salvattore.js: {}
+    js/jquery.countdown.js: {}
+    #js/jquery.mCustomScrollbar.concat.min.js: {}
+    js/waypoints.min.js: {}
+    js/jquery.counterup.min.js: {}
+    js/owl.carousel.min.js: {}
+    js/retina.js: {}
+    js/main.js: {}
