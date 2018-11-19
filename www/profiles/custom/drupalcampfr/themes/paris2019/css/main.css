@@ -63,6 +63,11 @@ section {
 	/*padding:90px 0;*/
 }
 
+section.block.container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 .main-container.not-front {
 	padding-top : 130px;
 }
@@ -117,7 +122,7 @@ table tr th {
 	background:transparent;
 	margin-bottom:0;
 	border-radius:0;
-	z-index:1041;
+	z-index:1000;
 	width:100%;
 	-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
   -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
