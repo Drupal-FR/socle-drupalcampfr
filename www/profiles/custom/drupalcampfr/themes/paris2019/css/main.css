@@ -909,6 +909,20 @@ table tr th {
 	text-align:center;
 }
 
+.sponsor-view .views-row {
+	margin: 15px 0;
+}
+.sponsor-view .views-field {
+	text-align: center;
+}
+.sponsor-view .views-field h4 {
+	margin-top: 5px;
+}
+.sponsor-view .views-field h4 a {
+	color : black;
+	font-weight: normal;
+}
+
 #sponsors-carousel:first-child {
 	margin-left:0;
 }
