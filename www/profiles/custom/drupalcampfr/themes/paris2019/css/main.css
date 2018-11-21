@@ -939,17 +939,17 @@ table tr th {
 	display:none;
 }
 
-footer {
+footer.footer {
 	color:#b0b0b0;
 	background:#262626;
 	padding:70px 0;
 }
 
-footer h4 {
+footer.footer h4 {
 	color:#ffffff;
 }
 
-footer h4:after {
+footer.footer h4:after {
 	content: "";
   	display: block;
   	width: 60px;
@@ -959,20 +959,20 @@ footer h4:after {
   	margin-bottom: 15px;
 }
 
-footer ul li a {
+footer.footer ul li a {
 	color:#ececee;
 }
 
-footer ul li a:hover {
+footer.footer ul li a:hover {
 	color:#ffffff;
 }
 
-footer .button-big {
+footer.footer .button-big {
 	font-size:16px;
 	width:100%;
 }
 
-footer dt {
+footer.footer dt {
 	color:#ffffff;
 	font-family:'montserratlight';
 	font-size:13px;
