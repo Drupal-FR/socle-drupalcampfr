@@ -749,7 +749,13 @@ table tr th {
 
 
 /* REGISTER */
-
+#views-exposed-form-pass-block-1 #edit-adherent--wrapper legend {
+	float : left;
+	width : auto;
+	margin-right: 1em;
+}
+#views-exposed-form-pass-block-1 #edit-adherent--wrapper > .fieldset-wrapper {
+}
 #register {
 	background:#f5f5f5;
 	border-bottom:1px solid #f0f0f0;
@@ -761,7 +767,7 @@ table tr th {
 }
 
 .price-table {
-	color:#ffffff;
+	color:#000000;
 	background:#fac42b;
 	padding:20px;
 	line-height:1;
@@ -823,6 +829,10 @@ table tr th {
 
 .price-table .desc li:last-child {
 	border-bottom:none;
+}
+
+.price-table h4 {
+	clear : both;
 }
 
 /* register form */

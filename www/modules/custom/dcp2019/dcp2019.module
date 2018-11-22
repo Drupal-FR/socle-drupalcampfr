@@ -20,7 +20,28 @@ function dcp2019_theme() {
   return $theme;
 }
 
+function dcp2019_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if($form['#id'] === 'views-exposed-form-pass-block-1') {
+    $form['adherent']['#type'] = 'radios';
+    $form['adherent']['#options']['All'] = t('Voir toutes les offres');
+    $form['adherent']['#options']['1'] = t('Oui');
+    $form['adherent']['#options']['0'] = t('Non');
+
+    $form['adherent']['#attributes']['onChange'] = 'this.form.submit();';
+    $form['actions']['submit']['#attributes']['style'] = 'display:none';
+
+
+  }
+}
 
 function dcp2019_preprocess(&$variables, $hook) {
   $variables['pathtotheme'] = base_path() . drupal_get_path('theme', \Drupal::theme()->getActiveTheme()->getName());
+}
+
+function dcp2019_preprocess_commerce_product(array &$variables) {
+  /** @var \Drupal\commerce_product\Entity\Product $product */
+  $product = $variables['elements']['#commerce_product'];
+  $variables['attributes']['class'][] = 'price-table';
+  $variables['attributes']['class'][] = 'col-md-5';
+  $variables['prix_adherent'] = $product->get('field_prix_adherent')->value;
 }
