@@ -91,6 +91,19 @@ body.not-front #nav-primary-sticky-wrapper {
 	color:#999999;
 }
 
+.btn {
+}
+
+.btn.btn-primary {
+	background-color: #fac42b;
+	color: black;
+}
+
+.navbar-custom a.btn {
+	padding : 8px;
+	font-weight: bold;
+}
+
 a {
 	outline:none;
 }
